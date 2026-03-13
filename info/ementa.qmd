@@ -1,0 +1,29 @@
+---
+title: ""
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Ementa
+
+Introdução. Regras elementares de probabilidade. Distribuição binominal, Poisson e normal. População e amostras. Testes de bondade de ajustamento. Uso de transformações. Distribuições de certas estatísticas amostrais. Noções de testes e hipóteses. Noções de delineamento experimental. Experimentos com um e dois fatores. Regressão e correlação.
+
+
+## Objetivos
+
+Proporcionar experiências de aprendizagem que permitam ao estudante familiarizar-se com conhecimentos estatísticos fundamentais para a análise, interpretação e solução de problemas cotidianos e aplicados.
+
+## Metodologia
+
+A disciplina será desenvolvida por meio de aulas teóricas expositivas, com uso de recursos visuais, resolução de exercícios em sala e realização de atividades extraclasse.
+
+## Habilidades e Competências
+
+Ao final da disciplina, o estudante deverá compreender os principais conceitos de estatística descritiva, distribuições de probabilidade e inferência estatística, bem como os fundamentos de correlação e regressão linear simples. Espera-se que o estudante seja capaz de organizar, analisar e interpretar dados experimentais, utilizando ferramentas estatísticas para apoiar a tomada de decisões.
+
+Essas competências permitirão aplicar métodos estatísticos em problemas típicos da Engenharia de Materiais, como análise de propriedades de materiais, interpretação de resultados experimentais, avaliação de variabilidade em processos e identificação de relações entre variáveis físicas e mecânicas.
+
+## Avaliação
+Serão realizadas três avaliações ao longo do semestre. As avaliações poderão ser provas, trabalhos ou outras atividades solicitadas pelo professor.

@@ -1,0 +1,49 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  bread-crumbs: false
+  page-navigation: true
+  title: "Estatística Aplicada"
+  sidebar:
+    style: "docked"
+    search: false
+    logo: img/ESTAT0011_logo_hex.png
+    contents:
+    - section: "Informações da disciplina"
+      contents: 
+      - href: info/dados_gerais.qmd
+        text: "Dados gerais"
+      - href: info/ementa.qmd
+        text: "Ementa e objetivos"
+      - href: info/conteudo.qmd
+        text: "Conteúdo"
+      - href: info/bibliografia.qmd
+        text: "Bibliografia"
+    
+    - section: "Aulas"
+      contents: 
+      - section: "Parte 1: Introdução à Probabilidade"
+        contents:
+          - href: aulas/01-Apresentacao_da_disciplina_e_conceitos_iniciais.qmd
+            text: "1- Apresentação da Disciplina"
+          - href: aulas/02-Medidas_de_posicao.qmd
+            text: "2- Medidas de Posição"
+          - href: aulas/03-Medidas_de_dispersao.qmd
+            text: "3- Medidas de Dispersão"
+          - href: aulas/04-Distribuicao_de_frequencias_simples_e_em_classe.qmd
+            text: "4- Distribuição de Frequências"
+            
+    - href: PDFs/listas/listas_de_exercicio.qmd
+      text: "Listas de Exercício"
+      
+
+format:
+  html:
+    theme: styles.scss
+    toc: true
+    grid:
+      sidebar-width: 300px
+resources:
+  - PDF_slides/**

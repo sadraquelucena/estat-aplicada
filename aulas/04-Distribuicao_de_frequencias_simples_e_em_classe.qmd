@@ -1,0 +1,33 @@
+---
+title: "Conteúdo 4"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Distribuição de Frequências Simples e em Classes
+
+Os slides desta aula apresentam os procedimentos para organização e síntese de dados por meio de distribuições de frequência, etapa fundamental na análise estatística de dados experimentais. São discutidas as diferenças entre dados brutos e rol, a construção de tabelas de frequência para variáveis qualitativas e quantitativas, bem como o uso da Regra de Sturges para definir o número adequado de classes. Também são abordadas as interpretações de frequências absolutas, relativas e acumuladas, destacando como essas ferramentas auxiliam na identificação de padrões nos dados e na tomada de decisões.
+
+Slides:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide04_html.png)<br>Versão html
+</a>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/slides/04-Distribuicao_de_frequencias_simples_e_em_classe.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide04_pdf.png)<br>Versão pdf
+</a>
+:::
+
+::::
+
+
+
+

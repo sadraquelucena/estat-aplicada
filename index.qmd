@@ -1,0 +1,17 @@
+---
+title: ""
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+# Bem-vindo(a)!
+
+Esta página foi criada para centralizar os conteúdos, atividades, cronograma e materiais da disciplina ESTAT0011 — Estatística Aplicada, ofertada pelo Departamentoe de Estatística e Ciências Atuariais para o curso de Engenharia de Materiais da Universidade Federal de Sergipe. Ao longo do semestre, serão desenvolvidos os principais conceitos e ferramentas estatísticas utilizados na análise de dados experimentais, com foco em aplicações típicas da engenharia.
+
+A disciplina abordará tópicos fundamentais como estatística descritiva, distribuições de probabilidade, estimação de parâmetros, intervalos de confiança, testes de hipóteses e análise de regressão, sempre com ênfase na interpretação e utilização dessas técnicas em problemas reais de engenharia de materiais, como caracterização de propriedades, controle de qualidade e análise de resultados experimentais.
+
+As aulas combinarão exposição teórica dos conceitos com exemplos práticos, resolução de exercícios e análise de conjuntos de dados, permitindo que os estudantes desenvolvam a capacidade de aplicar métodos estatísticos na tomada de decisões baseada em dados.
+
+Fique atento(a) às atualizações desta página — ela será utilizada para disponibilização de avisos, materiais de apoio, listas de exercícios e alterações no cronograma ao longo do semestre.

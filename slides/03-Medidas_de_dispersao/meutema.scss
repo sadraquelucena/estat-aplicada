@@ -1,0 +1,78 @@
+/*-- scss:defaults --*/
+
+$presentation-font-size-root: 28pt;
+$presentation-title-slide-text-align: "left";
+
+
+/* Tamanho da fonte dos code chunks */
+pre code {
+  font-size: 28pt !important;  /* Força a aplicação do estilo */
+}
+
+/* Bloco de código preenchendo todo o frame */
+.reveal code {
+  max-height: 100% !important;
+}
+
+.reveal .slide-logo {
+   max-height: 1em !important;
+}
+
+
+/* formatação de tabela nas normas da ABNT */
+
+.reveal table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+  border-top: 2px solid black;    /* Linha superior grossa */
+/*  border-bottom: 2px solid black; /* Linha inferior grossa */
+  border-left: none;              /* Sem bordas laterais */
+  border-right: none;
+}
+
+.reveal table thead th {
+  border-bottom: 1px solid black; /* Linha que separa o cabeçalho */
+  background-color: transparent;  /* ABNT não prevê fundo colorido */
+  text-align: center;
+}
+
+.reveal table tbody td {
+  border: none;                   /* Sem linhas internas */
+  padding: 0.5em;
+}
+
+.reveal table tr:last-child td {
+  border-top: 1px solid black;    /* Linha opcional para destacar o 'Total' */
+}
+
+.reveal .quarto-table-caption {
+  text-align: left;               /* Título da tabela alinhado à esquerda */
+  font-size: 1em;
+}
+
+
+
+
+
+/* Estilo para Grade de Dados Brutos (Contagem) */
+.grade-dados table {
+  border-collapse: collapse !important;
+  border: 2px solid #333 !important; /* Bordas externas escuras */
+  font-size: 1em !important;
+  margin: auto;
+}
+
+.grade-dados table td, 
+.grade-dados table th {
+  border: 1px solid #ccc !important; /* Linhas verticais e horizontais internas */
+  padding: 8px !important;
+  text-align: center !important;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Garante que não herde o estilo ABNT de esconder bordas */
+.grade-dados table thead th {
+  border-bottom: 1px solid #ccc !important;
+}

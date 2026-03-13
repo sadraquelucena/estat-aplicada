@@ -1,0 +1,23 @@
+---
+title: ""
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Bibliografia
+
+### Básica
+
+- MONTGOMERY, D. C.; RUNGER, G. C. {\bf Estatística Aplicada e Probabilidade para Engenheiros}. 7. ed. Rio de Janeiro: LTC, 2021.
+- MORETTIN, P. A.; BUSSAB, W. O. {\bf Estatística Básica}. 9. ed. São Paulo: Saraiva, 2017.
+- WALPOLE, R.; MYERS, R.; MYERS, S; YE, K. {\bf Probabilidade e Estatística para Engenharia e Ciências}. Ed. Pearson, 2009.
+- MEYER, P. L.. Probabilidade. Aplicações à Estatística. 2. ed. Livros Técn. Científicos, 1987.
+- VIEIRA, Sonia. Estatística básica. São Paulo: Cengage Learning, 2012.
+
+
+### Complementar
+
+- ROSS, Sheldon M. Introduction to probability models. 8th. ed. United States of America: Academic Press, 2003.
+- MAGALHÃES, Marcos Nascimento; Probabilidade e Variável Aleatória. 3. ed. São Paulo, SP: EDUSP, 2011.

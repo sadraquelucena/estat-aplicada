@@ -1,0 +1,21 @@
+---
+title: ""
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Cronograma de Aulas
+
+Cronograma de aulas de Probabilidade I seguindo o [calendário acadêmico do período 2025-1](https://prograd.ufs.br/uploads/content_attach/path/39591/Portaria_71_2025_GR_calend_rio_academico_campus_S_o_Crist_v_o_2025.1_e_2025.2.pdf).
+
+
+| Aula   | Data                        | Assunto Previsto                 |
+|:------:|:----------------------------|:---------------------------------|
+| 1      | Terça, 13 de maio de 2025   | Seminário: Variabilidades na Saúde Suplementar e ferramentas de decisão |
+| 2      | Quinta, 15 de maio de 2025  | Seminário: Mecanismos de Solvência: Seguro e Resseguro |
+| 3      | Terça, 20 de maio de 2025   | Apresentação da disciplina. Introdução aos Conjuntos. |
+| 4      | Quinta, 22 de maio de 2025  | Técnicas de contagem (parte 1) |
+
+

@@ -1,0 +1,314 @@
+---
+title: "Distribuição de Frequências Simples e em Classe"
+subtitle: "ESTAT0011 -- Estatística Aplicada"
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <span style="font-size:.8em;">sadraquelucena@academico.ufs.br</span>
+    <br>
+    <a href="http://sadraquelucena.github.io/estat-aplicada" style="font-size:.8em;">http://sadraquelucena.github.io/estat-aplicada</a>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1024
+    height: 768
+    margin: 0.1         # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem numero das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_horizontal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+
+lang: pt-BR
+---
+
+## Objetivos da Aula
+
+- Diferenciar **Dados Brutos** de **Dados Organizados**.
+- Construir tabelas de frequência para variáveis qualitativas (nominais e ordinais).
+- Aplicar a **Regra de Sturges** para variáveis quantitativas.
+- Interpretar Frequências Absolutas, Relativas e Acumuladas no contexto de materiais.
+
+---
+
+## Do Dado à Decisão
+
+- A estatística é a ferramenta que extrai a **Informação** do **Dado** para que você tome a **Decisão** correta.
+
+  1. **DADO:** Valor bruto (sensor/planilha).
+      - *Ex:* Resistência de **152 MPa**. ***Status:*** Isolado, sem contexto.
+
+  2. **INFORMAÇÃO (Padrão):** Dados organizados em **Tabelas**.
+      - *Ex:* **75%** do lote está abaixo de 160 MPa. ***Status:*** Cenário revelado.
+
+  3. **DECISÃO:** Conclusão baseada na análise.
+      - *Ex:* **Rejeitar o lote** ou ajustar o forno. ***Status:*** Engenharia aplicada.
+
+---
+
+## Organização dos Dados
+
+Na Engenharia de Materiais, coletamos dados de:
+
+- Ensaios mecânicos (tração, dureza).
+- Caracterização química (pureza, composição).
+- Processamento (temperatura de sinterização, tempo de cura).
+
+**Ferramentas Principais:**
+
+1. **Descrição Tabular:** Tabelas de frequências (simples ou agrupadas).
+
+2. **Gráficos Descritivos:** Histogramas, Box-plots, Gráficos de Barras.
+
+---
+
+## Dados Brutos vs. Rol
+
+- **Dados Brutos:** Dados na ordem em que foram coletados.
+  - *Ex:* pH medido: 7.2, 6.8, 7.5, 7.0...
+- **Rol:** Dados organizados em uma sequência (crescente ou decrescente).
+  - *Ex:* 6.8, 7.0, 7.2, 7.5...
+
+> **Por que organizar?** Facilita a identificação da amplitude total ($AT$), valores mínimos, máximos e possíveis erros de medição (*outliers*).
+
+---
+
+## Tabelas para Variáveis Qualitativas
+
+###  Nominais (Sem hierarquia)
+
+- **Dica:** Organizar em ordem decrescente de frequência absoluta para destacar o item mais comum.
+
+::: {style="font-size: 0.8em;"}
+| Polímero (Sigla) | Frequência Absoluta ($f_i$) | Frequência Relativa (%) |
+|:--- |:---:|:---:|
+| PP (Polipropileno) | 45 | 45,0 |
+| PEAD (Polietileno) | 30 | 30,0 |
+| PVC (Policloreto) | 25 | 25,0 |
+| **Total** | **100** | **100,0** |
+: Distribuição de polímeros em um lote de reciclagem. {#tbl-polimeros}
+:::
+
+::: {style="font-size: 0.8em; text-align: left;"}
+Fonte: Dados fictícios (2026).
+:::
+
+---
+
+## Tabelas para Variáveis Qualitativas
+
+###  Nominais (Sem hierarquia)
+
+O que podemos extrarir da tabela:
+
+- **Informação:** O PP representa quase metade do lote (45%).
+- **Decisão:** Priorizar a configuração da extrusora para as propriedades térmicas do Polipropileno.
+
+---
+
+## Tabelas para Variáveis Qualitativas
+
+### Ordinais (Com hierarquia)
+
+- **Regra:** Manter a ordem natural da variável, independentemente da frequência.
+
+::: {style="font-size: 0.8em;"}
+| Grau de Corrosão | Frequência Absoluta ($f_i$) | Frequência Relativa (%) |
+|:--- |:---:|:---:|
+| Leve | 12 | 24,0 |
+| Moderada | 28 | 56,0 |
+| Severa | 10 | 20,0 |
+| **Total** | **50** | **100,0** |
+: Níveis de corrosão observados em amostras de aço. {#tbl-corrosao}
+:::
+
+::: {style="font-size: 0.8em; text-align: left;"}
+Fonte: Dados fictícios (2026).
+:::
+
+---
+
+## Tabelas para Variáveis Qualitativas
+
+### Ordinais (Com hierarquia)
+
+- **Informação:** 76% das amostras apresentam corrosão Moderada ou Severa.
+- **Decisão:** Interromper a linha de produção para manutenção preventiva, pois o nível de degradação é inaceitável.
+
+---
+
+## Tabelas para Variáveis Qualitativas
+
+- Para a construção de tabelas técnicas, siga as diretrizes da ABNT:
+
+1. **Título (Topo):** Deve ser claro, conciso e responder: *O que? Onde? Quando?*
+2. **Laterais Abertas:** Nunca utilize linhas verticais para "fechar" a tabela nas bordas esquerda e direita.
+3. **Linhas Horizontais:** Use apenas no topo, abaixo do cabeçalho e na base (fundo).
+
+---
+
+## Tabelas para Variáveis Qualitativas
+
+4. **Alinhamento:**
+   - Coluna de categorias (texto): Alinhada à esquerda.
+   - Colunas numéricas ($f_i$, %): Centralizadas ou alinhadas pela vírgula.
+5. **Ordenação (A Lógica):**
+   - **Nominais:** Ordem decrescente de frequência (destaca o mais importante).
+   - **Ordinais:** Ordem natural da hierarquia (ex: Baixo $\rightarrow$ Médio $\rightarrow$ Alto).
+6. **Fonte (Rodapé):** Obrigatória, mesmo que sejam dados próprios ("Fonte: Dados da pesquisa (ano).").
+
+---
+
+## Exemplo 4.1
+
+Você é responsável pelo laboratório de metalografia e precisa organizar o estoque de 40 amostras de ligas metálicas que chegaram sem identificação na caixa. Organize os dados em uma tabela.
+
+::: {.grade-dados}
+| | | | | | | | |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Aço | Alumínio | Inox | Aço | Cobre | Aço | Inox | Alumínio |
+| Alumínio | Aço | Cobre | Aço | Titânio | Inox | Aço | Alumínio |
+| Aço | Inox | Aço | Cobre | Alumínio | Aço | Titânio | Alumínio |
+| Inox | Aço | Alumínio | Aço | Inox | Aço | Cobre | Alumínio |
+| Aço | Alumínio | Inox | Aço | Alumínio | Inox | Aço | Titânio |
+:::
+
+---
+
+## Exemplo 4.2
+
+Um inspetor de qualidade avaliou a integridade de 30 pontos de solda em um chassi automotivo, classificando-os de acordo com a norma técnica de segurança. Construa uma tabela para esses dados.
+
+::: {.grade-dados}
+| | | | | | |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| Leve | Moderada | Leve | Moderada | Severa | Leve |
+| Crítica | Moderada | Leve | Moderada | Severa | Leve |
+| Moderada | Moderada | Leve | Crítica | Moderada | Severa |
+| Leve | Moderada | Moderada | Leve | Severa | Moderada |
+| Leve | Moderada | Leve | Severa | Moderada | Crítica |
+:::
+
+
+---
+
+## Variáveis Quantitativas: Distribuição em Classes
+
+- Quando os valores são muito dispersos (ex: Resistência à Tração de 50 corpos de prova), precisamos agrupar em intervalos.
+
+**Etapas de Construção:**
+
+1. Definir o número de classes ($k$) $\rightarrow$ **Regra de Sturges**.
+2. Calcular a Amplitude Total ($AT$).
+3. Definir a Amplitude da Classe ($h$).
+
+---
+
+## A Regra de Sturges
+
+Para um conjunto de $n$ observações, o número ideal de classes ($k$) é:
+
+$$k = 1 + 3,322 \cdot \log_{10}(n)$$
+
+**Exemplo Prático:**
+
+Se ensaiamos $n=30$ amostras de aço:
+
+- $k = 1 + 3,322 \cdot \log_{10}(30)$
+- $k \approx 5,91 \rightarrow$ **Usamos 6 classes.**
+
+---
+
+## Amplitude e Intervalos
+
+Após definir $k=6$, calculamos a amplitude (tamanho) de cada classe:
+
+$$h = \frac{AT}{k} = \frac{\text{Máximo} - \text{Mínimo}}{k}$$
+
+- Após calcular $h = \frac{AT}{k}$, é recomendável realizar um arredondamento para cima para o número inteiro ou decimal exato mais próximo (ex: 5; 10; 15; 0,5; 1,0).
+- Em seguida, determinamos os limites de cada classe e contamos o número de elementos (frequência) em cada classe.
+
+---
+
+## Tipos de Frequência
+
+- **Absoluta ($f_i$):** Contagem de ocorrências na classe.
+- **Relativa ($f_{ri}$):** Porcentagem da classe em relação ao total ($f_i / n$).
+- **Acumulada ($F_i$):** Soma das frequências da classe atual com as anteriores.
+- **Acumulada Relativa ($F_{ri}$):** Porcentagem da classe atual com as anteriores ($F_i / n$).
+
+> **Nota:** Frequência acumulada **não faz sentido** para variáveis qualitativas nominais!
+
+---
+
+## Variáveis Quantitativas: Distribuição em Classes
+
+::: {style="font-size: 0.8em;"}
+| Classes (MPa) | $f_i$ | $f_{ri}$ (%) | $F_i$ | $F_{ri}$ (%) |
+|:---:|:---:|:---:|:---:|:---:|
+| $160 \vdash 170$ | $8$  | $20,\!0$ | $8$  | $20,\!0$ |
+| $170 \vdash 180$ | $18$ | $45,\!0$ | $26$ | $65,\!0$ |
+| $180 \vdash 190$ | $10$ | $25,\!0$ | $36$ | $90,\!0$ |
+| $190 \vdash 200$ | $4$  | $10,\!0$ | $40$ | $100,\!0$ |
+| **Total** | **$40$** | **$100,\!0$** | **--** | **--** |
+: Distribuição de frequências da resistência à tração da liga de alumínio ($n=40$). {#tbl-quantitativa}
+:::
+
+::: {style="font-size: 0.8em; text-align: left;"}
+**Legenda:** $f_i$: Freq. Absoluta; $f_{ri}$: Freq. Relativa; $F_i$: Freq. Acumulada; $F_{ri}$: Freq. Acumulada Relativa.  
+**Fonte:** Dados fictícios (2026).
+:::
+
+---
+
+## Variáveis Quantitativas: Distribuição em Classes
+
+- Se o projeto exige resistência mínima de 180 MPa, a coluna $F_{ri}$ nos avisa que 65% das peças são inseguras (Informação).
+    - **Decisão:** Rejeitar o lote de alumínio.
+
+---
+
+## Tabelas para Variáveis Quantitativas
+
+- A estética é igual de tabelas para variáveis qualitativas, mas a estrutura interna muda.
+- Sempre deve ser informada a grandeza e a unidade (ex: "Tensão de Ruptura (MPa)").
+- A ABNT/IBGE recomenda o uso do símbolo $| \dashv$ para indicar intervalos:
+  - $10 \vdash 20$: Inclui o 10, mas não inclui o 20 (aberto à direita).
+- Se uma classe não possui ocorrências, deve-se colocar um hífen (-) ou o número 0, nunca deixar a célula vazia.
+
+---
+
+## Como verificar se a tabela está correta
+
+- A soma da coluna $f_i$ resultou exatamente em $n$?
+- A soma de $f_{ri}$ é $100\%$? (Cuidado com arredondamentos).
+- O último valor da coluna $F_i$ é igual ao total de amostras ($n$)?
+- Usou o símbolo $\vdash$ corretamente para garantir que um dado não seja contado em duas classes ao mesmo tempo?
+- A tabela está "aberta" nas laterais (sem linhas verticais externas)?
+- Indicou a unidade de medida utilizada?
+- A tabela permite que um tomador de decisão entenda o cenário rapidamente?
+
+---
+
+## Exemplo 4.3
+
+Um engenheiro de materiais recebeu um lote de 40 amostras de um novo polímero reforçado com fibras de vidro. Para validar o processo de fabricação, ele realizou ensaios de tração para medir o Limite de Resistência à Tração (RT) em MPa. Construa uma tabela de frequências com os dados da amostra.
+
+::: {style="font-size: 1em; background-color: #f8f9fa; padding: 10px; border-radius: 5px; border: 1px solid #dee2e6;"}
+152, 155, 158, 160, 162, 163, 164, 165, 167, 168,
+
+170, 171, 172, 172, 173, 174, 175, 175, 176, 177,
+
+178, 178, 179, 180, 181, 182, 183, 184, 185, 186,
+
+188, 190, 191, 192, 194, 195, 196, 197, 199, 202
+:::
+
+O fornecedor garante que 90% das peças resistem a pelo menos 160 MPa. Com base na sua coluna de Frequência Acumulada, o fornecedor está falando a verdade?
+
+# Fim

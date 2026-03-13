@@ -1,0 +1,411 @@
+---
+title: "Medidas de Dispersão"
+subtitle: "ESTAT0011 -- Estatística Aplicada"
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <span style="font-size:.8em;">sadraquelucena@academico.ufs.br</span>
+    <br>
+    <a href="http://sadraquelucena.github.io/estat-aplicada" style="font-size:.8em;">http://sadraquelucena.github.io/estat-aplicada</a>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1024
+    height: 768
+    margin: 0.1         # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem numero das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_horizontal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+
+lang: pt-BR
+---
+
+## Introdução
+
+- Na Engenharia de Materiais, saber onde os dados se localizam (Média) é apenas metade da história.
+- O "barulho" dos dados -- a variabilidade natural e os erros de medição -- define se um material é confiável ou perigoso.
+- Duas ligas metálicas podem ter a mesma resistência média, mas uma pode ser muito instável (variável) e a outra muito uniforme.
+- Para o engenheiro, **variabilidade é sinônimo de risco**. Precisamos quantificar esse risco.
+
+---
+
+## Introdução
+
+- Como medir a incerteza e a falta de uniformidade em um lote de materiais?
+- **Medidas de Dispersão** (ou variabilidade) indicam quão afastados os dados estão do centro de massa.
+- Informações principais que vamos extrair:
+    - **Amplitude:** erro médio ao quadrado em relação à média.
+    - **Variância:** desvio médio real, na mesma unidade dos dados.
+    - **Desvio-padrão:** Qual o desvio médio real, na mesma unidade do material?
+    - **Coeficiente de Variação:** a variação é grande ou pequena em relação à média?
+    
+---
+
+## Introdução
+
+#### Exemplo
+
+- Imagine dois lotes de cerâmica com resistência média de 100 MPa.
+    - No **Lote A**, todas as peças variam entre 98 e 102 MPa.
+    - No **Lote B**, as peças variam entre 50 e 150 MPa.
+- Se você projetar uma peça para suportar 90 MPa, o **Lote A é seguro**, mas o **Lote B é arriscado**, apesar da média ser 100.
+
+#### Ponto Chave
+
+- Média não descreve confiabilidade.
+- Dispersão descreve.
+
+
+
+# Amplitude Total
+
+(A faixa de operação do material)
+
+---
+
+## Por que calcular a amplitude?
+
+Em uma linha de produção, um engenheiro monitora a **estabilidade térmica** de um forno. Mesmo com média estável, o material pode sofrer danos se houver:
+
+- picos excessivos de calor (degradação térmica)
+- quedas bruscas de temperatura (choque térmico)
+- instabilidade no sistema de controle
+
+#### Pergunta
+
+Como medir de forma rápida a **distância total** entre o valor mais alto e o mais baixo de um processo?
+
+---
+
+## Amplitude Total ($AT$)
+
+- A amplitude total é a diferença entre o maior e o menor valor de um conjunto de dados.
+- Se identificarmos o valor máximo ($X_{máx}$) e o valor mínimo ($X_{mín}$) em uma amostra, a amplitude é dada por:
+$$AT = X_{máx} - X_{mín}$$
+
+- Este indicador mostra o **campo de variação** absoluto dos dados.
+- É a medida de dispersão mais simples de calcular.
+
+---
+
+## Interpretação da Amplitude
+
+- Imagine a amplitude como a extensão de uma régua.
+- Ela define os limites externos onde os dados se encontram.
+- Essa interpretação é útil para:
+    - Identificar a largura total do processo produtivo.
+    - Verificar se os extremos ultrapassam limites de segurança.
+    - Realizar triagens rápidas em lotes de materiais.
+
+---
+
+## Exemplo 3.1
+
+Um engenheiro monitora a temperatura de um forno de tratamento térmico em dois momentos diferentes do dia.
+
+- **Momento A (°C):** 850, 852, 848, 851, 849.
+- **Momento B (°C):** 850, 852, 848, 851, 920.
+
+Calcule a amplitude total ($AT$) para ambos os momentos e compare os resultados.
+
+---
+
+## Reflexão
+
+- No exemplo 2.2, a amplitude saltou de 4°C para 72°C devido a um único pico.
+- Isso levanta uma questão importante:
+    - A amplitude descreve o que acontece no "meio" dos dados?
+    - Um erro de leitura no sensor pode invalidar toda a análise?
+- Essa limitação motiva o uso de medidas mais precisas, como o **Desvio-padrão**.
+
+---
+
+## Vantagens e Desvantagens da Amplitude
+
+#### Vantagens
+- Cálculo imediato e intuitivo.
+- Ideal para definir limites de tolerância (mínimo/máximo).
+- Muito usada em gráficos de controle simples.
+
+#### Desvantagem
+
+- Extremamente sensível a valores extremos (*outliers*).
+- Ignora como os dados estão distribuídos entre os extremos.
+
+---
+
+## O que fazer na prática?
+
+- Use a amplitude para **verificações rápidas** de segurança.
+- Não confie apenas nela para caracterizar a uniformidade do material.
+- Combine a amplitude com o **desvio-padrão** para uma visão completa.
+
+
+
+
+# Variância
+
+(A medida da oscilação interna)
+
+---
+
+## Quando a Amplitude não basta
+
+- A amplitude foca apenas nos extremos do lote. No entanto, para garantir a confiabilidade de uma peça, o engenheiro precisa saber:
+    - Como todos os dados se comportam em relação à média?
+    - O material é homogêneo ou apresenta oscilações internas?
+    - Qual o "erro médio" cometido ao usar a média como resumo?
+
+#### Pergunta
+
+Como calcular uma medida que utilize todos os valores do conjunto para descrever o espalhamento dos dados?
+
+
+---
+
+## Variância ($S^2$)
+
+- A variância mede a média dos quadrados dos desvios em relação à média.
+- Indica o espalhamento dos dados ao redor do centro de massa.
+- O cálculo diferencia dados populacionais de dados amostrais:
+
+| Tipo      | Fórmula |
+|:----------|:--------|
+| População | $\sigma^2 = \frac{\sum (X_i - \mu)^2}{N}$|
+| Amostra   | $S^2 = \frac{\sum (X_i-\overline{X})}{n-1}$|
+
+- $\mu$ é a média populacional e $\overline{X}$ é a média amostral.
+
+---
+
+## Entendendo o Cálculo
+
+- Calculamos a distância de cada ponto até a média ($X_i - \overline{X}$).
+- Elevamos ao quadrado para eliminar valores negativos.
+- Dividimos pelo total (com ajuste $n-1$ para amostras).
+- **Observação:** O resultado final estará na unidade ao quadrado (ex: $MPa^2$).
+- **Nota:** O denominador $n-1$ (graus de liberdade) corrige o viés em amostras pequenas.
+
+---
+
+## Exemplo 3.2
+
+Considere dois lotes de aço com a mesma resistência média ($\overline{X} = 500 \text{ MPa}$). Foram testadas 3 amostras de cada lote:
+
+- **Lote A (MPa):** 499, 500, 501.
+- **Lote B (MPa):** 450, 500, 550.
+
+Calcule a variância ($S^2$) de cada lote. Qual material apresenta maior uniformidade na estrutura interna?
+
+---
+
+## Reflexão
+
+- A variância do Lote B será muito maior que a do Lote A.
+- Isso levanta um problema de interpretação direta:
+    - Se a unidade original é MPa, a variância resulta em $MPa^2$.
+    - O que significa fisicamente uma "pressão ao quadrado"?
+- Essa dificuldade de escala motiva o estudo do **Desvio-padrão**.
+
+---
+
+## Vantagens e Desvantagens da Variância
+
+#### Vantagens
+
+- Considera a variação de cada dado individualmente.
+- Base fundamental para cálculos estatísticos avançados.
+- Essencial para modelos de controle de qualidade industrial.
+
+#### Desvantagens
+
+- A unidade de medida original é alterada (fica ao quadrado).
+- Interpretação física difícil para tomadas de decisão rápidas.
+
+---
+
+## Observações Importantes
+
+- Use a **Variância** para comparar a consistência entre dois processos.
+- Lembre que ela penaliza pesadamente grandes desvios (devido ao quadrado).
+- Para laudos técnicos, utilize o **Desvio-padrão** para retornar à escala original.
+
+
+
+# Desvio-Padrão
+
+(A medida de dispersão na escala real)
+
+---
+
+## O Problema da Unidade ao Quadrado
+
+Vimos que a Variância ($S^2$) é excelente para cálculos, mas gera um problema prático no laboratório de materiais:
+
+- Resistência em $MPa$ vira $MPa^2$.
+- Dureza em $HB$ vira $HB^2$.
+- Temperatura em $°C$ vira $°C^2$.
+
+#### Pergunta
+
+Como retornar a medida de variabilidade para a **mesma unidade original** das nossas medições?
+
+---
+
+## Desvio-Padrão ($S$)
+- O desvio-padrão é definido como a raiz quadrada positiva da variância.
+- Ele indica o quanto, em média, os dados se afastam da média aritmética.
+- Fórmula para dados amostrais: $$S = \sqrt{S^2}$$
+
+- Prefere-se o uso do desvio-padrão por sua **interpretabilidade direta** no projeto.
+
+---
+
+## Interpretação
+
+- O desvio-padrão traz a dispersão de volta para a escala real.
+- Ele permite dizer: "A resistência é $500 \pm 10 \text{ MPa}$".
+- Facilita a visualização do erro médio em torno do centro.
+
+---
+
+## Exemplo 3.3
+
+Retome os dados do Exemplo 3.2 sobre a resistência dos aços:
+
+- Lote A: $S^2 = 1 \text{ MPa}^2$.
+- Lote B: $S^2 = 2500 \text{ MPa}^2$.
+
+Calcule o desvio-padrão ($S$) para ambos os lotes. Qual a diferença de "erro" em MPa entre o material estável e o instável?
+
+- Se o limite de projeto exige que nenhuma peça falhe abaixo de $480 \text{ MPa}$, qual lote você aprovaria com segurança apenas olhando para o desvio-padrão?
+
+---
+
+## Vantagens e Desvantagens do Desvio-Padrão
+
+#### Vantagens
+
+- Expresso na **mesma unidade** dos dados originais.
+- Mais intuitivo para engenheiros e técnicos de laboratório.
+- Base para definir intervalos de confiança e margens de segurança.
+
+#### Desvantagens
+
+- Assim como a média, é sensível a valores extremos (*outliers*).
+
+---
+
+## Observações Importantes
+
+- Use o **Desvio-Padrão** para redigir laudos técnicos e manuais.
+- Ele é a "régua" oficial para medir a qualidade de um lote.
+- Quanto menor o desvio, mais **previsível** e confiável é o seu material.
+
+
+# Coeficiente de Variação
+
+(A medida da variabilidade relativa)
+
+---
+
+## Comparando o Incomparável
+
+- Média e desvio-padrão são limitados quando precisamos comparar dois cenários diferentes:
+    - Lotes com médias muito dista
+    ntes (ex: fibra fina vs. barra grossa).
+    - Materiais medidos em unidades diferentes (ex: dureza vs. tração).
+    - Processos onde a escala de grandeza altera a percepção do erro.
+
+#### Pergunta
+
+- Como saber qual material é mais estável se as médias são diferentes?
+
+---
+
+## Coeficiente de Variação ($CV$)
+
+- O $CV$ é uma medida relativa de dispersão.
+- Expressa o desvio-padrão como uma proporção da média.
+- Frequentemente utilizado em porcentagem: $$CV\% = \left( \frac{S}{\overline{X}} \right) \times 100$$
+- Elimina a unidade de medida, tornando os dados adimensionais.
+
+---
+
+## Interpretação Técnica
+
+- O $CV$ indica a **precisão relativa** do processo produtivo.
+- Permite comparar a uniformidade entre materiais distintos.
+- **Baixo $CV$:** processo homogêneo e controlado.
+- **Alto $CV$:** alta dispersão relativa e maior risco técnico.
+
+---
+
+## Exemplo 3.4
+
+Um laboratório compara a estabilidade de dois processos de fabricação de filamentos.
+
+- Processo A: Média = 120 μm; Desvio-padrão ($S$) = 1,58 μm.
+- Processo B: Média = 116 μm; Desvio-padrão ($S$) = 36,47 μm.
+
+Calcule o $CV$ para cada processo. Qual deles apresenta o desempenho mais estável para evitar picos de defeitos?
+
+---
+
+## Vantagens e Desvantagens
+
+#### Vantagens
+
+- Permite comparar dispersões entre conjuntos com unidades diferentes.
+- Facilita a comunicação de resultados para gerência (porcentagem).
+- Excelente indicador de escalabilidade e risco de processo.
+
+#### Desvantagem
+
+- Perde o sentido se a média for igual ou próxima de zero.
+
+---
+
+## Observações Importantes
+
+- Use o Coeficiente de Variação para validar fornecedores diferentes.
+- Um $CV$ abaixo de 10% geralmente indica alta precisão na engenharia.
+- Ele é a ferramenta final para decidir sobre a eficiência da produção.
+
+---
+
+## Qual Medida Usar?
+
+| Situação no Laboratório | Medida Recomendada | Por quê? |
+| :--- | :--- | :--- |
+| **Triagem rápida** de lotes | Amplitude Total | Identifica picos de defeitos ou instabilidade bruta. |
+| **Laudo técnico** oficial | Desvio-padrão | Avalia consistência na mesma unidade do material. |
+| **Comparar** processos | $CV$ | Compara precisão relativa entre materiais diferentes. |
+| **Cálculos** de qualidade | Variância | Base matemática para modelos estatísticos avançados. |
+
+---
+
+## Resumo de Aplicações
+
+- **Amplitude:** uso em inspeções iniciais e limites de segurança.
+- **Desvio-padrão:** padrão ouro para relatórios de conformidade técnica.
+- **CV:** ferramenta essencial para seleção de fornecedores e escalabilidade.
+- **Variância:** fundamental para pesquisa acadêmica e otimização de processos.
+
+---
+
+## Atenção!
+
+- O engenheiro nunca utiliza apenas um indicador isolado.
+- A **Média** localiza o material; a **Dispersão** valida sua confiabilidade.
+- Menor variabilidade sempre resulta em menor risco de falha estrutural.
+
+
+# Fim

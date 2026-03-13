@@ -1,0 +1,33 @@
+---
+title: "Conteúdo 1"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Apresentação da Disciplina e Conceitos Iniciais
+
+Este material apresenta a estrutura da disciplina Estatística Aplicada (ESTAT0011), incluindo informações sobre carga horária, cronograma, datas importantes, metodologia e objetivos do curso. Além disso, introduz os conceitos iniciais da Estatística, fundamentais para o desenvolvimento da disciplina, como população e amostra, parâmetros e estatísticas, bem como a classificação de variáveis qualitativas e quantitativas, ilustradas com exemplos relacionados à Engenharia de Materiais.
+
+Slides:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide01_html.png)<br>Versão html
+</a>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide01_pdf.png)<br>Versão pdf
+</a>
+:::
+
+::::
+
+
+
+

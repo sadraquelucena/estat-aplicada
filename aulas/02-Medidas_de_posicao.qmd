@@ -1,0 +1,33 @@
+---
+title: "Conteúdo 2"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Medidas de Posição
+
+Os slides desta aula introduzem as medidas de posição utilizadas para resumir e interpretar conjuntos de dados experimentais. São apresentados os conceitos de média aritmética, mediana, moda e separatrizes (quartis e percentis), discutindo suas definições, interpretações e limitações. Ao longo da aula, exemplos inspirados em ensaios e propriedades de materiais são utilizados para mostrar como essas medidas ajudam a compreender o comportamento dos dados, identificar valores atípicos e apoiar a análise e a tomada de decisão.
+
+Slides:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/slides/02-Medidas_de_posicao/02-Medidas_de_posicao.html" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide02_html.png)<br>Versão html
+</a>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/slides/02-Medidas_de_posicao.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide02_pdf.png)<br>Versão pdf
+</a>
+:::
+
+::::
+
+
+
+

@@ -1,0 +1,33 @@
+---
+title: "Conteúdo 3"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Medidas de Dispersão
+
+Os slides desta aula apresentam as principais medidas de dispersão, utilizadas para quantificar a variabilidade dos dados em torno de uma medida central. São discutidos os conceitos de amplitude total, variância, desvio-padrão e coeficiente de variação, destacando suas definições, interpretações e aplicações na análise de dados experimentais.
+
+Slides:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide03_html.png)<br>Versão html
+</a>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/slides/03-Medidas_de_dispersao.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide03_pdf.png)<br>Versão pdf
+</a>
+:::
+
+::::
+
+
+
+

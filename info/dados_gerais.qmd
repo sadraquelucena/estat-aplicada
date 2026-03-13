@@ -1,0 +1,25 @@
+---
+title: ""
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Dados Gerais da Disciplina
+
+**Componente curricular:**  
+**ESTAT0011 - Estatística Aplicada**  
+*Disciplina obrigatória para o curso de Engenharia de Materiais da Universidade Federal de Sergipe*
+
+
+## Informações da Disciplina
+
+- **Carga Horária:** 60 horas (4 créditos)
+- **Unidade Responsável:** Departamento de Estatística e Ciências Atuariais (DECAT)
+- **Docente Responsável:** Prof. Dr. Sadraque E. F. Lucena
+- **Plano de Ensino da Disciplina:**
+  - [Plano de Ensino 2026.1](/PDFs/planos_ensino/plano_de_ensino_estatistica_aplicada_2026-1.pdf){target="_blank"} | [Calendário Acadêmico UFS 2026.1](/PDFs/planos_ensino/calendario_academico_2026.1-2.pdf){target="_blank"}
+
+
+Os horários das aulas, datas das avaliações e cronograma de aulas encontram-se no plano de ensino da disciplina.

@@ -1,0 +1,74 @@
+---
+title: ""
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Conteúdo
+
+1. Estatística Descritiva e Confiabilidade de Dados
+
+    1.1. As fases do trabalho estatístico e classificação de variáveis em engenharia;
+    
+    1.2. Séries estatísticas e representação tabular e gráfica (Histogramas e Box-plots);
+    
+    1.3. Distribuição de frequências simples e em classe;
+    
+    1.4. Medidas de Posição: Média, Mediana e Moda;
+    
+    1.5. Medidas de Dispersão: Variância, desvio-padrão e coeficiente de variação (CV);
+    
+    1.6. Erros de medição e tratamento de valores atípicos (*outliers*).
+
+
+2.  Probabilidade e Modelagem de Fenômenos
+
+    2.1. Conceitos de probabilidade: Experimento aleatório, espaço amostral e eventos;
+    
+    2.2. Probabilidade condicional e Teorema de Bayes aplicado a ensaios não-destrutivos;
+    
+    2.3. Variáveis aleatórias, esperança matemática e variância;
+    
+    2.4. Distribuições discretas: Bernoulli, Binomial e Poisson (defeitos por unidade de área);
+    
+    2.5. Distribuições contínuas: Uniforme, Exponencial e Normal;
+    
+    2.6. Padronização (Z) e tabelas de probabilidade.
+
+3. Inferência Estatística e Tomada de Decisão
+
+    3.1. Noções de amostragem e erro padrão;
+    
+    3.2. Distribuições amostrais da média e da proporção;
+    
+    3.3. Intervalo de confiança para média e proporção;
+    
+    3.4. Testes de hipóteses: Conceitos, erro tipo I e erro tipo II;
+    
+    3.5. Teste t de Student para comparação de médias (amostras independentes e pareadas);
+    
+    3.6. Testes de bondade de ajuste (testes de normalidade).
+
+4. Delineamento Experimental (ANOVA) e Modelagem
+
+    4.1. Introdução ao delineamento experimental (DOE);
+    
+    4.2. Análise de Variância (ANOVA) com um fator: Experimentos completamente casualizados;
+    
+    4.3. Análise de Variância (ANOVA) com dois fatores e interação;
+    
+    4.4. Tipos de correlação e Coeficiente Linear de Pearson;
+    
+    4.5. Regressão Linear Simples: Estimativa de parâmetros e interpretação física;
+    
+    4.6. Coeficiente de determinação ($R^2$) e análise de resíduos.
+
+5. Tópicos Especiais de Engenharia de Materiais
+
+    5.1. Introdução à Distribuição de Weibull;
+    
+    5.2. Linearização da função de Weibull via logaritmos;
+    
+    5.3. Determinação do Módulo de Weibull ($m$) para análise de confiabilidade de materiais frágeis.
