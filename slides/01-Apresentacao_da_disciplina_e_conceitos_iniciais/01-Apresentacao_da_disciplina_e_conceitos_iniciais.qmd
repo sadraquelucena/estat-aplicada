@@ -1,5 +1,5 @@
 ---
-title: "Apresentação da Disciplina e Conceito Iniciais"
+title: "Apresentação da Disciplina e Conceitos Iniciais"
 subtitle: "ESTAT0011 -- Estatística Aplicada"
 author:
   name: | # indica que o campo name terá múltiplas linhas
@@ -29,9 +29,9 @@ lang: pt-BR
 
 ## Canais de Comunicação e Materiais da Disciplina
 
-- Site: <http://sadraquelucena.github.io/estatmat>
+- Site: <http://sadraquelucena.github.io/estat-aplicada>
 
-- Grupo no WhatsApp: <http://tiny.cc/prob1wpp>
+- Grupo no WhatsApp: <http://tiny.cc/eawpp>
 
 ![](imagens/WhatsApp.jpeg){fig-align="center"}
 
@@ -58,7 +58,7 @@ lang: pt-BR
 ## Ementa
 
 - Regras elementares de probabilidade.
-- Distribuição binominal, Poisson e normal.
+- Distribuição binomial, Poisson e normal.
 - População e amostras.
 - Testes de bondade de ajustamento.
 - Uso de transformações.
@@ -76,9 +76,9 @@ lang: pt-BR
 
     1.1. As fases do trabalho estatístico e classificação de variáveis em engenharia;
     
-    1.2. Séries estatísticas e representação tabular e gráfica (Histogramas e Box-plots);
+    1.2. Séries estatísticas e representação tabular e gráfica (Histogramas e Boxplots);
     
-    1.3. Distribuição de frequências simples e em classe;
+    1.3. Distribuição de frequências simples e em classes;
     
     1.4. Medidas de Posição: Média, Mediana e Moda;
     
@@ -94,7 +94,7 @@ lang: pt-BR
 
     2.1. Conceitos de probabilidade: Experimento aleatório, espaço amostral e eventos;
     
-    2.2. Probabilidade condicional e Teorema de Bayes aplicado a ensaios não-destrutivos;
+    2.2. Probabilidade condicional e Teorema de Bayes aplicado a ensaios não destrutivos;
     
     2.3. Variáveis aleatórias, esperança matemática e variância;
     
@@ -187,10 +187,10 @@ lang: pt-BR
 
 ### Não haverá aula
 
-- **02/04/2026:** Quinta-feira santa (recesso academico)
+- **02/04/2026:** Quinta-feira santa (recesso acadêmico)
 - **21/04/2026:** Tiradentes (feriado nacional)
 - **04/06/2026:** Corpus Christi (recesso acadêmico)
-- **23/06/2026:** Véspera de Sâo João (recesso acadêmico)
+- **23/06/2026:** Véspera de São João (recesso acadêmico)
 
 
 
@@ -205,7 +205,7 @@ lang: pt-BR
 
 - Consiste de todas as unidades de interesse.
 - Quando os dados coletados são da população, chamamos o procedimento de coleta de **censo**.
-- Qualquer característica numérica de uma população é chamada de **parâmtetro**.
+- Qualquer característica numérica de uma população é chamada de **parâmetro**.
 
 ---
 
@@ -217,7 +217,7 @@ lang: pt-BR
 - Qualquer subconjunto da população.
 - Usada para fazer inferências sobre a população.
 - Quando os dados coletados são de uma amostra, o procedimento de coleta é chamado de **amostragem**.
-- Qualquer função aplicada sobre a amostra é chamada **estatística**.
+- Qualquer medida calculada a partir da amostra é chamada de **estatística**.
 
 ---
 
@@ -231,7 +231,7 @@ lang: pt-BR
 
 ### Quantitativas
 
-- São variáveis que constituem em medidas ou contagens numéricas.
+- São variáveis que correspondem a medidas ou contagens numéricas.
 - **Exemplos:** Teor de carbono (%), Espessura de revestimento (µm)
 
 ---
@@ -246,7 +246,7 @@ lang: pt-BR
     - Tipo de polímero (PE, PP, PVC, PET)
     - Método de ensaio (tração, impacto, dureza)
     - Fornecedor de minério (Vale, CSN Mineração)
-- Um caso especial de são os dados **binários**, que possuem apenas duas categorias de valores (0/1, verdadeiro/falso).
+- Um caso especial são os dados **binários**, que possuem apenas duas categorias de valores (0/1, verdadeiro/falso).
 
 ---
 

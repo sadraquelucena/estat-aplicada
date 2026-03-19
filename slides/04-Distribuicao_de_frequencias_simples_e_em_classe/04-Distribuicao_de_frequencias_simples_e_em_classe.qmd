@@ -1,5 +1,5 @@
 ---
-title: "Distribuição de Frequências Simples e em Classe"
+title: "Distribuição de Frequências Simples e em Classes"
 subtitle: "ESTAT0011 -- Estatística Aplicada"
 author:
   name: | # indica que o campo name terá múltiplas linhas
@@ -38,16 +38,16 @@ lang: pt-BR
 
 ## Do Dado à Decisão
 
-- A estatística é a ferramenta que extrai a **Informação** do **Dado** para que você tome a **Decisão** correta.
+- A estatística é a ferramenta que extrai a **Informação** a partir dos **Dados** para que você tome a **Decisão** correta.
 
   1. **DADO:** Valor bruto (sensor/planilha).
-      - *Ex:* Resistência de **152 MPa**. ***Status:*** Isolado, sem contexto.
+      - *Ex:* Resistência de **152 MPa**. ***Situação:*** Isolado, sem contexto.
 
   2. **INFORMAÇÃO (Padrão):** Dados organizados em **Tabelas**.
-      - *Ex:* **75%** do lote está abaixo de 160 MPa. ***Status:*** Cenário revelado.
+      - *Ex:* **75%** do lote está abaixo de 160 MPa. ***Situação:*** Cenário revelado.
 
   3. **DECISÃO:** Conclusão baseada na análise.
-      - *Ex:* **Rejeitar o lote** ou ajustar o forno. ***Status:*** Engenharia aplicada.
+      - *Ex:* **Rejeitar o lote** ou ajustar o forno. ***Situação:*** Engenharia aplicada.
 
 ---
 
@@ -63,7 +63,7 @@ Na Engenharia de Materiais, coletamos dados de:
 
 1. **Descrição Tabular:** Tabelas de frequências (simples ou agrupadas).
 
-2. **Gráficos Descritivos:** Histogramas, Box-plots, Gráficos de Barras.
+2. **Gráficos Estatísticos:** Histogramas, Boxplots, Gráficos de Barras.
 
 ---
 
@@ -71,10 +71,10 @@ Na Engenharia de Materiais, coletamos dados de:
 
 - **Dados Brutos:** Dados na ordem em que foram coletados.
   - *Ex:* pH medido: 7.2, 6.8, 7.5, 7.0...
-- **Rol:** Dados organizados em uma sequência (crescente ou decrescente).
+- **Rol:** Dados organizados em ordem crescente ou decrescente.
   - *Ex:* 6.8, 7.0, 7.2, 7.5...
 
-> **Por que organizar?** Facilita a identificação da amplitude total ($AT$), valores mínimos, máximos e possíveis erros de medição (*outliers*).
+> **Por que organizar?** Facilita a identificação da amplitude total, dos valores mínimos e máximos.
 
 ---
 
@@ -104,7 +104,7 @@ Fonte: Dados fictícios (2026).
 
 ###  Nominais (Sem hierarquia)
 
-O que podemos extrarir da tabela:
+O que podemos extrair da tabela:
 
 - **Informação:** O PP representa quase metade do lote (45%).
 - **Decisão:** Priorizar a configuração da extrusora para as propriedades térmicas do Polipropileno.
@@ -238,9 +238,9 @@ $$h = \frac{AT}{k} = \frac{\text{Máximo} - \text{Mínimo}}{k}$$
 ## Tipos de Frequência
 
 - **Absoluta ($f_i$):** Contagem de ocorrências na classe.
-- **Relativa ($f_{ri}$):** Porcentagem da classe em relação ao total ($f_i / n$).
+- **Relativa ($f_{ri}$):** Proporção da classe em relação ao total ($f_i / n$).
 - **Acumulada ($F_i$):** Soma das frequências da classe atual com as anteriores.
-- **Acumulada Relativa ($F_{ri}$):** Porcentagem da classe atual com as anteriores ($F_i / n$).
+- **Acumulada Relativa ($F_{ri}$):** Proporção acumulada até a classe atual ($F_i / n$).
 
 > **Nota:** Frequência acumulada **não faz sentido** para variáveis qualitativas nominais!
 
@@ -275,7 +275,7 @@ $$h = \frac{AT}{k} = \frac{\text{Máximo} - \text{Mínimo}}{k}$$
 
 ## Tabelas para Variáveis Quantitativas
 
-- A estética é igual de tabelas para variáveis qualitativas, mas a estrutura interna muda.
+- A estética é igual à das tabelas para variáveis qualitativas, mas a estrutura interna muda.
 - Sempre deve ser informada a grandeza e a unidade (ex: "Tensão de Ruptura (MPa)").
 - A ABNT/IBGE recomenda o uso do símbolo $| \dashv$ para indicar intervalos:
   - $10 \vdash 20$: Inclui o 10, mas não inclui o 20 (aberto à direita).

@@ -29,9 +29,9 @@ lang: pt-BR
 
 ## Introdução
 
-- Na Engenharia de Materiais, é comum realizarmos diversas vezes um experimento para caracterizar as propriedades de um material.
+- Na Engenharia de Materiais, é comum realizar experimentos repetidas vezes para caracterizar as propriedades de um material.
 - Isso ocorre porque os dados possuem variabilidade natural, erros de medição, impurezas nas amostras e comportamentos inesperados.
-- Por isso, faz mais sentido olhar para o comportamento de um conjunto de corpos de prova do que para um único teste.
+- Por isso, faz mais sentido analisar o comportamento de um conjunto de corpos de prova do que para um único teste.
 - No entanto, para compreendermos melhor, precisamos resumir as informações coletadas.
 
 ---
@@ -39,7 +39,7 @@ lang: pt-BR
 ## Introdução
 
 - Como podemos resumir milhares de medições de laboratório em indicadores que permitam uma **tomada de decisão** técnica segura e econômica?
-- As **Medidas de Posição** (ou de Tendência Central) são os nossos primeiros instrumentos de navegação para localizar onde a maioria dos nossos dados "se localizam".
+- As **Medidas de Posição** (ou de Tendência Central) são os nossos primeiros instrumentos de navegação para localizar onde a maioria dos dados "se localiza".
 - Tipos de informações essenciais que podemos extrair:
 
     - **O Equilíbrio:** Onde está o centro de massa? (Média)
@@ -206,7 +206,7 @@ $$ Md = \frac{X_{\frac{n}{2}}+X_{\frac{n}{2}+1}}{2} $$
 
 ## Exemplo 2.3
 
-(Mesmos dados so Exemplo 1.2) Considere o lote com falha de processamento. As medidas obtidas foram: **200, 205, 198, 202, 10** MPa. Calcule a mediana e compare com a média. Qual descreve melhor a resistência do polímero "bom"?
+(Mesmos dados do Exemplo 2.2) Considere o lote com falha de processamento. As medidas obtidas foram: **200, 205, 198, 202, 10** MPa. Calcule a mediana e compare com a média. Qual descreve melhor a resistência do polímero "bom"?
 
 ---
 
@@ -459,7 +459,7 @@ $$ P_k = \frac{k(n+1)}{100} $$
 
 ## Exemplo 2.5
 
-Um laboratório mediu a resistência à tração (tensão máxima que o material suporta antes de romper) de 10 amostras de um polím ro, em MPa. Os valores já estão ordenados:
+Um laboratório mediu a resistência à tração (tensão máxima que o material suporta antes de romper) de 10 amostras de um polímero, em MPa. Os valores já estão ordenados:
 $$ 180, ~190, ~195, ~198, ~200, ~202, ~205, ~210, ~212, ~220 $$
 
 Determine os quartis e o percentil 90.

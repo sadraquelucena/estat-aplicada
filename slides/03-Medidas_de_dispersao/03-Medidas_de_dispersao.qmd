@@ -32,7 +32,7 @@ lang: pt-BR
 - Na Engenharia de Materiais, saber onde os dados se localizam (Média) é apenas metade da história.
 - O "barulho" dos dados -- a variabilidade natural e os erros de medição -- define se um material é confiável ou perigoso.
 - Duas ligas metálicas podem ter a mesma resistência média, mas uma pode ser muito instável (variável) e a outra muito uniforme.
-- Para o engenheiro, **variabilidade é sinônimo de risco**. Precisamos quantificar esse risco.
+- Para o engenheiro, **variabilidade elevada está associada a maior risco**. Precisamos quantificar esse risco.
 
 ---
 
@@ -41,9 +41,9 @@ lang: pt-BR
 - Como medir a incerteza e a falta de uniformidade em um lote de materiais?
 - **Medidas de Dispersão** (ou variabilidade) indicam quão afastados os dados estão do centro de massa.
 - Informações principais que vamos extrair:
-    - **Amplitude:** erro médio ao quadrado em relação à média.
-    - **Variância:** desvio médio real, na mesma unidade dos dados.
-    - **Desvio-padrão:** Qual o desvio médio real, na mesma unidade do material?
+    - **Amplitude:** diferença entre o maior e o menor valor.
+    - **Variância:** média dos quadrados dos desvios em relação à média (unidade ao quadrado).
+    - **Desvio-padrão:** medida do espalhamento dos dados na mesma unidade da variável.
     - **Coeficiente de Variação:** a variação é grande ou pequena em relação à média?
     
 ---
@@ -119,7 +119,7 @@ Calcule a amplitude total ($AT$) para ambos os momentos e compare os resultados.
 
 ## Reflexão
 
-- No exemplo 2.2, a amplitude saltou de 4°C para 72°C devido a um único pico.
+- No exemplo 3.1, a amplitude saltou de 4°C para 72°C devido a um único pico.
 - Isso levanta uma questão importante:
     - A amplitude descreve o que acontece no "meio" dos dados?
     - Um erro de leitura no sensor pode invalidar toda a análise?
@@ -161,7 +161,7 @@ Calcule a amplitude total ($AT$) para ambos os momentos e compare os resultados.
 - A amplitude foca apenas nos extremos do lote. No entanto, para garantir a confiabilidade de uma peça, o engenheiro precisa saber:
     - Como todos os dados se comportam em relação à média?
     - O material é homogêneo ou apresenta oscilações internas?
-    - Qual o "erro médio" cometido ao usar a média como resumo?
+    - Qual o desvio em relação à média como resumo?
 
 #### Pergunta
 
@@ -179,7 +179,7 @@ Como calcular uma medida que utilize todos os valores do conjunto para descrever
 | Tipo      | Fórmula |
 |:----------|:--------|
 | População | $\sigma^2 = \frac{\sum (X_i - \mu)^2}{N}$|
-| Amostra   | $S^2 = \frac{\sum (X_i-\overline{X})}{n-1}$|
+| Amostra   | $S^2 = \frac{\sum (X_i-\overline{X})^2}{n-1}$|
 
 - $\mu$ é a média populacional e $\overline{X}$ é a média amostral.
 
@@ -319,8 +319,7 @@ Calcule o desvio-padrão ($S$) para ambos os lotes. Qual a diferença de "erro" 
 ## Comparando o Incomparável
 
 - Média e desvio-padrão são limitados quando precisamos comparar dois cenários diferentes:
-    - Lotes com médias muito dista
-    ntes (ex: fibra fina vs. barra grossa).
+    - Lotes com médias muito distantes (ex: fibra fina vs. barra grossa).
     - Materiais medidos em unidades diferentes (ex: dureza vs. tração).
     - Processos onde a escala de grandeza altera a percepção do erro.
 
@@ -334,7 +333,7 @@ Calcule o desvio-padrão ($S$) para ambos os lotes. Qual a diferença de "erro" 
 
 - O $CV$ é uma medida relativa de dispersão.
 - Expressa o desvio-padrão como uma proporção da média.
-- Frequentemente utilizado em porcentagem: $$CV\% = \left( \frac{S}{\overline{X}} \right) \times 100$$
+- Frequentemente utilizado em porcentagem: $$CV = \left( \frac{S}{\overline{X}} \right) \times 100\%$$
 - Elimina a unidade de medida, tornando os dados adimensionais.
 
 ---
@@ -396,7 +395,7 @@ Calcule o $CV$ para cada processo. Qual deles apresenta o desempenho mais estáv
 
 - **Amplitude:** uso em inspeções iniciais e limites de segurança.
 - **Desvio-padrão:** padrão ouro para relatórios de conformidade técnica.
-- **CV:** ferramenta essencial para seleção de fornecedores e escalabilidade.
+- **$CV$:** ferramenta essencial para seleção de fornecedores e escalabilidade.
 - **Variância:** fundamental para pesquisa acadêmica e otimização de processos.
 
 ---
