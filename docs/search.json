@@ -73,147 +73,147 @@
   {
     "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#objetivos-da-aula",
     "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#objetivos-da-aula",
-    "title": "Distribuição de Frequências Simples e em Classe",
+    "title": "Distribuição de Frequências Simples e em Classes",
     "section": "Objetivos da Aula",
     "text": "Objetivos da Aula\n\nDiferenciar Dados Brutos de Dados Organizados.\nConstruir tabelas de frequência para variáveis qualitativas (nominais e ordinais).\nAplicar a Regra de Sturges para variáveis quantitativas.\nInterpretar Frequências Absolutas, Relativas e Acumuladas no contexto de materiais."
   },
   {
     "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#do-dado-à-decisão",
     "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#do-dado-à-decisão",
-    "title": "Distribuição de Frequências Simples e em Classe",
+    "title": "Distribuição de Frequências Simples e em Classes",
     "section": "Do Dado à Decisão",
-    "text": "Do Dado à Decisão\n\nA estatística é a ferramenta que extrai a Informação do Dado para que você tome a Decisão correta.\n\nDADO: Valor bruto (sensor/planilha).\n\nEx: Resistência de 152 MPa. Status: Isolado, sem contexto.\n\nINFORMAÇÃO (Padrão): Dados organizados em Tabelas.\n\nEx: 75% do lote está abaixo de 160 MPa. Status: Cenário revelado.\n\nDECISÃO: Conclusão baseada na análise.\n\nEx: Rejeitar o lote ou ajustar o forno. Status: Engenharia aplicada."
+    "text": "Do Dado à Decisão\n\nA estatística é a ferramenta que extrai a Informação a partir dos Dados para que você tome a Decisão correta.\n\nDADO: Valor bruto (sensor/planilha).\n\nEx: Resistência de 152 MPa. Situação: Isolado, sem contexto.\n\nINFORMAÇÃO (Padrão): Dados organizados em Tabelas.\n\nEx: 75% do lote está abaixo de 160 MPa. Situação: Cenário revelado.\n\nDECISÃO: Conclusão baseada na análise.\n\nEx: Rejeitar o lote ou ajustar o forno. Situação: Engenharia aplicada."
   },
   {
     "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#organização-dos-dados",
     "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#organização-dos-dados",
-    "title": "Distribuição de Frequências Simples e em Classe",
+    "title": "Distribuição de Frequências Simples e em Classes",
     "section": "Organização dos Dados",
-    "text": "Organização dos Dados\nNa Engenharia de Materiais, coletamos dados de:\n\nEnsaios mecânicos (tração, dureza).\nCaracterização química (pureza, composição).\nProcessamento (temperatura de sinterização, tempo de cura).\n\nFerramentas Principais:\n\nDescrição Tabular: Tabelas de frequências (simples ou agrupadas).\nGráficos Descritivos: Histogramas, Box-plots, Gráficos de Barras."
+    "text": "Organização dos Dados\nNa Engenharia de Materiais, coletamos dados de:\n\nEnsaios mecânicos (tração, dureza).\nCaracterização química (pureza, composição).\nProcessamento (temperatura de sinterização, tempo de cura).\n\nFerramentas Principais:\n\nDescrição Tabular: Tabelas de frequências (simples ou agrupadas).\nGráficos Estatísticos: Histogramas, Boxplots, Gráficos de Barras."
   },
   {
     "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#dados-brutos-vs.-rol",
     "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#dados-brutos-vs.-rol",
-    "title": "Distribuição de Frequências Simples e em Classe",
+    "title": "Distribuição de Frequências Simples e em Classes",
     "section": "Dados Brutos vs. Rol",
-    "text": "Dados Brutos vs. Rol\n\nDados Brutos: Dados na ordem em que foram coletados.\n\nEx: pH medido: 7.2, 6.8, 7.5, 7.0…\n\nRol: Dados organizados em uma sequência (crescente ou decrescente).\n\nEx: 6.8, 7.0, 7.2, 7.5…\n\n\n\nPor que organizar? Facilita a identificação da amplitude total (\\(AT\\)), valores mínimos, máximos e possíveis erros de medição (outliers)."
+    "text": "Dados Brutos vs. Rol\n\nDados Brutos: Dados na ordem em que foram coletados.\n\nEx: pH medido: 7.2, 6.8, 7.5, 7.0…\n\nRol: Dados organizados em ordem crescente ou decrescente.\n\nEx: 6.8, 7.0, 7.2, 7.5…\n\n\n\nPor que organizar? Facilita a identificação da amplitude total, dos valores mínimos e máximos."
   },
   {
     "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-qualitativas",
     "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-qualitativas",
-    "title": "Distribuição de Frequências Simples e em Classe",
+    "title": "Distribuição de Frequências Simples e em Classes",
     "section": "Tabelas para Variáveis Qualitativas",
     "text": "Tabelas para Variáveis Qualitativas\nNominais (Sem hierarquia)\n\nDica: Organizar em ordem decrescente de frequência absoluta para destacar o item mais comum.\n\n\n\n\n\nTabela 1: Distribuição de polímeros em um lote de reciclagem.\n\n\n\n\n\n\n\n\n\n\nPolímero (Sigla)\nFrequência Absoluta (\\(f_i\\))\nFrequência Relativa (%)\n\n\n\n\nPP (Polipropileno)\n45\n45,0\n\n\nPEAD (Polietileno)\n30\n30,0\n\n\nPVC (Policloreto)\n25\n25,0\n\n\nTotal\n100\n100,0\n\n\n\n\n\n\n\n\nFonte: Dados fictícios (2026)."
   },
   {
     "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-qualitativas-1",
     "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-qualitativas-1",
-    "title": "Distribuição de Frequências Simples e em Classe",
+    "title": "Distribuição de Frequências Simples e em Classes",
     "section": "Tabelas para Variáveis Qualitativas",
-    "text": "Tabelas para Variáveis Qualitativas\nNominais (Sem hierarquia)\nO que podemos extrarir da tabela:\n\nInformação: O PP representa quase metade do lote (45%).\nDecisão: Priorizar a configuração da extrusora para as propriedades térmicas do Polipropileno."
+    "text": "Tabelas para Variáveis Qualitativas\nNominais (Sem hierarquia)\nO que podemos extrair da tabela:\n\nInformação: O PP representa quase metade do lote (45%).\nDecisão: Priorizar a configuração da extrusora para as propriedades térmicas do Polipropileno."
   },
   {
     "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-qualitativas-2",
     "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-qualitativas-2",
-    "title": "Distribuição de Frequências Simples e em Classe",
+    "title": "Distribuição de Frequências Simples e em Classes",
     "section": "Tabelas para Variáveis Qualitativas",
     "text": "Tabelas para Variáveis Qualitativas\nOrdinais (Com hierarquia)\n\nRegra: Manter a ordem natural da variável, independentemente da frequência.\n\n\n\n\n\nTabela 2: Níveis de corrosão observados em amostras de aço.\n\n\n\n\n\n\n\n\n\n\nGrau de Corrosão\nFrequência Absoluta (\\(f_i\\))\nFrequência Relativa (%)\n\n\n\n\nLeve\n12\n24,0\n\n\nModerada\n28\n56,0\n\n\nSevera\n10\n20,0\n\n\nTotal\n50\n100,0\n\n\n\n\n\n\n\n\nFonte: Dados fictícios (2026)."
   },
   {
     "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-qualitativas-3",
     "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-qualitativas-3",
-    "title": "Distribuição de Frequências Simples e em Classe",
+    "title": "Distribuição de Frequências Simples e em Classes",
     "section": "Tabelas para Variáveis Qualitativas",
     "text": "Tabelas para Variáveis Qualitativas\nOrdinais (Com hierarquia)\n\nInformação: 76% das amostras apresentam corrosão Moderada ou Severa.\nDecisão: Interromper a linha de produção para manutenção preventiva, pois o nível de degradação é inaceitável."
   },
   {
     "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-qualitativas-4",
     "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-qualitativas-4",
-    "title": "Distribuição de Frequências Simples e em Classe",
+    "title": "Distribuição de Frequências Simples e em Classes",
     "section": "Tabelas para Variáveis Qualitativas",
     "text": "Tabelas para Variáveis Qualitativas\n\nPara a construção de tabelas técnicas, siga as diretrizes da ABNT:\n\n\nTítulo (Topo): Deve ser claro, conciso e responder: O que? Onde? Quando?\nLaterais Abertas: Nunca utilize linhas verticais para “fechar” a tabela nas bordas esquerda e direita.\nLinhas Horizontais: Use apenas no topo, abaixo do cabeçalho e na base (fundo)."
   },
   {
     "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-qualitativas-5",
     "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-qualitativas-5",
-    "title": "Distribuição de Frequências Simples e em Classe",
+    "title": "Distribuição de Frequências Simples e em Classes",
     "section": "Tabelas para Variáveis Qualitativas",
     "text": "Tabelas para Variáveis Qualitativas\n\nAlinhamento:\n\nColuna de categorias (texto): Alinhada à esquerda.\nColunas numéricas (\\(f_i\\), %): Centralizadas ou alinhadas pela vírgula.\n\nOrdenação (A Lógica):\n\nNominais: Ordem decrescente de frequência (destaca o mais importante).\nOrdinais: Ordem natural da hierarquia (ex: Baixo \\(\\rightarrow\\) Médio \\(\\rightarrow\\) Alto).\n\nFonte (Rodapé): Obrigatória, mesmo que sejam dados próprios (“Fonte: Dados da pesquisa (ano).”)."
   },
   {
     "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#exemplo-4.1",
     "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#exemplo-4.1",
-    "title": "Distribuição de Frequências Simples e em Classe",
+    "title": "Distribuição de Frequências Simples e em Classes",
     "section": "Exemplo 4.1",
     "text": "Exemplo 4.1\nVocê é responsável pelo laboratório de metalografia e precisa organizar o estoque de 40 amostras de ligas metálicas que chegaram sem identificação na caixa. Organize os dados em uma tabela.\n\n\n\n\nAço\nAlumínio\nInox\nAço\nCobre\nAço\nInox\nAlumínio\n\n\nAlumínio\nAço\nCobre\nAço\nTitânio\nInox\nAço\nAlumínio\n\n\nAço\nInox\nAço\nCobre\nAlumínio\nAço\nTitânio\nAlumínio\n\n\nInox\nAço\nAlumínio\nAço\nInox\nAço\nCobre\nAlumínio\n\n\nAço\nAlumínio\nInox\nAço\nAlumínio\nInox\nAço\nTitânio"
   },
   {
     "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#exemplo-4.2",
     "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#exemplo-4.2",
-    "title": "Distribuição de Frequências Simples e em Classe",
+    "title": "Distribuição de Frequências Simples e em Classes",
     "section": "Exemplo 4.2",
     "text": "Exemplo 4.2\nUm inspetor de qualidade avaliou a integridade de 30 pontos de solda em um chassi automotivo, classificando-os de acordo com a norma técnica de segurança. Construa uma tabela para esses dados.\n\n\n\n\nLeve\nModerada\nLeve\nModerada\nSevera\nLeve\n\n\nCrítica\nModerada\nLeve\nModerada\nSevera\nLeve\n\n\nModerada\nModerada\nLeve\nCrítica\nModerada\nSevera\n\n\nLeve\nModerada\nModerada\nLeve\nSevera\nModerada\n\n\nLeve\nModerada\nLeve\nSevera\nModerada\nCrítica"
   },
   {
     "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#variáveis-quantitativas-distribuição-em-classes",
     "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#variáveis-quantitativas-distribuição-em-classes",
-    "title": "Distribuição de Frequências Simples e em Classe",
+    "title": "Distribuição de Frequências Simples e em Classes",
     "section": "Variáveis Quantitativas: Distribuição em Classes",
     "text": "Variáveis Quantitativas: Distribuição em Classes\n\nQuando os valores são muito dispersos (ex: Resistência à Tração de 50 corpos de prova), precisamos agrupar em intervalos.\n\nEtapas de Construção:\n\nDefinir o número de classes (\\(k\\)) \\(\\rightarrow\\) Regra de Sturges.\nCalcular a Amplitude Total (\\(AT\\)).\nDefinir a Amplitude da Classe (\\(h\\))."
   },
   {
     "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#a-regra-de-sturges",
     "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#a-regra-de-sturges",
-    "title": "Distribuição de Frequências Simples e em Classe",
+    "title": "Distribuição de Frequências Simples e em Classes",
     "section": "A Regra de Sturges",
     "text": "A Regra de Sturges\nPara um conjunto de \\(n\\) observações, o número ideal de classes (\\(k\\)) é:\n\\[k = 1 + 3,322 \\cdot \\log_{10}(n)\\]\nExemplo Prático:\nSe ensaiamos \\(n=30\\) amostras de aço:\n\n\\(k = 1 + 3,322 \\cdot \\log_{10}(30)\\)\n\\(k \\approx 5,91 \\rightarrow\\) Usamos 6 classes."
   },
   {
     "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#amplitude-e-intervalos",
     "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#amplitude-e-intervalos",
-    "title": "Distribuição de Frequências Simples e em Classe",
+    "title": "Distribuição de Frequências Simples e em Classes",
     "section": "Amplitude e Intervalos",
     "text": "Amplitude e Intervalos\nApós definir \\(k=6\\), calculamos a amplitude (tamanho) de cada classe:\n\\[h = \\frac{AT}{k} = \\frac{\\text{Máximo} - \\text{Mínimo}}{k}\\]\n\nApós calcular \\(h = \\frac{AT}{k}\\), é recomendável realizar um arredondamento para cima para o número inteiro ou decimal exato mais próximo (ex: 5; 10; 15; 0,5; 1,0).\nEm seguida, determinamos os limites de cada classe e contamos o número de elementos (frequência) em cada classe."
   },
   {
     "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tipos-de-frequência",
     "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tipos-de-frequência",
-    "title": "Distribuição de Frequências Simples e em Classe",
+    "title": "Distribuição de Frequências Simples e em Classes",
     "section": "Tipos de Frequência",
-    "text": "Tipos de Frequência\n\nAbsoluta (\\(f_i\\)): Contagem de ocorrências na classe.\nRelativa (\\(f_{ri}\\)): Porcentagem da classe em relação ao total (\\(f_i / n\\)).\nAcumulada (\\(F_i\\)): Soma das frequências da classe atual com as anteriores.\nAcumulada Relativa (\\(F_{ri}\\)): Porcentagem da classe atual com as anteriores (\\(F_i / n\\)).\n\n\nNota: Frequência acumulada não faz sentido para variáveis qualitativas nominais!"
+    "text": "Tipos de Frequência\n\nAbsoluta (\\(f_i\\)): Contagem de ocorrências na classe.\nRelativa (\\(f_{ri}\\)): Proporção da classe em relação ao total (\\(f_i / n\\)).\nAcumulada (\\(F_i\\)): Soma das frequências da classe atual com as anteriores.\nAcumulada Relativa (\\(F_{ri}\\)): Proporção acumulada até a classe atual (\\(F_i / n\\)).\n\n\nNota: Frequência acumulada não faz sentido para variáveis qualitativas nominais!"
   },
   {
     "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#variáveis-quantitativas-distribuição-em-classes-1",
     "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#variáveis-quantitativas-distribuição-em-classes-1",
-    "title": "Distribuição de Frequências Simples e em Classe",
+    "title": "Distribuição de Frequências Simples e em Classes",
     "section": "Variáveis Quantitativas: Distribuição em Classes",
     "text": "Variáveis Quantitativas: Distribuição em Classes\n\n\n\n\nTabela 3: Distribuição de frequências da resistência à tração da liga de alumínio (\\(n=40\\)).\n\n\n\n\n\nClasses (MPa)\n\\(f_i\\)\n\\(f_{ri}\\) (%)\n\\(F_i\\)\n\\(F_{ri}\\) (%)\n\n\n\n\n\\(160 \\vdash 170\\)\n\\(8\\)\n\\(20,\\!0\\)\n\\(8\\)\n\\(20,\\!0\\)\n\n\n\\(170 \\vdash 180\\)\n\\(18\\)\n\\(45,\\!0\\)\n\\(26\\)\n\\(65,\\!0\\)\n\n\n\\(180 \\vdash 190\\)\n\\(10\\)\n\\(25,\\!0\\)\n\\(36\\)\n\\(90,\\!0\\)\n\n\n\\(190 \\vdash 200\\)\n\\(4\\)\n\\(10,\\!0\\)\n\\(40\\)\n\\(100,\\!0\\)\n\n\nTotal\n\\(40\\)\n\\(100,\\!0\\)\n–\n–\n\n\n\n\n\n\n\n\nLegenda: \\(f_i\\): Freq. Absoluta; \\(f_{ri}\\): Freq. Relativa; \\(F_i\\): Freq. Acumulada; \\(F_{ri}\\): Freq. Acumulada Relativa.\nFonte: Dados fictícios (2026)."
   },
   {
     "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#variáveis-quantitativas-distribuição-em-classes-2",
     "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#variáveis-quantitativas-distribuição-em-classes-2",
-    "title": "Distribuição de Frequências Simples e em Classe",
+    "title": "Distribuição de Frequências Simples e em Classes",
     "section": "Variáveis Quantitativas: Distribuição em Classes",
     "text": "Variáveis Quantitativas: Distribuição em Classes\n\nSe o projeto exige resistência mínima de 180 MPa, a coluna \\(F_{ri}\\) nos avisa que 65% das peças são inseguras (Informação).\n\nDecisão: Rejeitar o lote de alumínio."
   },
   {
     "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-quantitativas",
     "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-quantitativas",
-    "title": "Distribuição de Frequências Simples e em Classe",
+    "title": "Distribuição de Frequências Simples e em Classes",
     "section": "Tabelas para Variáveis Quantitativas",
-    "text": "Tabelas para Variáveis Quantitativas\n\nA estética é igual de tabelas para variáveis qualitativas, mas a estrutura interna muda.\nSempre deve ser informada a grandeza e a unidade (ex: “Tensão de Ruptura (MPa)”).\nA ABNT/IBGE recomenda o uso do símbolo \\(| \\dashv\\) para indicar intervalos:\n\n\\(10 \\vdash 20\\): Inclui o 10, mas não inclui o 20 (aberto à direita).\n\nSe uma classe não possui ocorrências, deve-se colocar um hífen (-) ou o número 0, nunca deixar a célula vazia."
+    "text": "Tabelas para Variáveis Quantitativas\n\nA estética é igual à das tabelas para variáveis qualitativas, mas a estrutura interna muda.\nSempre deve ser informada a grandeza e a unidade (ex: “Tensão de Ruptura (MPa)”).\nA ABNT/IBGE recomenda o uso do símbolo \\(| \\dashv\\) para indicar intervalos:\n\n\\(10 \\vdash 20\\): Inclui o 10, mas não inclui o 20 (aberto à direita).\n\nSe uma classe não possui ocorrências, deve-se colocar um hífen (-) ou o número 0, nunca deixar a célula vazia."
   },
   {
     "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#como-verificar-se-a-tabela-está-correta",
     "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#como-verificar-se-a-tabela-está-correta",
-    "title": "Distribuição de Frequências Simples e em Classe",
+    "title": "Distribuição de Frequências Simples e em Classes",
     "section": "Como verificar se a tabela está correta",
     "text": "Como verificar se a tabela está correta\n\nA soma da coluna \\(f_i\\) resultou exatamente em \\(n\\)?\nA soma de \\(f_{ri}\\) é \\(100\\%\\)? (Cuidado com arredondamentos).\nO último valor da coluna \\(F_i\\) é igual ao total de amostras (\\(n\\))?\nUsou o símbolo \\(\\vdash\\) corretamente para garantir que um dado não seja contado em duas classes ao mesmo tempo?\nA tabela está “aberta” nas laterais (sem linhas verticais externas)?\nIndicou a unidade de medida utilizada?\nA tabela permite que um tomador de decisão entenda o cenário rapidamente?"
   },
   {
     "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#exemplo-4.3",
     "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#exemplo-4.3",
-    "title": "Distribuição de Frequências Simples e em Classe",
+    "title": "Distribuição de Frequências Simples e em Classes",
     "section": "Exemplo 4.3",
     "text": "Exemplo 4.3\nUm engenheiro de materiais recebeu um lote de 40 amostras de um novo polímero reforçado com fibras de vidro. Para validar o processo de fabricação, ele realizou ensaios de tração para medir o Limite de Resistência à Tração (RT) em MPa. Construa uma tabela de frequências com os dados da amostra.\n\n152, 155, 158, 160, 162, 163, 164, 165, 167, 168,\n170, 171, 172, 172, 173, 174, 175, 175, 176, 177,\n178, 178, 179, 180, 181, 182, 183, 184, 185, 186,\n188, 190, 191, 192, 194, 195, 196, 197, 199, 202\n\nO fornecedor garante que 90% das peças resistem a pelo menos 160 MPa. Com base na sua coluna de Frequência Acumulada, o fornecedor está falando a verdade?"
   },
@@ -222,28 +222,28 @@
     "href": "slides/02-Medidas_de_posicao/02-Medidas_de_posicao.html#introdução",
     "title": "Medidas de Posição",
     "section": "Introdução",
-    "text": "Introdução\n\nNa Engenharia de Materiais, é comum realizarmos diversas vezes um experimento para caracterizar as propriedades de um material.\nIsso ocorre porque os dados possuem variabilidade natural, erros de medição, impurezas nas amostras e comportamentos inesperados.\nPor isso, faz mais sentido olhar para o comportamento de um conjunto de corpos de prova do que para um único teste.\nNo entanto, para compreendermos melhor, precisamos resumir as informações coletadas."
+    "text": "Introdução\n\nNa Engenharia de Materiais, é comum realizar experimentos repetidas vezes para caracterizar as propriedades de um material.\nIsso ocorre porque os dados possuem variabilidade natural, erros de medição, impurezas nas amostras e comportamentos inesperados.\nPor isso, faz mais sentido analisar o comportamento de um conjunto de corpos de prova do que para um único teste.\nNo entanto, para compreendermos melhor, precisamos resumir as informações coletadas."
   },
   {
     "objectID": "slides/02-Medidas_de_posicao/02-Medidas_de_posicao.html#introdução-1",
     "href": "slides/02-Medidas_de_posicao/02-Medidas_de_posicao.html#introdução-1",
     "title": "Medidas de Posição",
     "section": "Introdução",
-    "text": "Introdução\n\nComo podemos resumir milhares de medições de laboratório em indicadores que permitam uma tomada de decisão técnica segura e econômica?\nAs Medidas de Posição (ou de Tendência Central) são os nossos primeiros instrumentos de navegação para localizar onde a maioria dos nossos dados “se localizam”.\nTipos de informações essenciais que podemos extrair:\n\nO Equilíbrio: Onde está o centro de massa? (Média)\nA Ordem: Qual valor divide o lote ao meio? (Mediana)\nO Padrão: O que mais se repete no processo? (Moda)\nAs Fronteiras: Onde estão os 25% melhores ou piores? (Separatrizes)"
+    "text": "Introdução\n\nComo podemos resumir milhares de medições de laboratório em indicadores que permitam uma tomada de decisão técnica segura e econômica?\nAs Medidas de Posição (ou de Tendência Central) são os nossos primeiros instrumentos de navegação para identificar onde a maioria dos dados “se localiza”.\nTipos de informações essenciais que podemos extrair:\n\nO Equilíbrio: Onde está o centro de massa? (Média)\nA Ordem: Qual valor divide o lote ao meio? (Mediana)\nO Padrão: O que mais se repete no processo? (Moda)\nAs Fronteiras: Onde estão os 25% melhores ou piores? (Separatrizes)"
   },
   {
     "objectID": "slides/02-Medidas_de_posicao/02-Medidas_de_posicao.html#introdução-2",
     "href": "slides/02-Medidas_de_posicao/02-Medidas_de_posicao.html#introdução-2",
     "title": "Medidas de Posição",
     "section": "Introdução",
-    "text": "Introdução\nExemplo\n\nImagine que você precisa decidir se um lote de polímero para próteses médicas deve ser aprovado ou descartado. Se você olhar apenas para a Média, pode ignorar uma peça defeituosa que causará a quebra da prótese. Precisamos de todas as medidas para decidir com segurança.\n\nPonto Chave\n\nNão foquem no cálculo (a calculadora faz isso).\nFoquem no sentido: por que uma medida é melhor que outra para cada tipo de problema?"
+    "text": "Introdução\nExemplo\n\nImagine que você precisa decidir se um lote de polímero para próteses médicas deve ser aprovado ou descartado. Diante de muitos valores obtidos nas medições, é necessário resumir essas informações em números representativos para facilitar a análise. A média cumpre esse papel ao indicar um valor geral do conjunto, mas existem também outras medidas, como a mediana e a moda, que oferecem diferentes perspectivas sobre a distribuição e tornam a decisão mais confiável.\n\nAtenção!\n\nNão foquem no cálculo (a calculadora faz isso).\nFoquem no sentido: por que uma medida é melhor que outra para cada tipo de problema?"
   },
   {
     "objectID": "slides/02-Medidas_de_posicao/02-Medidas_de_posicao.html#por-que-calcular-a-média",
     "href": "slides/02-Medidas_de_posicao/02-Medidas_de_posicao.html#por-que-calcular-a-média",
     "title": "Medidas de Posição",
     "section": "Por que calcular a média?",
-    "text": "Por que calcular a média?\nEm um laboratório, uma engenheira está avaliando a resistência à tração (tensão máxima que o material suporta antes de romper) de um polímero usado em engrenagens. Cada peça testada pode apresentar valores ligeiramente diferentes devido a:\n\npequenas impurezas no material\ndefeitos microscópicos\npequenas variações no processo de fabricação\n\nPergunta\nSe medirmos várias peças de um mesmo lote e obtivermos valores diferentes, como resumir todo esse comportamento em um único número representativo?"
+    "text": "Por que calcular a média?\nSuponha que em um laboratório, uma engenheira está avaliando a resistência à tração (tensão máxima que o material suporta antes de romper) de um polímero usado em engrenagens. Cada peça testada pode apresentar valores ligeiramente diferentes devido a:\n\npequenas impurezas no material\ndefeitos microscópicos\npequenas variações no processo de fabricação\n\nPergunta\nSe medirmos várias peças de um mesmo lote e obtivermos valores diferentes, como resumir todo esse comportamento em um único número representativo?"
   },
   {
     "objectID": "slides/02-Medidas_de_posicao/02-Medidas_de_posicao.html#média-aritmética-1",
@@ -285,7 +285,7 @@
     "href": "slides/02-Medidas_de_posicao/02-Medidas_de_posicao.html#vantagens-e-desvantagens-da-média",
     "title": "Medidas de Posição",
     "section": "Vantagens e Desvantagens da Média",
-    "text": "Vantagens e Desvantagens da Média\nVantagens\n\nUtiliza todas as observações do conjunto de dados\nFácil de calcular\nAmplamente utilizada em engenharia e ciência\n\nDesvantagem\n\nA média é muito sensível a valores extremos (outliers).\n\n\noutlier = valor muito diferente dos demais dados"
+    "text": "Vantagens e Desvantagens da Média\nVantagens\n\nUtiliza todas as observações do conjunto de dados\nFácil de calcular\nAmplamente utilizada em engenharia e ciência\n\nDesvantagem\n\nA média é muito sensível a valores extremos (outliers)."
   },
   {
     "objectID": "slides/02-Medidas_de_posicao/02-Medidas_de_posicao.html#o-que-fazer-na-prática",
@@ -306,7 +306,7 @@
     "href": "slides/02-Medidas_de_posicao/02-Medidas_de_posicao.html#mediana-1",
     "title": "Medidas de Posição",
     "section": "Mediana",
-    "text": "Mediana\n\nA mediana é o valor central de um conjunto de dados após ordenar os valores.\nEsse conjunto ordenado é chamado de Rol.\n\n\nRol = lista de dados organizada do menor para o maior valor\n\n\nPara determinar a mediana:\n\nOrdenamos os dados.\nIdentificamos a posição central."
+    "text": "Mediana\n\nA mediana é o valor central de um conjunto de dados após ordenar os valores.\nEsse conjunto ordenado é chamado de Rol.\n\n\nRol = lista de dados organizada do menor para o maior valor.\n\n\nPara determinar a mediana:\n\nOrdenamos os dados.\nIdentificamos a posição central."
   },
   {
     "objectID": "slides/02-Medidas_de_posicao/02-Medidas_de_posicao.html#encontrando-a-mediana",
@@ -320,7 +320,7 @@
     "href": "slides/02-Medidas_de_posicao/02-Medidas_de_posicao.html#exemplo-2.3",
     "title": "Medidas de Posição",
     "section": "Exemplo 2.3",
-    "text": "Exemplo 2.3\n(Mesmos dados so Exemplo 1.2) Considere o lote com falha de processamento. As medidas obtidas foram: 200, 205, 198, 202, 10 MPa. Calcule a mediana e compare com a média. Qual descreve melhor a resistência do polímero “bom”?"
+    "text": "Exemplo 2.3\n(Mesmos dados do Exemplo 2.2) Considere o lote com falha de processamento. As medidas obtidas foram: 200, 205, 198, 202, 10 MPa. Calcule a mediana e compare com a média. Qual descreve melhor a resistência do polímero “bom”?"
   },
   {
     "objectID": "slides/02-Medidas_de_posicao/02-Medidas_de_posicao.html#vantagens-e-desvantagens-da-mediana",
@@ -348,7 +348,7 @@
     "href": "slides/02-Medidas_de_posicao/02-Medidas_de_posicao.html#moda-1",
     "title": "Medidas de Posição",
     "section": "Moda",
-    "text": "Moda\nA moda (\\(Mo\\)) é o valor que possui a maior frequência no conjunto de dados. - É a única medida de posição que pode ser usada para variáveis qualitativas (ex: tipo de defeito mais comum). - Definição formal: \\[Mo = \\text{valor com maior frequência}.\\]"
+    "text": "Moda\nA moda (\\(Mo\\)) é o valor que possui a maior frequência no conjunto de dados.\n\nÉ a única medida de posição que pode ser usada para variáveis qualitativas (ex: tipo de defeito mais comum).\nDefinição formal: \\[Mo = \\text{valor com maior frequência}.\\]"
   },
   {
     "objectID": "slides/02-Medidas_de_posicao/02-Medidas_de_posicao.html#observações-importantes-1",
@@ -390,7 +390,7 @@
     "href": "slides/02-Medidas_de_posicao/02-Medidas_de_posicao.html#além-do-centro-1",
     "title": "Medidas de Posição",
     "section": "Além do Centro",
-    "text": "Além do Centro\nPergunta\n\nComo podemos dividir os dados em partes iguais para analisar diferentes regiões do desempenho do material?\n\nIdeia central\nUsamos separatrizes, que dividem os dados ordenados em partes iguais."
+    "text": "Além do Centro\nPergunta\n\nComo podemos dividir os dados em partes iguais para analisar diferentes regiões do desempenho do material?\n\nResposta\n\nUsamos separatrizes, que dividem os dados ordenados em partes iguais."
   },
   {
     "objectID": "slides/02-Medidas_de_posicao/02-Medidas_de_posicao.html#separatrizes-1",
@@ -467,7 +467,7 @@
     "href": "slides/02-Medidas_de_posicao/02-Medidas_de_posicao.html#exemplo-2.5",
     "title": "Medidas de Posição",
     "section": "Exemplo 2.5",
-    "text": "Exemplo 2.5\nUm laboratório mediu a resistência à tração (tensão máxima que o material suporta antes de romper) de 10 amostras de um polím ro, em MPa. Os valores já estão ordenados: \\[ 180, ~190, ~195, ~198, ~200, ~202, ~205, ~210, ~212, ~220 \\]\nDetermine os quartis e o percentil 90."
+    "text": "Exemplo 2.5\nUm laboratório mediu a resistência à tração (tensão máxima que o material suporta antes de romper) de 10 amostras de um polímero, em MPa. Os valores já estão ordenados: \\[ 180, ~190, ~195, ~198, ~200, ~202, ~205, ~210, ~212, ~220 \\]\nDetermine os quartis e o percentil 90."
   },
   {
     "objectID": "slides/02-Medidas_de_posicao/02-Medidas_de_posicao.html#média-valor-médio",
@@ -605,14 +605,14 @@
     "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#introdução",
     "title": "Medidas de Dispersão",
     "section": "Introdução",
-    "text": "Introdução\n\nNa Engenharia de Materiais, saber onde os dados se localizam (Média) é apenas metade da história.\nO “barulho” dos dados – a variabilidade natural e os erros de medição – define se um material é confiável ou perigoso.\nDuas ligas metálicas podem ter a mesma resistência média, mas uma pode ser muito instável (variável) e a outra muito uniforme.\nPara o engenheiro, variabilidade é sinônimo de risco. Precisamos quantificar esse risco."
+    "text": "Introdução\n\nNa Engenharia de Materiais, saber onde os dados se localizam (Média) é apenas metade da história.\nO “barulho” dos dados – a variabilidade natural e os erros de medição – define se um material é confiável ou perigoso.\nDuas ligas metálicas podem ter a mesma resistência média, mas uma pode ser muito instável (variável) e a outra muito uniforme.\nPara o engenheiro, variabilidade elevada está associada a maior risco. Precisamos quantificar esse risco."
   },
   {
     "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#introdução-1",
     "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#introdução-1",
     "title": "Medidas de Dispersão",
     "section": "Introdução",
-    "text": "Introdução\n\nComo medir a incerteza e a falta de uniformidade em um lote de materiais?\nMedidas de Dispersão (ou variabilidade) indicam quão afastados os dados estão do centro de massa.\nInformações principais que vamos extrair:\n\nAmplitude: erro médio ao quadrado em relação à média.\nVariância: desvio médio real, na mesma unidade dos dados.\nDesvio-padrão: Qual o desvio médio real, na mesma unidade do material?\nCoeficiente de Variação: a variação é grande ou pequena em relação à média?"
+    "text": "Introdução\n\nComo medir a incerteza e a falta de uniformidade em um lote de materiais?\nMedidas de Dispersão (ou variabilidade) indicam quão afastados os dados estão do centro de massa.\nInformações principais que vamos extrair:\n\nAmplitude: diferença entre o maior e o menor valor.\nVariância: média dos quadrados dos desvios em relação à média (unidade ao quadrado).\nDesvio-padrão: medida do espalhamento dos dados na mesma unidade da variável.\nCoeficiente de Variação: a variação é grande ou pequena em relação à média?"
   },
   {
     "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#introdução-2",
@@ -654,7 +654,7 @@
     "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#reflexão",
     "title": "Medidas de Dispersão",
     "section": "Reflexão",
-    "text": "Reflexão\n\nNo exemplo 2.2, a amplitude saltou de 4°C para 72°C devido a um único pico.\nIsso levanta uma questão importante:\n\nA amplitude descreve o que acontece no “meio” dos dados?\nUm erro de leitura no sensor pode invalidar toda a análise?\n\nEssa limitação motiva o uso de medidas mais precisas, como o Desvio-padrão."
+    "text": "Reflexão\n\nNo exemplo 3.1, a amplitude saltou de 4°C para 72°C devido a um único pico.\nIsso levanta uma questão importante:\n\nA amplitude descreve o que acontece no “meio” dos dados?\nUm erro de leitura no sensor pode invalidar toda a análise?\n\nEssa limitação motiva o uso de medidas mais precisas, como o Desvio-padrão."
   },
   {
     "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#vantagens-e-desvantagens-da-amplitude",
@@ -675,14 +675,14 @@
     "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#quando-a-amplitude-não-basta",
     "title": "Medidas de Dispersão",
     "section": "Quando a Amplitude não basta",
-    "text": "Quando a Amplitude não basta\n\nA amplitude foca apenas nos extremos do lote. No entanto, para garantir a confiabilidade de uma peça, o engenheiro precisa saber:\n\nComo todos os dados se comportam em relação à média?\nO material é homogêneo ou apresenta oscilações internas?\nQual o “erro médio” cometido ao usar a média como resumo?\n\n\nPergunta\nComo calcular uma medida que utilize todos os valores do conjunto para descrever o espalhamento dos dados?"
+    "text": "Quando a Amplitude não basta\n\nA amplitude foca apenas nos extremos do lote. No entanto, para garantir a confiabilidade de uma peça, o engenheiro precisa saber:\n\nComo todos os dados se comportam em relação à média?\nO material é homogêneo ou apresenta oscilações internas?\nQual o desvio em relação à média como resumo?\n\n\nPergunta\nComo calcular uma medida que utilize todos os valores do conjunto para descrever o espalhamento dos dados?"
   },
   {
     "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#variância-s2",
     "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#variância-s2",
     "title": "Medidas de Dispersão",
     "section": "Variância (\\(S^2\\))",
-    "text": "Variância (\\(S^2\\))\n\nA variância mede a média dos quadrados dos desvios em relação à média.\nIndica o espalhamento dos dados ao redor do centro de massa.\nO cálculo diferencia dados populacionais de dados amostrais:\n\n\n\n\nTipo\nFórmula\n\n\n\n\nPopulação\n\\(\\sigma^2 = \\frac{\\sum (X_i - \\mu)^2}{N}\\)\n\n\nAmostra\n\\(S^2 = \\frac{\\sum (X_i-\\overline{X})}{n-1}\\)\n\n\n\n\n\\(\\mu\\) é a média populacional e \\(\\overline{X}\\) é a média amostral."
+    "text": "Variância (\\(S^2\\))\n\nA variância mede a média dos quadrados dos desvios em relação à média.\nIndica o espalhamento dos dados ao redor do centro de massa.\nO cálculo diferencia dados populacionais de dados amostrais:\n\n\n\n\nTipo\nFórmula\n\n\n\n\nPopulação\n\\(\\sigma^2 = \\frac{\\sum (X_i - \\mu)^2}{N}\\)\n\n\nAmostra\n\\(S^2 = \\frac{\\sum (X_i-\\overline{X})^2}{n-1}\\)\n\n\n\n\n\\(\\mu\\) é a média populacional e \\(\\overline{X}\\) é a média amostral."
   },
   {
     "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#entendendo-o-cálculo",
@@ -766,14 +766,14 @@
     "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#comparando-o-incomparável",
     "title": "Medidas de Dispersão",
     "section": "Comparando o Incomparável",
-    "text": "Comparando o Incomparável\n\nMédia e desvio-padrão são limitados quando precisamos comparar dois cenários diferentes:\n\nLotes com médias muito dista ntes (ex: fibra fina vs. barra grossa).\nMateriais medidos em unidades diferentes (ex: dureza vs. tração).\nProcessos onde a escala de grandeza altera a percepção do erro.\n\n\nPergunta\n\nComo saber qual material é mais estável se as médias são diferentes?"
+    "text": "Comparando o Incomparável\n\nMédia e desvio-padrão são limitados quando precisamos comparar dois cenários diferentes:\n\nLotes com médias muito distantes (ex: fibra fina vs. barra grossa).\nMateriais medidos em unidades diferentes (ex: dureza vs. tração).\nProcessos onde a escala de grandeza altera a percepção do erro.\n\n\nPergunta\n\nComo saber qual material é mais estável se as médias são diferentes?"
   },
   {
     "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#coeficiente-de-variação-cv",
     "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#coeficiente-de-variação-cv",
     "title": "Medidas de Dispersão",
     "section": "Coeficiente de Variação (\\(CV\\))",
-    "text": "Coeficiente de Variação (\\(CV\\))\n\nO \\(CV\\) é uma medida relativa de dispersão.\nExpressa o desvio-padrão como uma proporção da média.\nFrequentemente utilizado em porcentagem: \\[CV\\% = \\left( \\frac{S}{\\overline{X}} \\right) \\times 100\\]\nElimina a unidade de medida, tornando os dados adimensionais."
+    "text": "Coeficiente de Variação (\\(CV\\))\n\nO \\(CV\\) é uma medida relativa de dispersão.\nExpressa o desvio-padrão como uma proporção da média.\nFrequentemente utilizado em porcentagem: \\[CV = \\left( \\frac{S}{\\overline{X}} \\right) \\times 100\\%\\]\nElimina a unidade de medida, tornando os dados adimensionais."
   },
   {
     "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#interpretação-técnica",
@@ -815,7 +815,7 @@
     "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#resumo-de-aplicações",
     "title": "Medidas de Dispersão",
     "section": "Resumo de Aplicações",
-    "text": "Resumo de Aplicações\n\nAmplitude: uso em inspeções iniciais e limites de segurança.\nDesvio-padrão: padrão ouro para relatórios de conformidade técnica.\nCV: ferramenta essencial para seleção de fornecedores e escalabilidade.\nVariância: fundamental para pesquisa acadêmica e otimização de processos."
+    "text": "Resumo de Aplicações\n\nAmplitude: uso em inspeções iniciais e limites de segurança.\nDesvio-padrão: padrão ouro para relatórios de conformidade técnica.\n\\(CV\\): ferramenta essencial para seleção de fornecedores e escalabilidade.\nVariância: fundamental para pesquisa acadêmica e otimização de processos."
   },
   {
     "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#atenção",
@@ -827,133 +827,133 @@
   {
     "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#canais-de-comunicação-e-materiais-da-disciplina",
     "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#canais-de-comunicação-e-materiais-da-disciplina",
-    "title": "Apresentação da Disciplina e Conceito Iniciais",
+    "title": "Apresentação da Disciplina e Conceitos Iniciais",
     "section": "Canais de Comunicação e Materiais da Disciplina",
-    "text": "Canais de Comunicação e Materiais da Disciplina\n\nSite: http://sadraquelucena.github.io/estatmat\nGrupo no WhatsApp: http://tiny.cc/prob1wpp"
+    "text": "Canais de Comunicação e Materiais da Disciplina\n\nSite: http://sadraquelucena.github.io/estat-aplicada\nGrupo no WhatsApp: http://tiny.cc/eawpp"
   },
   {
     "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#informações-da-disciplina",
     "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#informações-da-disciplina",
-    "title": "Apresentação da Disciplina e Conceito Iniciais",
+    "title": "Apresentação da Disciplina e Conceitos Iniciais",
     "section": "Informações da disciplina",
     "text": "Informações da disciplina\n\nComponente curricular: ESTAT0011 – Estatística Aplicada\nVagas Reservadas: Engenharia de Materiais\nCarga horária: 60 horas (4 créditos)\nHorário:\n\nTerças – 17h00 às 18h30\nQuintas – 17h00 às 18h30\n\nDocente: Prof. Dr. Sadraque E. F. Lucena"
   },
   {
     "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#objetivos",
     "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#objetivos",
-    "title": "Apresentação da Disciplina e Conceito Iniciais",
+    "title": "Apresentação da Disciplina e Conceitos Iniciais",
     "section": "Objetivos",
     "text": "Objetivos\n\nProporcionar experiências de aprendizagem que permitam ao estudante familiarizar-se com conhecimentos estatísticos fundamentais para a análise, interpretação e solução de problemas cotidianos e aplicados."
   },
   {
     "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#ementa",
     "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#ementa",
-    "title": "Apresentação da Disciplina e Conceito Iniciais",
+    "title": "Apresentação da Disciplina e Conceitos Iniciais",
     "section": "Ementa",
-    "text": "Ementa\n\nRegras elementares de probabilidade.\nDistribuição binominal, Poisson e normal.\nPopulação e amostras.\nTestes de bondade de ajustamento.\nUso de transformações.\nDistribuições de certas estatísticas amostrais.\nNoções de testes e hipóteses.\nNoções de delineamento experimental.\nExperimentos com um e dois fatores.\nRegressão e correlação."
+    "text": "Ementa\n\nRegras elementares de probabilidade.\nDistribuição binomial, Poisson e normal.\nPopulação e amostras.\nTestes de bondade de ajustamento.\nUso de transformações.\nDistribuições de certas estatísticas amostrais.\nNoções de testes e hipóteses.\nNoções de delineamento experimental.\nExperimentos com um e dois fatores.\nRegressão e correlação."
   },
   {
     "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#conteúdo-programático",
     "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#conteúdo-programático",
-    "title": "Apresentação da Disciplina e Conceito Iniciais",
+    "title": "Apresentação da Disciplina e Conceitos Iniciais",
     "section": "Conteúdo programático",
-    "text": "Conteúdo programático\n\nEstatística Descritiva e Confiabilidade de Dados\n1.1. As fases do trabalho estatístico e classificação de variáveis em engenharia;\n1.2. Séries estatísticas e representação tabular e gráfica (Histogramas e Box-plots);\n1.3. Distribuição de frequências simples e em classe;\n1.4. Medidas de Posição: Média, Mediana e Moda;\n1.5. Medidas de Dispersão: Variância, desvio-padrão e coeficiente de variação (CV);\n1.6. Erros de medição e tratamento de valores atípicos (outliers)."
+    "text": "Conteúdo programático\n\nEstatística Descritiva e Confiabilidade de Dados\n1.1. As fases do trabalho estatístico e classificação de variáveis em engenharia;\n1.2. Séries estatísticas e representação tabular e gráfica (Histogramas e Boxplots);\n1.3. Distribuição de frequências simples e em classes;\n1.4. Medidas de Posição: Média, Mediana e Moda;\n1.5. Medidas de Dispersão: Variância, desvio-padrão e coeficiente de variação (CV);\n1.6. Erros de medição e tratamento de valores atípicos (outliers)."
   },
   {
     "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#conteúdo-programático-1",
     "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#conteúdo-programático-1",
-    "title": "Apresentação da Disciplina e Conceito Iniciais",
+    "title": "Apresentação da Disciplina e Conceitos Iniciais",
     "section": "Conteúdo programático",
-    "text": "Conteúdo programático\n\nProbabilidade e Modelagem de Fenômenos\n2.1. Conceitos de probabilidade: Experimento aleatório, espaço amostral e eventos;\n2.2. Probabilidade condicional e Teorema de Bayes aplicado a ensaios não-destrutivos;\n2.3. Variáveis aleatórias, esperança matemática e variância;\n2.4. Distribuições discretas: Bernoulli, Binomial e Poisson (defeitos por unidade de área);\n2.5. Distribuições contínuas: Uniforme, Exponencial e Normal;\n2.6. Padronização (Z) e tabelas de probabilidade."
+    "text": "Conteúdo programático\n\nProbabilidade e Modelagem de Fenômenos\n2.1. Conceitos de probabilidade: Experimento aleatório, espaço amostral e eventos;\n2.2. Probabilidade condicional e Teorema de Bayes aplicado a ensaios não destrutivos;\n2.3. Variáveis aleatórias, esperança matemática e variância;\n2.4. Distribuições discretas: Bernoulli, Binomial e Poisson (defeitos por unidade de área);\n2.5. Distribuições contínuas: Uniforme, Exponencial e Normal;\n2.6. Padronização (Z) e tabelas de probabilidade."
   },
   {
     "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#conteúdo-programático-2",
     "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#conteúdo-programático-2",
-    "title": "Apresentação da Disciplina e Conceito Iniciais",
+    "title": "Apresentação da Disciplina e Conceitos Iniciais",
     "section": "Conteúdo programático",
     "text": "Conteúdo programático\n\nInferência Estatística e Tomada de Decisão\n3.1. Noções de amostragem e erro padrão;\n3.2. Distribuições amostrais da média e da proporção;\n3.3. Intervalo de confiança para média e proporção;\n3.4. Testes de hipóteses: Conceitos, erro tipo I e erro tipo II;\n3.5. Teste t de Student para comparação de médias (amostras independentes e pareadas);\n3.6. Testes de bondade de ajuste (testes de normalidade)."
   },
   {
     "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#conteúdo-programático-3",
     "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#conteúdo-programático-3",
-    "title": "Apresentação da Disciplina e Conceito Iniciais",
+    "title": "Apresentação da Disciplina e Conceitos Iniciais",
     "section": "Conteúdo programático",
     "text": "Conteúdo programático\n\nDelineamento Experimental (ANOVA) e Modelagem\n4.1. Análise de Variância (ANOVA) com um fator: Experimentos completamente casualizados;\n4.2. Análise de Variância (ANOVA) com dois fatores e interação;\n4.3. Tipos de correlação e Coeficiente Linear de Pearson;\n4.4. Regressão Linear Simples: Estimativa de parâmetros e interpretação física;\n4.5. Coeficiente de determinação (\\(R^2\\)) e análise de resíduos."
   },
   {
     "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#conteúdo-programático-4",
     "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#conteúdo-programático-4",
-    "title": "Apresentação da Disciplina e Conceito Iniciais",
+    "title": "Apresentação da Disciplina e Conceitos Iniciais",
     "section": "Conteúdo programático",
     "text": "Conteúdo programático\n\nTópicos Especiais de Engenharia de Materiais\n5.1. Introdução à Distribuição de Weibull;\n5.2. Linearização da função de Weibull via logaritmos;\n5.3. Determinação do Módulo de Weibull (\\(m\\)) para análise de confiabilidade de materiais frágeis."
   },
   {
     "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#bibliografia-recomendada",
     "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#bibliografia-recomendada",
-    "title": "Apresentação da Disciplina e Conceito Iniciais",
+    "title": "Apresentação da Disciplina e Conceitos Iniciais",
     "section": "Bibliografia Recomendada",
     "text": "Bibliografia Recomendada"
   },
   {
     "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#metodologia",
     "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#metodologia",
-    "title": "Apresentação da Disciplina e Conceito Iniciais",
+    "title": "Apresentação da Disciplina e Conceitos Iniciais",
     "section": "Metodologia",
     "text": "Metodologia\n\n2 encontros semanais, com 90 minutos de aula presencial cada\n30 minutos de atividades extraclasse (hora-trabalho) para cada aula, indicadas pelo docente"
   },
   {
     "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#datas-importantes",
     "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#datas-importantes",
-    "title": "Apresentação da Disciplina e Conceito Iniciais",
+    "title": "Apresentação da Disciplina e Conceitos Iniciais",
     "section": "Datas Importantes",
-    "text": "Datas Importantes\nAvaliações\n\nAvaliação 1: 07/05/2026 (quinta)\nAvaliação 2: 11/06/2026 (quinta)\nAvaliação 3: 16/07/2026 (quinta)\nAvaliação Repositiva: 21/07/2026 (terça)\n\nNão haverá aula\n\n02/04/2026: Quinta-feira santa (recesso academico)\n21/04/2026: Tiradentes (feriado nacional)\n04/06/2026: Corpus Christi (recesso acadêmico)\n23/06/2026: Véspera de Sâo João (recesso acadêmico)"
+    "text": "Datas Importantes\nAvaliações\n\nAvaliação 1: 07/05/2026 (quinta)\nAvaliação 2: 11/06/2026 (quinta)\nAvaliação 3: 16/07/2026 (quinta)\nAvaliação Repositiva: 21/07/2026 (terça)\n\nNão haverá aula\n\n02/04/2026: Quinta-feira santa (recesso acadêmico)\n21/04/2026: Tiradentes (feriado nacional)\n04/06/2026: Corpus Christi (recesso acadêmico)\n23/06/2026: Véspera de São João (recesso acadêmico)"
   },
   {
     "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#população-vs.-amostra",
     "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#população-vs.-amostra",
-    "title": "Apresentação da Disciplina e Conceito Iniciais",
+    "title": "Apresentação da Disciplina e Conceitos Iniciais",
     "section": "População vs. Amostra",
-    "text": "População vs. Amostra\n\nPopulação\n\nConsiste de todas as unidades de interesse.\nQuando os dados coletados são da população, chamamos o procedimento de coleta de censo.\nQualquer característica numérica de uma população é chamada de parâmtetro."
+    "text": "População vs. Amostra\n\nPopulação\n\nConsiste de todas as unidades de interesse.\nQuando os dados coletados são da população, chamamos o procedimento de coleta de censo.\nQualquer característica numérica de uma população é chamada de parâmetro."
   },
   {
     "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#população-vs.-amostra-1",
     "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#população-vs.-amostra-1",
-    "title": "Apresentação da Disciplina e Conceito Iniciais",
+    "title": "Apresentação da Disciplina e Conceitos Iniciais",
     "section": "População vs. Amostra",
-    "text": "População vs. Amostra\n\nAmostra\n\nQualquer subconjunto da população.\nUsada para fazer inferências sobre a população.\nQuando os dados coletados são de uma amostra, o procedimento de coleta é chamado de amostragem.\nQualquer função aplicada sobre a amostra é chamada estatística."
+    "text": "População vs. Amostra\n\nAmostra\n\nQualquer subconjunto da população.\nUsada para fazer inferências sobre a população.\nQuando os dados coletados são de uma amostra, o procedimento de coleta é chamado de amostragem.\nQualquer medida calculada a partir da amostra é chamada de estatística."
   },
   {
     "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#tipos-de-variáveis",
     "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#tipos-de-variáveis",
-    "title": "Apresentação da Disciplina e Conceito Iniciais",
+    "title": "Apresentação da Disciplina e Conceitos Iniciais",
     "section": "Tipos de Variáveis",
-    "text": "Tipos de Variáveis\nQualitativas\n\nSão variáveis que consistem em atributos, classificações ou registros não numéricos.\nExemplos: Tipo de tratamento térmico (têmpera, recozimento, normalização), Presença de defeito (sim / não)\n\nQuantitativas\n\nSão variáveis que constituem em medidas ou contagens numéricas.\nExemplos: Teor de carbono (%), Espessura de revestimento (µm)"
+    "text": "Tipos de Variáveis\nQualitativas\n\nSão variáveis que consistem em atributos, classificações ou registros não numéricos.\nExemplos: Tipo de tratamento térmico (têmpera, recozimento, normalização), Presença de defeito (sim / não)\n\nQuantitativas\n\nSão variáveis que correspondem a medidas ou contagens numéricas.\nExemplos: Teor de carbono (%), Espessura de revestimento (µm)"
   },
   {
     "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#variáveis-qualitativas",
     "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#variáveis-qualitativas",
-    "title": "Apresentação da Disciplina e Conceito Iniciais",
+    "title": "Apresentação da Disciplina e Conceitos Iniciais",
     "section": "Variáveis Qualitativas",
-    "text": "Variáveis Qualitativas\n\nNominais\n\nOs dados que representam um conjunto de possíveis categorias e não possuem ordem.\nExemplos:\n\nTipo de polímero (PE, PP, PVC, PET)\nMétodo de ensaio (tração, impacto, dureza)\nFornecedor de minério (Vale, CSN Mineração)\n\nUm caso especial de são os dados binários, que possuem apenas duas categorias de valores (0/1, verdadeiro/falso)."
+    "text": "Variáveis Qualitativas\n\nNominais\n\nOs dados que representam um conjunto de possíveis categorias e não possuem ordem.\nExemplos:\n\nTipo de polímero (PE, PP, PVC, PET)\nMétodo de ensaio (tração, impacto, dureza)\nFornecedor de minério (Vale, CSN Mineração)\n\nUm caso especial são os dados binários, que possuem apenas duas categorias de valores (0/1, verdadeiro/falso)."
   },
   {
     "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#variáveis-qualitativas-1",
     "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#variáveis-qualitativas-1",
-    "title": "Apresentação da Disciplina e Conceito Iniciais",
+    "title": "Apresentação da Disciplina e Conceitos Iniciais",
     "section": "Variáveis Qualitativas",
     "text": "Variáveis Qualitativas\n\nOrdinais\n\nDado categórico que tem uma ordem explícita.\nExemplos:\n\nClassificação de dureza (Escala Mohs): 1- Extremamente macio a 10- Dureza máxima\nNível de oxidação (Baixo, Médio, Alto)\nClassificação de acabamento superficial (ruim, regular, bom, excelente)"
   },
   {
     "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#variáveis-quantitativas",
     "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#variáveis-quantitativas",
-    "title": "Apresentação da Disciplina e Conceito Iniciais",
+    "title": "Apresentação da Disciplina e Conceitos Iniciais",
     "section": "Variáveis Quantitativas",
     "text": "Variáveis Quantitativas\n\nDiscretas\n\nPodem assumir apenas valores inteiros, como contagens.\nExemplos: Número de trincas em uma amostra, Número de peças produzidas por lote\n\nContínuas\n\nPodem assumir qualquer valor em um intervalo.\nExemplos: Temperatura de tratamento térmico (°C), Resistência à tração (MPa)"
   },
   {
     "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#exemplo",
     "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#exemplo",
-    "title": "Apresentação da Disciplina e Conceito Iniciais",
+    "title": "Apresentação da Disciplina e Conceitos Iniciais",
     "section": "Exemplo",
     "text": "Exemplo\nClassifique as variáveis abaixo:\n\nTipo de liga metálica (ex: Aço 1020, Inox 304)\nNúmero de microtrincas por cm² em uma cerâmica\nTemperatura de sinterização em °C (ex: 1250.5°C)\nClassificação de resistência ao impacto (Ruim &lt; Regular &lt; Bom)\nQuantidade de fases presentes na microestrutura\nAlongamento percentual após ensaio de tração (ex: 12.4%)\nTipo de fratura observada (Dúctil ou Frágil)\nRugosidade superficial (Ra) medida em micrômetros\nNível de pureza do reagente (Técnico &lt; Analítico &lt; Ultrapuro)"
   },

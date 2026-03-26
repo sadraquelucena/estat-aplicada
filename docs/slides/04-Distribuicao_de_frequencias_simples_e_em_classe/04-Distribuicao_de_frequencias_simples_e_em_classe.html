@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.9.28">
 
   <meta name="author" content="Prof.&nbsp;Dr.&nbsp;Sadraque E. F. Lucena  sadraquelucena@academico.ufs.br   http://sadraquelucena.github.io/estat-aplicada">
-  <title>Estatística Aplicada – Distribuição de Frequências Simples e em Classe</title>
+  <title>Estatística Aplicada – Distribuição de Frequências Simples e em Classes</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -130,7 +130,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Distribuição de Frequências Simples e em Classe</h1>
+  <h1 class="title">Distribuição de Frequências Simples e em Classes</h1>
   <p class="subtitle">ESTAT0011 – Estatística Aplicada</p>
 
 <div class="quarto-title-authors">
@@ -154,19 +154,19 @@
 <section id="do-dado-à-decisão" class="slide level2">
 <h2>Do Dado à Decisão</h2>
 <ul>
-<li><p>A estatística é a ferramenta que extrai a <strong>Informação</strong> do <strong>Dado</strong> para que você tome a <strong>Decisão</strong> correta.</p>
+<li><p>A estatística é a ferramenta que extrai a <strong>Informação</strong> a partir dos <strong>Dados</strong> para que você tome a <strong>Decisão</strong> correta.</p>
 <ol type="1">
 <li><strong>DADO:</strong> Valor bruto (sensor/planilha).
 <ul>
-<li><em>Ex:</em> Resistência de <strong>152 MPa</strong>. <strong><em>Status:</em></strong> Isolado, sem contexto.</li>
+<li><em>Ex:</em> Resistência de <strong>152 MPa</strong>. <strong><em>Situação:</em></strong> Isolado, sem contexto.</li>
 </ul></li>
 <li><strong>INFORMAÇÃO (Padrão):</strong> Dados organizados em <strong>Tabelas</strong>.
 <ul>
-<li><em>Ex:</em> <strong>75%</strong> do lote está abaixo de 160 MPa. <strong><em>Status:</em></strong> Cenário revelado.</li>
+<li><em>Ex:</em> <strong>75%</strong> do lote está abaixo de 160 MPa. <strong><em>Situação:</em></strong> Cenário revelado.</li>
 </ul></li>
 <li><strong>DECISÃO:</strong> Conclusão baseada na análise.
 <ul>
-<li><em>Ex:</em> <strong>Rejeitar o lote</strong> ou ajustar o forno. <strong><em>Status:</em></strong> Engenharia aplicada.</li>
+<li><em>Ex:</em> <strong>Rejeitar o lote</strong> ou ajustar o forno. <strong><em>Situação:</em></strong> Engenharia aplicada.</li>
 </ul></li>
 </ol></li>
 </ul>
@@ -182,7 +182,7 @@
 <p><strong>Ferramentas Principais:</strong></p>
 <ol type="1">
 <li><p><strong>Descrição Tabular:</strong> Tabelas de frequências (simples ou agrupadas).</p></li>
-<li><p><strong>Gráficos Descritivos:</strong> Histogramas, Box-plots, Gráficos de Barras.</p></li>
+<li><p><strong>Gráficos Estatísticos:</strong> Histogramas, Boxplots, Gráficos de Barras.</p></li>
 </ol>
 </section>
 <section id="dados-brutos-vs.-rol" class="slide level2">
@@ -192,13 +192,13 @@
 <ul>
 <li><em>Ex:</em> pH medido: 7.2, 6.8, 7.5, 7.0…</li>
 </ul></li>
-<li><strong>Rol:</strong> Dados organizados em uma sequência (crescente ou decrescente).
+<li><strong>Rol:</strong> Dados organizados em ordem crescente ou decrescente.
 <ul>
 <li><em>Ex:</em> 6.8, 7.0, 7.2, 7.5…</li>
 </ul></li>
 </ul>
 <blockquote>
-<p><strong>Por que organizar?</strong> Facilita a identificação da amplitude total (<span class="math inline">\(AT\)</span>), valores mínimos, máximos e possíveis erros de medição (<em>outliers</em>).</p>
+<p><strong>Por que organizar?</strong> Facilita a identificação da amplitude total, dos valores mínimos e máximos.</p>
 </blockquote>
 </section>
 <section id="tabelas-para-variáveis-qualitativas" class="slide level2">
@@ -261,7 +261,7 @@ Tabela&nbsp;1: Distribuição de polímeros em um lote de reciclagem.
 <section id="tabelas-para-variáveis-qualitativas-1" class="slide level2">
 <h2>Tabelas para Variáveis Qualitativas</h2>
 <h3 id="nominais-sem-hierarquia-1">Nominais (Sem hierarquia)</h3>
-<p>O que podemos extrarir da tabela:</p>
+<p>O que podemos extrair da tabela:</p>
 <ul>
 <li><strong>Informação:</strong> O PP representa quase metade do lote (45%).</li>
 <li><strong>Decisão:</strong> Priorizar a configuração da extrusora para as propriedades térmicas do Polipropileno.</li>
@@ -505,9 +505,9 @@ Tabela&nbsp;2: Níveis de corrosão observados em amostras de aço.
 <h2>Tipos de Frequência</h2>
 <ul>
 <li><strong>Absoluta (<span class="math inline">\(f_i\)</span>):</strong> Contagem de ocorrências na classe.</li>
-<li><strong>Relativa (<span class="math inline">\(f_{ri}\)</span>):</strong> Porcentagem da classe em relação ao total (<span class="math inline">\(f_i / n\)</span>).</li>
+<li><strong>Relativa (<span class="math inline">\(f_{ri}\)</span>):</strong> Proporção da classe em relação ao total (<span class="math inline">\(f_i / n\)</span>).</li>
 <li><strong>Acumulada (<span class="math inline">\(F_i\)</span>):</strong> Soma das frequências da classe atual com as anteriores.</li>
-<li><strong>Acumulada Relativa (<span class="math inline">\(F_{ri}\)</span>):</strong> Porcentagem da classe atual com as anteriores (<span class="math inline">\(F_i / n\)</span>).</li>
+<li><strong>Acumulada Relativa (<span class="math inline">\(F_{ri}\)</span>):</strong> Proporção acumulada até a classe atual (<span class="math inline">\(F_i / n\)</span>).</li>
 </ul>
 <blockquote>
 <p><strong>Nota:</strong> Frequência acumulada <strong>não faz sentido</strong> para variáveis qualitativas nominais!</p>
@@ -591,7 +591,7 @@ Tabela&nbsp;3: Distribuição de frequências da resistência à tração da lig
 <section id="tabelas-para-variáveis-quantitativas" class="slide level2">
 <h2>Tabelas para Variáveis Quantitativas</h2>
 <ul>
-<li>A estética é igual de tabelas para variáveis qualitativas, mas a estrutura interna muda.</li>
+<li>A estética é igual à das tabelas para variáveis qualitativas, mas a estrutura interna muda.</li>
 <li>Sempre deve ser informada a grandeza e a unidade (ex: “Tensão de Ruptura (MPa)”).</li>
 <li>A ABNT/IBGE recomenda o uso do símbolo <span class="math inline">\(| \dashv\)</span> para indicar intervalos:
 <ul>

@@ -148,7 +148,7 @@
 <li>Na Engenharia de Materiais, saber onde os dados se localizam (Média) é apenas metade da história.</li>
 <li>O “barulho” dos dados – a variabilidade natural e os erros de medição – define se um material é confiável ou perigoso.</li>
 <li>Duas ligas metálicas podem ter a mesma resistência média, mas uma pode ser muito instável (variável) e a outra muito uniforme.</li>
-<li>Para o engenheiro, <strong>variabilidade é sinônimo de risco</strong>. Precisamos quantificar esse risco.</li>
+<li>Para o engenheiro, <strong>variabilidade elevada está associada a maior risco</strong>. Precisamos quantificar esse risco.</li>
 </ul>
 </section>
 <section id="introdução-1" class="slide level2">
@@ -158,9 +158,9 @@
 <li><strong>Medidas de Dispersão</strong> (ou variabilidade) indicam quão afastados os dados estão do centro de massa.</li>
 <li>Informações principais que vamos extrair:
 <ul>
-<li><strong>Amplitude:</strong> erro médio ao quadrado em relação à média.</li>
-<li><strong>Variância:</strong> desvio médio real, na mesma unidade dos dados.</li>
-<li><strong>Desvio-padrão:</strong> Qual o desvio médio real, na mesma unidade do material?</li>
+<li><strong>Amplitude:</strong> diferença entre o maior e o menor valor.</li>
+<li><strong>Variância:</strong> média dos quadrados dos desvios em relação à média (unidade ao quadrado).</li>
+<li><strong>Desvio-padrão:</strong> medida do espalhamento dos dados na mesma unidade da variável.</li>
 <li><strong>Coeficiente de Variação:</strong> a variação é grande ou pequena em relação à média?</li>
 </ul></li>
 </ul>
@@ -232,7 +232,7 @@
 <section id="reflexão" class="slide level2">
 <h2>Reflexão</h2>
 <ul>
-<li>No exemplo 2.2, a amplitude saltou de 4°C para 72°C devido a um único pico.</li>
+<li>No exemplo 3.1, a amplitude saltou de 4°C para 72°C devido a um único pico.</li>
 <li>Isso levanta uma questão importante:
 <ul>
 <li>A amplitude descreve o que acontece no “meio” dos dados?</li>
@@ -275,7 +275,7 @@
 <ul>
 <li>Como todos os dados se comportam em relação à média?</li>
 <li>O material é homogêneo ou apresenta oscilações internas?</li>
-<li>Qual o “erro médio” cometido ao usar a média como resumo?</li>
+<li>Qual o desvio em relação à média como resumo?</li>
 </ul></li>
 </ul>
 <h4 id="pergunta-1">Pergunta</h4>
@@ -302,7 +302,7 @@
 </tr>
 <tr class="even">
 <td style="text-align: left;">Amostra</td>
-<td style="text-align: left;"><span class="math inline">\(S^2 = \frac{\sum (X_i-\overline{X})}{n-1}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(S^2 = \frac{\sum (X_i-\overline{X})^2}{n-1}\)</span></td>
 </tr>
 </tbody>
 </table>
@@ -439,7 +439,7 @@
 <ul>
 <li>Média e desvio-padrão são limitados quando precisamos comparar dois cenários diferentes:
 <ul>
-<li>Lotes com médias muito dista ntes (ex: fibra fina vs.&nbsp;barra grossa).</li>
+<li>Lotes com médias muito distantes (ex: fibra fina vs.&nbsp;barra grossa).</li>
 <li>Materiais medidos em unidades diferentes (ex: dureza vs.&nbsp;tração).</li>
 <li>Processos onde a escala de grandeza altera a percepção do erro.</li>
 </ul></li>
@@ -454,7 +454,7 @@
 <ul>
 <li>O <span class="math inline">\(CV\)</span> é uma medida relativa de dispersão.</li>
 <li>Expressa o desvio-padrão como uma proporção da média.</li>
-<li>Frequentemente utilizado em porcentagem: <span class="math display">\[CV\% = \left( \frac{S}{\overline{X}} \right) \times 100\]</span></li>
+<li>Frequentemente utilizado em porcentagem: <span class="math display">\[CV = \left( \frac{S}{\overline{X}} \right) \times 100\%\]</span></li>
 <li>Elimina a unidade de medida, tornando os dados adimensionais.</li>
 </ul>
 </section>
@@ -541,7 +541,7 @@
 <ul>
 <li><strong>Amplitude:</strong> uso em inspeções iniciais e limites de segurança.</li>
 <li><strong>Desvio-padrão:</strong> padrão ouro para relatórios de conformidade técnica.</li>
-<li><strong>CV:</strong> ferramenta essencial para seleção de fornecedores e escalabilidade.</li>
+<li><strong><span class="math inline">\(CV\)</span>:</strong> ferramenta essencial para seleção de fornecedores e escalabilidade.</li>
 <li><strong>Variância:</strong> fundamental para pesquisa acadêmica e otimização de processos.</li>
 </ul>
 </section>

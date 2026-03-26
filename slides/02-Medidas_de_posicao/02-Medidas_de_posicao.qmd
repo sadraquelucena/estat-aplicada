@@ -39,7 +39,7 @@ lang: pt-BR
 ## Introdução
 
 - Como podemos resumir milhares de medições de laboratório em indicadores que permitam uma **tomada de decisão** técnica segura e econômica?
-- As **Medidas de Posição** (ou de Tendência Central) são os nossos primeiros instrumentos de navegação para localizar onde a maioria dos dados "se localiza".
+- As **Medidas de Posição** (ou de Tendência Central) são os nossos primeiros instrumentos de navegação para identificar onde a maioria dos dados "se localiza".
 - Tipos de informações essenciais que podemos extrair:
 
     - **O Equilíbrio:** Onde está o centro de massa? (Média)
@@ -53,9 +53,10 @@ lang: pt-BR
 
 #### Exemplo
 
-- Imagine que você precisa decidir se um lote de polímero para próteses médicas deve ser aprovado ou descartado. Se você olhar apenas para a **Média**, pode ignorar uma peça defeituosa que causará a quebra da prótese. Precisamos de todas as medidas para decidir com segurança.
+- Imagine que você precisa decidir se um lote de polímero para próteses médicas deve ser aprovado ou descartado. Diante de muitos valores obtidos nas medições, é necessário resumir essas informações em números representativos para facilitar a análise. A **média** cumpre esse papel ao indicar um valor geral do conjunto, mas existem também outras medidas, como a mediana e a moda, que oferecem diferentes perspectivas sobre a distribuição e tornam a decisão mais confiável.
 
-#### Ponto Chave
+
+#### Atenção!
 
 - Não foquem no cálculo (a calculadora faz isso).
 - Foquem no sentido: por que uma medida é melhor que outra para cada tipo de problema?
@@ -70,7 +71,7 @@ lang: pt-BR
 
 ## Por que calcular a média?
 
-Em um laboratório, uma engenheira está avaliando a **resistência à tração** (*tensão máxima que o material suporta antes de romper*) de um polímero usado em engrenagens. Cada peça testada pode apresentar valores ligeiramente diferentes devido a:
+Suponha que em um laboratório, uma engenheira está avaliando a **resistência à tração** (*tensão máxima que o material suporta antes de romper*) de um polímero usado em engrenagens. Cada peça testada pode apresentar valores ligeiramente diferentes devido a:
 
 - pequenas impurezas no material
 - defeitos microscópicos
@@ -140,8 +141,6 @@ Considere agora um novo lote com falha de processamento. As medidas obtidas fora
 
 - A média é muito sensível a valores extremos (*outliers*).
 
-> outlier = valor muito diferente dos demais dados
-
 ---
 
 ## O que fazer na prática?
@@ -180,7 +179,7 @@ Existe uma medida que represente o **centro do conjunto de dados**, mas que **n�
 - A mediana é o valor central de um conjunto de dados após ordenar os valores.
 - Esse conjunto ordenado é chamado de **Rol**.
 
-> Rol = lista de dados organizada do menor para o maior valor
+> Rol = lista de dados organizada do menor para o maior valor.
 
 - Para determinar a mediana:
     1. Ordenamos os dados.
@@ -254,6 +253,7 @@ qual valor de resistência é **mais provável de aparecer novamente?**
 ## Moda
 
 A moda ($Mo$) é o valor que possui a maior frequência no conjunto de dados.
+
 - É a única medida de posição que pode ser usada para variáveis qualitativas (ex: tipo de defeito mais comum).
 - Definição formal:
 $$Mo = \text{valor com maior frequência}.$$
@@ -339,9 +339,9 @@ Mas um engenheiro frequentemente precisa responder perguntas como:
 
 - Como podemos dividir os dados em partes iguais para analisar diferentes regiões do desempenho do material?
 
-#### Ideia central
+#### Resposta
 
-Usamos **separatrizes**, que dividem os dados ordenados em partes iguais.
+- Usamos **separatrizes**, que dividem os dados ordenados em partes iguais.
 
 ---
 
