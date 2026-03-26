@@ -28,6 +28,16 @@ Slides:
 
 ::::
 
+Lista de Exercícios:
 
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/listas/EstatAplicada_lista1.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/listas/lista01.png){width=80%}<br>Lista 1
+</a>
+:::
+
+::::
 
 

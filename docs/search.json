@@ -4,20 +4,14 @@
     "href": "PDFs/listas/listas_de_exercicio.html",
     "title": "Listas de Exercício",
     "section": "",
-    "text": "A prática é a chave para o domínio da Probabilidade. Aqui estão as listas de exercícios, organizadas para acompanhar o conteúdo da disciplina e ajudar você a consolidar o conhecimento. Utilize-as como sua principal ferramenta de estudo; elas são o melhor caminho para o sucesso nas avaliações.",
-    "crumbs": [
-      "Listas de Exercício"
-    ]
+    "text": "A prática é a chave para o domínio da Probabilidade. Aqui estão as listas de exercícios, organizadas para acompanhar o conteúdo da disciplina e ajudar você a consolidar o conhecimento. Utilize-as como sua principal ferramenta de estudo; elas são o melhor caminho para o sucesso nas avaliações."
   },
   {
     "objectID": "PDFs/listas/listas_de_exercicio.html#parte-1-introdução-à-probabilidade",
     "href": "PDFs/listas/listas_de_exercicio.html#parte-1-introdução-à-probabilidade",
     "title": "Listas de Exercício",
     "section": "Parte 1: Introdução à Probabilidade",
-    "text": "Parte 1: Introdução à Probabilidade\n\n\n Lista 1 \n\n\n Lista 2 \n\n\n Lista 3 \n\n\n Lista 4",
-    "crumbs": [
-      "Listas de Exercício"
-    ]
+    "text": "Parte 1: Introdução à Probabilidade\n\n\n Lista 1 \n\n\n Lista 2 \n\n\n Lista 3 \n\n\n Lista 4"
   },
   {
     "objectID": "info/bibliografia.html",
@@ -509,10 +503,10 @@
     "href": "aulas/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html",
     "title": "Conteúdo 1",
     "section": "",
-    "text": "Este material apresenta a estrutura da disciplina Estatística Aplicada (ESTAT0011), incluindo informações sobre carga horária, cronograma, datas importantes, metodologia e objetivos do curso. Além disso, introduz os conceitos iniciais da Estatística, fundamentais para o desenvolvimento da disciplina, como população e amostra, parâmetros e estatísticas, bem como a classificação de variáveis qualitativas e quantitativas, ilustradas com exemplos relacionados à Engenharia de Materiais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf",
+    "text": "Este material apresenta a estrutura da disciplina Estatística Aplicada (ESTAT0011), incluindo informações sobre carga horária, cronograma, datas importantes, metodologia e objetivos do curso. Além disso, introduz os conceitos iniciais da Estatística, fundamentais para o desenvolvimento da disciplina, como população e amostra, parâmetros e estatísticas, bem como a classificação de variáveis qualitativas e quantitativas, ilustradas com exemplos relacionados à Engenharia de Materiais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 1",
     "crumbs": [
       "Aulas",
-      "Parte 1: Introdução à Probabilidade",
+      "Parte 1: Estatística Descritiva",
       "1- Apresentação da Disciplina"
     ]
   },
@@ -521,10 +515,10 @@
     "href": "aulas/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#apresentação-da-disciplina-e-conceitos-iniciais",
     "title": "Conteúdo 1",
     "section": "",
-    "text": "Este material apresenta a estrutura da disciplina Estatística Aplicada (ESTAT0011), incluindo informações sobre carga horária, cronograma, datas importantes, metodologia e objetivos do curso. Além disso, introduz os conceitos iniciais da Estatística, fundamentais para o desenvolvimento da disciplina, como população e amostra, parâmetros e estatísticas, bem como a classificação de variáveis qualitativas e quantitativas, ilustradas com exemplos relacionados à Engenharia de Materiais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf",
+    "text": "Este material apresenta a estrutura da disciplina Estatística Aplicada (ESTAT0011), incluindo informações sobre carga horária, cronograma, datas importantes, metodologia e objetivos do curso. Além disso, introduz os conceitos iniciais da Estatística, fundamentais para o desenvolvimento da disciplina, como população e amostra, parâmetros e estatísticas, bem como a classificação de variáveis qualitativas e quantitativas, ilustradas com exemplos relacionados à Engenharia de Materiais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 1",
     "crumbs": [
       "Aulas",
-      "Parte 1: Introdução à Probabilidade",
+      "Parte 1: Estatística Descritiva",
       "1- Apresentação da Disciplina"
     ]
   },
@@ -533,10 +527,10 @@
     "href": "aulas/02-Medidas_de_posicao.html",
     "title": "Conteúdo 2",
     "section": "",
-    "text": "Os slides desta aula introduzem as medidas de posição utilizadas para resumir e interpretar conjuntos de dados experimentais. São apresentados os conceitos de média aritmética, mediana, moda e separatrizes (quartis e percentis), discutindo suas definições, interpretações e limitações. Ao longo da aula, exemplos inspirados em ensaios e propriedades de materiais são utilizados para mostrar como essas medidas ajudam a compreender o comportamento dos dados, identificar valores atípicos e apoiar a análise e a tomada de decisão.\nSlides:\n\n\n Versão html \n\n\n Versão pdf",
+    "text": "Os slides desta aula introduzem as medidas de posição utilizadas para resumir e interpretar conjuntos de dados experimentais. São apresentados os conceitos de média aritmética, mediana, moda e separatrizes (quartis e percentis), discutindo suas definições, interpretações e limitações. Ao longo da aula, exemplos inspirados em ensaios e propriedades de materiais são utilizados para mostrar como essas medidas ajudam a compreender o comportamento dos dados, identificar valores atípicos e apoiar a análise e a tomada de decisão.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 2",
     "crumbs": [
       "Aulas",
-      "Parte 1: Introdução à Probabilidade",
+      "Parte 1: Estatística Descritiva",
       "2- Medidas de Posição"
     ]
   },
@@ -545,10 +539,10 @@
     "href": "aulas/02-Medidas_de_posicao.html#medidas-de-posição",
     "title": "Conteúdo 2",
     "section": "",
-    "text": "Os slides desta aula introduzem as medidas de posição utilizadas para resumir e interpretar conjuntos de dados experimentais. São apresentados os conceitos de média aritmética, mediana, moda e separatrizes (quartis e percentis), discutindo suas definições, interpretações e limitações. Ao longo da aula, exemplos inspirados em ensaios e propriedades de materiais são utilizados para mostrar como essas medidas ajudam a compreender o comportamento dos dados, identificar valores atípicos e apoiar a análise e a tomada de decisão.\nSlides:\n\n\n Versão html \n\n\n Versão pdf",
+    "text": "Os slides desta aula introduzem as medidas de posição utilizadas para resumir e interpretar conjuntos de dados experimentais. São apresentados os conceitos de média aritmética, mediana, moda e separatrizes (quartis e percentis), discutindo suas definições, interpretações e limitações. Ao longo da aula, exemplos inspirados em ensaios e propriedades de materiais são utilizados para mostrar como essas medidas ajudam a compreender o comportamento dos dados, identificar valores atípicos e apoiar a análise e a tomada de decisão.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 2",
     "crumbs": [
       "Aulas",
-      "Parte 1: Introdução à Probabilidade",
+      "Parte 1: Estatística Descritiva",
       "2- Medidas de Posição"
     ]
   },
@@ -557,10 +551,10 @@
     "href": "aulas/03-Medidas_de_dispersao.html",
     "title": "Conteúdo 3",
     "section": "",
-    "text": "Os slides desta aula apresentam as principais medidas de dispersão, utilizadas para quantificar a variabilidade dos dados em torno de uma medida central. São discutidos os conceitos de amplitude total, variância, desvio-padrão e coeficiente de variação, destacando suas definições, interpretações e aplicações na análise de dados experimentais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf",
+    "text": "Os slides desta aula apresentam as principais medidas de dispersão, utilizadas para quantificar a variabilidade dos dados em torno de uma medida central. São discutidos os conceitos de amplitude total, variância, desvio-padrão e coeficiente de variação, destacando suas definições, interpretações e aplicações na análise de dados experimentais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 3",
     "crumbs": [
       "Aulas",
-      "Parte 1: Introdução à Probabilidade",
+      "Parte 1: Estatística Descritiva",
       "3- Medidas de Dispersão"
     ]
   },
@@ -569,10 +563,10 @@
     "href": "aulas/03-Medidas_de_dispersao.html#medidas-de-dispersão",
     "title": "Conteúdo 3",
     "section": "",
-    "text": "Os slides desta aula apresentam as principais medidas de dispersão, utilizadas para quantificar a variabilidade dos dados em torno de uma medida central. São discutidos os conceitos de amplitude total, variância, desvio-padrão e coeficiente de variação, destacando suas definições, interpretações e aplicações na análise de dados experimentais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf",
+    "text": "Os slides desta aula apresentam as principais medidas de dispersão, utilizadas para quantificar a variabilidade dos dados em torno de uma medida central. São discutidos os conceitos de amplitude total, variância, desvio-padrão e coeficiente de variação, destacando suas definições, interpretações e aplicações na análise de dados experimentais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 3",
     "crumbs": [
       "Aulas",
-      "Parte 1: Introdução à Probabilidade",
+      "Parte 1: Estatística Descritiva",
       "3- Medidas de Dispersão"
     ]
   },
@@ -581,10 +575,10 @@
     "href": "aulas/04-Distribuicao_de_frequencias_simples_e_em_classe.html",
     "title": "Conteúdo 4",
     "section": "",
-    "text": "Os slides desta aula apresentam os procedimentos para organização e síntese de dados por meio de distribuições de frequência, etapa fundamental na análise estatística de dados experimentais. São discutidas as diferenças entre dados brutos e rol, a construção de tabelas de frequência para variáveis qualitativas e quantitativas, bem como o uso da Regra de Sturges para definir o número adequado de classes. Também são abordadas as interpretações de frequências absolutas, relativas e acumuladas, destacando como essas ferramentas auxiliam na identificação de padrões nos dados e na tomada de decisões.\nSlides:\n\n\n Versão html \n\n\n Versão pdf",
+    "text": "Os slides desta aula apresentam os procedimentos para organização e síntese de dados por meio de distribuições de frequência, etapa fundamental na análise estatística de dados experimentais. São discutidas as diferenças entre dados brutos e rol, a construção de tabelas de frequência para variáveis qualitativas e quantitativas, bem como o uso da Regra de Sturges para definir o número adequado de classes. Também são abordadas as interpretações de frequências absolutas, relativas e acumuladas, destacando como essas ferramentas auxiliam na identificação de padrões nos dados e na tomada de decisões.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 4",
     "crumbs": [
       "Aulas",
-      "Parte 1: Introdução à Probabilidade",
+      "Parte 1: Estatística Descritiva",
       "4- Distribuição de Frequências"
     ]
   },
@@ -593,10 +587,10 @@
     "href": "aulas/04-Distribuicao_de_frequencias_simples_e_em_classe.html#distribuição-de-frequências-simples-e-em-classes",
     "title": "Conteúdo 4",
     "section": "",
-    "text": "Os slides desta aula apresentam os procedimentos para organização e síntese de dados por meio de distribuições de frequência, etapa fundamental na análise estatística de dados experimentais. São discutidas as diferenças entre dados brutos e rol, a construção de tabelas de frequência para variáveis qualitativas e quantitativas, bem como o uso da Regra de Sturges para definir o número adequado de classes. Também são abordadas as interpretações de frequências absolutas, relativas e acumuladas, destacando como essas ferramentas auxiliam na identificação de padrões nos dados e na tomada de decisões.\nSlides:\n\n\n Versão html \n\n\n Versão pdf",
+    "text": "Os slides desta aula apresentam os procedimentos para organização e síntese de dados por meio de distribuições de frequência, etapa fundamental na análise estatística de dados experimentais. São discutidas as diferenças entre dados brutos e rol, a construção de tabelas de frequência para variáveis qualitativas e quantitativas, bem como o uso da Regra de Sturges para definir o número adequado de classes. Também são abordadas as interpretações de frequências absolutas, relativas e acumuladas, destacando como essas ferramentas auxiliam na identificação de padrões nos dados e na tomada de decisões.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 4",
     "crumbs": [
       "Aulas",
-      "Parte 1: Introdução à Probabilidade",
+      "Parte 1: Estatística Descritiva",
       "4- Distribuição de Frequências"
     ]
   },

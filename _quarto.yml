@@ -8,6 +8,7 @@ website:
   title: "Estatística Aplicada"
   sidebar:
     style: "docked"
+    collapse-level: 3
     search: false
     logo: img/ESTAT0011_logo_hex.png
     contents:
@@ -24,7 +25,7 @@ website:
     
     - section: "Aulas"
       contents: 
-      - section: "Parte 1: Introdução à Probabilidade"
+      - section: "Parte 1: Estatística Descritiva"
         contents:
           - href: aulas/01-Apresentacao_da_disciplina_e_conceitos_iniciais.qmd
             text: "1- Apresentação da Disciplina"
@@ -35,8 +36,7 @@ website:
           - href: aulas/04-Distribuicao_de_frequencias_simples_e_em_classe.qmd
             text: "4- Distribuição de Frequências"
             
-    - href: PDFs/listas/listas_de_exercicio.qmd
-      text: "Listas de Exercício"
+
       
 
 format:
