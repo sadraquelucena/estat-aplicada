@@ -145,8 +145,8 @@
 <section id="introdução" class="slide level2">
 <h2>Introdução</h2>
 <ul>
-<li>Na Engenharia de Materiais, saber onde os dados se localizam (Média) é apenas metade da história.</li>
-<li>O “barulho” dos dados – a variabilidade natural e os erros de medição – define se um material é confiável ou perigoso.</li>
+<li>Na Engenharia de Materiais, saber onde os dados se localizam (Média) não diz todas as informações sobre os dados.</li>
+<li>A variabilidade natural e os erros de medição definem se um material é confiável ou perigoso.</li>
 <li>Duas ligas metálicas podem ter a mesma resistência média, mas uma pode ser muito instável (variável) e a outra muito uniforme.</li>
 <li>Para o engenheiro, <strong>variabilidade elevada está associada a maior risco</strong>. Precisamos quantificar esse risco.</li>
 </ul>
@@ -161,7 +161,7 @@
 <li><strong>Amplitude:</strong> diferença entre o maior e o menor valor.</li>
 <li><strong>Variância:</strong> média dos quadrados dos desvios em relação à média (unidade ao quadrado).</li>
 <li><strong>Desvio-padrão:</strong> medida do espalhamento dos dados na mesma unidade da variável.</li>
-<li><strong>Coeficiente de Variação:</strong> a variação é grande ou pequena em relação à média?</li>
+<li><strong>Coeficiente de Variação:</strong> quantifica se a variação é grande ou pequena em relação à média.</li>
 </ul></li>
 </ul>
 </section>
@@ -174,9 +174,9 @@
 <li>No <strong>Lote A</strong>, todas as peças variam entre 98 e 102 MPa.</li>
 <li>No <strong>Lote B</strong>, as peças variam entre 50 e 150 MPa.</li>
 </ul></li>
-<li>Se você projetar uma peça para suportar 90 MPa, o <strong>Lote A é seguro</strong>, mas o <strong>Lote B é arriscado</strong>, apesar da média ser 100.</li>
+<li>Se você projetar uma peça para suportar 90 MPa, o <strong>Lote A é seguro</strong>, mas o <strong>Lote B é arriscado</strong>, apesar da média ser 100 MPa.</li>
 </ul>
-<h4 id="ponto-chave">Ponto Chave</h4>
+<h4 id="atenção">Atenção!</h4>
 <ul>
 <li>Média não descreve confiabilidade.</li>
 <li>Dispersão descreve.</li>
@@ -195,14 +195,14 @@
 <li>quedas bruscas de temperatura (choque térmico)</li>
 <li>instabilidade no sistema de controle</li>
 </ul>
-<h4 id="pergunta">Pergunta</h4>
+<h4 id="pergunta-motivadora">Pergunta Motivadora</h4>
 <p>Como medir de forma rápida a <strong>distância total</strong> entre o valor mais alto e o mais baixo de um processo?</p>
 </section>
 <section id="amplitude-total-at" class="slide level2">
 <h2>Amplitude Total (<span class="math inline">\(AT\)</span>)</h2>
 <ul>
 <li><p>A amplitude total é a diferença entre o maior e o menor valor de um conjunto de dados.</p></li>
-<li><p>Se identificarmos o valor máximo (<span class="math inline">\(X_{máx}\)</span>) e o valor mínimo (<span class="math inline">\(X_{mín}\)</span>) em uma amostra, a amplitude é dada por: <span class="math display">\[AT = X_{máx} - X_{mín}\]</span></p></li>
+<li><p>Se identificarmos o valor máximo (<span class="math inline">\(X_{max}\)</span>) e o valor mínimo (<span class="math inline">\(X_{min}\)</span>) em uma amostra, a amplitude é dada por: <span class="math display">\[AT = X_{max} - X_{min}\]</span></p></li>
 <li><p>Este indicador mostra o <strong>campo de variação</strong> absoluto dos dados.</p></li>
 <li><p>É a medida de dispersão mais simples de calcular.</p></li>
 </ul>
@@ -268,8 +268,8 @@
 <h1>Variância</h1>
 <p>(A medida da oscilação interna)</p>
 </section>
-<section id="quando-a-amplitude-não-basta" class="slide level2">
-<h2>Quando a Amplitude não basta</h2>
+<section id="a-amplitude-não-basta" class="slide level2">
+<h2>A Amplitude não basta</h2>
 <ul>
 <li>A amplitude foca apenas nos extremos do lote. No entanto, para garantir a confiabilidade de uma peça, o engenheiro precisa saber:
 <ul>
@@ -278,13 +278,13 @@
 <li>Qual o desvio em relação à média como resumo?</li>
 </ul></li>
 </ul>
-<h4 id="pergunta-1">Pergunta</h4>
+<h4 id="pergunta-motivadora-1">Pergunta Motivadora</h4>
 <p>Como calcular uma medida que utilize todos os valores do conjunto para descrever o espalhamento dos dados?</p>
 </section>
 <section id="variância-s2" class="slide level2">
 <h2>Variância (<span class="math inline">\(S^2\)</span>)</h2>
 <ul>
-<li>A variância mede a média dos quadrados dos desvios em relação à média.</li>
+<li>A variância calcula a média dos quadrados dos desvios em relação à média.</li>
 <li>Indica o espalhamento dos dados ao redor do centro de massa.</li>
 <li>O cálculo diferencia dados populacionais de dados amostrais:</li>
 </ul>
@@ -333,12 +333,12 @@
 <h2>Reflexão</h2>
 <ul>
 <li>A variância do Lote B será muito maior que a do Lote A.</li>
-<li>Isso levanta um problema de interpretação direta:
+<li>Problema de interpretação:
 <ul>
-<li>Se a unidade original é MPa, a variância resulta em <span class="math inline">\(MPa^2\)</span>.</li>
+<li>Se a unidade original é MPa, a variância fica dada em MPa<span class="math inline">\(^2\)</span>.</li>
 <li>O que significa fisicamente uma “pressão ao quadrado”?</li>
 </ul></li>
-<li>Essa dificuldade de escala motiva o estudo do <strong>Desvio-padrão</strong>.</li>
+<li>Essa dificuldade de interpretção da unidade de medida motiva o estudo do <strong>Desvio-padrão</strong>.</li>
 </ul>
 </section>
 <section id="vantagens-e-desvantagens-da-variância" class="slide level2">
@@ -370,13 +370,13 @@
 </section>
 <section id="o-problema-da-unidade-ao-quadrado" class="slide level2">
 <h2>O Problema da Unidade ao Quadrado</h2>
-<p>Vimos que a Variância (<span class="math inline">\(S^2\)</span>) é excelente para cálculos, mas gera um problema prático no laboratório de materiais:</p>
+<p>A Variância (<span class="math inline">\(S^2\)</span>) é excelente para cálculos, mas gera um problema prático na interpretação da unidade de medida:</p>
 <ul>
-<li>Resistência em <span class="math inline">\(MPa\)</span> vira <span class="math inline">\(MPa^2\)</span>.</li>
-<li>Dureza em <span class="math inline">\(HB\)</span> vira <span class="math inline">\(HB^2\)</span>.</li>
-<li>Temperatura em <span class="math inline">\(°C\)</span> vira <span class="math inline">\(°C^2\)</span>.</li>
+<li>Resistência em MPa vira MPa<span class="math inline">\(^2\)</span>.</li>
+<li>Dureza em HB vira HB<span class="math inline">\(^2\)</span>.</li>
+<li>Temperatura em °C vira °C<span class="math inline">\(^2\)</span>.</li>
 </ul>
-<h4 id="pergunta-2">Pergunta</h4>
+<h4 id="pergunta-motivadora-2">Pergunta Motivadora</h4>
 <p>Como retornar a medida de variabilidade para a <strong>mesma unidade original</strong> das nossas medições?</p>
 </section>
 <section id="desvio-padrão-s" class="slide level2">
@@ -385,14 +385,14 @@
 <li><p>O desvio-padrão é definido como a raiz quadrada positiva da variância.</p></li>
 <li><p>Ele indica o quanto, em média, os dados se afastam da média aritmética.</p></li>
 <li><p>Fórmula para dados amostrais: <span class="math display">\[S = \sqrt{S^2}\]</span></p></li>
-<li><p>Prefere-se o uso do desvio-padrão por sua <strong>interpretabilidade direta</strong> no projeto.</p></li>
+<li><p>Prefere-se o uso do desvio-padrão por sua <strong>interpretabilidade direta</strong> em projetos.</p></li>
 </ul>
 </section>
 <section id="interpretação" class="slide level2">
 <h2>Interpretação</h2>
 <ul>
 <li>O desvio-padrão traz a dispersão de volta para a escala real.</li>
-<li>Ele permite dizer: “A resistência é <span class="math inline">\(500 \pm 10 \text{ MPa}\)</span>”.</li>
+<li>Ele permite dizer: “A resistência é <span class="math inline">\(500 \pm 10\)</span> MPa”.</li>
 <li>Facilita a visualização do erro médio em torno do centro.</li>
 </ul>
 </section>
@@ -400,12 +400,12 @@
 <h2>Exemplo 3.3</h2>
 <p>Retome os dados do Exemplo 3.2 sobre a resistência dos aços:</p>
 <ul>
-<li>Lote A: <span class="math inline">\(S^2 = 1 \text{ MPa}^2\)</span>.</li>
-<li>Lote B: <span class="math inline">\(S^2 = 2500 \text{ MPa}^2\)</span>.</li>
+<li>Lote A: <span class="math inline">\(S^2 = 1\)</span> MPa<span class="math inline">\(^2\)</span>.</li>
+<li>Lote B: <span class="math inline">\(S^2 = 2500\)</span> MPa<span class="math inline">\(^2\)</span>.</li>
 </ul>
 <p>Calcule o desvio-padrão (<span class="math inline">\(S\)</span>) para ambos os lotes. Qual a diferença de “erro” em MPa entre o material estável e o instável?</p>
 <ul>
-<li>Se o limite de projeto exige que nenhuma peça falhe abaixo de <span class="math inline">\(480 \text{ MPa}\)</span>, qual lote você aprovaria com segurança apenas olhando para o desvio-padrão?</li>
+<li>Se o limite de projeto exige que nenhuma peça falhe abaixo de <span class="math inline">\(480\)</span> MPa, qual lote você aprovaria com segurança apenas olhando para o desvio-padrão?</li>
 </ul>
 </section>
 <section id="vantagens-e-desvantagens-do-desvio-padrão" class="slide level2">
@@ -444,7 +444,7 @@
 <li>Processos onde a escala de grandeza altera a percepção do erro.</li>
 </ul></li>
 </ul>
-<h4 id="pergunta-3">Pergunta</h4>
+<h4 id="pergunta-motivadora-3">Pergunta Motivadora</h4>
 <ul>
 <li>Como saber qual material é mais estável se as médias são diferentes?</li>
 </ul>
@@ -461,10 +461,12 @@
 <section id="interpretação-técnica" class="slide level2">
 <h2>Interpretação Técnica</h2>
 <ul>
-<li>O <span class="math inline">\(CV\)</span> indica a <strong>precisão relativa</strong> do processo produtivo.</li>
-<li>Permite comparar a uniformidade entre materiais distintos.</li>
+<li><p>O <span class="math inline">\(CV\)</span> indica a <strong>precisão relativa</strong> do processo produtivo.</p></li>
+<li><p>Permite comparar a uniformidade entre materiais distintos.</p>
+<ul>
 <li><strong>Baixo <span class="math inline">\(CV\)</span>:</strong> processo homogêneo e controlado.</li>
 <li><strong>Alto <span class="math inline">\(CV\)</span>:</strong> alta dispersão relativa e maior risco técnico.</li>
+</ul></li>
 </ul>
 </section>
 <section id="exemplo-3.4" class="slide level2">
@@ -496,8 +498,13 @@
 <li>Um <span class="math inline">\(CV\)</span> abaixo de 10% geralmente indica alta precisão na engenharia.</li>
 <li>Ele é a ferramenta final para decidir sobre a eficiência da produção.</li>
 </ul>
+</section></section>
+<section>
+<section id="qual-medida-usar" class="title-slide slide level1 center">
+<h1>Qual Medida Usar?</h1>
+
 </section>
-<section id="qual-medida-usar" class="slide level2">
+<section id="qual-medida-usar-1" class="slide level2">
 <h2>Qual Medida Usar?</h2>
 <table class="caption-top">
 <colgroup>
@@ -519,19 +526,38 @@
 <td style="text-align: left;">Identifica picos de defeitos ou instabilidade bruta.</td>
 </tr>
 <tr class="even">
+<td style="text-align: left;"><strong>Cálculos</strong> de qualidade</td>
+<td style="text-align: left;">Variância</td>
+<td style="text-align: left;">Base matemática para modelos estatísticos avançados.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="qual-medida-usar-2" class="slide level2">
+<h2>Qual Medida Usar?</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Situação no Laboratório</th>
+<th style="text-align: left;">Medida Recomendada</th>
+<th style="text-align: left;">Por quê?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
 <td style="text-align: left;"><strong>Laudo técnico</strong> oficial</td>
 <td style="text-align: left;">Desvio-padrão</td>
 <td style="text-align: left;">Avalia consistência na mesma unidade do material.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;"><strong>Comparar</strong> processos</td>
 <td style="text-align: left;"><span class="math inline">\(CV\)</span></td>
 <td style="text-align: left;">Compara precisão relativa entre materiais diferentes.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Cálculos</strong> de qualidade</td>
-<td style="text-align: left;">Variância</td>
-<td style="text-align: left;">Base matemática para modelos estatísticos avançados.</td>
 </tr>
 </tbody>
 </table>
@@ -540,12 +566,12 @@
 <h2>Resumo de Aplicações</h2>
 <ul>
 <li><strong>Amplitude:</strong> uso em inspeções iniciais e limites de segurança.</li>
-<li><strong>Desvio-padrão:</strong> padrão ouro para relatórios de conformidade técnica.</li>
-<li><strong><span class="math inline">\(CV\)</span>:</strong> ferramenta essencial para seleção de fornecedores e escalabilidade.</li>
 <li><strong>Variância:</strong> fundamental para pesquisa acadêmica e otimização de processos.</li>
+<li><strong>Desvio-padrão:</strong> referência para relatórios de conformidade técnica.</li>
+<li><strong><span class="math inline">\(CV\)</span>:</strong> ferramenta essencial para seleção de fornecedores e escalabilidade.</li>
 </ul>
 </section>
-<section id="atenção" class="slide level2">
+<section id="atenção-1" class="slide level2">
 <h2>Atenção!</h2>
 <ul>
 <li>O engenheiro nunca utiliza apenas um indicador isolado.</li>

@@ -599,35 +599,35 @@
     "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#introdução",
     "title": "Medidas de Dispersão",
     "section": "Introdução",
-    "text": "Introdução\n\nNa Engenharia de Materiais, saber onde os dados se localizam (Média) é apenas metade da história.\nO “barulho” dos dados – a variabilidade natural e os erros de medição – define se um material é confiável ou perigoso.\nDuas ligas metálicas podem ter a mesma resistência média, mas uma pode ser muito instável (variável) e a outra muito uniforme.\nPara o engenheiro, variabilidade elevada está associada a maior risco. Precisamos quantificar esse risco."
+    "text": "Introdução\n\nNa Engenharia de Materiais, saber onde os dados se localizam (Média) não diz todas as informações sobre os dados.\nA variabilidade natural e os erros de medição definem se um material é confiável ou perigoso.\nDuas ligas metálicas podem ter a mesma resistência média, mas uma pode ser muito instável (variável) e a outra muito uniforme.\nPara o engenheiro, variabilidade elevada está associada a maior risco. Precisamos quantificar esse risco."
   },
   {
     "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#introdução-1",
     "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#introdução-1",
     "title": "Medidas de Dispersão",
     "section": "Introdução",
-    "text": "Introdução\n\nComo medir a incerteza e a falta de uniformidade em um lote de materiais?\nMedidas de Dispersão (ou variabilidade) indicam quão afastados os dados estão do centro de massa.\nInformações principais que vamos extrair:\n\nAmplitude: diferença entre o maior e o menor valor.\nVariância: média dos quadrados dos desvios em relação à média (unidade ao quadrado).\nDesvio-padrão: medida do espalhamento dos dados na mesma unidade da variável.\nCoeficiente de Variação: a variação é grande ou pequena em relação à média?"
+    "text": "Introdução\n\nComo medir a incerteza e a falta de uniformidade em um lote de materiais?\nMedidas de Dispersão (ou variabilidade) indicam quão afastados os dados estão do centro de massa.\nInformações principais que vamos extrair:\n\nAmplitude: diferença entre o maior e o menor valor.\nVariância: média dos quadrados dos desvios em relação à média (unidade ao quadrado).\nDesvio-padrão: medida do espalhamento dos dados na mesma unidade da variável.\nCoeficiente de Variação: quantifica se a variação é grande ou pequena em relação à média."
   },
   {
     "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#introdução-2",
     "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#introdução-2",
     "title": "Medidas de Dispersão",
     "section": "Introdução",
-    "text": "Introdução\nExemplo\n\nImagine dois lotes de cerâmica com resistência média de 100 MPa.\n\nNo Lote A, todas as peças variam entre 98 e 102 MPa.\nNo Lote B, as peças variam entre 50 e 150 MPa.\n\nSe você projetar uma peça para suportar 90 MPa, o Lote A é seguro, mas o Lote B é arriscado, apesar da média ser 100.\n\nPonto Chave\n\nMédia não descreve confiabilidade.\nDispersão descreve."
+    "text": "Introdução\nExemplo\n\nImagine dois lotes de cerâmica com resistência média de 100 MPa.\n\nNo Lote A, todas as peças variam entre 98 e 102 MPa.\nNo Lote B, as peças variam entre 50 e 150 MPa.\n\nSe você projetar uma peça para suportar 90 MPa, o Lote A é seguro, mas o Lote B é arriscado, apesar da média ser 100 MPa.\n\nAtenção!\n\nMédia não descreve confiabilidade.\nDispersão descreve."
   },
   {
     "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#por-que-calcular-a-amplitude",
     "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#por-que-calcular-a-amplitude",
     "title": "Medidas de Dispersão",
     "section": "Por que calcular a amplitude?",
-    "text": "Por que calcular a amplitude?\nEm uma linha de produção, um engenheiro monitora a estabilidade térmica de um forno. Mesmo com média estável, o material pode sofrer danos se houver:\n\npicos excessivos de calor (degradação térmica)\nquedas bruscas de temperatura (choque térmico)\ninstabilidade no sistema de controle\n\nPergunta\nComo medir de forma rápida a distância total entre o valor mais alto e o mais baixo de um processo?"
+    "text": "Por que calcular a amplitude?\nEm uma linha de produção, um engenheiro monitora a estabilidade térmica de um forno. Mesmo com média estável, o material pode sofrer danos se houver:\n\npicos excessivos de calor (degradação térmica)\nquedas bruscas de temperatura (choque térmico)\ninstabilidade no sistema de controle\n\nPergunta Motivadora\nComo medir de forma rápida a distância total entre o valor mais alto e o mais baixo de um processo?"
   },
   {
     "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#amplitude-total-at",
     "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#amplitude-total-at",
     "title": "Medidas de Dispersão",
     "section": "Amplitude Total (\\(AT\\))",
-    "text": "Amplitude Total (\\(AT\\))\n\nA amplitude total é a diferença entre o maior e o menor valor de um conjunto de dados.\nSe identificarmos o valor máximo (\\(X_{máx}\\)) e o valor mínimo (\\(X_{mín}\\)) em uma amostra, a amplitude é dada por: \\[AT = X_{máx} - X_{mín}\\]\nEste indicador mostra o campo de variação absoluto dos dados.\nÉ a medida de dispersão mais simples de calcular."
+    "text": "Amplitude Total (\\(AT\\))\n\nA amplitude total é a diferença entre o maior e o menor valor de um conjunto de dados.\nSe identificarmos o valor máximo (\\(X_{max}\\)) e o valor mínimo (\\(X_{min}\\)) em uma amostra, a amplitude é dada por: \\[AT = X_{max} - X_{min}\\]\nEste indicador mostra o campo de variação absoluto dos dados.\nÉ a medida de dispersão mais simples de calcular."
   },
   {
     "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#interpretação-da-amplitude",
@@ -665,18 +665,18 @@
     "text": "O que fazer na prática?\n\nUse a amplitude para verificações rápidas de segurança.\nNão confie apenas nela para caracterizar a uniformidade do material.\nCombine a amplitude com o desvio-padrão para uma visão completa."
   },
   {
-    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#quando-a-amplitude-não-basta",
-    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#quando-a-amplitude-não-basta",
+    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#a-amplitude-não-basta",
+    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#a-amplitude-não-basta",
     "title": "Medidas de Dispersão",
-    "section": "Quando a Amplitude não basta",
-    "text": "Quando a Amplitude não basta\n\nA amplitude foca apenas nos extremos do lote. No entanto, para garantir a confiabilidade de uma peça, o engenheiro precisa saber:\n\nComo todos os dados se comportam em relação à média?\nO material é homogêneo ou apresenta oscilações internas?\nQual o desvio em relação à média como resumo?\n\n\nPergunta\nComo calcular uma medida que utilize todos os valores do conjunto para descrever o espalhamento dos dados?"
+    "section": "A Amplitude não basta",
+    "text": "A Amplitude não basta\n\nA amplitude foca apenas nos extremos do lote. No entanto, para garantir a confiabilidade de uma peça, o engenheiro precisa saber:\n\nComo todos os dados se comportam em relação à média?\nO material é homogêneo ou apresenta oscilações internas?\nQual o desvio em relação à média como resumo?\n\n\nPergunta Motivadora\nComo calcular uma medida que utilize todos os valores do conjunto para descrever o espalhamento dos dados?"
   },
   {
     "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#variância-s2",
     "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#variância-s2",
     "title": "Medidas de Dispersão",
     "section": "Variância (\\(S^2\\))",
-    "text": "Variância (\\(S^2\\))\n\nA variância mede a média dos quadrados dos desvios em relação à média.\nIndica o espalhamento dos dados ao redor do centro de massa.\nO cálculo diferencia dados populacionais de dados amostrais:\n\n\n\n\nTipo\nFórmula\n\n\n\n\nPopulação\n\\(\\sigma^2 = \\frac{\\sum (X_i - \\mu)^2}{N}\\)\n\n\nAmostra\n\\(S^2 = \\frac{\\sum (X_i-\\overline{X})^2}{n-1}\\)\n\n\n\n\n\\(\\mu\\) é a média populacional e \\(\\overline{X}\\) é a média amostral."
+    "text": "Variância (\\(S^2\\))\n\nA variância calcula a média dos quadrados dos desvios em relação à média.\nIndica o espalhamento dos dados ao redor do centro de massa.\nO cálculo diferencia dados populacionais de dados amostrais:\n\n\n\n\nTipo\nFórmula\n\n\n\n\nPopulação\n\\(\\sigma^2 = \\frac{\\sum (X_i - \\mu)^2}{N}\\)\n\n\nAmostra\n\\(S^2 = \\frac{\\sum (X_i-\\overline{X})^2}{n-1}\\)\n\n\n\n\n\\(\\mu\\) é a média populacional e \\(\\overline{X}\\) é a média amostral."
   },
   {
     "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#entendendo-o-cálculo",
@@ -697,7 +697,7 @@
     "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#reflexão-1",
     "title": "Medidas de Dispersão",
     "section": "Reflexão",
-    "text": "Reflexão\n\nA variância do Lote B será muito maior que a do Lote A.\nIsso levanta um problema de interpretação direta:\n\nSe a unidade original é MPa, a variância resulta em \\(MPa^2\\).\nO que significa fisicamente uma “pressão ao quadrado”?\n\nEssa dificuldade de escala motiva o estudo do Desvio-padrão."
+    "text": "Reflexão\n\nA variância do Lote B será muito maior que a do Lote A.\nProblema de interpretação:\n\nSe a unidade original é MPa, a variância fica dada em MPa\\(^2\\).\nO que significa fisicamente uma “pressão ao quadrado”?\n\nEssa dificuldade de interpretção da unidade de medida motiva o estudo do Desvio-padrão."
   },
   {
     "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#vantagens-e-desvantagens-da-variância",
@@ -718,28 +718,28 @@
     "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#o-problema-da-unidade-ao-quadrado",
     "title": "Medidas de Dispersão",
     "section": "O Problema da Unidade ao Quadrado",
-    "text": "O Problema da Unidade ao Quadrado\nVimos que a Variância (\\(S^2\\)) é excelente para cálculos, mas gera um problema prático no laboratório de materiais:\n\nResistência em \\(MPa\\) vira \\(MPa^2\\).\nDureza em \\(HB\\) vira \\(HB^2\\).\nTemperatura em \\(°C\\) vira \\(°C^2\\).\n\nPergunta\nComo retornar a medida de variabilidade para a mesma unidade original das nossas medições?"
+    "text": "O Problema da Unidade ao Quadrado\nA Variância (\\(S^2\\)) é excelente para cálculos, mas gera um problema prático na interpretação da unidade de medida:\n\nResistência em MPa vira MPa\\(^2\\).\nDureza em HB vira HB\\(^2\\).\nTemperatura em °C vira °C\\(^2\\).\n\nPergunta Motivadora\nComo retornar a medida de variabilidade para a mesma unidade original das nossas medições?"
   },
   {
     "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#desvio-padrão-s",
     "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#desvio-padrão-s",
     "title": "Medidas de Dispersão",
     "section": "Desvio-Padrão (\\(S\\))",
-    "text": "Desvio-Padrão (\\(S\\))\n\nO desvio-padrão é definido como a raiz quadrada positiva da variância.\nEle indica o quanto, em média, os dados se afastam da média aritmética.\nFórmula para dados amostrais: \\[S = \\sqrt{S^2}\\]\nPrefere-se o uso do desvio-padrão por sua interpretabilidade direta no projeto."
+    "text": "Desvio-Padrão (\\(S\\))\n\nO desvio-padrão é definido como a raiz quadrada positiva da variância.\nEle indica o quanto, em média, os dados se afastam da média aritmética.\nFórmula para dados amostrais: \\[S = \\sqrt{S^2}\\]\nPrefere-se o uso do desvio-padrão por sua interpretabilidade direta em projetos."
   },
   {
     "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#interpretação",
     "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#interpretação",
     "title": "Medidas de Dispersão",
     "section": "Interpretação",
-    "text": "Interpretação\n\nO desvio-padrão traz a dispersão de volta para a escala real.\nEle permite dizer: “A resistência é \\(500 \\pm 10 \\text{ MPa}\\)”.\nFacilita a visualização do erro médio em torno do centro."
+    "text": "Interpretação\n\nO desvio-padrão traz a dispersão de volta para a escala real.\nEle permite dizer: “A resistência é \\(500 \\pm 10\\) MPa”.\nFacilita a visualização do erro médio em torno do centro."
   },
   {
     "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#exemplo-3.3",
     "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#exemplo-3.3",
     "title": "Medidas de Dispersão",
     "section": "Exemplo 3.3",
-    "text": "Exemplo 3.3\nRetome os dados do Exemplo 3.2 sobre a resistência dos aços:\n\nLote A: \\(S^2 = 1 \\text{ MPa}^2\\).\nLote B: \\(S^2 = 2500 \\text{ MPa}^2\\).\n\nCalcule o desvio-padrão (\\(S\\)) para ambos os lotes. Qual a diferença de “erro” em MPa entre o material estável e o instável?\n\nSe o limite de projeto exige que nenhuma peça falhe abaixo de \\(480 \\text{ MPa}\\), qual lote você aprovaria com segurança apenas olhando para o desvio-padrão?"
+    "text": "Exemplo 3.3\nRetome os dados do Exemplo 3.2 sobre a resistência dos aços:\n\nLote A: \\(S^2 = 1\\) MPa\\(^2\\).\nLote B: \\(S^2 = 2500\\) MPa\\(^2\\).\n\nCalcule o desvio-padrão (\\(S\\)) para ambos os lotes. Qual a diferença de “erro” em MPa entre o material estável e o instável?\n\nSe o limite de projeto exige que nenhuma peça falhe abaixo de \\(480\\) MPa, qual lote você aprovaria com segurança apenas olhando para o desvio-padrão?"
   },
   {
     "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#vantagens-e-desvantagens-do-desvio-padrão",
@@ -760,7 +760,7 @@
     "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#comparando-o-incomparável",
     "title": "Medidas de Dispersão",
     "section": "Comparando o Incomparável",
-    "text": "Comparando o Incomparável\n\nMédia e desvio-padrão são limitados quando precisamos comparar dois cenários diferentes:\n\nLotes com médias muito distantes (ex: fibra fina vs. barra grossa).\nMateriais medidos em unidades diferentes (ex: dureza vs. tração).\nProcessos onde a escala de grandeza altera a percepção do erro.\n\n\nPergunta\n\nComo saber qual material é mais estável se as médias são diferentes?"
+    "text": "Comparando o Incomparável\n\nMédia e desvio-padrão são limitados quando precisamos comparar dois cenários diferentes:\n\nLotes com médias muito distantes (ex: fibra fina vs. barra grossa).\nMateriais medidos em unidades diferentes (ex: dureza vs. tração).\nProcessos onde a escala de grandeza altera a percepção do erro.\n\n\nPergunta Motivadora\n\nComo saber qual material é mais estável se as médias são diferentes?"
   },
   {
     "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#coeficiente-de-variação-cv",
@@ -774,7 +774,7 @@
     "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#interpretação-técnica",
     "title": "Medidas de Dispersão",
     "section": "Interpretação Técnica",
-    "text": "Interpretação Técnica\n\nO \\(CV\\) indica a precisão relativa do processo produtivo.\nPermite comparar a uniformidade entre materiais distintos.\nBaixo \\(CV\\): processo homogêneo e controlado.\nAlto \\(CV\\): alta dispersão relativa e maior risco técnico."
+    "text": "Interpretação Técnica\n\nO \\(CV\\) indica a precisão relativa do processo produtivo.\nPermite comparar a uniformidade entre materiais distintos.\n\nBaixo \\(CV\\): processo homogêneo e controlado.\nAlto \\(CV\\): alta dispersão relativa e maior risco técnico."
   },
   {
     "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#exemplo-3.4",
@@ -798,22 +798,29 @@
     "text": "Observações Importantes\n\nUse o Coeficiente de Variação para validar fornecedores diferentes.\nUm \\(CV\\) abaixo de 10% geralmente indica alta precisão na engenharia.\nEle é a ferramenta final para decidir sobre a eficiência da produção."
   },
   {
-    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#qual-medida-usar",
-    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#qual-medida-usar",
+    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#qual-medida-usar-1",
+    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#qual-medida-usar-1",
     "title": "Medidas de Dispersão",
     "section": "Qual Medida Usar?",
-    "text": "Qual Medida Usar?\n\n\n\n\n\n\n\n\nSituação no Laboratório\nMedida Recomendada\nPor quê?\n\n\n\n\nTriagem rápida de lotes\nAmplitude Total\nIdentifica picos de defeitos ou instabilidade bruta.\n\n\nLaudo técnico oficial\nDesvio-padrão\nAvalia consistência na mesma unidade do material.\n\n\nComparar processos\n\\(CV\\)\nCompara precisão relativa entre materiais diferentes.\n\n\nCálculos de qualidade\nVariância\nBase matemática para modelos estatísticos avançados."
+    "text": "Qual Medida Usar?\n\n\n\n\n\n\n\n\nSituação no Laboratório\nMedida Recomendada\nPor quê?\n\n\n\n\nTriagem rápida de lotes\nAmplitude Total\nIdentifica picos de defeitos ou instabilidade bruta.\n\n\nCálculos de qualidade\nVariância\nBase matemática para modelos estatísticos avançados."
+  },
+  {
+    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#qual-medida-usar-2",
+    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#qual-medida-usar-2",
+    "title": "Medidas de Dispersão",
+    "section": "Qual Medida Usar?",
+    "text": "Qual Medida Usar?\n\n\n\n\n\n\n\n\nSituação no Laboratório\nMedida Recomendada\nPor quê?\n\n\n\n\nLaudo técnico oficial\nDesvio-padrão\nAvalia consistência na mesma unidade do material.\n\n\nComparar processos\n\\(CV\\)\nCompara precisão relativa entre materiais diferentes."
   },
   {
     "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#resumo-de-aplicações",
     "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#resumo-de-aplicações",
     "title": "Medidas de Dispersão",
     "section": "Resumo de Aplicações",
-    "text": "Resumo de Aplicações\n\nAmplitude: uso em inspeções iniciais e limites de segurança.\nDesvio-padrão: padrão ouro para relatórios de conformidade técnica.\n\\(CV\\): ferramenta essencial para seleção de fornecedores e escalabilidade.\nVariância: fundamental para pesquisa acadêmica e otimização de processos."
+    "text": "Resumo de Aplicações\n\nAmplitude: uso em inspeções iniciais e limites de segurança.\nVariância: fundamental para pesquisa acadêmica e otimização de processos.\nDesvio-padrão: referência para relatórios de conformidade técnica.\n\\(CV\\): ferramenta essencial para seleção de fornecedores e escalabilidade."
   },
   {
-    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#atenção",
-    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#atenção",
+    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#atenção-1",
+    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#atenção-1",
     "title": "Medidas de Dispersão",
     "section": "Atenção!",
     "text": "Atenção!\n\nO engenheiro nunca utiliza apenas um indicador isolado.\nA Média localiza o material; a Dispersão valida sua confiabilidade.\nMenor variabilidade sempre resulta em menor risco de falha estrutural."

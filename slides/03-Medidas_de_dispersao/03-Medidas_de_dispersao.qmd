@@ -29,8 +29,8 @@ lang: pt-BR
 
 ## Introdução
 
-- Na Engenharia de Materiais, saber onde os dados se localizam (Média) é apenas metade da história.
-- O "barulho" dos dados -- a variabilidade natural e os erros de medição -- define se um material é confiável ou perigoso.
+- Na Engenharia de Materiais, saber onde os dados se localizam (Média) não diz todas as informações sobre os dados.
+- A variabilidade natural e os erros de medição definem se um material é confiável ou perigoso.
 - Duas ligas metálicas podem ter a mesma resistência média, mas uma pode ser muito instável (variável) e a outra muito uniforme.
 - Para o engenheiro, **variabilidade elevada está associada a maior risco**. Precisamos quantificar esse risco.
 
@@ -44,7 +44,7 @@ lang: pt-BR
     - **Amplitude:** diferença entre o maior e o menor valor.
     - **Variância:** média dos quadrados dos desvios em relação à média (unidade ao quadrado).
     - **Desvio-padrão:** medida do espalhamento dos dados na mesma unidade da variável.
-    - **Coeficiente de Variação:** a variação é grande ou pequena em relação à média?
+    - **Coeficiente de Variação:** quantifica se a variação é grande ou pequena em relação à média.
     
 ---
 
@@ -55,9 +55,9 @@ lang: pt-BR
 - Imagine dois lotes de cerâmica com resistência média de 100 MPa.
     - No **Lote A**, todas as peças variam entre 98 e 102 MPa.
     - No **Lote B**, as peças variam entre 50 e 150 MPa.
-- Se você projetar uma peça para suportar 90 MPa, o **Lote A é seguro**, mas o **Lote B é arriscado**, apesar da média ser 100.
+- Se você projetar uma peça para suportar 90 MPa, o **Lote A é seguro**, mas o **Lote B é arriscado**, apesar da média ser 100 MPa.
 
-#### Ponto Chave
+#### Atenção!
 
 - Média não descreve confiabilidade.
 - Dispersão descreve.
@@ -78,7 +78,7 @@ Em uma linha de produção, um engenheiro monitora a **estabilidade térmica** d
 - quedas bruscas de temperatura (choque térmico)
 - instabilidade no sistema de controle
 
-#### Pergunta
+#### Pergunta Motivadora
 
 Como medir de forma rápida a **distância total** entre o valor mais alto e o mais baixo de um processo?
 
@@ -87,8 +87,8 @@ Como medir de forma rápida a **distância total** entre o valor mais alto e o m
 ## Amplitude Total ($AT$)
 
 - A amplitude total é a diferença entre o maior e o menor valor de um conjunto de dados.
-- Se identificarmos o valor máximo ($X_{máx}$) e o valor mínimo ($X_{mín}$) em uma amostra, a amplitude é dada por:
-$$AT = X_{máx} - X_{mín}$$
+- Se identificarmos o valor máximo ($X_{max}$) e o valor mínimo ($X_{min}$) em uma amostra, a amplitude é dada por:
+$$AT = X_{max} - X_{min}$$
 
 - Este indicador mostra o **campo de variação** absoluto dos dados.
 - É a medida de dispersão mais simples de calcular.
@@ -156,14 +156,14 @@ Calcule a amplitude total ($AT$) para ambos os momentos e compare os resultados.
 
 ---
 
-## Quando a Amplitude não basta
+## A Amplitude não basta
 
 - A amplitude foca apenas nos extremos do lote. No entanto, para garantir a confiabilidade de uma peça, o engenheiro precisa saber:
     - Como todos os dados se comportam em relação à média?
     - O material é homogêneo ou apresenta oscilações internas?
     - Qual o desvio em relação à média como resumo?
 
-#### Pergunta
+#### Pergunta Motivadora
 
 Como calcular uma medida que utilize todos os valores do conjunto para descrever o espalhamento dos dados?
 
@@ -172,7 +172,7 @@ Como calcular uma medida que utilize todos os valores do conjunto para descrever
 
 ## Variância ($S^2$)
 
-- A variância mede a média dos quadrados dos desvios em relação à média.
+- A variância calcula a média dos quadrados dos desvios em relação à média.
 - Indica o espalhamento dos dados ao redor do centro de massa.
 - O cálculo diferencia dados populacionais de dados amostrais:
 
@@ -209,10 +209,10 @@ Calcule a variância ($S^2$) de cada lote. Qual material apresenta maior uniform
 ## Reflexão
 
 - A variância do Lote B será muito maior que a do Lote A.
-- Isso levanta um problema de interpretação direta:
-    - Se a unidade original é MPa, a variância resulta em $MPa^2$.
+- Problema de interpretação:
+    - Se a unidade original é MPa, a variância fica dada em MPa$^2$.
     - O que significa fisicamente uma "pressão ao quadrado"?
-- Essa dificuldade de escala motiva o estudo do **Desvio-padrão**.
+- Essa dificuldade de interpretção da unidade de medida motiva o estudo do **Desvio-padrão**.
 
 ---
 
@@ -247,13 +247,13 @@ Calcule a variância ($S^2$) de cada lote. Qual material apresenta maior uniform
 
 ## O Problema da Unidade ao Quadrado
 
-Vimos que a Variância ($S^2$) é excelente para cálculos, mas gera um problema prático no laboratório de materiais:
+A Variância ($S^2$) é excelente para cálculos, mas gera um problema prático na interpretação da unidade de medida:
 
-- Resistência em $MPa$ vira $MPa^2$.
-- Dureza em $HB$ vira $HB^2$.
-- Temperatura em $°C$ vira $°C^2$.
+- Resistência em MPa vira MPa$^2$.
+- Dureza em HB vira HB$^2$.
+- Temperatura em °C vira °C$^2$.
 
-#### Pergunta
+#### Pergunta Motivadora
 
 Como retornar a medida de variabilidade para a **mesma unidade original** das nossas medições?
 
@@ -264,14 +264,14 @@ Como retornar a medida de variabilidade para a **mesma unidade original** das no
 - Ele indica o quanto, em média, os dados se afastam da média aritmética.
 - Fórmula para dados amostrais: $$S = \sqrt{S^2}$$
 
-- Prefere-se o uso do desvio-padrão por sua **interpretabilidade direta** no projeto.
+- Prefere-se o uso do desvio-padrão por sua **interpretabilidade direta** em projetos.
 
 ---
 
 ## Interpretação
 
 - O desvio-padrão traz a dispersão de volta para a escala real.
-- Ele permite dizer: "A resistência é $500 \pm 10 \text{ MPa}$".
+- Ele permite dizer: "A resistência é $500 \pm 10$ MPa".
 - Facilita a visualização do erro médio em torno do centro.
 
 ---
@@ -280,12 +280,12 @@ Como retornar a medida de variabilidade para a **mesma unidade original** das no
 
 Retome os dados do Exemplo 3.2 sobre a resistência dos aços:
 
-- Lote A: $S^2 = 1 \text{ MPa}^2$.
-- Lote B: $S^2 = 2500 \text{ MPa}^2$.
+- Lote A: $S^2 = 1$ MPa$^2$.
+- Lote B: $S^2 = 2500$ MPa$^2$.
 
 Calcule o desvio-padrão ($S$) para ambos os lotes. Qual a diferença de "erro" em MPa entre o material estável e o instável?
 
-- Se o limite de projeto exige que nenhuma peça falhe abaixo de $480 \text{ MPa}$, qual lote você aprovaria com segurança apenas olhando para o desvio-padrão?
+- Se o limite de projeto exige que nenhuma peça falhe abaixo de $480$ MPa, qual lote você aprovaria com segurança apenas olhando para o desvio-padrão?
 
 ---
 
@@ -323,7 +323,7 @@ Calcule o desvio-padrão ($S$) para ambos os lotes. Qual a diferença de "erro" 
     - Materiais medidos em unidades diferentes (ex: dureza vs. tração).
     - Processos onde a escala de grandeza altera a percepção do erro.
 
-#### Pergunta
+#### Pergunta Motivadora
 
 - Como saber qual material é mais estável se as médias são diferentes?
 
@@ -342,8 +342,9 @@ Calcule o desvio-padrão ($S$) para ambos os lotes. Qual a diferença de "erro" 
 
 - O $CV$ indica a **precisão relativa** do processo produtivo.
 - Permite comparar a uniformidade entre materiais distintos.
-- **Baixo $CV$:** processo homogêneo e controlado.
-- **Alto $CV$:** alta dispersão relativa e maior risco técnico.
+    
+    - **Baixo $CV$:** processo homogêneo e controlado.
+    - **Alto $CV$:** alta dispersão relativa e maior risco técnico.
 
 ---
 
@@ -378,25 +379,36 @@ Calcule o $CV$ para cada processo. Qual deles apresenta o desempenho mais estáv
 - Um $CV$ abaixo de 10% geralmente indica alta precisão na engenharia.
 - Ele é a ferramenta final para decidir sobre a eficiência da produção.
 
----
+
+# Qual Medida Usar?
+
 
 ## Qual Medida Usar?
 
 | Situação no Laboratório | Medida Recomendada | Por quê? |
 | :--- | :--- | :--- |
 | **Triagem rápida** de lotes | Amplitude Total | Identifica picos de defeitos ou instabilidade bruta. |
+| **Cálculos** de qualidade | Variância | Base matemática para modelos estatísticos avançados. |
+
+---
+
+## Qual Medida Usar?
+
+| Situação no Laboratório | Medida Recomendada | Por quê? |
+| :--- | :--- | :--- |
 | **Laudo técnico** oficial | Desvio-padrão | Avalia consistência na mesma unidade do material. |
 | **Comparar** processos | $CV$ | Compara precisão relativa entre materiais diferentes. |
-| **Cálculos** de qualidade | Variância | Base matemática para modelos estatísticos avançados. |
+
 
 ---
 
 ## Resumo de Aplicações
 
 - **Amplitude:** uso em inspeções iniciais e limites de segurança.
-- **Desvio-padrão:** padrão ouro para relatórios de conformidade técnica.
-- **$CV$:** ferramenta essencial para seleção de fornecedores e escalabilidade.
 - **Variância:** fundamental para pesquisa acadêmica e otimização de processos.
+- **Desvio-padrão:** referência para relatórios de conformidade técnica.
+- **$CV$:** ferramenta essencial para seleção de fornecedores e escalabilidade.
+
 
 ---
 
