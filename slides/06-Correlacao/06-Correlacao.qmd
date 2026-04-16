@@ -1,0 +1,271 @@
+---
+title: "Correlação"
+subtitle: "ESTAT0011 -- Estatística Aplicada"
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <span style="font-size:.8em;">sadraquelucena@academico.ufs.br</span>
+    <br>
+    <a href="http://sadraquelucena.github.io/estat-aplicada" style="font-size:.8em;">http://sadraquelucena.github.io/estat-aplicada</a>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1024
+    height: 768
+    margin: 0.1         # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem numero das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_horizontal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+
+lang: pt-BR
+---
+
+## Entendendo Relações entre Variáveis
+
+- Em engenharia, raramente as variáveis são analisadas isoladamente. Buscamos sempre entender **como uma variável responde a mudanças em outra**.
+
+- Exemplos:
+
+    - Relação entre tensão aplicada e deformação de um material.
+
+    - Relação entre temperatura e dilatação térmica de um material.
+
+- Para analisar essas relações, focaremos em duas técnicas principais, intimamente ligadas:
+
+    - **Correlação:** Resume o grau e a direção do relacionamento linear entre duas variáveis (como $X$ e $Y$).
+    
+    - **Regressão:** Fornece uma equação matemática que descreve o relacionamento entre as variáveis, permitindo previsões.
+
+
+
+
+## Correlação
+
+- **Objetivo:** Determinar o grau e a direção do relacionamento linear entre duas variáveis quantitativas.
+
+- **Observação Importante!** Correlação indica associação, não causa e efeito. Variáveis podem se mover juntas por influência de um terceiro fator.
+
+- **Exemplo:** O aumento no número de sensores instalados em equipamentos industriais e o aumento no número de falhas registradas são correlacionados (ambos crescem com maior monitoramento), mas um não causa o outro.
+
+- O relacionamento entre variáveis pode ser analisado por meio do **gráfico de dispersão**. Ele permite identificar tendência crescente ou decrescente, ausência de padrão e possíveis *outliers*.
+
+
+
+
+## Gráfico de Dispersão
+
+```{r}
+#| echo: false
+#| eval: true
+#| warning: false
+#| fig-align: center
+
+library(tidyverse)
+library(patchwork)
+
+# Definindo uma semente para reprodutibilidade
+set.seed(123)
+
+# Gerando dados sem correlação
+dados_sem_correlacao <- tibble(
+  x = runif(100, min = 0, max = 100), # Variável X aleatória
+  y = runif(100, min = 0, max = 100)  # Variável Y aleatória (independente de X)
+)
+
+# Criando o gráfico de dispersão
+fig1 = ggplot(dados_sem_correlacao, aes(x = x, y = y)) +
+  geom_point(alpha = 0.7, color = "darkblue", size = 3) + # Pontos com transparência e cor
+  labs(
+    title = "Sem correlação",
+    x = "X",
+    y = "Y"
+  ) +
+  theme_minimal(base_size = 16) + # Tema minimalista com tamanho de fonte base
+  theme(plot.title = element_text(hjust = 0.5, face = "bold"), # Centraliza e negrita o título
+        plot.subtitle = element_text(hjust = 0.5)) # Centraliza o subtítulo
+
+bd <- tibble(
+  x = runif(100, min = 0, max = 100), # Variável X aleatória
+  y = 2*x + rnorm(100, mean = 0, sd = 8)  # Variável Y aleatória (independente de X)
+)
+fig2 = ggplot(bd, aes(x = x, y = y)) +
+  geom_point(alpha = 0.7, color = "darkblue", size = 3) + # Pontos com transparência e cor
+  labs(
+    title = "Correlação positiva forte",
+    x = "X",
+    y = "Y"
+  ) +
+  theme_minimal(base_size = 16) + # Tema minimalista com tamanho de fonte base
+  theme(plot.title = element_text(hjust = 0.5, face = "bold"), # Centraliza e negrita o título
+        plot.subtitle = element_text(hjust = 0.5)) # Centraliza o subtítulo
+
+
+bd <- tibble(
+  x = runif(100, min = 0, max = 100), # Variável X aleatória
+  y = 2*x + rnorm(100, mean = 0, sd = 30)  # Variável Y aleatória (independente de X)
+)
+fig3 = ggplot(bd, aes(x = x, y = y)) +
+  geom_point(alpha = 0.7, color = "darkblue", size = 3) + # Pontos com transparência e cor
+  labs(
+    title = "Correlação positiva",
+    x = "X",
+    y = "Y"
+  ) +
+  theme_minimal(base_size = 16) + # Tema minimalista com tamanho de fonte base
+  theme(plot.title = element_text(hjust = 0.5, face = "bold"), # Centraliza e negrita o título
+        plot.subtitle = element_text(hjust = 0.5)) # Centraliza o subtítulo
+
+bd <- tibble(
+  x = runif(100, min = 0, max = 100), # Variável X aleatória
+  y = -2*x + rnorm(100, mean = 0, sd = 8)  # Variável Y aleatória (independente de X)
+)
+fig4 = ggplot(bd, aes(x = x, y = y)) +
+  geom_point(alpha = 0.7, color = "darkblue", size = 3) + # Pontos com transparência e cor
+  labs(
+    title = "Correlação negativa forte",
+    x = "X",
+    y = "Y"
+  ) +
+  theme_minimal(base_size = 16) + # Tema minimalista com tamanho de fonte base
+  theme(plot.title = element_text(hjust = 0.5, face = "bold"), # Centraliza e negrita o título
+        plot.subtitle = element_text(hjust = 0.5)) # Centraliza o subtítulo
+
+
+bd <- tibble(
+  x = runif(100, min = 0, max = 100), # Variável X aleatória
+  y = -2*x + rnorm(100, mean = 0, sd = 30)  # Variável Y aleatória (independente de X)
+)
+fig5 = ggplot(bd, aes(x = x, y = y)) +
+  geom_point(alpha = 0.7, color = "darkblue", size = 3) + # Pontos com transparência e cor
+  labs(
+    title = "Correlação negativa",
+    x = "X",
+    y = "Y"
+  ) +
+  theme_minimal(base_size = 16) + # Tema minimalista com tamanho de fonte base
+  theme(plot.title = element_text(hjust = 0.5, face = "bold"), # Centraliza e negrita o título
+        plot.subtitle = element_text(hjust = 0.5)) # Centraliza o subtítulo
+
+
+bd <- tibble(
+  x = runif(150, min = -10, max = 10), # Variável X aleatória
+  y = -x^2 + 20 + rnorm(150, mean = 0, sd = 20)  # Variável Y aleatória (independente de X)
+)
+fig6 = ggplot(bd, aes(x = x, y = y)) +
+  geom_point(alpha = 0.7, color = "darkblue", size = 3) + # Pontos com transparência e cor
+  labs(
+    title = "Correlação não linear",
+    x = "X",
+    y = "Y"
+  ) +
+  theme_minimal(base_size = 16) + # Tema minimalista com tamanho de fonte base
+  theme(plot.title = element_text(hjust = 0.5, face = "bold"), # Centraliza e negrita o título
+        plot.subtitle = element_text(hjust = 0.5)) # Centraliza o subtítulo
+
+(fig1 + fig2 + fig3)/(fig4 + fig5 + fig6)
+```
+
+
+
+
+## Coeficiente de Correlação Linear de Pearson
+
+- Uma medida fundamental para quantificar o grau e o sinal da correlação linear entre duas variáveis ($X$ e $Y$) é o **Coeficiente de Correlação Linear de Pearson**.
+- Para um conjunto de $n$ observações pareadas $\{(x_1,y_1),\ldots,(x_n,y_n)\}$, onde $\overline{x}$ e $\overline{y}$ representam as médias amostrais de $X$ e $Y$ respectivamente, o coeficiente de correlação de Pearson é definido como
+$$
+r_{xy} = \frac{\sum_{i=1}^n x_i y_i - n\overline{x}\overline{y}}{\sqrt{\sum_{i=1}^n x_i^2 - n\overline{x}^2}\sqrt{\sum_{i=1}^n y_i^2 - n\overline{y}^2}}
+$$
+
+
+
+
+## Interpretando o valor de $r_{xy}$
+
+O valor do coeficiente de correlação de Pearson ($r_{xy}$) sempre estará entre -1 e +1:
+
+- $r_{xy} = +1$: Indica uma **correlação linear positiva perfeita**. À medida que $X$ aumenta, $Y$ aumenta proporcionalmente.
+- $r_{xy} = -1$: Indica uma **correlação linear negativa perfeita**. À medida que $X$ aumenta, $Y$ diminui proporcionalmente.
+- $r_{xy} = 0$: Sugere ausência de correlação linear. Não há uma relação linear discernível entre $X$ e $Y$.
+- $0<r<1$: *correlação linear positiva*.
+- $-1<r<0$: *correlação linear negativa*.
+
+
+
+
+## Exemplo 5.1
+
+Uma equipe de engenharia civil analisou dados de diferentes obras e observou que o coeficiente de correlação entre o número de operários no canteiro e o número de acidentes registrados foi de +0,68. A partir desses dados, podemos inferir com segurança que aumentar o número de operários causa mais acidentes?
+
+- **Não**. Uma correlação positiva (+0,68) indica apenas uma **associação**, mas **não prova causalidade**, pois podem haver:
+
+    - **Fatores de Confundimento:** Obras maiores exigem mais operários, envolvem maior complexidade, apresentam mais riscos.
+
+    - **Desenho do Estudo:** Para confirmar a causalidade seria necessário comparar obras de **mesmo porte** e controlar variáveis como tipo de atividade, nível de segurança e condições ambientais.
+
+
+
+
+## Exemplo 5.2
+
+Em um experimento de engenharia de materiais, foi analisada a relação entre a temperatura de um material e sua resistência mecânica. O coeficiente de correlação linear obtido foi próximo de zero (r ≈ 0). Isso significa que não há nenhum tipo de relação entre essas variáveis?
+
+- **Não.** Uma correlação de Pearson próxima de zero indica ausência de **relação linear**, mas não exclui outras possibilidades:
+
+    - **Relação não linear:** a resistência pode aumentar até certo ponto e depois diminuir com o aumento da temperatura. O resultado é uma curva (não uma reta) → correlação linear ≈ 0.
+    - **Relações mediadas:** O comportamento depende de fatores como tipo de material, microestrutura e tratamentos térmicos. Essas variáveis influenciam a forma da curva.
+
+- Ou seja, não há uma tendência evidente de uma variável influenciar diretamente na outra, mas outras formas de conexão podem existir.
+
+
+
+
+## Exemplo 5.3
+Um engenheiro analisou dados de um experimento relacionando a força aplicada em uma mola e a deformação resultante. Foi obtido um coeficiente de correlação de Pearson de +0,95. O que você esperaria ver em um gráfico de dispersão desses dados?
+
+- Um $r$ = +0,95 indica uma **correlação linear positiva extremamente forte**.
+
+- No gráfico de dispersão, você veria os pontos formando uma **linha reta ascendente muito compacta e coesa**. Isso significa que, à medida que a força aumenta, a deformação também aumenta.
+
+
+
+
+## Exemplo 5.4
+
+Um laboratório de materiais de construção está desenvolvendo painéis de gesso misturados com isopor (EPS) para isolamento de paredes. O estudo visa entender a relação entre a espessura desse painel e a sua capacidade de bloquear ruídos externos. As variáveis utilizadas foram a espessura do painel de isolamento em centímetros (X) e a redução do ruído medida no ambiente em decibéis (Y).
+
+Foram testados 9 painéis com espessuras diferentes:
+
+|  |  |  |  |  |  |  |  |  |  |
+| :--------- | -: | -: | -: | -: | -: | -: | -: | -: | -: |
+| X (cm) |  1 |  2 |  3 | 4 |  5 |  6 | 7 |  8 |  9 |
+| Y (dB) | 9 | 14 | 12 | 20 | 17 | 25 | 22 | 28 | 20 |
+
+
+Calcule o Coeficiente de Correlação Linear de Pearson ($r_{xy}$) e interprete.
+
+
+
+
+## Exemplo 5.5
+
+Em um estudo de engenharia civil, analisou-se a relação entre a altura de um edifício (em metros) (X) e sua frequência natural de vibração (em Hz) (Y). Sabe-se que estruturas mais altas tendem a ser mais flexíveis. Isso reduz a frequência natural de vibração, mas o comportamento não é perfeitamente linear (depende de rigidez, material, geometria).
+
+Foram coletados dados de 10 estruturas:
+
+|  |  |  |  |  |  |  |  |  |  |  |
+| ------------- | --: | --: | --: | --: | --: | --: | --: | --: | --: | --: |
+| X (altura, m) |  10 |  20 |  15 |  30 |  25 |  35 |  12 |  40 |  18 |  28 |
+| Y (Hz)        | 3,2 | 2,1 | 2,9 | 2,6 | 2,4 | 1,9 | 3,1 | 2,2 | 2,5 | 2,2 |
+
+
+Calcule o coeficiente de correlação de Pearson ($r_{xy}$) e interprete.
+
+
+# Fim

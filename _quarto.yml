@@ -35,7 +35,10 @@ website:
             text: "3- Medidas de Dispersão"
           - href: aulas/04-Distribuicao_de_frequencias_simples_e_em_classe.qmd
             text: "4- Distribuição de Frequências"
-            
+          - href: aulas/05-Visualizacao_de_dados.qmd
+            text: "5- Visualização de Dados"
+          - href: aulas/06-Correlacao.qmd
+            text: "6- Correlação"
 
       
 
