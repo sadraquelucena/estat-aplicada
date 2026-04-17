@@ -39,6 +39,9 @@ website:
             text: "5- Visualização de Dados"
           - href: aulas/06-Correlacao.qmd
             text: "6- Correlação"
+          - href: aulas/07-Regressao.qmd
+            text: "7- Regressão Linear Simples"
+            
 
       
 

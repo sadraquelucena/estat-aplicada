@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>conteudo – Estatística Aplicada</title>
+<title>Conteúdo 7 – Estatística Aplicada</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -33,8 +33,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../info/bibliografia.html" rel="next">
-<link href="../info/ementa.html" rel="prev">
+<link href="../aulas/06-Correlacao.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -72,35 +71,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -114,7 +84,7 @@ window.Quarto = {
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-          <h1 class="quarto-secondary-nav-title"></h1>
+          <h1 class="quarto-secondary-nav-title">Conteúdo 7</h1>
         </a>     
     </div>
   </nav>
@@ -154,7 +124,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../info/conteudo.html" class="sidebar-item-text sidebar-link active">
+  <a href="../info/conteudo.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Conteúdo</span></a>
   </div>
 </li>
@@ -222,7 +192,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../aulas/07-Regressao.html" class="sidebar-item-text sidebar-link">
+  <a href="../aulas/07-Regressao.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">7- Regressão Linear Simples</span></a>
   </div>
 </li>
@@ -237,47 +207,45 @@ window.Quarto = {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block">Conteúdo 7</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<section id="conteúdo" class="level2">
-<h2 data-anchor-id="conteúdo">Conteúdo</h2>
-<ol type="1">
-<li><p>Estatística Descritiva e Confiabilidade de Dados</p>
-<p>1.1. As fases do trabalho estatístico e classificação de variáveis em engenharia;</p>
-<p>1.2. Séries estatísticas e representação tabular e gráfica (Histogramas e Box-plots);</p>
-<p>1.3. Distribuição de frequências simples e em classe;</p>
-<p>1.4. Medidas de Posição: Média, Mediana e Moda;</p>
-<p>1.5. Medidas de Dispersão: Variância, desvio-padrão e coeficiente de variação (CV);</p>
-<p>1.6. Erros de medição e tratamento de valores atípicos (<em>outliers</em>).</p></li>
-<li><p>Probabilidade e Modelagem de Fenômenos</p>
-<p>2.1. Conceitos de probabilidade: Experimento aleatório, espaço amostral e eventos;</p>
-<p>2.2. Probabilidade condicional e Teorema de Bayes aplicado a ensaios não-destrutivos;</p>
-<p>2.3. Variáveis aleatórias, esperança matemática e variância;</p>
-<p>2.4. Distribuições discretas: Bernoulli, Binomial e Poisson (defeitos por unidade de área);</p>
-<p>2.5. Distribuições contínuas: Uniforme, Exponencial e Normal;</p>
-<p>2.6. Padronização (Z) e tabelas de probabilidade.</p></li>
-<li><p>Inferência Estatística e Tomada de Decisão</p>
-<p>3.1. Noções de amostragem e erro padrão;</p>
-<p>3.2. Distribuições amostrais da média e da proporção;</p>
-<p>3.3. Intervalo de confiança para média e proporção;</p>
-<p>3.4. Testes de hipóteses: Conceitos, erro tipo I e erro tipo II;</p>
-<p>3.5. Teste t de Student para comparação de médias (amostras independentes e pareadas);</p>
-<p>3.6. Testes de bondade de ajuste (testes de normalidade).</p></li>
-<li><p>Delineamento Experimental (ANOVA) e Modelagem</p>
-<p>4.1. Introdução ao delineamento experimental (DOE);</p>
-<p>4.2. Análise de Variância (ANOVA) com um fator: Experimentos completamente casualizados;</p>
-<p>4.3. Análise de Variância (ANOVA) com dois fatores e interação;</p>
-<p>4.4. Tipos de correlação e Coeficiente Linear de Pearson;</p>
-<p>4.5. Regressão Linear Simples: Estimativa de parâmetros e interpretação física;</p>
-<p>4.6. Coeficiente de determinação (<span class="math inline">\(R^2\)</span>) e análise de resíduos.</p></li>
-<li><p>Tópicos Especiais de Engenharia de Materiais</p>
-<p>5.1. Introdução à Distribuição de Weibull;</p>
-<p>5.2. Linearização da função de Weibull via logaritmos;</p>
-<p>5.3. Determinação do Módulo de Weibull (<span class="math inline">\(m\)</span>) para análise de confiabilidade de materiais frágeis.</p></li>
-</ol>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="regressão-linear-simples" class="level2">
+<h2 data-anchor-id="regressão-linear-simples">Regressão Linear Simples</h2>
+<p>Nesta aula é apresentada a regressão linear simples como modelo para descrever e prever a relação entre uma variável independente e uma dependente. É Abordada a estimação dos parâmetros pelo método dos mínimos quadrados, a interpretação dos resíduos e o uso do coeficiente de determinação (R²) para avaliar o ajuste do modelo.</p>
+<p>Slides:</p>
+<div class="grid">
+<div class="g-col-12 g-col-md-4">
+<p><a href="../slides/07-Regressao/07-Regressao.html" target="_blank" style="text-decoration: none; color: inherit;"> <img src="../PDFs/slides/slide07_html.png" class="img-fluid"><br>Versão html </a></p>
+</div>
+<div class="g-col-12 g-col-md-4">
+<p><a href="../PDFs/slides/07-Regressao.pdf" target="_blank" style="text-decoration: none; color: inherit;"> <img src="../PDFs/slides/slide07_pdf.png" class="img-fluid"><br>Versão pdf </a></p>
+</div>
+</div>
+<p>Lista de Exercícios:</p>
+<div class="grid">
+<div class="g-col-12 g-col-md-4">
+<p><a href="../PDFs/listas/EstatAplicada_lista7.pdf" target="_blank" style="text-decoration: none; color: inherit;"> <img src="../PDFs/listas/lista07.png" class="img-fluid" style="width:80.0%"><br>Lista 7 </a></p>
+</div>
+</div>
 
 
 </section>
@@ -678,14 +646,11 @@ window.Quarto = {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../info/ementa.html" class="pagination-link" aria-label="Ementa e objetivos">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Ementa e objetivos</span>
+      <a href="../aulas/06-Correlacao.html" class="pagination-link" aria-label="6- Correlação">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">6- Correlação</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../info/bibliografia.html" class="pagination-link" aria-label="Bibliografia">
-        <span class="nav-page-text">Bibliografia</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

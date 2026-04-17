@@ -1,0 +1,43 @@
+---
+title: "Conteúdo 7"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Regressão Linear Simples
+
+Nesta aula é apresentada a regressão linear simples como modelo para descrever e prever a relação entre uma variável independente e uma dependente. É Abordada a estimação dos parâmetros pelo método dos mínimos quadrados, a interpretação dos resíduos e o uso do coeficiente de determinação (R²) para avaliar o ajuste do modelo.
+
+Slides:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/slides/07-Regressao/07-Regressao.html" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide07_html.png)<br>Versão html
+</a>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/slides/07-Regressao.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide07_pdf.png)<br>Versão pdf
+</a>
+:::
+
+::::
+
+Lista de Exercícios:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/listas/EstatAplicada_lista7.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/listas/lista07.png){width=80%}<br>Lista 7
+</a>
+:::
+
+::::
+
+
