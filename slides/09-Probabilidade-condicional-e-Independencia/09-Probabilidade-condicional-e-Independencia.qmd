@@ -1,0 +1,208 @@
+---
+title: "Probabilidade Condicional e Independência"
+subtitle: "ESTAT0011 -- Estatística Aplicada"
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <span style="font-size:.8em;">sadraquelucena@academico.ufs.br</span>
+    <br>
+    <a href="http://sadraquelucena.github.io/estat-aplicada" style="font-size:.8em;">http://sadraquelucena.github.io/estat-aplicada</a>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1024
+    height: 768
+    margin: 0.1         # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem numero das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_horizontal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+
+lang: pt-BR
+---
+
+## Exemplo 9.1
+
+Um lote de 1.000 peças metálicas foi produzido em uma fundição. Dessas peças, 300 foram fabricadas com uma nova Liga de Titânio (mais leve, usada em próteses médicas e satélites), enquanto o restante foi feito com uma liga de aço convencional. Ao final do dia, o controle de qualidade identificou que 65 peças apresentaram microfissuras (defeito de fabricação). Entre as peças feitas com a Liga de Titânio, 30 apresentaram esse defeito.
+
+a) Qual é a probabilidade de uma peça escolhida ao acaso no lote total apresentar uma microfissura?
+
+b) Qual é a probabilidade de uma peça ter microfissura, sabendo que ela é da nova Liga de Titânio?
+
+
+
+
+## 
+
+- No exemplo anterior, calculamos uma probabilidade levando em conta uma informação adicional -- o tipo de material utilizado na peça (liga de titânio).
+
+- Quando uma informação conhecida influencia o cálculo da probabilidade, estamos lidando com um caso de probabilidade condicional.
+
+- Vejamos a definição formal.
+
+
+
+
+## Definição 9.1: Probabilidade Condicional
+
+A probabilidade de que um evento $B$ ocorra, dado que o evento $A$ ocorreu, é definida por:
+$$
+	P(B|A) = \frac{P(A\cap B)}{P(A)},
+$$
+desde que $P(A)>0$.
+
+- $P(B|A)$ se lê "probabilidade de $B$ dado $A$".
+
+
+
+
+## Probabilidade Condicional
+
+### O que realmente estamos calculando?
+
+- Ao calcular $P(B|A)$, queremos saber **qual é a chance de $B$ acontecer sabendo que $A$ já aconteceu**.
+
+- Como sabemos que o evento $A$ ocorreu, restringimos o espaço de possibilidades apenas a $A$.
+
+- Ou seja, ao invés de calcularmos probabilidades considerando todo o espaço amostral $\Omega$, consideramos apenas o novo "espaço amostral" $A$.
+
+
+
+
+
+## Probabilidade Condicional
+
+![Fonte: http://clubes.obmep.org.br/blog/sala-de-estudo-probabilidades-sala-3/](imagens/condicional.png)
+
+
+
+
+## Probabilidade Condicional
+
+Temos duas formas principais de pensar ou calcular $P(B | A)$:
+
+1. **Interpretativamente**: analisando a ocorrência de $B$ dentro do espaço amostral reduzido $A$.
+2. **Formalmente**: aplicando a fórmula $P(B|A)=\frac{P(A\cap B)}{P(A)}$.
+
+
+
+
+## Exemplo 9.2 
+Em uma empresa de tecnologia, há 100 funcionários. Alguns trabalham na área de desenvolvimento de *software* ($D$) e outros na área de suporte ao cliente ($S$). Além disso, alguns trabalham em *home office* ($H$) e outros trabalham no escritório ($E$). A tabela abaixo mostra o número de funcionários em cada categoria:
+
+|      |$D$ | $S$ | Total |
+|:----:|:--:|:---:|:-----:|
+|$H$   | 40 | 30  | 70    |
+|$E$   | 20 | 10  | 30    |
+|Total | 60 | 40  | 100   |
+
+Um funcionário é escolhido ao acaso e descobre-se que ele trabalha em *home office* ($H$). Qual é a probabilidade de que ele seja da área de desenvolvimento de *software* ($D$)?
+
+
+
+## Exemplo 9.3
+
+Em um tratamento de câncer utilizando feixe de prótons, a eficácia depende da sincronia de dois sistemas independentes. Verificou-se que a probabilidade do feixe atingir a profundidade correta (Pico de Bragg) é $P(T) = 0,83$. A probabilidade do posicionamento robótico do paciente estar milimetricamente correto durante a aplicação é $P(S) = 0,82$. A probabilidade de ambos (profundidade e posição) estarem corretos simultaneamente é $P(T \cap S) = 0,78$.
+
+a) Qual a probabilidade de o posicionamento estar correto ($S$), dado que a profundidade do feixe foi atingida com sucesso ($T$)?
+
+b) Qual a probabilidade de a profundidade ter sido atingida com sucesso ($T$), dado que o posicionamento do paciente estava correto ($S$)?
+
+
+
+
+##
+
+Agora vamos mudar um pouco...
+<br><br>
+
+### Exemplo 9.4
+
+Em uma obra de um edifício, foram moldados 100 corpos de prova de concreto para ensaio de compressão. Após a cura, verificou-se que 20 deles não atingiram a resistência mínima exigida. Se um estagiário de engenharia escolher aleatoriamente dois desses corpos de prova para uma análise detalhada, qual a probabilidade de ambos serem os que falharam no teste:
+
+a. Se a escolha for feita com reposição?
+
+b. Se a escolha for feita sem reposição?
+
+
+
+
+## Teorema da Multiplicação
+
+- Uma das consequências mais importantes da definição de probabilidade condicional é
+$$
+  P(B|A) = \frac{P(A\cap B)}{P(A)} \Rightarrow P(A\cap B) = P(A)P(B|A).
+$$
+
+- Este resultado é chamado **Teorema da Multiplicação**.
+
+
+- **Obs.:** Use a regra da multiplicação apenas quando temos uma sequência de eventos $A$ e $B$ em que o evento $B$ é **INFLUENCIADO** pelo evento $A$.
+
+
+
+
+## Exemplo 9.5
+
+Um laboratório de metalurgia recebeu um lote de 20 corpos de prova de uma nova liga de alumínio. Após uma inspeção preliminar por ultrassom, verificou-se que 5 deles apresentam microfissuras internas. Um pesquisador retira, aleatoriamente e sem reposição, dois desses corpos de prova para realizar um ensaio de tração. Qual a probabilidade de que os dois materiais selecionados sejam justamente aqueles que possuem microfissuras?
+
+
+
+
+## Teorema da Multiplicação
+
+- O Teorema da Multiplicação pode ser generalizada para mais de dois eventos da seguinte maneira:
+$$
+  P(A_1\cap A_2\cap A_3 \cap \cdots \cap A_n) =
+$$
+$$
+  = P(A_1)P(A_2|A_1)P(A_3|A_1\cap A_2) \cdots P(A_n | A_1\cap A_2 \cap \cdots \cap A_{n-1}).
+$$
+
+
+
+
+## Exemplo 9.6
+
+Três cartas são escolhidas em sucessão, sem reposição, de um baralho comum. Determine a probabilidade de que o evento $A_1 \cap A_2 \cap A_3$ ocorra, onde $A_1$ é o evento no qual a primeira carta é um ás vermelho, $A_2$ , a segunda é um ás ou um valete, e $A_3$ , o evento no qual a terceira carta é maior que 3, mas menor que 7.
+
+
+
+
+## Eventos Independentes
+
+Dois eventos $A$ e $B$ são independentes se, e somente se,
+$$
+  P(A|B)=P(A) \quad \text{ou} \quad P(B|A)=P(B),
+$$
+desde que as probabilidades condicionais existam. Caso contrário, $A$ e $B$ serão dependentes.
+
+- Isto implica que $A$ e $B$ são independentes se $$ P(A\cap B) = P(A)P(B). $$
+- Se temos $n$ eventos, eles serão independentes se a probabilidade de todas as interseções possı́veis fatorar no produto das probabilidades individuais:
+$$
+  P(A_1\cap A_2\cap \cdots\cap A_k) = P(A_1)P(A_2)\cdots P(A_k).
+$$
+
+
+
+
+## Exemplo 9.7
+
+Uma pequena cidade tem um caminhão de bombeiros e uma ambulância para as emergências. A probabilidade de que o caminhão de bombeiros esteja disponı́vel quando necessário é de 0,98 e a da ambulância é de 0,92. No caso de um ferimento
+causado por um incêndio em um prédio, determine a probabilidade de a ambulância e o caminhão de bombeiros estarem disponı́veis.
+
+
+
+## Exemplo 9.8
+
+Uma carta é retirada aleatoriamente de um baralho padrão de 52 cartas. Considere os eventos $A$: "a carta é vermelha" e $B$: "a carta é um rei". Os eventos $A$ e $B$ são independentes?
+
+
+
+# Fim

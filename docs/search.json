@@ -198,151 +198,270 @@
     "text": "Exemplo\nClassifique as variáveis abaixo:\n\nTipo de liga metálica (ex: Aço 1020, Inox 304)\nNúmero de microtrincas por cm² em uma cerâmica\nTemperatura de sinterização em °C (ex: 1250.5°C)\nClassificação de resistência ao impacto (Ruim &lt; Regular &lt; Bom)\nQuantidade de fases presentes na microestrutura\nAlongamento percentual após ensaio de tração (ex: 12.4%)\nTipo de fratura observada (Dúctil ou Frágil)\nRugosidade superficial (Ra) medida em micrômetros\nNível de pureza do reagente (Técnico &lt; Analítico &lt; Ultrapuro)"
   },
   {
-    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#objetivos-da-aula",
-    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#objetivos-da-aula",
-    "title": "Distribuição de Frequências Simples e em Classes",
-    "section": "Objetivos da Aula",
-    "text": "Objetivos da Aula\n\nDiferenciar Dados Brutos de Dados Organizados.\nConstruir tabelas de frequência para variáveis qualitativas (nominais e ordinais).\nAplicar a Regra de Sturges para variáveis quantitativas.\nInterpretar Frequências Absolutas, Relativas e Acumuladas no contexto de materiais."
+    "objectID": "slides/06-Correlacao/06-Correlacao.html#entendendo-relações-entre-variáveis",
+    "href": "slides/06-Correlacao/06-Correlacao.html#entendendo-relações-entre-variáveis",
+    "title": "Correlação",
+    "section": "Entendendo Relações entre Variáveis",
+    "text": "Entendendo Relações entre Variáveis\n\nEm engenharia, raramente as variáveis são analisadas isoladamente. Buscamos sempre entender como uma variável responde a mudanças em outra.\nExemplos:\n\nRelação entre tensão aplicada e deformação de um material.\nRelação entre temperatura e dilatação térmica de um material.\n\nPara analisar essas relações, focaremos em duas técnicas principais, intimamente ligadas:\n\nCorrelação: Resume o grau e a direção do relacionamento linear entre duas variáveis (como \\(X\\) e \\(Y\\)).\nRegressão: Fornece uma equação matemática que descreve o relacionamento entre as variáveis, permitindo previsões."
   },
   {
-    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#do-dado-à-decisão",
-    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#do-dado-à-decisão",
-    "title": "Distribuição de Frequências Simples e em Classes",
-    "section": "Do Dado à Decisão",
-    "text": "Do Dado à Decisão\n\nA estatística é a ferramenta que extrai a Informação a partir dos Dados para que você tome a Decisão correta.\n\nDADO: Valor bruto (sensor/planilha).\n\nEx: Resistência de 152 MPa. Situação: Isolado, sem contexto.\n\nINFORMAÇÃO (Padrão): Dados organizados em Tabelas.\n\nEx: 75% do lote está abaixo de 160 MPa. Situação: Cenário revelado.\n\nDECISÃO: Conclusão baseada na análise.\n\nEx: Rejeitar o lote ou ajustar o forno. Situação: Engenharia aplicada."
+    "objectID": "slides/06-Correlacao/06-Correlacao.html#correlação",
+    "href": "slides/06-Correlacao/06-Correlacao.html#correlação",
+    "title": "Correlação",
+    "section": "Correlação",
+    "text": "Correlação\n\nObjetivo: Determinar o grau e a direção do relacionamento linear entre duas variáveis quantitativas.\nObservação Importante! Correlação indica associação, não causa e efeito. Variáveis podem se mover juntas por influência de um terceiro fator.\nExemplo: O aumento no número de sensores instalados em equipamentos industriais e o aumento no número de falhas registradas são correlacionados (ambos crescem com maior monitoramento), mas um não causa o outro.\nO relacionamento entre variáveis pode ser analisado por meio do gráfico de dispersão. Ele permite identificar tendência crescente ou decrescente, ausência de padrão e possíveis outliers."
   },
   {
-    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#organização-dos-dados",
-    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#organização-dos-dados",
-    "title": "Distribuição de Frequências Simples e em Classes",
-    "section": "Organização dos Dados",
-    "text": "Organização dos Dados\nNa Engenharia de Materiais, coletamos dados de:\n\nEnsaios mecânicos (tração, dureza).\nCaracterização química (pureza, composição).\nProcessamento (temperatura de sinterização, tempo de cura).\n\nFerramentas Principais:\n\nDescrição Tabular: Tabelas de frequências (simples ou agrupadas).\nGráficos Estatísticos: Histogramas, Boxplots, Gráficos de Barras."
+    "objectID": "slides/06-Correlacao/06-Correlacao.html#gráfico-de-dispersão",
+    "href": "slides/06-Correlacao/06-Correlacao.html#gráfico-de-dispersão",
+    "title": "Correlação",
+    "section": "Gráfico de Dispersão",
+    "text": "Gráfico de Dispersão"
   },
   {
-    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#dados-brutos-vs.-rol",
-    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#dados-brutos-vs.-rol",
-    "title": "Distribuição de Frequências Simples e em Classes",
-    "section": "Dados Brutos vs. Rol",
-    "text": "Dados Brutos vs. Rol\n\nDados Brutos: Dados na ordem em que foram coletados.\n\nEx: pH medido: 7.2, 6.8, 7.5, 7.0…\n\nRol: Dados organizados em ordem crescente ou decrescente.\n\nEx: 6.8, 7.0, 7.2, 7.5…\n\n\n\nPor que organizar? Facilita a identificação da amplitude total, dos valores mínimos e máximos."
+    "objectID": "slides/06-Correlacao/06-Correlacao.html#coeficiente-de-correlação-linear-de-pearson",
+    "href": "slides/06-Correlacao/06-Correlacao.html#coeficiente-de-correlação-linear-de-pearson",
+    "title": "Correlação",
+    "section": "Coeficiente de Correlação Linear de Pearson",
+    "text": "Coeficiente de Correlação Linear de Pearson\n\nUma medida fundamental para quantificar o grau e o sinal da correlação linear entre duas variáveis (\\(X\\) e \\(Y\\)) é o Coeficiente de Correlação Linear de Pearson.\nPara um conjunto de \\(n\\) observações pareadas \\(\\{(x_1,y_1),\\ldots,(x_n,y_n)\\}\\), onde \\(\\overline{x}\\) e \\(\\overline{y}\\) representam as médias amostrais de \\(X\\) e \\(Y\\) respectivamente, o coeficiente de correlação de Pearson é definido como \\[\nr_{xy} = \\frac{\\sum_{i=1}^n x_i y_i - n\\overline{x}\\overline{y}}{\\sqrt{\\sum_{i=1}^n x_i^2 - n\\overline{x}^2}\\sqrt{\\sum_{i=1}^n y_i^2 - n\\overline{y}^2}}\n\\]"
   },
   {
-    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-qualitativas",
-    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-qualitativas",
-    "title": "Distribuição de Frequências Simples e em Classes",
-    "section": "Tabelas para Variáveis Qualitativas",
-    "text": "Tabelas para Variáveis Qualitativas\nNominais (Sem hierarquia)\n\nDica: Organizar em ordem decrescente de frequência absoluta para destacar o item mais comum.\n\n\n\n\n\nTabela 1: Distribuição de polímeros em um lote de reciclagem.\n\n\n\n\n\n\n\n\n\n\nPolímero (Sigla)\nFrequência Absoluta (\\(f_i\\))\nFrequência Relativa (%)\n\n\n\n\nPP (Polipropileno)\n45\n45,0\n\n\nPEAD (Polietileno)\n30\n30,0\n\n\nPVC (Policloreto)\n25\n25,0\n\n\nTotal\n100\n100,0\n\n\n\n\n\n\n\n\nFonte: Dados fictícios (2026)."
+    "objectID": "slides/06-Correlacao/06-Correlacao.html#interpretando-o-valor-de-r_xy",
+    "href": "slides/06-Correlacao/06-Correlacao.html#interpretando-o-valor-de-r_xy",
+    "title": "Correlação",
+    "section": "Interpretando o valor de \\(r_{xy}\\)",
+    "text": "Interpretando o valor de \\(r_{xy}\\)\nO valor do coeficiente de correlação de Pearson (\\(r_{xy}\\)) sempre estará entre -1 e +1:\n\n\\(r_{xy} = +1\\): Indica uma correlação linear positiva perfeita. À medida que \\(X\\) aumenta, \\(Y\\) aumenta proporcionalmente.\n\\(r_{xy} = -1\\): Indica uma correlação linear negativa perfeita. À medida que \\(X\\) aumenta, \\(Y\\) diminui proporcionalmente.\n\\(r_{xy} = 0\\): Sugere ausência de correlação linear. Não há uma relação linear discernível entre \\(X\\) e \\(Y\\).\n\\(0&lt;r&lt;1\\): correlação linear positiva.\n\\(-1&lt;r&lt;0\\): correlação linear negativa."
   },
   {
-    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-qualitativas-1",
-    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-qualitativas-1",
-    "title": "Distribuição de Frequências Simples e em Classes",
-    "section": "Tabelas para Variáveis Qualitativas",
-    "text": "Tabelas para Variáveis Qualitativas\nNominais (Sem hierarquia)\nO que podemos extrair da tabela:\n\nInformação: O PP representa quase metade do lote (45%).\nDecisão: Priorizar a configuração da extrusora para as propriedades térmicas do Polipropileno."
+    "objectID": "slides/06-Correlacao/06-Correlacao.html#exemplo-5.1",
+    "href": "slides/06-Correlacao/06-Correlacao.html#exemplo-5.1",
+    "title": "Correlação",
+    "section": "Exemplo 5.1",
+    "text": "Exemplo 5.1\nUma equipe de engenharia civil analisou dados de diferentes obras e observou que o coeficiente de correlação entre o número de operários no canteiro e o número de acidentes registrados foi de +0,68. A partir desses dados, podemos inferir com segurança que aumentar o número de operários causa mais acidentes?\n\nNão. Uma correlação positiva (+0,68) indica apenas uma associação, mas não prova causalidade, pois podem haver:\n\nFatores de Confundimento: Obras maiores exigem mais operários, envolvem maior complexidade, apresentam mais riscos.\nDesenho do Estudo: Para confirmar a causalidade seria necessário comparar obras de mesmo porte e controlar variáveis como tipo de atividade, nível de segurança e condições ambientais."
   },
   {
-    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-qualitativas-2",
-    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-qualitativas-2",
-    "title": "Distribuição de Frequências Simples e em Classes",
-    "section": "Tabelas para Variáveis Qualitativas",
-    "text": "Tabelas para Variáveis Qualitativas\nOrdinais (Com hierarquia)\n\nRegra: Manter a ordem natural da variável, independentemente da frequência.\n\n\n\n\n\nTabela 2: Níveis de corrosão observados em amostras de aço.\n\n\n\n\n\n\n\n\n\n\nGrau de Corrosão\nFrequência Absoluta (\\(f_i\\))\nFrequência Relativa (%)\n\n\n\n\nLeve\n12\n24,0\n\n\nModerada\n28\n56,0\n\n\nSevera\n10\n20,0\n\n\nTotal\n50\n100,0\n\n\n\n\n\n\n\n\nFonte: Dados fictícios (2026)."
+    "objectID": "slides/06-Correlacao/06-Correlacao.html#exemplo-5.2",
+    "href": "slides/06-Correlacao/06-Correlacao.html#exemplo-5.2",
+    "title": "Correlação",
+    "section": "Exemplo 5.2",
+    "text": "Exemplo 5.2\nEm um experimento de engenharia de materiais, foi analisada a relação entre a temperatura de um material e sua resistência mecânica. O coeficiente de correlação linear obtido foi próximo de zero (r ≈ 0). Isso significa que não há nenhum tipo de relação entre essas variáveis?\n\nNão. Uma correlação de Pearson próxima de zero indica ausência de relação linear, mas não exclui outras possibilidades:\n\nRelação não linear: a resistência pode aumentar até certo ponto e depois diminuir com o aumento da temperatura. O resultado é uma curva (não uma reta) → correlação linear ≈ 0.\nRelações mediadas: O comportamento depende de fatores como tipo de material, microestrutura e tratamentos térmicos. Essas variáveis influenciam a forma da curva.\n\nOu seja, não há uma tendência evidente de uma variável influenciar diretamente na outra, mas outras formas de conexão podem existir."
   },
   {
-    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-qualitativas-3",
-    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-qualitativas-3",
-    "title": "Distribuição de Frequências Simples e em Classes",
-    "section": "Tabelas para Variáveis Qualitativas",
-    "text": "Tabelas para Variáveis Qualitativas\nOrdinais (Com hierarquia)\n\nInformação: 76% das amostras apresentam corrosão Moderada ou Severa.\nDecisão: Interromper a linha de produção para manutenção preventiva, pois o nível de degradação é inaceitável."
+    "objectID": "slides/06-Correlacao/06-Correlacao.html#exemplo-5.3",
+    "href": "slides/06-Correlacao/06-Correlacao.html#exemplo-5.3",
+    "title": "Correlação",
+    "section": "Exemplo 5.3",
+    "text": "Exemplo 5.3\nUm engenheiro analisou dados de um experimento relacionando a força aplicada em uma mola e a deformação resultante. Foi obtido um coeficiente de correlação de Pearson de +0,95. O que você esperaria ver em um gráfico de dispersão desses dados?\n\nUm \\(r\\) = +0,95 indica uma correlação linear positiva extremamente forte.\nNo gráfico de dispersão, você veria os pontos formando uma linha reta ascendente muito compacta e coesa. Isso significa que, à medida que a força aumenta, a deformação também aumenta."
   },
   {
-    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-qualitativas-4",
-    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-qualitativas-4",
-    "title": "Distribuição de Frequências Simples e em Classes",
-    "section": "Tabelas para Variáveis Qualitativas",
-    "text": "Tabelas para Variáveis Qualitativas\n\nPara a construção de tabelas técnicas, siga as diretrizes da ABNT:\n\n\nTítulo (Topo): Deve ser claro, conciso e responder: O que? Onde? Quando?\nLaterais Abertas: Nunca utilize linhas verticais para “fechar” a tabela nas bordas esquerda e direita.\nLinhas Horizontais: Use apenas no topo, abaixo do cabeçalho e na base (fundo)."
+    "objectID": "slides/06-Correlacao/06-Correlacao.html#exemplo-5.4",
+    "href": "slides/06-Correlacao/06-Correlacao.html#exemplo-5.4",
+    "title": "Correlação",
+    "section": "Exemplo 5.4",
+    "text": "Exemplo 5.4\nUm laboratório de materiais de construção está desenvolvendo painéis de gesso misturados com isopor (EPS) para isolamento de paredes. O estudo visa entender a relação entre a espessura desse painel e a sua capacidade de bloquear ruídos externos. As variáveis utilizadas foram a espessura do painel de isolamento em centímetros (X) e a redução do ruído medida no ambiente em decibéis (Y).\nForam testados 9 painéis com espessuras diferentes:\n\n\n\nX (cm)\n1\n2\n3\n4\n5\n6\n7\n8\n9\n\n\nY (dB)\n9\n14\n12\n20\n17\n25\n22\n28\n20\n\n\n\nCalcule o Coeficiente de Correlação Linear de Pearson (\\(r_{xy}\\)) e interprete."
   },
   {
-    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-qualitativas-5",
-    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-qualitativas-5",
-    "title": "Distribuição de Frequências Simples e em Classes",
-    "section": "Tabelas para Variáveis Qualitativas",
-    "text": "Tabelas para Variáveis Qualitativas\n\nAlinhamento:\n\nColuna de categorias (texto): Alinhada à esquerda.\nColunas numéricas (\\(f_i\\), %): Centralizadas ou alinhadas pela vírgula.\n\nOrdenação (A Lógica):\n\nNominais: Ordem decrescente de frequência (destaca o mais importante).\nOrdinais: Ordem natural da hierarquia (ex: Baixo \\(\\rightarrow\\) Médio \\(\\rightarrow\\) Alto).\n\nFonte (Rodapé): Obrigatória, mesmo que sejam dados próprios (“Fonte: Dados da pesquisa (ano).”)."
+    "objectID": "slides/06-Correlacao/06-Correlacao.html#exemplo-5.5",
+    "href": "slides/06-Correlacao/06-Correlacao.html#exemplo-5.5",
+    "title": "Correlação",
+    "section": "Exemplo 5.5",
+    "text": "Exemplo 5.5\nEm um estudo de engenharia civil, analisou-se a relação entre a altura de um edifício (em metros) (X) e sua frequência natural de vibração (em Hz) (Y). Sabe-se que estruturas mais altas tendem a ser mais flexíveis. Isso reduz a frequência natural de vibração, mas o comportamento não é perfeitamente linear (depende de rigidez, material, geometria).\nForam coletados dados de 10 estruturas:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nX (altura, m)\n10\n20\n15\n30\n25\n35\n12\n40\n18\n28\n\n\nY (Hz)\n3,2\n2,1\n2,9\n2,6\n2,4\n1,9\n3,1\n2,2\n2,5\n2,2\n\n\n\nCalcule o coeficiente de correlação de Pearson (\\(r_{xy}\\)) e interprete."
   },
   {
-    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#exemplo-4.1",
-    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#exemplo-4.1",
-    "title": "Distribuição de Frequências Simples e em Classes",
-    "section": "Exemplo 4.1",
-    "text": "Exemplo 4.1\nVocê é responsável pelo laboratório de metalografia e precisa organizar o estoque de 40 amostras de ligas metálicas que chegaram sem identificação na caixa. Organize os dados em uma tabela.\n\n\n\n\nAço\nAlumínio\nInox\nAço\nCobre\nAço\nInox\nAlumínio\n\n\nAlumínio\nAço\nCobre\nAço\nTitânio\nInox\nAço\nAlumínio\n\n\nAço\nInox\nAço\nCobre\nAlumínio\nAço\nTitânio\nAlumínio\n\n\nInox\nAço\nAlumínio\nAço\nInox\nAço\nCobre\nAlumínio\n\n\nAço\nAlumínio\nInox\nAço\nAlumínio\nInox\nAço\nTitânio"
+    "objectID": "slides/08-Probabilidade/08-Probabilidade.html#o-que-é-probabilidade",
+    "href": "slides/08-Probabilidade/08-Probabilidade.html#o-que-é-probabilidade",
+    "title": "Introdução à Probabilidade",
+    "section": "O que é Probabilidade?",
+    "text": "O que é Probabilidade?\n\nA Probabilidade é a linguagem da incerteza. Em Estatística, estamos fundamentalmente interessados em quantificar e modelar a incerteza associada a fenômenos aleatórios.\nEla nos permite:\n\nPrever a frequência de ocorrência de eventos;\nTomar decisões informadas sob condições de risco;\nEntender a variabilidade em dados e processos."
   },
   {
-    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#exemplo-4.2",
-    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#exemplo-4.2",
-    "title": "Distribuição de Frequências Simples e em Classes",
-    "section": "Exemplo 4.2",
-    "text": "Exemplo 4.2\nUm inspetor de qualidade avaliou a integridade de 30 pontos de solda em um chassi automotivo, classificando-os de acordo com a norma técnica de segurança. Construa uma tabela para esses dados.\n\n\n\n\nLeve\nModerada\nLeve\nModerada\nSevera\nLeve\n\n\nCrítica\nModerada\nLeve\nModerada\nSevera\nLeve\n\n\nModerada\nModerada\nLeve\nCrítica\nModerada\nSevera\n\n\nLeve\nModerada\nModerada\nLeve\nSevera\nModerada\n\n\nLeve\nModerada\nLeve\nSevera\nModerada\nCrítica"
+    "objectID": "slides/08-Probabilidade/08-Probabilidade.html#mas-o-que-é-um-fenômeno-aleatório",
+    "href": "slides/08-Probabilidade/08-Probabilidade.html#mas-o-que-é-um-fenômeno-aleatório",
+    "title": "Introdução à Probabilidade",
+    "section": "Mas o que é um Fenômeno Aleatório?",
+    "text": "Mas o que é um Fenômeno Aleatório?\n\nÉ um experimento ou observação cujo resultado não pode ser previsto com certeza absoluta, mesmo que as condições iniciais sejam idênticas.\n\nExemplos:\n\nMedir a profundidade de pites de corrosão em uma placa de aço inoxidável exposta a ambiente marinho para prever o tempo de vida útil.\nContagem do volume de veículos em uma rodovia em horários de pico para decidir a necessidade de duplicação da via.\nEstimar a probabilidade de um modelo de visão computacional classificar corretamente uma imagem médica sob diferentes condições de ruído."
   },
   {
-    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#variáveis-quantitativas-distribuição-em-classes",
-    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#variáveis-quantitativas-distribuição-em-classes",
-    "title": "Distribuição de Frequências Simples e em Classes",
-    "section": "Variáveis Quantitativas: Distribuição em Classes",
-    "text": "Variáveis Quantitativas: Distribuição em Classes\n\nQuando os valores são muito dispersos (ex: Resistência à Tração de 50 corpos de prova), precisamos agrupar em intervalos.\n\nEtapas de Construção:\n\nDefinir o número de classes (\\(k\\)) \\(\\rightarrow\\) Regra de Sturges.\nCalcular a Amplitude Total (\\(AT\\)).\nDefinir a Amplitude da Classe (\\(h\\))."
+    "objectID": "slides/08-Probabilidade/08-Probabilidade.html#definição-8.1-experimento",
+    "href": "slides/08-Probabilidade/08-Probabilidade.html#definição-8.1-experimento",
+    "title": "Introdução à Probabilidade",
+    "section": "Definição 8.1: Experimento",
+    "text": "Definição 8.1: Experimento\n\nQualquer processo que gera um conjunto de dados ou resultados.\nPense nele como uma ação ou observação que podemos repetir (ou imaginar repetir) sob as mesmas condições.\n\nExemplos:\n\nContar o número de poros em uma amostra cerâmica.\nVerificar a umidade do solo em uma amostra de campo.\nExecutar um algoritmo de busca e medir o tempo de resposta.\nMedir a dose absorvida em um detector de radiação."
   },
   {
-    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#a-regra-de-sturges",
-    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#a-regra-de-sturges",
-    "title": "Distribuição de Frequências Simples e em Classes",
-    "section": "A Regra de Sturges",
-    "text": "A Regra de Sturges\nPara um conjunto de \\(n\\) observações, o número ideal de classes (\\(k\\)) é:\n\\[k = 1 + 3,322 \\cdot \\log_{10}(n)\\]\nExemplo Prático:\nSe ensaiamos \\(n=30\\) amostras de aço:\n\n\\(k = 1 + 3,322 \\cdot \\log_{10}(30)\\)\n\\(k \\approx 5,91 \\rightarrow\\) Usamos 6 classes."
+    "objectID": "slides/08-Probabilidade/08-Probabilidade.html#definição-8.2-espaço-amostral-omega",
+    "href": "slides/08-Probabilidade/08-Probabilidade.html#definição-8.2-espaço-amostral-omega",
+    "title": "Introdução à Probabilidade",
+    "section": "Definição 8.2: Espaço Amostral (\\(\\Omega\\))",
+    "text": "Definição 8.2: Espaço Amostral (\\(\\Omega\\))\n\nÉ o conjunto de TODOS os resultados possíveis de um experimento.\nRepresentado pelo símbolo \\(\\Omega\\) (Ômega maiúscula).\nCada resultado individual dentro do espaço amostral é chamado de elemento ou ponto amostral."
   },
   {
-    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#amplitude-e-intervalos",
-    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#amplitude-e-intervalos",
-    "title": "Distribuição de Frequências Simples e em Classes",
-    "section": "Amplitude e Intervalos",
-    "text": "Amplitude e Intervalos\nApós definir \\(k=6\\), calculamos a amplitude (tamanho) de cada classe:\n\\[h = \\frac{AT}{k} = \\frac{\\text{Máximo} - \\text{Mínimo}}{k}\\]\n\nApós calcular \\(h = \\frac{AT}{k}\\), é recomendável realizar um arredondamento para cima para o número inteiro ou decimal exato mais próximo (ex: 5; 10; 15; 0,5; 1,0).\nEm seguida, determinamos os limites de cada classe e contamos o número de elementos (frequência) em cada classe."
+    "objectID": "slides/08-Probabilidade/08-Probabilidade.html#exemplos",
+    "href": "slides/08-Probabilidade/08-Probabilidade.html#exemplos",
+    "title": "Introdução à Probabilidade",
+    "section": "Exemplos",
+    "text": "Exemplos\n\nExperimento: Lançar uma moeda.\n\nEspaço Amostral (\\(\\Omega\\)): \\(\\{Cara, Coroa\\}\\)\nPontos Amostrais: Cara, Coroa\n\nExperimento: Classificar um produto (defeituoso/não defeituoso).\n\nEspaço Amostral (\\(\\Omega\\)): \\(\\{\\text{Defeituoso}, \\text{Não Defeituoso}\\}\\)\n\nExperimento: Contar o número de carros que passam por um cruzamento em 1 minuto.\n\nEspaço Amostral (\\(\\Omega\\)): \\(\\{0, 1, 2, 3, \\ldots\\}\\) (Infinitos, mas enumeráveis!)"
   },
   {
-    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tipos-de-frequência",
-    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tipos-de-frequência",
-    "title": "Distribuição de Frequências Simples e em Classes",
-    "section": "Tipos de Frequência",
-    "text": "Tipos de Frequência\n\nAbsoluta (\\(f_i\\)): Contagem de ocorrências na classe.\nRelativa (\\(f_{ri}\\)): Proporção da classe em relação ao total (\\(f_i / n\\)).\nAcumulada (\\(F_i\\)): Soma das frequências da classe atual com as anteriores.\nAcumulada Relativa (\\(F_{ri}\\)): Proporção acumulada até a classe atual (\\(F_i / n\\)).\n\n\nNota: Frequência acumulada não faz sentido para variáveis qualitativas nominais!"
+    "objectID": "slides/08-Probabilidade/08-Probabilidade.html#outro-exemplo",
+    "href": "slides/08-Probabilidade/08-Probabilidade.html#outro-exemplo",
+    "title": "Introdução à Probabilidade",
+    "section": "Outro Exemplo",
+    "text": "Outro Exemplo\nConsidere o experimento de jogar um dado de seis faces e observar a face voltada para cima. O espaço amostral é \\[\n    \\Omega = \\{1,2,3,4,5,6\\}.\n\\]\nAtenção! Mais de um espaço amostral pode ser usado para descrever o mesmo experimento.\n\nSe estivermos interessados em saber se o número será par ou ímpar, o espaço amostral será simplesmente: \\[\n  \\Omega = \\{\\text{par, ímpar}\\}.\n\\]"
   },
   {
-    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#variáveis-quantitativas-distribuição-em-classes-1",
-    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#variáveis-quantitativas-distribuição-em-classes-1",
-    "title": "Distribuição de Frequências Simples e em Classes",
-    "section": "Variáveis Quantitativas: Distribuição em Classes",
-    "text": "Variáveis Quantitativas: Distribuição em Classes\n\n\n\n\nTabela 3: Distribuição de frequências da resistência à tração da liga de alumínio (\\(n=40\\)).\n\n\n\n\n\nClasses (MPa)\n\\(f_i\\)\n\\(f_{ri}\\) (%)\n\\(F_i\\)\n\\(F_{ri}\\) (%)\n\n\n\n\n\\(160 \\vdash 170\\)\n\\(8\\)\n\\(20,\\!0\\)\n\\(8\\)\n\\(20,\\!0\\)\n\n\n\\(170 \\vdash 180\\)\n\\(18\\)\n\\(45,\\!0\\)\n\\(26\\)\n\\(65,\\!0\\)\n\n\n\\(180 \\vdash 190\\)\n\\(10\\)\n\\(25,\\!0\\)\n\\(36\\)\n\\(90,\\!0\\)\n\n\n\\(190 \\vdash 200\\)\n\\(4\\)\n\\(10,\\!0\\)\n\\(40\\)\n\\(100,\\!0\\)\n\n\nTotal\n\\(40\\)\n\\(100,\\!0\\)\n–\n–\n\n\n\n\n\n\n\n\nLegenda: \\(f_i\\): Freq. Absoluta; \\(f_{ri}\\): Freq. Relativa; \\(F_i\\): Freq. Acumulada; \\(F_{ri}\\): Freq. Acumulada Relativa.\nFonte: Dados fictícios (2026)."
+    "objectID": "slides/08-Probabilidade/08-Probabilidade.html#exemplo-8.1",
+    "href": "slides/08-Probabilidade/08-Probabilidade.html#exemplo-8.1",
+    "title": "Introdução à Probabilidade",
+    "section": "Exemplo 8.1",
+    "text": "Exemplo 8.1\nPeças que saem de uma linha de produção são marcadas como defeituosas (D) e não defeituosas (N). As peças são inspecionadas e sua condição é registrada. Isto é feito até que duas peças defeituosas consecutivas sejam fabricadas ou que quatro peças tenham sido inspecionadas, aquilo que ocorrer primeiro. Descreva um espaço amostral para este experimento."
   },
   {
-    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#variáveis-quantitativas-distribuição-em-classes-2",
-    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#variáveis-quantitativas-distribuição-em-classes-2",
-    "title": "Distribuição de Frequências Simples e em Classes",
-    "section": "Variáveis Quantitativas: Distribuição em Classes",
-    "text": "Variáveis Quantitativas: Distribuição em Classes\n\nSe o projeto exige resistência mínima de 180 MPa, a coluna \\(F_{ri}\\) nos avisa que 65% das peças são inseguras (Informação).\n\nDecisão: Rejeitar o lote de alumínio."
+    "objectID": "slides/08-Probabilidade/08-Probabilidade.html#definição-8.3-evento",
+    "href": "slides/08-Probabilidade/08-Probabilidade.html#definição-8.3-evento",
+    "title": "Introdução à Probabilidade",
+    "section": "Definição 8.3: Evento",
+    "text": "Definição 8.3: Evento\n\nUm evento é um subconjunto do espaço amostral (\\(\\Omega\\)).\n\nPense nele como uma coleção específica de um ou mais resultados de um experimento que nos interessa.\n\nDenotamos um evento por uma letra maiúscula. Ex.: \\(A\\), \\(B\\), \\(C\\), etc.\n\nExemplo\nDado um espaço amostral \\(\\Omega = \\{t|t &gt; 0\\}\\), onde t é o tempo em minutos que você espera o ônibus no ponto, então o evento A, em que o ônibus chega antes de 10 minutos é \\[A = \\{t|0 \\leq t &lt; 10\\}.\\]"
   },
   {
-    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-quantitativas",
-    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-quantitativas",
-    "title": "Distribuição de Frequências Simples e em Classes",
-    "section": "Tabelas para Variáveis Quantitativas",
-    "text": "Tabelas para Variáveis Quantitativas\n\nA estética é igual à das tabelas para variáveis qualitativas, mas a estrutura interna muda.\nSempre deve ser informada a grandeza e a unidade (ex: “Tensão de Ruptura (MPa)”).\nA ABNT/IBGE recomenda o uso do símbolo \\(| \\dashv\\) para indicar intervalos:\n\n\\(10 \\vdash 20\\): Inclui o 10, mas não inclui o 20 (aberto à direita).\n\nSe uma classe não possui ocorrências, deve-se colocar um hífen (-) ou o número 0, nunca deixar a célula vazia."
+    "objectID": "slides/08-Probabilidade/08-Probabilidade.html#section",
+    "href": "slides/08-Probabilidade/08-Probabilidade.html#section",
+    "title": "Introdução à Probabilidade",
+    "section": "",
+    "text": "Como um evento é um subconjunto do espaço amostral, operações sobre conjuntos podem ser utilizadas:\n\n\\(A\\cup B\\): ocorre \\(A\\) ou \\(B\\);\n\\(A\\cap B\\): ocorre A e B (simultaneamente);\n\\(A^c\\) : não ocorre A;\n\\(\\bigcup\\limits_{i=1}^{n}A_i\\): ao menos um \\(A_i\\) ocorre (vale para \\(\\bigcup\\limits_{i=1}^{\\infty}A_i\\));\n\\(\\bigcap\\limits_{i=1}^{n}A_i\\): todos os \\(A_i\\) ocorrem (vale para \\(\\bigcap\\limits_{i=1}^{\\infty}A_i\\))."
   },
   {
-    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#como-verificar-se-a-tabela-está-correta",
-    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#como-verificar-se-a-tabela-está-correta",
-    "title": "Distribuição de Frequências Simples e em Classes",
-    "section": "Como verificar se a tabela está correta",
-    "text": "Como verificar se a tabela está correta\n\nA soma da coluna \\(f_i\\) resultou exatamente em \\(n\\)?\nA soma de \\(f_{ri}\\) é \\(100\\%\\)? (Cuidado com arredondamentos).\nO último valor da coluna \\(F_i\\) é igual ao total de amostras (\\(n\\))?\nUsou o símbolo \\(\\vdash\\) corretamente para garantir que um dado não seja contado em duas classes ao mesmo tempo?\nA tabela está “aberta” nas laterais (sem linhas verticais externas)?\nIndicou a unidade de medida utilizada?\nA tabela permite que um tomador de decisão entenda o cenário rapidamente?"
+    "objectID": "slides/08-Probabilidade/08-Probabilidade.html#definição-8.4-eventos-mutuamente-excludentes",
+    "href": "slides/08-Probabilidade/08-Probabilidade.html#definição-8.4-eventos-mutuamente-excludentes",
+    "title": "Introdução à Probabilidade",
+    "section": "Definição 8.4: Eventos Mutuamente Excludentes",
+    "text": "Definição 8.4: Eventos Mutuamente Excludentes\n\nDois eventos \\(A\\) e \\(B\\) são denominados mutuamente excludentes se eles não puderem ocorrer juntos.\nIsto é, \\(A\\cap B=\\emptyset\\)."
   },
   {
-    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#exemplo-4.3",
-    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#exemplo-4.3",
-    "title": "Distribuição de Frequências Simples e em Classes",
-    "section": "Exemplo 4.3",
-    "text": "Exemplo 4.3\nUm engenheiro de materiais recebeu um lote de 40 amostras de um novo polímero reforçado com fibras de vidro. Para validar o processo de fabricação, ele realizou ensaios de tração para medir o Limite de Resistência à Tração (RT) em MPa. Construa uma tabela de frequências com os dados da amostra.\n\n152, 155, 158, 160, 162, 163, 164, 165, 167, 168,\n170, 171, 172, 172, 173, 174, 175, 175, 176, 177,\n178, 178, 179, 180, 181, 182, 183, 184, 185, 186,\n188, 190, 191, 192, 194, 195, 196, 197, 199, 202\n\nO fornecedor garante que 90% das peças resistem a pelo menos 160 MPa. Com base na sua coluna de Frequência Acumulada, o fornecedor está falando a verdade?"
+    "objectID": "slides/08-Probabilidade/08-Probabilidade.html#exemplo-8.2",
+    "href": "slides/08-Probabilidade/08-Probabilidade.html#exemplo-8.2",
+    "title": "Introdução à Probabilidade",
+    "section": "Exemplo 8.2",
+    "text": "Exemplo 8.2\nQuais desses eventos são mutuamente excludentes?\n\nUm jogador de xadrez que dá um xeque-mate e perde o rei na mesma jogada.\nUm jogador de pôquer que tem um flush (todas as cartas do mesmo naipe) e três de um tipo na mesma mão de cinco cartas.\nUma mãe que dá à luz uma menina e gêmeas no mesmo dia.\nUm time de futebol que perde o último jogo e ganha o Brasileirão.\nUm usuário tem sua conta bloqueada por tentativas de login e consegue acessar o sistema com sucesso no mesmo minuto."
+  },
+  {
+    "objectID": "slides/08-Probabilidade/08-Probabilidade.html#por-que-precisamos-de-probabilidade",
+    "href": "slides/08-Probabilidade/08-Probabilidade.html#por-que-precisamos-de-probabilidade",
+    "title": "Introdução à Probabilidade",
+    "section": "Por que precisamos de probabilidade?",
+    "text": "Por que precisamos de probabilidade?\n\nEm experimentos aleatórios, a gente não sabe qual resultado específico vai acontecer quando o experimento é feito.\nOu seja, se \\(A\\) é um evento ligado a um experimento, não podemos ter certeza se \\(A\\) vai ocorrer ou não.\nPor isso, fica muito importante tentar associar um número ao evento \\(A\\), que vai medir, de alguma forma, o quão provável é a ocorrência de \\(A\\).\nEssa tarefa nos leva direto à teoria da probabilidade."
+  },
+  {
+    "objectID": "slides/08-Probabilidade/08-Probabilidade.html#definição-8.5-probabilidade",
+    "href": "slides/08-Probabilidade/08-Probabilidade.html#definição-8.5-probabilidade",
+    "title": "Introdução à Probabilidade",
+    "section": "Definição 8.5: Probabilidade",
+    "text": "Definição 8.5: Probabilidade\nSeja \\(E\\) um experimento. Seja \\(\\Omega\\) o espaço amostral associado a \\(E\\). A cada evento \\(A\\) associaremos um número real representado por \\(P(A)\\) e denominado probabilidade de \\(A\\), que satisfaz às seguintes propriedades:\n\nP1. \\(0\\leq P(A)\\leq1\\): A probabilidade de qualquer evento está sempre entre 0 (impossível) e 1 (certo).\nP2. \\(P(\\Omega) = 1\\): A probabilidade de que algum resultado do espaço amostral ocorra (ou seja, de que o experimento aconteça) é 1.\nP3. Se \\(A\\) e \\(B\\) forem mutuamente excludentes, \\(P(A\\cup B)=P(A)+P(B)\\): Se dois eventos não podem acontecer ao mesmo tempo, a probabilidade de que um ou outro ocorra é a soma das suas probabilidades individuais."
+  },
+  {
+    "objectID": "slides/08-Probabilidade/08-Probabilidade.html#section-1",
+    "href": "slides/08-Probabilidade/08-Probabilidade.html#section-1",
+    "title": "Introdução à Probabilidade",
+    "section": "",
+    "text": "De P3, temos que \\(P\\left(\\bigcup\\limits_{i=1}^n A_i\\right) = \\sum\\limits_{i=1}^n P(A_i).\\) Esta é uma generalização importante da propriedade P3 para múltiplos eventos mutuamente excludentes.\nP4. Se \\(A_1,A_2,A_3,\\ldots\\) forem, dois a dois, eventos mutuamente excludentes, então \\[\n  P\\left(\\bigcup\\limits_{i=1}^\\infty A_i\\right) = \\sum\\limits_{i=1}^\\infty P(A_i).\n\\]\nA escolha das propriedades da probabilidade apresentadas é obviamente sugerida pelas características da frequência relativa. Isso reforça a ideia de que a teoria da probabilidade formaliza o que observamos empiricamente ao repetir experimentos muitas vezes."
+  },
+  {
+    "objectID": "slides/08-Probabilidade/08-Probabilidade.html#resultados-decorrentes-da-definição-de-pa",
+    "href": "slides/08-Probabilidade/08-Probabilidade.html#resultados-decorrentes-da-definição-de-pa",
+    "title": "Introdução à Probabilidade",
+    "section": "Resultados Decorrentes da Definição de \\(P(A)\\)",
+    "text": "Resultados Decorrentes da Definição de \\(P(A)\\)\n\nR1. \\(P(\\emptyset)=0\\).\nR2. \\(P(A^c) = 1-P(A)\\).\nR3. \\(P(A\\cup B) = P(A)+P(B)-P(A\\cap B)\\).\nR4. \\(P(A\\cup B\\cup C) = P(A)+P(B)+P(C)-P(A\\cap B)-P(A\\cap C)\\)  \\(\\qquad \\qquad \\qquad -P(B\\cap C)+P(A\\cap B \\cap C)\\).\nR5. \\(A\\subset B \\Rightarrow P(A)\\leq P(B)\\)."
+  },
+  {
+    "objectID": "slides/08-Probabilidade/08-Probabilidade.html#exemplo-8.3",
+    "href": "slides/08-Probabilidade/08-Probabilidade.html#exemplo-8.3",
+    "title": "Introdução à Probabilidade",
+    "section": "Exemplo 8.3",
+    "text": "Exemplo 8.3\nSuponha que \\(A\\), \\(B\\) e \\(C\\) sejam eventos tais que\n\n\\(P(A) = P(B) = P(C) = 1/4\\),\n\\(P(A \\cap B) = P(C \\cap B) = 0\\) e\n\\(P(A \\cap C) = 1/8\\).\n\nCalcule a probabilidade de que ao menos um dos eventos \\(A\\), \\(B\\) ou \\(C\\) ocorra."
+  },
+  {
+    "objectID": "slides/08-Probabilidade/08-Probabilidade.html#exemplo-8.4",
+    "href": "slides/08-Probabilidade/08-Probabilidade.html#exemplo-8.4",
+    "title": "Introdução à Probabilidade",
+    "section": "Exemplo 8.4",
+    "text": "Exemplo 8.4\nUm dado é lançado e todos os resultados se supõem igualmente verossímeis. O evento \\(A\\) ocorrerá se, e somente se, um número maior do que 4 aparecer. Qual a probabilidade do evento \\(A\\)?"
+  },
+  {
+    "objectID": "slides/08-Probabilidade/08-Probabilidade.html#exemplo-8.5",
+    "href": "slides/08-Probabilidade/08-Probabilidade.html#exemplo-8.5",
+    "title": "Introdução à Probabilidade",
+    "section": "Exemplo 8.5",
+    "text": "Exemplo 8.5\nUma moeda equilibrada é atirada duas vezes. Seja \\(A\\) o evento: “aparece uma cara”. Qual a probabilidade do evento \\(A\\)?"
+  },
+  {
+    "objectID": "slides/08-Probabilidade/08-Probabilidade.html#resultados-igualmente-verossímeis",
+    "href": "slides/08-Probabilidade/08-Probabilidade.html#resultados-igualmente-verossímeis",
+    "title": "Introdução à Probabilidade",
+    "section": "Resultados Igualmente Verossímeis",
+    "text": "Resultados Igualmente Verossímeis\n\nSuponha que temos um espaço amostral \\(\\Omega = \\{a_1,a_2, \\ldots, a_k\\}\\), com k resultados possíveis.\nSe todos os resultados forem igualmente verossímeis (ou seja, têm a mesma chance de acontecer), então a probabilidade de cada resultado elementar \\(a_i\\) será \\(p_i=1/k\\).\nAssim, para qualquer evento A formado por \\(r\\) resultados (ou seja, \\(A\\) tem \\(r\\) “casos favoráveis”), teremos: \\[ P(A) = \\frac{r}{k}.\\]"
+  },
+  {
+    "objectID": "slides/08-Probabilidade/08-Probabilidade.html#resultados-igualmente-verossímeis-1",
+    "href": "slides/08-Probabilidade/08-Probabilidade.html#resultados-igualmente-verossímeis-1",
+    "title": "Introdução à Probabilidade",
+    "section": "Resultados Igualmente Verossímeis",
+    "text": "Resultados Igualmente Verossímeis\n\nOutra forma de expressar isso, e que é muito popular, é: \\[P(A)=\\frac{\\text{número de casos favoráveis a }A}{\\text{número total de casos}}.\\]\nObservação 1: Esta expressão só é válida se todos os resultados forem igualmente verossímeis. Se não forem, você deve usar a soma das probabilidades \\(p_i\\) individuais que vimos antes.\nObservação 2: Podemos utilizar técnicas de contagem (permutação, arranjo e combinação) para determinarmos o número de resultados possíveis de um experimento."
+  },
+  {
+    "objectID": "slides/08-Probabilidade/08-Probabilidade.html#técnicas-de-contagem",
+    "href": "slides/08-Probabilidade/08-Probabilidade.html#técnicas-de-contagem",
+    "title": "Introdução à Probabilidade",
+    "section": "Técnicas de Contagem",
+    "text": "Técnicas de Contagem\n\nPermutação: Usada quando temos \\(n\\) elementos e selecionamos todos eles, onde a ordem importa. O número de resultados possíveis é \\(n!\\)\nArranjo: Quando selecionamos \\(k\\) elementos de um conjunto de \\(n\\), onde a ordem é relevante. Calculado por \\[ _nA_k = \\frac{n!}{(n-k)!}. \\]\nCombinação: Quando selecionamos \\(k\\) elementos de um conjunto de \\(n\\), onde a ordem não importa. Calculada por \\[ _nC_k=\\binom{n}{k} = \\frac{n!}{k!(n-k)!}. \\]"
+  },
+  {
+    "objectID": "slides/08-Probabilidade/08-Probabilidade.html#exemplo-8.6",
+    "href": "slides/08-Probabilidade/08-Probabilidade.html#exemplo-8.6",
+    "title": "Introdução à Probabilidade",
+    "section": "Exemplo 8.6",
+    "text": "Exemplo 8.6\nEm uma sala, 10 pessoas estão usando emblemas numerados de 1 até 10. Três pessoas são escolhidas ao acaso e convidadas a saírem da sala simultaneamente. O número de seu emblema é anotado.\n\nQual é a probabilidade de que o menor número de emblema seja 5?\nQual é a probabilidade de que o maior número de emblema seja 5?"
+  },
+  {
+    "objectID": "slides/08-Probabilidade/08-Probabilidade.html#exemplo-8.7",
+    "href": "slides/08-Probabilidade/08-Probabilidade.html#exemplo-8.7",
+    "title": "Introdução à Probabilidade",
+    "section": "Exemplo 8.7",
+    "text": "Exemplo 8.7\nSuponha que os três dígitos 1, 2 e 3 sejam escritos em ordem aleatória. Qual a probabilidade de que ao menos um dígito ocupe seu próprio lugar?"
+  },
+  {
+    "objectID": "slides/08-Probabilidade/08-Probabilidade.html#exemplo-8.8",
+    "href": "slides/08-Probabilidade/08-Probabilidade.html#exemplo-8.8",
+    "title": "Introdução à Probabilidade",
+    "section": "Exemplo 8.8",
+    "text": "Exemplo 8.8\nDez fichas são numeradas de 1 até 10 são misturadas em uma urna. Duas fichas, numeradas (X, Y), são extraídas da urna, sucessivamente e sem reposição. Qual é a probabilidade de que seja X + Y = 10?"
+  },
+  {
+    "objectID": "slides/08-Probabilidade/08-Probabilidade.html#exemplo-8.9",
+    "href": "slides/08-Probabilidade/08-Probabilidade.html#exemplo-8.9",
+    "title": "Introdução à Probabilidade",
+    "section": "Exemplo 8.9",
+    "text": "Exemplo 8.9\nUm lote é formado de 10 artigos bons, 4 com defeitos menores e 2 com defeitos graves. Um artigo é escolhido ao acaso. Ache a probabilidade de que:\n\nEle não tenha defeitos.\nEle não tenha defeitos graves.\nEle ou seja perfeito ou tenha defeitos graves."
+  },
+  {
+    "objectID": "slides/08-Probabilidade/08-Probabilidade.html#exemplo-8.10",
+    "href": "slides/08-Probabilidade/08-Probabilidade.html#exemplo-8.10",
+    "title": "Introdução à Probabilidade",
+    "section": "Exemplo 8.10",
+    "text": "Exemplo 8.10\nUma caixa contém etiquetas numeradas \\(1, 2, \\ldots, n\\). Duas etiquetas são escolhidas ao acaso. Determine a probabilidade de que os números das etiquetas sejam inteiros consecutivos (em ordem crescente ou decrescente) se:\n\nAs etiquetas forem escolhidas sem reposição.\nAs etiquetas forem escolhidas com reposição."
+  },
+  {
+    "objectID": "slides/08-Probabilidade/08-Probabilidade.html#exemplo-8.11",
+    "href": "slides/08-Probabilidade/08-Probabilidade.html#exemplo-8.11",
+    "title": "Introdução à Probabilidade",
+    "section": "Exemplo 8.11",
+    "text": "Exemplo 8.11\nUm inteiro é escolhido ao acaso, dentre os números \\(1, 2, \\ldots, 50\\). Qual será a probabilidade de que o número escolhido seja divisível por 6 ou por 8?"
+  },
+  {
+    "objectID": "slides/08-Probabilidade/08-Probabilidade.html#exemplo-8.12",
+    "href": "slides/08-Probabilidade/08-Probabilidade.html#exemplo-8.12",
+    "title": "Introdução à Probabilidade",
+    "section": "Exemplo 8.12",
+    "text": "Exemplo 8.12\nDentre 6 números positivos e 8 negativos, escolhem-se ao acaso 4 números (sem reposição) e multiplicam-se esses números. Qual será a probabilidade de que o produto seja um número positivo?"
   },
   {
     "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#gráfico-como-ferramenta-de-decisão",
@@ -621,6 +740,30 @@
     ]
   },
   {
+    "objectID": "aulas/09-Probabilidade-condicional-e-Independencia.html",
+    "href": "aulas/09-Probabilidade-condicional-e-Independencia.html",
+    "title": "Conteúdo 9",
+    "section": "",
+    "text": "Nesta aula são apresentados os conceitos de probabilidade condicional e independência como ferramentas fundamentais para calcular e avaliar as chances de um evento quando temos informações adicionais conhecidas. É abordada a definição formal e interpretativa da probabilidade condicional por meio da redução do espaço amostral, a aplicação do Teorema da Multiplicação para determinar a interseção de eventos sucessivos e a caracterização de eventos independentes, nos quais a ocorrência de um resultado não interfere na probabilidade do outro.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 9",
+    "crumbs": [
+      "Aulas",
+      "Parte 2: Probabilidade",
+      "9- Probabilidade Condicional e Independência"
+    ]
+  },
+  {
+    "objectID": "aulas/09-Probabilidade-condicional-e-Independencia.html#probabilidade-condicional-e-independência",
+    "href": "aulas/09-Probabilidade-condicional-e-Independencia.html#probabilidade-condicional-e-independência",
+    "title": "Conteúdo 9",
+    "section": "",
+    "text": "Nesta aula são apresentados os conceitos de probabilidade condicional e independência como ferramentas fundamentais para calcular e avaliar as chances de um evento quando temos informações adicionais conhecidas. É abordada a definição formal e interpretativa da probabilidade condicional por meio da redução do espaço amostral, a aplicação do Teorema da Multiplicação para determinar a interseção de eventos sucessivos e a caracterização de eventos independentes, nos quais a ocorrência de um resultado não interfere na probabilidade do outro.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 9",
+    "crumbs": [
+      "Aulas",
+      "Parte 2: Probabilidade",
+      "9- Probabilidade Condicional e Independência"
+    ]
+  },
+  {
     "objectID": "aulas/07-Regressao.html",
     "href": "aulas/07-Regressao.html",
     "title": "Conteúdo 7",
@@ -762,6 +905,30 @@
       "Aulas",
       "Parte 1: Estatística Descritiva",
       "4- Distribuição de Frequências"
+    ]
+  },
+  {
+    "objectID": "aulas/08-Probabilidade.html",
+    "href": "aulas/08-Probabilidade.html",
+    "title": "Conteúdo 8",
+    "section": "",
+    "text": "Nesta aula é apresentada a teoria da probabilidade como a linguagem fundamental para quantificar e modelar a incerteza associada a fenômenos aleatórios. É abordada a definição de espaços amostrais e eventos, as propriedades matemáticas e operacionais do cálculo de probabilidades, e o uso de técnicas de contagem como permutação, arranjo e combinação para determinar a ocorrência de resultados equiprováveis.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 8",
+    "crumbs": [
+      "Aulas",
+      "Parte 2: Probabilidade",
+      "8- Probabilidade"
+    ]
+  },
+  {
+    "objectID": "aulas/08-Probabilidade.html#introdução-à-probabilidade",
+    "href": "aulas/08-Probabilidade.html#introdução-à-probabilidade",
+    "title": "Conteúdo 8",
+    "section": "",
+    "text": "Nesta aula é apresentada a teoria da probabilidade como a linguagem fundamental para quantificar e modelar a incerteza associada a fenômenos aleatórios. É abordada a definição de espaços amostrais e eventos, as propriedades matemáticas e operacionais do cálculo de probabilidades, e o uso de técnicas de contagem como permutação, arranjo e combinação para determinar a ocorrência de resultados equiprováveis.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 8",
+    "crumbs": [
+      "Aulas",
+      "Parte 2: Probabilidade",
+      "8- Probabilidade"
     ]
   },
   {
@@ -1283,74 +1450,263 @@
     "text": "Atenção!\n\nO engenheiro nunca utiliza apenas um indicador isolado.\nA Média localiza o material; a Dispersão valida sua confiabilidade.\nMenor variabilidade sempre resulta em menor risco de falha estrutural."
   },
   {
-    "objectID": "slides/06-Correlacao/06-Correlacao.html#entendendo-relações-entre-variáveis",
-    "href": "slides/06-Correlacao/06-Correlacao.html#entendendo-relações-entre-variáveis",
-    "title": "Correlação",
-    "section": "Entendendo Relações entre Variáveis",
-    "text": "Entendendo Relações entre Variáveis\n\nEm engenharia, raramente as variáveis são analisadas isoladamente. Buscamos sempre entender como uma variável responde a mudanças em outra.\nExemplos:\n\nRelação entre tensão aplicada e deformação de um material.\nRelação entre temperatura e dilatação térmica de um material.\n\nPara analisar essas relações, focaremos em duas técnicas principais, intimamente ligadas:\n\nCorrelação: Resume o grau e a direção do relacionamento linear entre duas variáveis (como \\(X\\) e \\(Y\\)).\nRegressão: Fornece uma equação matemática que descreve o relacionamento entre as variáveis, permitindo previsões."
+    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#objetivos-da-aula",
+    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#objetivos-da-aula",
+    "title": "Distribuição de Frequências Simples e em Classes",
+    "section": "Objetivos da Aula",
+    "text": "Objetivos da Aula\n\nDiferenciar Dados Brutos de Dados Organizados.\nConstruir tabelas de frequência para variáveis qualitativas (nominais e ordinais).\nAplicar a Regra de Sturges para variáveis quantitativas.\nInterpretar Frequências Absolutas, Relativas e Acumuladas no contexto de materiais."
   },
   {
-    "objectID": "slides/06-Correlacao/06-Correlacao.html#correlação",
-    "href": "slides/06-Correlacao/06-Correlacao.html#correlação",
-    "title": "Correlação",
-    "section": "Correlação",
-    "text": "Correlação\n\nObjetivo: Determinar o grau e a direção do relacionamento linear entre duas variáveis quantitativas.\nObservação Importante! Correlação indica associação, não causa e efeito. Variáveis podem se mover juntas por influência de um terceiro fator.\nExemplo: O aumento no número de sensores instalados em equipamentos industriais e o aumento no número de falhas registradas são correlacionados (ambos crescem com maior monitoramento), mas um não causa o outro.\nO relacionamento entre variáveis pode ser analisado por meio do gráfico de dispersão. Ele permite identificar tendência crescente ou decrescente, ausência de padrão e possíveis outliers."
+    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#do-dado-à-decisão",
+    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#do-dado-à-decisão",
+    "title": "Distribuição de Frequências Simples e em Classes",
+    "section": "Do Dado à Decisão",
+    "text": "Do Dado à Decisão\n\nA estatística é a ferramenta que extrai a Informação a partir dos Dados para que você tome a Decisão correta.\n\nDADO: Valor bruto (sensor/planilha).\n\nEx: Resistência de 152 MPa. Situação: Isolado, sem contexto.\n\nINFORMAÇÃO (Padrão): Dados organizados em Tabelas.\n\nEx: 75% do lote está abaixo de 160 MPa. Situação: Cenário revelado.\n\nDECISÃO: Conclusão baseada na análise.\n\nEx: Rejeitar o lote ou ajustar o forno. Situação: Engenharia aplicada."
   },
   {
-    "objectID": "slides/06-Correlacao/06-Correlacao.html#gráfico-de-dispersão",
-    "href": "slides/06-Correlacao/06-Correlacao.html#gráfico-de-dispersão",
-    "title": "Correlação",
-    "section": "Gráfico de Dispersão",
-    "text": "Gráfico de Dispersão"
+    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#organização-dos-dados",
+    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#organização-dos-dados",
+    "title": "Distribuição de Frequências Simples e em Classes",
+    "section": "Organização dos Dados",
+    "text": "Organização dos Dados\nNa Engenharia de Materiais, coletamos dados de:\n\nEnsaios mecânicos (tração, dureza).\nCaracterização química (pureza, composição).\nProcessamento (temperatura de sinterização, tempo de cura).\n\nFerramentas Principais:\n\nDescrição Tabular: Tabelas de frequências (simples ou agrupadas).\nGráficos Estatísticos: Histogramas, Boxplots, Gráficos de Barras."
   },
   {
-    "objectID": "slides/06-Correlacao/06-Correlacao.html#coeficiente-de-correlação-linear-de-pearson",
-    "href": "slides/06-Correlacao/06-Correlacao.html#coeficiente-de-correlação-linear-de-pearson",
-    "title": "Correlação",
-    "section": "Coeficiente de Correlação Linear de Pearson",
-    "text": "Coeficiente de Correlação Linear de Pearson\n\nUma medida fundamental para quantificar o grau e o sinal da correlação linear entre duas variáveis (\\(X\\) e \\(Y\\)) é o Coeficiente de Correlação Linear de Pearson.\nPara um conjunto de \\(n\\) observações pareadas \\(\\{(x_1,y_1),\\ldots,(x_n,y_n)\\}\\), onde \\(\\overline{x}\\) e \\(\\overline{y}\\) representam as médias amostrais de \\(X\\) e \\(Y\\) respectivamente, o coeficiente de correlação de Pearson é definido como \\[\nr_{xy} = \\frac{\\sum_{i=1}^n x_i y_i - n\\overline{x}\\overline{y}}{\\sqrt{\\sum_{i=1}^n x_i^2 - n\\overline{x}^2}\\sqrt{\\sum_{i=1}^n y_i^2 - n\\overline{y}^2}}\n\\]"
+    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#dados-brutos-vs.-rol",
+    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#dados-brutos-vs.-rol",
+    "title": "Distribuição de Frequências Simples e em Classes",
+    "section": "Dados Brutos vs. Rol",
+    "text": "Dados Brutos vs. Rol\n\nDados Brutos: Dados na ordem em que foram coletados.\n\nEx: pH medido: 7.2, 6.8, 7.5, 7.0…\n\nRol: Dados organizados em ordem crescente ou decrescente.\n\nEx: 6.8, 7.0, 7.2, 7.5…\n\n\n\nPor que organizar? Facilita a identificação da amplitude total, dos valores mínimos e máximos."
   },
   {
-    "objectID": "slides/06-Correlacao/06-Correlacao.html#interpretando-o-valor-de-r_xy",
-    "href": "slides/06-Correlacao/06-Correlacao.html#interpretando-o-valor-de-r_xy",
-    "title": "Correlação",
-    "section": "Interpretando o valor de \\(r_{xy}\\)",
-    "text": "Interpretando o valor de \\(r_{xy}\\)\nO valor do coeficiente de correlação de Pearson (\\(r_{xy}\\)) sempre estará entre -1 e +1:\n\n\\(r_{xy} = +1\\): Indica uma correlação linear positiva perfeita. À medida que \\(X\\) aumenta, \\(Y\\) aumenta proporcionalmente.\n\\(r_{xy} = -1\\): Indica uma correlação linear negativa perfeita. À medida que \\(X\\) aumenta, \\(Y\\) diminui proporcionalmente.\n\\(r_{xy} = 0\\): Sugere ausência de correlação linear. Não há uma relação linear discernível entre \\(X\\) e \\(Y\\).\n\\(0&lt;r&lt;1\\): correlação linear positiva.\n\\(-1&lt;r&lt;0\\): correlação linear negativa."
+    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-qualitativas",
+    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-qualitativas",
+    "title": "Distribuição de Frequências Simples e em Classes",
+    "section": "Tabelas para Variáveis Qualitativas",
+    "text": "Tabelas para Variáveis Qualitativas\nNominais (Sem hierarquia)\n\nDica: Organizar em ordem decrescente de frequência absoluta para destacar o item mais comum.\n\n\n\n\n\nTabela 1: Distribuição de polímeros em um lote de reciclagem.\n\n\n\n\n\n\n\n\n\n\nPolímero (Sigla)\nFrequência Absoluta (\\(f_i\\))\nFrequência Relativa (%)\n\n\n\n\nPP (Polipropileno)\n45\n45,0\n\n\nPEAD (Polietileno)\n30\n30,0\n\n\nPVC (Policloreto)\n25\n25,0\n\n\nTotal\n100\n100,0\n\n\n\n\n\n\n\n\nFonte: Dados fictícios (2026)."
   },
   {
-    "objectID": "slides/06-Correlacao/06-Correlacao.html#exemplo-5.1",
-    "href": "slides/06-Correlacao/06-Correlacao.html#exemplo-5.1",
-    "title": "Correlação",
-    "section": "Exemplo 5.1",
-    "text": "Exemplo 5.1\nUma equipe de engenharia civil analisou dados de diferentes obras e observou que o coeficiente de correlação entre o número de operários no canteiro e o número de acidentes registrados foi de +0,68. A partir desses dados, podemos inferir com segurança que aumentar o número de operários causa mais acidentes?\n\nNão. Uma correlação positiva (+0,68) indica apenas uma associação, mas não prova causalidade, pois podem haver:\n\nFatores de Confundimento: Obras maiores exigem mais operários, envolvem maior complexidade, apresentam mais riscos.\nDesenho do Estudo: Para confirmar a causalidade seria necessário comparar obras de mesmo porte e controlar variáveis como tipo de atividade, nível de segurança e condições ambientais."
+    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-qualitativas-1",
+    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-qualitativas-1",
+    "title": "Distribuição de Frequências Simples e em Classes",
+    "section": "Tabelas para Variáveis Qualitativas",
+    "text": "Tabelas para Variáveis Qualitativas\nNominais (Sem hierarquia)\nO que podemos extrair da tabela:\n\nInformação: O PP representa quase metade do lote (45%).\nDecisão: Priorizar a configuração da extrusora para as propriedades térmicas do Polipropileno."
   },
   {
-    "objectID": "slides/06-Correlacao/06-Correlacao.html#exemplo-5.2",
-    "href": "slides/06-Correlacao/06-Correlacao.html#exemplo-5.2",
-    "title": "Correlação",
-    "section": "Exemplo 5.2",
-    "text": "Exemplo 5.2\nEm um experimento de engenharia de materiais, foi analisada a relação entre a temperatura de um material e sua resistência mecânica. O coeficiente de correlação linear obtido foi próximo de zero (r ≈ 0). Isso significa que não há nenhum tipo de relação entre essas variáveis?\n\nNão. Uma correlação de Pearson próxima de zero indica ausência de relação linear, mas não exclui outras possibilidades:\n\nRelação não linear: a resistência pode aumentar até certo ponto e depois diminuir com o aumento da temperatura. O resultado é uma curva (não uma reta) → correlação linear ≈ 0.\nRelações mediadas: O comportamento depende de fatores como tipo de material, microestrutura e tratamentos térmicos. Essas variáveis influenciam a forma da curva.\n\nOu seja, não há uma tendência evidente de uma variável influenciar diretamente na outra, mas outras formas de conexão podem existir."
+    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-qualitativas-2",
+    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-qualitativas-2",
+    "title": "Distribuição de Frequências Simples e em Classes",
+    "section": "Tabelas para Variáveis Qualitativas",
+    "text": "Tabelas para Variáveis Qualitativas\nOrdinais (Com hierarquia)\n\nRegra: Manter a ordem natural da variável, independentemente da frequência.\n\n\n\n\n\nTabela 2: Níveis de corrosão observados em amostras de aço.\n\n\n\n\n\n\n\n\n\n\nGrau de Corrosão\nFrequência Absoluta (\\(f_i\\))\nFrequência Relativa (%)\n\n\n\n\nLeve\n12\n24,0\n\n\nModerada\n28\n56,0\n\n\nSevera\n10\n20,0\n\n\nTotal\n50\n100,0\n\n\n\n\n\n\n\n\nFonte: Dados fictícios (2026)."
   },
   {
-    "objectID": "slides/06-Correlacao/06-Correlacao.html#exemplo-5.3",
-    "href": "slides/06-Correlacao/06-Correlacao.html#exemplo-5.3",
-    "title": "Correlação",
-    "section": "Exemplo 5.3",
-    "text": "Exemplo 5.3\nUm engenheiro analisou dados de um experimento relacionando a força aplicada em uma mola e a deformação resultante. Foi obtido um coeficiente de correlação de Pearson de +0,95. O que você esperaria ver em um gráfico de dispersão desses dados?\n\nUm \\(r\\) = +0,95 indica uma correlação linear positiva extremamente forte.\nNo gráfico de dispersão, você veria os pontos formando uma linha reta ascendente muito compacta e coesa. Isso significa que, à medida que a força aumenta, a deformação também aumenta."
+    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-qualitativas-3",
+    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-qualitativas-3",
+    "title": "Distribuição de Frequências Simples e em Classes",
+    "section": "Tabelas para Variáveis Qualitativas",
+    "text": "Tabelas para Variáveis Qualitativas\nOrdinais (Com hierarquia)\n\nInformação: 76% das amostras apresentam corrosão Moderada ou Severa.\nDecisão: Interromper a linha de produção para manutenção preventiva, pois o nível de degradação é inaceitável."
   },
   {
-    "objectID": "slides/06-Correlacao/06-Correlacao.html#exemplo-5.4",
-    "href": "slides/06-Correlacao/06-Correlacao.html#exemplo-5.4",
-    "title": "Correlação",
-    "section": "Exemplo 5.4",
-    "text": "Exemplo 5.4\nUm laboratório de materiais de construção está desenvolvendo painéis de gesso misturados com isopor (EPS) para isolamento de paredes. O estudo visa entender a relação entre a espessura desse painel e a sua capacidade de bloquear ruídos externos. As variáveis utilizadas foram a espessura do painel de isolamento em centímetros (X) e a redução do ruído medida no ambiente em decibéis (Y).\nForam testados 9 painéis com espessuras diferentes:\n\n\n\nX (cm)\n1\n2\n3\n4\n5\n6\n7\n8\n9\n\n\nY (dB)\n9\n14\n12\n20\n17\n25\n22\n28\n20\n\n\n\nCalcule o Coeficiente de Correlação Linear de Pearson (\\(r_{xy}\\)) e interprete."
+    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-qualitativas-4",
+    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-qualitativas-4",
+    "title": "Distribuição de Frequências Simples e em Classes",
+    "section": "Tabelas para Variáveis Qualitativas",
+    "text": "Tabelas para Variáveis Qualitativas\n\nPara a construção de tabelas técnicas, siga as diretrizes da ABNT:\n\n\nTítulo (Topo): Deve ser claro, conciso e responder: O que? Onde? Quando?\nLaterais Abertas: Nunca utilize linhas verticais para “fechar” a tabela nas bordas esquerda e direita.\nLinhas Horizontais: Use apenas no topo, abaixo do cabeçalho e na base (fundo)."
   },
   {
-    "objectID": "slides/06-Correlacao/06-Correlacao.html#exemplo-5.5",
-    "href": "slides/06-Correlacao/06-Correlacao.html#exemplo-5.5",
-    "title": "Correlação",
-    "section": "Exemplo 5.5",
-    "text": "Exemplo 5.5\nEm um estudo de engenharia civil, analisou-se a relação entre a altura de um edifício (em metros) (X) e sua frequência natural de vibração (em Hz) (Y). Sabe-se que estruturas mais altas tendem a ser mais flexíveis. Isso reduz a frequência natural de vibração, mas o comportamento não é perfeitamente linear (depende de rigidez, material, geometria).\nForam coletados dados de 10 estruturas:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nX (altura, m)\n10\n20\n15\n30\n25\n35\n12\n40\n18\n28\n\n\nY (Hz)\n3,2\n2,1\n2,9\n2,6\n2,4\n1,9\n3,1\n2,2\n2,5\n2,2\n\n\n\nCalcule o coeficiente de correlação de Pearson (\\(r_{xy}\\)) e interprete."
+    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-qualitativas-5",
+    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-qualitativas-5",
+    "title": "Distribuição de Frequências Simples e em Classes",
+    "section": "Tabelas para Variáveis Qualitativas",
+    "text": "Tabelas para Variáveis Qualitativas\n\nAlinhamento:\n\nColuna de categorias (texto): Alinhada à esquerda.\nColunas numéricas (\\(f_i\\), %): Centralizadas ou alinhadas pela vírgula.\n\nOrdenação (A Lógica):\n\nNominais: Ordem decrescente de frequência (destaca o mais importante).\nOrdinais: Ordem natural da hierarquia (ex: Baixo \\(\\rightarrow\\) Médio \\(\\rightarrow\\) Alto).\n\nFonte (Rodapé): Obrigatória, mesmo que sejam dados próprios (“Fonte: Dados da pesquisa (ano).”)."
+  },
+  {
+    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#exemplo-4.1",
+    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#exemplo-4.1",
+    "title": "Distribuição de Frequências Simples e em Classes",
+    "section": "Exemplo 4.1",
+    "text": "Exemplo 4.1\nVocê é responsável pelo laboratório de metalografia e precisa organizar o estoque de 40 amostras de ligas metálicas que chegaram sem identificação na caixa. Organize os dados em uma tabela.\n\n\n\n\nAço\nAlumínio\nInox\nAço\nCobre\nAço\nInox\nAlumínio\n\n\nAlumínio\nAço\nCobre\nAço\nTitânio\nInox\nAço\nAlumínio\n\n\nAço\nInox\nAço\nCobre\nAlumínio\nAço\nTitânio\nAlumínio\n\n\nInox\nAço\nAlumínio\nAço\nInox\nAço\nCobre\nAlumínio\n\n\nAço\nAlumínio\nInox\nAço\nAlumínio\nInox\nAço\nTitânio"
+  },
+  {
+    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#exemplo-4.2",
+    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#exemplo-4.2",
+    "title": "Distribuição de Frequências Simples e em Classes",
+    "section": "Exemplo 4.2",
+    "text": "Exemplo 4.2\nUm inspetor de qualidade avaliou a integridade de 30 pontos de solda em um chassi automotivo, classificando-os de acordo com a norma técnica de segurança. Construa uma tabela para esses dados.\n\n\n\n\nLeve\nModerada\nLeve\nModerada\nSevera\nLeve\n\n\nCrítica\nModerada\nLeve\nModerada\nSevera\nLeve\n\n\nModerada\nModerada\nLeve\nCrítica\nModerada\nSevera\n\n\nLeve\nModerada\nModerada\nLeve\nSevera\nModerada\n\n\nLeve\nModerada\nLeve\nSevera\nModerada\nCrítica"
+  },
+  {
+    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#variáveis-quantitativas-distribuição-em-classes",
+    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#variáveis-quantitativas-distribuição-em-classes",
+    "title": "Distribuição de Frequências Simples e em Classes",
+    "section": "Variáveis Quantitativas: Distribuição em Classes",
+    "text": "Variáveis Quantitativas: Distribuição em Classes\n\nQuando os valores são muito dispersos (ex: Resistência à Tração de 50 corpos de prova), precisamos agrupar em intervalos.\n\nEtapas de Construção:\n\nDefinir o número de classes (\\(k\\)) \\(\\rightarrow\\) Regra de Sturges.\nCalcular a Amplitude Total (\\(AT\\)).\nDefinir a Amplitude da Classe (\\(h\\))."
+  },
+  {
+    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#a-regra-de-sturges",
+    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#a-regra-de-sturges",
+    "title": "Distribuição de Frequências Simples e em Classes",
+    "section": "A Regra de Sturges",
+    "text": "A Regra de Sturges\nPara um conjunto de \\(n\\) observações, o número ideal de classes (\\(k\\)) é:\n\\[k = 1 + 3,322 \\cdot \\log_{10}(n)\\]\nExemplo Prático:\nSe ensaiamos \\(n=30\\) amostras de aço:\n\n\\(k = 1 + 3,322 \\cdot \\log_{10}(30)\\)\n\\(k \\approx 5,91 \\rightarrow\\) Usamos 6 classes."
+  },
+  {
+    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#amplitude-e-intervalos",
+    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#amplitude-e-intervalos",
+    "title": "Distribuição de Frequências Simples e em Classes",
+    "section": "Amplitude e Intervalos",
+    "text": "Amplitude e Intervalos\nApós definir \\(k=6\\), calculamos a amplitude (tamanho) de cada classe:\n\\[h = \\frac{AT}{k} = \\frac{\\text{Máximo} - \\text{Mínimo}}{k}\\]\n\nApós calcular \\(h = \\frac{AT}{k}\\), é recomendável realizar um arredondamento para cima para o número inteiro ou decimal exato mais próximo (ex: 5; 10; 15; 0,5; 1,0).\nEm seguida, determinamos os limites de cada classe e contamos o número de elementos (frequência) em cada classe."
+  },
+  {
+    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tipos-de-frequência",
+    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tipos-de-frequência",
+    "title": "Distribuição de Frequências Simples e em Classes",
+    "section": "Tipos de Frequência",
+    "text": "Tipos de Frequência\n\nAbsoluta (\\(f_i\\)): Contagem de ocorrências na classe.\nRelativa (\\(f_{ri}\\)): Proporção da classe em relação ao total (\\(f_i / n\\)).\nAcumulada (\\(F_i\\)): Soma das frequências da classe atual com as anteriores.\nAcumulada Relativa (\\(F_{ri}\\)): Proporção acumulada até a classe atual (\\(F_i / n\\)).\n\n\nNota: Frequência acumulada não faz sentido para variáveis qualitativas nominais!"
+  },
+  {
+    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#variáveis-quantitativas-distribuição-em-classes-1",
+    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#variáveis-quantitativas-distribuição-em-classes-1",
+    "title": "Distribuição de Frequências Simples e em Classes",
+    "section": "Variáveis Quantitativas: Distribuição em Classes",
+    "text": "Variáveis Quantitativas: Distribuição em Classes\n\n\n\n\nTabela 3: Distribuição de frequências da resistência à tração da liga de alumínio (\\(n=40\\)).\n\n\n\n\n\nClasses (MPa)\n\\(f_i\\)\n\\(f_{ri}\\) (%)\n\\(F_i\\)\n\\(F_{ri}\\) (%)\n\n\n\n\n\\(160 \\vdash 170\\)\n\\(8\\)\n\\(20,\\!0\\)\n\\(8\\)\n\\(20,\\!0\\)\n\n\n\\(170 \\vdash 180\\)\n\\(18\\)\n\\(45,\\!0\\)\n\\(26\\)\n\\(65,\\!0\\)\n\n\n\\(180 \\vdash 190\\)\n\\(10\\)\n\\(25,\\!0\\)\n\\(36\\)\n\\(90,\\!0\\)\n\n\n\\(190 \\vdash 200\\)\n\\(4\\)\n\\(10,\\!0\\)\n\\(40\\)\n\\(100,\\!0\\)\n\n\nTotal\n\\(40\\)\n\\(100,\\!0\\)\n–\n–\n\n\n\n\n\n\n\n\nLegenda: \\(f_i\\): Freq. Absoluta; \\(f_{ri}\\): Freq. Relativa; \\(F_i\\): Freq. Acumulada; \\(F_{ri}\\): Freq. Acumulada Relativa.\nFonte: Dados fictícios (2026)."
+  },
+  {
+    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#variáveis-quantitativas-distribuição-em-classes-2",
+    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#variáveis-quantitativas-distribuição-em-classes-2",
+    "title": "Distribuição de Frequências Simples e em Classes",
+    "section": "Variáveis Quantitativas: Distribuição em Classes",
+    "text": "Variáveis Quantitativas: Distribuição em Classes\n\nSe o projeto exige resistência mínima de 180 MPa, a coluna \\(F_{ri}\\) nos avisa que 65% das peças são inseguras (Informação).\n\nDecisão: Rejeitar o lote de alumínio."
+  },
+  {
+    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-quantitativas",
+    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#tabelas-para-variáveis-quantitativas",
+    "title": "Distribuição de Frequências Simples e em Classes",
+    "section": "Tabelas para Variáveis Quantitativas",
+    "text": "Tabelas para Variáveis Quantitativas\n\nA estética é igual à das tabelas para variáveis qualitativas, mas a estrutura interna muda.\nSempre deve ser informada a grandeza e a unidade (ex: “Tensão de Ruptura (MPa)”).\nA ABNT/IBGE recomenda o uso do símbolo \\(| \\dashv\\) para indicar intervalos:\n\n\\(10 \\vdash 20\\): Inclui o 10, mas não inclui o 20 (aberto à direita).\n\nSe uma classe não possui ocorrências, deve-se colocar um hífen (-) ou o número 0, nunca deixar a célula vazia."
+  },
+  {
+    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#como-verificar-se-a-tabela-está-correta",
+    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#como-verificar-se-a-tabela-está-correta",
+    "title": "Distribuição de Frequências Simples e em Classes",
+    "section": "Como verificar se a tabela está correta",
+    "text": "Como verificar se a tabela está correta\n\nA soma da coluna \\(f_i\\) resultou exatamente em \\(n\\)?\nA soma de \\(f_{ri}\\) é \\(100\\%\\)? (Cuidado com arredondamentos).\nO último valor da coluna \\(F_i\\) é igual ao total de amostras (\\(n\\))?\nUsou o símbolo \\(\\vdash\\) corretamente para garantir que um dado não seja contado em duas classes ao mesmo tempo?\nA tabela está “aberta” nas laterais (sem linhas verticais externas)?\nIndicou a unidade de medida utilizada?\nA tabela permite que um tomador de decisão entenda o cenário rapidamente?"
+  },
+  {
+    "objectID": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#exemplo-4.3",
+    "href": "slides/04-Distribuicao_de_frequencias_simples_e_em_classe/04-Distribuicao_de_frequencias_simples_e_em_classe.html#exemplo-4.3",
+    "title": "Distribuição de Frequências Simples e em Classes",
+    "section": "Exemplo 4.3",
+    "text": "Exemplo 4.3\nUm engenheiro de materiais recebeu um lote de 40 amostras de um novo polímero reforçado com fibras de vidro. Para validar o processo de fabricação, ele realizou ensaios de tração para medir o Limite de Resistência à Tração (RT) em MPa. Construa uma tabela de frequências com os dados da amostra.\n\n152, 155, 158, 160, 162, 163, 164, 165, 167, 168,\n170, 171, 172, 172, 173, 174, 175, 175, 176, 177,\n178, 178, 179, 180, 181, 182, 183, 184, 185, 186,\n188, 190, 191, 192, 194, 195, 196, 197, 199, 202\n\nO fornecedor garante que 90% das peças resistem a pelo menos 160 MPa. Com base na sua coluna de Frequência Acumulada, o fornecedor está falando a verdade?"
+  },
+  {
+    "objectID": "slides/09-Probabilidade-condicional-e-Independencia/09-Probabilidade-condicional-e-Independencia.html#exemplo-9.1",
+    "href": "slides/09-Probabilidade-condicional-e-Independencia/09-Probabilidade-condicional-e-Independencia.html#exemplo-9.1",
+    "title": "Probabilidade Condicional e Independência",
+    "section": "Exemplo 9.1",
+    "text": "Exemplo 9.1\nUm lote de 1.000 peças metálicas foi produzido em uma fundição. Dessas peças, 300 foram fabricadas com uma nova Liga de Titânio (mais leve, usada em próteses médicas e satélites), enquanto o restante foi feito com uma liga de aço convencional. Ao final do dia, o controle de qualidade identificou que 65 peças apresentaram microfissuras (defeito de fabricação). Entre as peças feitas com a Liga de Titânio, 30 apresentaram esse defeito.\n\nQual é a probabilidade de uma peça escolhida ao acaso no lote total apresentar uma microfissura?\nQual é a probabilidade de uma peça ter microfissura, sabendo que ela é da nova Liga de Titânio?"
+  },
+  {
+    "objectID": "slides/09-Probabilidade-condicional-e-Independencia/09-Probabilidade-condicional-e-Independencia.html#section",
+    "href": "slides/09-Probabilidade-condicional-e-Independencia/09-Probabilidade-condicional-e-Independencia.html#section",
+    "title": "Probabilidade Condicional e Independência",
+    "section": "",
+    "text": "No exemplo anterior, calculamos uma probabilidade levando em conta uma informação adicional – o tipo de material utilizado na peça (liga de titânio).\nQuando uma informação conhecida influencia o cálculo da probabilidade, estamos lidando com um caso de probabilidade condicional.\nVejamos a definição formal."
+  },
+  {
+    "objectID": "slides/09-Probabilidade-condicional-e-Independencia/09-Probabilidade-condicional-e-Independencia.html#definição-9.1-probabilidade-condicional",
+    "href": "slides/09-Probabilidade-condicional-e-Independencia/09-Probabilidade-condicional-e-Independencia.html#definição-9.1-probabilidade-condicional",
+    "title": "Probabilidade Condicional e Independência",
+    "section": "Definição 9.1: Probabilidade Condicional",
+    "text": "Definição 9.1: Probabilidade Condicional\nA probabilidade de que um evento \\(B\\) ocorra, dado que o evento \\(A\\) ocorreu, é definida por: \\[\n    P(B|A) = \\frac{P(A\\cap B)}{P(A)},\n\\] desde que \\(P(A)&gt;0\\).\n\n\\(P(B|A)\\) se lê “probabilidade de \\(B\\) dado \\(A\\)”."
+  },
+  {
+    "objectID": "slides/09-Probabilidade-condicional-e-Independencia/09-Probabilidade-condicional-e-Independencia.html#probabilidade-condicional",
+    "href": "slides/09-Probabilidade-condicional-e-Independencia/09-Probabilidade-condicional-e-Independencia.html#probabilidade-condicional",
+    "title": "Probabilidade Condicional e Independência",
+    "section": "Probabilidade Condicional",
+    "text": "Probabilidade Condicional\nO que realmente estamos calculando?\n\nAo calcular \\(P(B|A)\\), queremos saber qual é a chance de \\(B\\) acontecer sabendo que \\(A\\) já aconteceu.\nComo sabemos que o evento \\(A\\) ocorreu, restringimos o espaço de possibilidades apenas a \\(A\\).\nOu seja, ao invés de calcularmos probabilidades considerando todo o espaço amostral \\(\\Omega\\), consideramos apenas o novo “espaço amostral” \\(A\\)."
+  },
+  {
+    "objectID": "slides/09-Probabilidade-condicional-e-Independencia/09-Probabilidade-condicional-e-Independencia.html#probabilidade-condicional-1",
+    "href": "slides/09-Probabilidade-condicional-e-Independencia/09-Probabilidade-condicional-e-Independencia.html#probabilidade-condicional-1",
+    "title": "Probabilidade Condicional e Independência",
+    "section": "Probabilidade Condicional",
+    "text": "Probabilidade Condicional\n\nFonte: http://clubes.obmep.org.br/blog/sala-de-estudo-probabilidades-sala-3/"
+  },
+  {
+    "objectID": "slides/09-Probabilidade-condicional-e-Independencia/09-Probabilidade-condicional-e-Independencia.html#probabilidade-condicional-2",
+    "href": "slides/09-Probabilidade-condicional-e-Independencia/09-Probabilidade-condicional-e-Independencia.html#probabilidade-condicional-2",
+    "title": "Probabilidade Condicional e Independência",
+    "section": "Probabilidade Condicional",
+    "text": "Probabilidade Condicional\nTemos duas formas principais de pensar ou calcular \\(P(B | A)\\):\n\nInterpretativamente: analisando a ocorrência de \\(B\\) dentro do espaço amostral reduzido \\(A\\).\nFormalmente: aplicando a fórmula \\(P(B|A)=\\frac{P(A\\cap B)}{P(A)}\\)."
+  },
+  {
+    "objectID": "slides/09-Probabilidade-condicional-e-Independencia/09-Probabilidade-condicional-e-Independencia.html#exemplo-9.2",
+    "href": "slides/09-Probabilidade-condicional-e-Independencia/09-Probabilidade-condicional-e-Independencia.html#exemplo-9.2",
+    "title": "Probabilidade Condicional e Independência",
+    "section": "Exemplo 9.2",
+    "text": "Exemplo 9.2\nEm uma empresa de tecnologia, há 100 funcionários. Alguns trabalham na área de desenvolvimento de software (\\(D\\)) e outros na área de suporte ao cliente (\\(S\\)). Além disso, alguns trabalham em home office (\\(H\\)) e outros trabalham no escritório (\\(E\\)). A tabela abaixo mostra o número de funcionários em cada categoria:\n\n\n\n\n\\(D\\)\n\\(S\\)\nTotal\n\n\n\n\n\\(H\\)\n40\n30\n70\n\n\n\\(E\\)\n20\n10\n30\n\n\nTotal\n60\n40\n100\n\n\n\nUm funcionário é escolhido ao acaso e descobre-se que ele trabalha em home office (\\(H\\)). Qual é a probabilidade de que ele seja da área de desenvolvimento de software (\\(D\\))?"
+  },
+  {
+    "objectID": "slides/09-Probabilidade-condicional-e-Independencia/09-Probabilidade-condicional-e-Independencia.html#exemplo-9.3",
+    "href": "slides/09-Probabilidade-condicional-e-Independencia/09-Probabilidade-condicional-e-Independencia.html#exemplo-9.3",
+    "title": "Probabilidade Condicional e Independência",
+    "section": "Exemplo 9.3",
+    "text": "Exemplo 9.3\nEm um tratamento de câncer utilizando feixe de prótons, a eficácia depende da sincronia de dois sistemas independentes. Verificou-se que a probabilidade do feixe atingir a profundidade correta (Pico de Bragg) é \\(P(T) = 0,83\\). A probabilidade do posicionamento robótico do paciente estar milimetricamente correto durante a aplicação é \\(P(S) = 0,82\\). A probabilidade de ambos (profundidade e posição) estarem corretos simultaneamente é \\(P(T \\cap S) = 0,78\\).\n\nQual a probabilidade de o posicionamento estar correto (\\(S\\)), dado que a profundidade do feixe foi atingida com sucesso (\\(T\\))?\nQual a probabilidade de a profundidade ter sido atingida com sucesso (\\(T\\)), dado que o posicionamento do paciente estava correto (\\(S\\))?"
+  },
+  {
+    "objectID": "slides/09-Probabilidade-condicional-e-Independencia/09-Probabilidade-condicional-e-Independencia.html#section-1",
+    "href": "slides/09-Probabilidade-condicional-e-Independencia/09-Probabilidade-condicional-e-Independencia.html#section-1",
+    "title": "Probabilidade Condicional e Independência",
+    "section": "",
+    "text": "Agora vamos mudar um pouco… \nExemplo 9.4\nEm uma obra de um edifício, foram moldados 100 corpos de prova de concreto para ensaio de compressão. Após a cura, verificou-se que 20 deles não atingiram a resistência mínima exigida. Se um estagiário de engenharia escolher aleatoriamente dois desses corpos de prova para uma análise detalhada, qual a probabilidade de ambos serem os que falharam no teste:\n\nSe a escolha for feita com reposição?\nSe a escolha for feita sem reposição?"
+  },
+  {
+    "objectID": "slides/09-Probabilidade-condicional-e-Independencia/09-Probabilidade-condicional-e-Independencia.html#teorema-da-multiplicação",
+    "href": "slides/09-Probabilidade-condicional-e-Independencia/09-Probabilidade-condicional-e-Independencia.html#teorema-da-multiplicação",
+    "title": "Probabilidade Condicional e Independência",
+    "section": "Teorema da Multiplicação",
+    "text": "Teorema da Multiplicação\n\nUma das consequências mais importantes da definição de probabilidade condicional é \\[\nP(B|A) = \\frac{P(A\\cap B)}{P(A)} \\Rightarrow P(A\\cap B) = P(A)P(B|A).\n\\]\nEste resultado é chamado Teorema da Multiplicação.\nObs.: Use a regra da multiplicação apenas quando temos uma sequência de eventos \\(A\\) e \\(B\\) em que o evento \\(B\\) é INFLUENCIADO pelo evento \\(A\\)."
+  },
+  {
+    "objectID": "slides/09-Probabilidade-condicional-e-Independencia/09-Probabilidade-condicional-e-Independencia.html#exemplo-9.5",
+    "href": "slides/09-Probabilidade-condicional-e-Independencia/09-Probabilidade-condicional-e-Independencia.html#exemplo-9.5",
+    "title": "Probabilidade Condicional e Independência",
+    "section": "Exemplo 9.5",
+    "text": "Exemplo 9.5\nUm laboratório de metalurgia recebeu um lote de 20 corpos de prova de uma nova liga de alumínio. Após uma inspeção preliminar por ultrassom, verificou-se que 5 deles apresentam microfissuras internas. Um pesquisador retira, aleatoriamente e sem reposição, dois desses corpos de prova para realizar um ensaio de tração. Qual a probabilidade de que os dois materiais selecionados sejam justamente aqueles que possuem microfissuras?"
+  },
+  {
+    "objectID": "slides/09-Probabilidade-condicional-e-Independencia/09-Probabilidade-condicional-e-Independencia.html#teorema-da-multiplicação-1",
+    "href": "slides/09-Probabilidade-condicional-e-Independencia/09-Probabilidade-condicional-e-Independencia.html#teorema-da-multiplicação-1",
+    "title": "Probabilidade Condicional e Independência",
+    "section": "Teorema da Multiplicação",
+    "text": "Teorema da Multiplicação\n\nO Teorema da Multiplicação pode ser generalizada para mais de dois eventos da seguinte maneira: \\[\nP(A_1\\cap A_2\\cap A_3 \\cap \\cdots \\cap A_n) =\n\\] \\[\n= P(A_1)P(A_2|A_1)P(A_3|A_1\\cap A_2) \\cdots P(A_n | A_1\\cap A_2 \\cap \\cdots \\cap A_{n-1}).\n\\]"
+  },
+  {
+    "objectID": "slides/09-Probabilidade-condicional-e-Independencia/09-Probabilidade-condicional-e-Independencia.html#exemplo-9.6",
+    "href": "slides/09-Probabilidade-condicional-e-Independencia/09-Probabilidade-condicional-e-Independencia.html#exemplo-9.6",
+    "title": "Probabilidade Condicional e Independência",
+    "section": "Exemplo 9.6",
+    "text": "Exemplo 9.6\nTrês cartas são escolhidas em sucessão, sem reposição, de um baralho comum. Determine a probabilidade de que o evento \\(A_1 \\cap A_2 \\cap A_3\\) ocorra, onde \\(A_1\\) é o evento no qual a primeira carta é um ás vermelho, \\(A_2\\) , a segunda é um ás ou um valete, e \\(A_3\\) , o evento no qual a terceira carta é maior que 3, mas menor que 7."
+  },
+  {
+    "objectID": "slides/09-Probabilidade-condicional-e-Independencia/09-Probabilidade-condicional-e-Independencia.html#eventos-independentes",
+    "href": "slides/09-Probabilidade-condicional-e-Independencia/09-Probabilidade-condicional-e-Independencia.html#eventos-independentes",
+    "title": "Probabilidade Condicional e Independência",
+    "section": "Eventos Independentes",
+    "text": "Eventos Independentes\nDois eventos \\(A\\) e \\(B\\) são independentes se, e somente se, \\[\n  P(A|B)=P(A) \\quad \\text{ou} \\quad P(B|A)=P(B),\n\\] desde que as probabilidades condicionais existam. Caso contrário, \\(A\\) e \\(B\\) serão dependentes.\n\nIsto implica que \\(A\\) e \\(B\\) são independentes se \\[ P(A\\cap B) = P(A)P(B). \\]\nSe temos \\(n\\) eventos, eles serão independentes se a probabilidade de todas as interseções possı́veis fatorar no produto das probabilidades individuais: \\[\nP(A_1\\cap A_2\\cap \\cdots\\cap A_k) = P(A_1)P(A_2)\\cdots P(A_k).\n\\]"
+  },
+  {
+    "objectID": "slides/09-Probabilidade-condicional-e-Independencia/09-Probabilidade-condicional-e-Independencia.html#exemplo-9.7",
+    "href": "slides/09-Probabilidade-condicional-e-Independencia/09-Probabilidade-condicional-e-Independencia.html#exemplo-9.7",
+    "title": "Probabilidade Condicional e Independência",
+    "section": "Exemplo 9.7",
+    "text": "Exemplo 9.7\nUma pequena cidade tem um caminhão de bombeiros e uma ambulância para as emergências. A probabilidade de que o caminhão de bombeiros esteja disponı́vel quando necessário é de 0,98 e a da ambulância é de 0,92. No caso de um ferimento causado por um incêndio em um prédio, determine a probabilidade de a ambulância e o caminhão de bombeiros estarem disponı́veis."
+  },
+  {
+    "objectID": "slides/09-Probabilidade-condicional-e-Independencia/09-Probabilidade-condicional-e-Independencia.html#exemplo-9.8",
+    "href": "slides/09-Probabilidade-condicional-e-Independencia/09-Probabilidade-condicional-e-Independencia.html#exemplo-9.8",
+    "title": "Probabilidade Condicional e Independência",
+    "section": "Exemplo 9.8",
+    "text": "Exemplo 9.8\nUma carta é retirada aleatoriamente de um baralho padrão de 52 cartas. Considere os eventos \\(A\\): “a carta é vermelha” e \\(B\\): “a carta é um rei”. Os eventos \\(A\\) e \\(B\\) são independentes?"
   },
   {
     "objectID": "slides/07-Regressao/07-Regressao.html#motivação",

@@ -41,6 +41,12 @@ website:
             text: "6- Correlação"
           - href: aulas/07-Regressao.qmd
             text: "7- Regressão Linear Simples"
+      - section: "Parte 2: Probabilidade"
+        contents:
+          - href: aulas/08-Probabilidade.qmd
+            text: "8- Probabilidade"
+          - href: aulas/09-Probabilidade-condicional-e-Independencia.qmd
+            text: "9- Probabilidade Condicional e Independência"
             
 
       

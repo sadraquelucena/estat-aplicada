@@ -1,0 +1,43 @@
+---
+title: "Conteúdo 9"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Probabilidade Condicional e Independência
+
+Nesta aula são apresentados os conceitos de probabilidade condicional e independência como ferramentas fundamentais para calcular e avaliar as chances de um evento quando temos informações adicionais conhecidas. É abordada a definição formal e interpretativa da probabilidade condicional por meio da redução do espaço amostral, a aplicação do Teorema da Multiplicação para determinar a interseção de eventos sucessivos e a caracterização de eventos independentes, nos quais a ocorrência de um resultado não interfere na probabilidade do outro.
+
+Slides:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/slides/09-Probabilidade-condicional-e-Independencia/09-Probabilidade-condicional-e-Independencia.html" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide09_html.png)<br>Versão html
+</a>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/slides/09-Probabilidade-condicional-e-Independencia.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide09_pdf.png)<br>Versão pdf
+</a>
+:::
+
+::::
+
+Lista de Exercícios:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/listas/EstatAplicada_lista9.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/listas/lista09.png){width=80%}<br>Lista 9
+</a>
+:::
+
+::::
+
+

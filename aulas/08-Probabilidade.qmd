@@ -1,0 +1,43 @@
+---
+title: "Conteúdo 8"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Introdução à Probabilidade
+
+Nesta aula é apresentada a teoria da probabilidade como a linguagem fundamental para quantificar e modelar a incerteza associada a fenômenos aleatórios. É abordada a definição de espaços amostrais e eventos, as propriedades matemáticas e operacionais do cálculo de probabilidades, e o uso de técnicas de contagem como permutação, arranjo e combinação para determinar a ocorrência de resultados equiprováveis.
+
+Slides:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/slides/08-Probabilidade/08-Probabilidade.html" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide08_html.png)<br>Versão html
+</a>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/slides/08-Probabilidade.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide08_pdf.png)<br>Versão pdf
+</a>
+:::
+
+::::
+
+Lista de Exercícios:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/listas/EstatAplicada_lista8.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/listas/lista08.png){width=80%}<br>Lista 8
+</a>
+:::
+
+::::
+
+
