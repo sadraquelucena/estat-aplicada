@@ -1,0 +1,108 @@
+---
+title: "Teorema da Probabilidade Total e Teorema de Bayes"
+subtitle: "ESTAT0011 -- Estatística Aplicada"
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <span style="font-size:.8em;">sadraquelucena@academico.ufs.br</span>
+    <br>
+    <a href="http://sadraquelucena.github.io/estat-aplicada" style="font-size:.8em;">http://sadraquelucena.github.io/estat-aplicada</a>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1024
+    height: 768
+    margin: 0.1         # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem numero das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_horizontal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+
+lang: pt-BR
+---
+
+## Exemplo 10.1
+
+Uma fábrica produz sensores de alta precisão utilizados em equipamentos de Raio-X e dispositivos inteligentes. A linha de produção é dividida em três setores de montagem: $S_1$, $S_2$ e $S_3$. O setor $S_1$ produz 30% dos sensores, o $S_2$ produz 45% e o $S_3$ produz os 25% restantes.Devido a variações na pureza da matéria-prima, alguns sensores podem sair de fábrica com falha na calibração. A taxa de falha é de 2% no setor $S_1$, 3% no setor $S_2$ e 2% no setor $S_3$. Ao selecionar um sensor finalizado da prateleira para uma auditoria, qual a probabilidade dele estar descalibrado?
+
+
+
+
+## Definição 10.1: Partição
+
+Dizemos que os eventos $B_1, B_2, \ldots, B_k$ constituem uma partição do espaço amostral $\Omega$ quando
+
+a. $B_i\cap B_j=\emptyset$, para todo $i\neq j$;
+
+b. $\bigcup_{i=1}^k B_i = \Omega$;
+
+c. $P(B_i)>0$, para todo $i$.
+
+<div style="text-align: center;">
+  <img src="imagens/particao.png" style="width: 400px;" />
+</div>
+
+
+## Teorema da Probabilidade Total
+
+Se os eventos $B_1, B_2, \ldots, B_k$ constituem uma partição do espaço amostral, de modo que $P(B_i)\neq 0$, para $i = 1, 2, \ldots, k$, então para qualquer evento $A$ de $\Omega$,
+$$
+  P(A) = \sum\limits_{i=1}^k P(B_i\cap A) = \sum\limits_{i=1}^k P(B_i) P(A|B_i).
+$$
+
+<div style="text-align: center;">
+  <img src="imagens/partB.png" style="width: 400px;" />
+</div>
+
+
+## Exemplo 10.2
+
+Um aluno propõe-se a resolver uma questão de um trabalho. A probabilidade de que consiga resolver a questão sem necessidade de uma pesquisa é de 40%. Caso faça a pesquisa, a probabilidade de que consiga resolver a questão é de 70%. Se a probabilidade do aluno fazer a pesquisa é de 80%, calcule a probabilidade de que consiga resolver a questão.
+
+
+
+
+## Exemplo 10.3
+
+Uma equipe de pesquisadores está testando quatro novos compostos de blindagem ($B_1, B_2, B_3, B_4$) feitos de concreto aditivado e polímeros. O objetivo é verificar se o material consegue bloquear totalmente a passagem de radiação ou resistir a um impacto severo sem romper. Em testes laboratoriais controlados, a probabilidade da blindagem manter sua integridade total foi de: 40% para o composto $B_1$; 30% para o composto $B_2$; 25% para o composto $B_3$; 50% para o composto $B_4$. Considerando que há um corpo de prova (amostra) de cada composto no laboratório e um deles é sorteado para inspeção final, qual a probabilidade do fiscal encontrar um material que resistiu 100% ao teste?
+
+
+
+
+## Teorema de Bayes
+
+Se os eventos $B_1, \ldots, B_k$ constituem uma partição do espaço
+amostral $\Omega$, de modo que $P(B_i) \neq 0$, para $i = 1, \ldots, k$, então para qualquer evento $A$ de $\Omega$, tal que $P(A) \neq 0$, temos que
+$$
+  P(B_r|A) = \frac{P(B_r\cap A)}{P(A)} = \frac{P(B_r)P(A|B_r)}{\sum_{i=1}^k P(B_i)P(A|B_i)},
+$$
+para $r = 1, \ldots, k$.
+
+
+
+
+## Exemplo 10.4
+
+Uma equipe de pesquisadores está testando quatro novos compostos de blindagem ($B_1, B_2, B_3, B_4$) feitos de concreto aditivado e polímeros. O objetivo é verificar se o material consegue bloquear totalmente a passagem de radiação ou resistir a um impacto severo sem romper. Em testes laboratoriais controlados, a probabilidade da blindagem manter sua integridade total foi de: 40% para o composto $B_1$; 30% para o composto $B_2$; 25% para o composto $B_3$; 50% para o composto $B_4$. Suponha que um corpo de prova foi selecionado aleatoriamente e resistiu 100% ao teste. Suponha que um servidor *web* em um ambiente simulado foi selecionado aleatoriamente e manteve 100% de disponibilidade durante picos de tráfego. Qual é a probabilidade de que ele tenha o composto $B_4$?
+
+
+
+
+## Exemplo 10.5
+
+Um vendedor de produtos eletrônicos estima que 2% dos seus clientes são da classe $A$, 15% da classe $B$, 63% da classe $C$ e o restante das classes $D$ e $E$. Ele está divulgando uma promoção para a venda de *notebooks* e acredita que tem 90% de probabilidade de vendê-los para indivíduos da classe $A$, 70% de probabilidade de vendê-los para a classe $B$, para a classe $C$, 40%, e para as classes $D$ e $E$, 10%. 
+
+a. Um cliente entra na loja. Qual a probabilidade dele comprar o computador em promoção?
+
+b. Um cliente entra na loja e não se interessa pela promoção. Qual a probabilidade de que seja da classe B?
+
+
+
+
+# Fim

@@ -1,0 +1,43 @@
+---
+title: "Conteúdo 10"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Teorema da Probabilidade Total e Teorema de Bayes
+
+Nesta aula são apresentados os conceitos do Teorema da Probabilidade Total e do Teorema de Bayes como ferramentas para avaliar as chances de causas quando um efeito já é conhecido. É abordada a definição formal de partição do espaço amostral por meio de eventos mutuamente excludentes, a aplicação da Probabilidade Total para determinar a probabilidade global de um acontecimento e a caracterização do Teorema de Bayes, no qual a ocorrência de um resultado prático permite atualizar e inverter as probabilidades condicionais.
+
+Slides:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/slides/10-Teorema-probabilidade-total-e-Bayes/10-Teorema-probabilidade-total-e-Bayes.html" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide10_html.png)<br>Versão html
+</a>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/slides/10-Teorema-probabilidade-total-e-Bayes.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide10_pdf.png)<br>Versão pdf
+</a>
+:::
+
+::::
+
+Lista de Exercícios:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/listas/EstatAplicada_lista10.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/listas/lista10.png){width=80%}<br>Lista 10
+</a>
+:::
+
+::::
+
+

@@ -47,6 +47,8 @@ website:
             text: "8- Probabilidade"
           - href: aulas/09-Probabilidade-condicional-e-Independencia.qmd
             text: "9- Probabilidade Condicional e Independência"
+          - href: aulas/10-Teorema-probabilidade-total-e-Bayes.qmd
+            text: "10- Teorema da Probabilidade Total e de Bayes"
             
 
       
