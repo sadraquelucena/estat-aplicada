@@ -49,6 +49,9 @@ website:
             text: "9- Probabilidade Condicional e Independência"
           - href: aulas/10-Teorema-probabilidade-total-e-Bayes.qmd
             text: "10- Teorema da Probabilidade Total e de Bayes"
+          - href: aulas/11-Distribuicao-Binomial.qmd
+            text: "11- Distribuicao Binomial"
+            
             
 
       

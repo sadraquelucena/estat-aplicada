@@ -1,0 +1,43 @@
+---
+title: "Conteúdo 11"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Distribuição Binomial
+
+Nesta aula, será apresentada a distribuição binomial, um dos modelos probabilísticos mais importantes para analisar experimentos com dois possíveis resultados (sucesso ou fracasso). Serão discutidos os conceitos fundamentais da distribuição, incluindo função de probabilidade, cálculo de probabilidades, esperança matemática e variância, sempre com exemplos aplicados e de fácil interpretação.
+
+Slides:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/slides/11-Distribuicao-Binomial/11-Distribuicao-Binomial.html" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide11_html.png)<br>Versão html
+</a>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/slides/11-Distribuicao-Binomial.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide11_pdf.png)<br>Versão pdf
+</a>
+:::
+
+::::
+
+Lista de Exercícios:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/listas/EstatAplicada_lista11.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/listas/lista11.png){width=80%}<br>Lista 11
+</a>
+:::
+
+::::
+
+

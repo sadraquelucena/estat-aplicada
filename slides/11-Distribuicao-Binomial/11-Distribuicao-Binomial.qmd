@@ -1,0 +1,109 @@
+---
+title: "A Distribuição Binomial"
+subtitle: "ESTAT0011 -- Estatística Aplicada"
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <span style="font-size:.8em;">sadraquelucena@academico.ufs.br</span>
+    <br>
+    <a href="http://sadraquelucena.github.io/estat-aplicada" style="font-size:.8em;">http://sadraquelucena.github.io/estat-aplicada</a>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1024
+    height: 768
+    margin: 0.1         # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem numero das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_horizontal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+
+lang: pt-BR
+---
+
+## Exemplo 11.1
+
+Um projeto de reabilitação desenvolveu uma prótese biomecânica de joelho para ajudar pacientes amputados a caminharem. Para garantir a segurança do paciente, a prótese usa sensores eletrônicos que monitoram o equilíbrio e a distribuição de carga. Sabe-se que a probabilidade de um desses sensores passar no teste de calibração (registrar o equilíbrio com alta precisão) é de $3/4$. Se selecionarmos quatro sensores para auditoria, qual a probabilidade de encontrarmos exatamente dois sensores aprovados?
+
+
+
+
+## Distribuição Binomial
+
+- Considere que $p$ é a probabilidade de sucesso em um
+experimento e $1 - p$ é a probabilidade de fracasso.
+- Suponha que vamos repetir o experimento $n$ vezes em que
+cada repetição é independente da outra.
+- Se $X$ é o número de sucesso nas $n$ repetições do experimento, dizemos que $X$ tem distribuição binomial e calculamos a probabilidade usando
+$$
+  P(X=x) = \binom{n}{x} p^x (1-p)^{n-x}, \quad x = 0, 1, 2,\ldots,n.
+$$
+- **Notação:** $X\sim$ Binomial($n,p$).
+
+
+
+## Exemplo 11.2
+
+Uma empresa desenvolveu um novo selante químico para proteger componentes eletrônicos e estruturas de concreto contra a umidade. Eles descobriram que a probabilidade de uma aplicação desse selante ser perfeita (sem nenhum poro por onde a água possa passar) é de 0,6 (ou 60%). Para um projeto piloto, eles aplicaram esse selante em 10 amostras de materiais diferentes.
+
+Determine a probabilidade de que:
+
+(a) Exatamente 7 amostras fiquem perfeitamente seladas?
+(b) No máximo 2 amostras fiquem perfeitamente seladas?
+(c) Pelo menos 8 amostras fiquem perfeitamente seladas?
+
+
+
+
+
+## 
+
+- Podemos calcular o valor esperado de um experimento e a variância para uma variável aleatória $X$ com distribuição Binomial($n, p$):
+$$ E(X) = np $$
+e
+$$ Var(X) = n p (1-p), $$
+respectivamente.
+
+
+
+
+## Exemplo 11.3
+
+Um sistema de reconhecimento facial é utilizado para liberar o acesso de estudantes a um laboratório da universidade. Em cada tentativa de acesso, o sistema pode funcionar corretamente ou apresentar falha. Testes anteriores mostraram que a probabilidade de falha em uma tentativa é de 20%. Suponha que sejam realizadas 10 tentativas independentes de acesso. Considere $X$ a variável aleatória que representa o número de falhas do sistema nas 10 tentativas.
+
+a) Calcule a probabilidade de o sistema apresentar de 3 a 5 falhas.
+
+b) Em média, quantas falhas são esperadas nas 10 tentativas?
+
+c) Qual a variância?
+
+
+
+## Exemplo 11.4
+
+Uma empresa produz sensores de deformação para monitorar a saúde de grandes estruturas. O controle de qualidade da fábrica indica que 3% desses sensores apresentam falhas na película condutora, impedindo a leitura dos dados.
+
+(a) Um engenheiro seleciona 20 sensores para instalar em uma viga de teste. Qual é a probabilidade de que haja pelo menos um dispositivo com falha entre esses 20?
+
+(b) Suponha que para monitorar uma ponte inteira sejam utilizados 200 sensores. Qual o número esperado de sensores com defeito e qual a variância?
+
+
+
+
+## Exemplo 11.5
+
+Em uma grande distribuidora, estima-se que 30% dos lotes de materiais contenham um nível de impureza acima do permitido. Como é impossível testar quimicamente cada grama de material, um laboratório seleciona oito amostras aleatoriamente para uma análise microscópica.
+
+(a) Assumindo que a estimativa de 30% de lotes impuros está correta, qual é a probabilidade de que, entre oito amostras selecionadas, exatamente três apresentem impurezas críticas?
+(b) Nesta amostra de 8 unidades, qual o comportamento médio esperado? Qual a variância?
+
+
+
+
+# Fim
