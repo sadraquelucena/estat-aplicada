@@ -1,0 +1,77 @@
+---
+title: "A Distribuição de Poisson"
+subtitle: "ESTAT0011 -- Estatística Aplicada"
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <span style="font-size:.8em;">sadraquelucena@academico.ufs.br</span>
+    <br>
+    <a href="http://sadraquelucena.github.io/estat-aplicada" style="font-size:.8em;">http://sadraquelucena.github.io/estat-aplicada</a>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1024
+    height: 768
+    margin: 0.1         # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem numero das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_horizontal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+
+lang: pt-BR
+---
+
+## Distribuição de Poisson
+
+- O número $x$ de resultados que ocorrem em certo intervalo de tempo ou em uma região específica pode ser modelado pela distribuição de Poisson.
+
+- A distribuição de probabilidade da variável aleatória de Poisson $X$, que representa esse número de ocorrências, é dada por
+$$
+  P(X=x) = \frac{e^{-\lambda}\lambda^x}{x!}, \quad x = 0,1,2,\ldots,
+$$
+
+em que $λ$ representa o número médio de ocorrências por unidade de tempo, distância, área ou volume, e $e = 2,\!71828\ldots$
+
+- **Notação:** $X\sim$ Poisson($\lambda$)
+
+
+
+
+## Exemplo 11.6
+
+Durante o processo de deposição de um filme fino, o número médio de microdefeitos encontrados por milímetro quadrado ($mm^2$) na superfície do material é quatro. Se um engenheiro selecionar aleatoriamente uma área de exatamente $1\text{ }mm^2$ para análise sob o microscópio, qual é a probabilidade de encontrar exatamente seis microdefeitos?
+
+
+
+## Exemplo 11.7
+
+Em uma clínica, um sensor utilizado para monitorar batimentos cardíacos pode registrar pequenos erros de leitura ao longo do dia. Suponha que a média seja de 2 erros por hora. Determine a probabilidade de o sensor registrar exatamente 4 erros em uma hora.
+
+
+## Exemplo 11.8
+
+Em média, chegam 3 novos corpos de prova (amostras) por hora para serem processados na estufa. No entanto, devido ao tamanho e ao tempo de ciclo, a estufa consegue processar, no máximo, 5 amostras por hora. Se chegar uma 6ª amostra, ela terá que esperar em uma bancada (fila). Qual é a probabilidade de que, em uma determinada hora, as novas amostras tenham que esperar na fila?
+
+
+## Exemplo 11.9
+
+Um aplicativo de mensagens apresenta travamentos ocasionais durante seu funcionamento, com média de 1,5 travamento por semana. Determine a probabilidade de ocorrerem mais de 2 travamentos em uma semana.
+
+
+## Exemplo 11.10
+
+Uma empresa de mapeamento utiliza drones para fotografar canteiros de obras ou áreas de preservação. O sensor da câmera do drone, feito de um material semicondutor sensível, sofre desgaste com o tempo. Esse desgaste causa o surgimento de "pixels ruidosos" (pontos pretos ou brancos que não deveriam estar lá). Em média, o software de análise detecta 12 pixels com ruído para cada $100\text{ }cm^2$ de sensor processado. Determine a probabilidade de que menos de três pixels ruidosos sejam registrados em:
+
+(a) Uma área de $100\text{ }cm^2$.
+(b) Uma área de $200\text{ }cm^2$.
+
+
+
+
+# Fim

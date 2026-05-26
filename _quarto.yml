@@ -50,7 +50,10 @@ website:
           - href: aulas/10-Teorema-probabilidade-total-e-Bayes.qmd
             text: "10- Teorema da Probabilidade Total e de Bayes"
           - href: aulas/11-Distribuicao-Binomial.qmd
-            text: "11- Distribuicao Binomial"
+            text: "11- Distribuição Binomial"
+          - href: aulas/12-Distribuicao-de-Poisson.qmd
+            text: "12- Distribuição de Poisson"
+            
             
             
 

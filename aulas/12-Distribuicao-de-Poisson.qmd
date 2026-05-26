@@ -1,0 +1,43 @@
+---
+title: "Conteúdo 12"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Distribuição de Poisson
+
+Nesta aula, é apresentada a distribuição de Poisson, um modelo probabilístico utilizado para descrever a quantidade de ocorrências de um evento em determinado intervalo de tempo, área ou espaço. Serão discutidos os conceitos fundamentais da distribuição, incluindo função de probabilidade, interpretação do parâmetro λ, cálculo de probabilidades e aplicações práticas.
+
+Slides:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/slides/12-Distribuicao-de-Poisson/12-Distribuicao-de-Poisson.html" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide12_html.png)<br>Versão html
+</a>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/slides/12-Distribuicao-de-Poisson.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide12_pdf.png)<br>Versão pdf
+</a>
+:::
+
+::::
+
+Lista de Exercícios:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/listas/EstatAplicada_lista12.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/listas/lista12.png){width=80%}<br>Lista 12
+</a>
+:::
+
+::::
+
+
