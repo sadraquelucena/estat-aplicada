@@ -1,0 +1,43 @@
+---
+title: "Conteúdo 13"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Distribuição Normal
+
+Nesta aula estudamos a distribuição normal, uma das distribuições de probabilidade mais importantes da Estatística. São apresentadas suas propriedades fundamentais, a interpretação geométrica das probabilidades e o processo de padronização por meio da variável normal padrão (Z). Além disso, discutimos o uso da tabela normal tanto para calcular probabilidades quanto para determinar valores associados a probabilidades específicas.
+
+Slides:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/slides/13-Distribuicao_normal/13-Distribuicao_normal.html" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide13_html.png)<br>Versão html
+</a>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/slides/13-Distribuicao_normal.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide13_pdf.png)<br>Versão pdf
+</a>
+:::
+
+::::
+
+Lista de Exercícios:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/listas/EstatAplicada_lista13.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/listas/lista13.png){width=80%}<br>Lista 13
+</a>
+:::
+
+::::
+
+

@@ -415,284 +415,722 @@
     "text": "Exemplo 4.3\nUm engenheiro de materiais recebeu um lote de 40 amostras de um novo polímero reforçado com fibras de vidro. Para validar o processo de fabricação, ele realizou ensaios de tração para medir o Limite de Resistência à Tração (RT) em MPa. Construa uma tabela de frequências com os dados da amostra.\n\n152, 155, 158, 160, 162, 163, 164, 165, 167, 168,\n170, 171, 172, 172, 173, 174, 175, 175, 176, 177,\n178, 178, 179, 180, 181, 182, 183, 184, 185, 186,\n188, 190, 191, 192, 194, 195, 196, 197, 199, 202\n\nO fornecedor garante que 90% das peças resistem a pelo menos 160 MPa. Com base na sua coluna de Frequência Acumulada, o fornecedor está falando a verdade?"
   },
   {
-    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#introdução",
-    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#introdução",
-    "title": "Medidas de Dispersão",
-    "section": "Introdução",
-    "text": "Introdução\n\nNa Engenharia de Materiais, saber onde os dados se localizam (Média) não diz todas as informações sobre os dados.\nA variabilidade natural e os erros de medição definem se um material é confiável ou perigoso.\nDuas ligas metálicas podem ter a mesma resistência média, mas uma pode ser muito instável (variável) e a outra muito uniforme.\nPara o engenheiro, variabilidade elevada está associada a maior risco. Precisamos quantificar esse risco."
+    "objectID": "slides/13-Distribuicao_normal/13-Distribuicao_normal.html#distribuição-normal",
+    "href": "slides/13-Distribuicao_normal/13-Distribuicao_normal.html#distribuição-normal",
+    "title": "A Distribuição Normal",
+    "section": "Distribuição Normal",
+    "text": "Distribuição Normal\nA densidade da variável aleatória normal \\(X\\), com média \\(\\mu\\) e variância \\(\\sigma^2\\), é dada por \\[\n    f(x) = \\frac{1}{\\sigma\\sqrt{2\\pi}} e^{-\\frac{1}{2\\sigma^2}(x-\\mu)^2}, \\quad -\\infty&lt;x&lt;\\infty,\n\\] em que \\(\\pi=3,14159\\ldots\\) e \\(e=2,717828\\ldots\\)\n\nNotação: \\(X\\sim N(\\mu,\\sigma^2)\\)."
   },
   {
-    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#introdução-1",
-    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#introdução-1",
-    "title": "Medidas de Dispersão",
-    "section": "Introdução",
-    "text": "Introdução\n\nComo medir a incerteza e a falta de uniformidade em um lote de materiais?\nMedidas de Dispersão (ou variabilidade) indicam quão afastados os dados estão do centro de massa.\nInformações principais que vamos extrair:\n\nAmplitude: diferença entre o maior e o menor valor.\nVariância: média dos quadrados dos desvios em relação à média (unidade ao quadrado).\nDesvio-padrão: medida do espalhamento dos dados na mesma unidade da variável.\nCoeficiente de Variação: quantifica se a variação é grande ou pequena em relação à média."
-  },
-  {
-    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#introdução-2",
-    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#introdução-2",
-    "title": "Medidas de Dispersão",
-    "section": "Introdução",
-    "text": "Introdução\nExemplo\n\nImagine dois lotes de cerâmica com resistência média de 100 MPa.\n\nNo Lote A, todas as peças variam entre 98 e 102 MPa.\nNo Lote B, as peças variam entre 50 e 150 MPa.\n\nSe você projetar uma peça para suportar 90 MPa, o Lote A é seguro, mas o Lote B é arriscado, apesar da média ser 100 MPa.\n\nAtenção!\n\nMédia não descreve confiabilidade.\nDispersão descreve."
-  },
-  {
-    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#por-que-calcular-a-amplitude",
-    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#por-que-calcular-a-amplitude",
-    "title": "Medidas de Dispersão",
-    "section": "Por que calcular a amplitude?",
-    "text": "Por que calcular a amplitude?\nEm uma linha de produção, um engenheiro monitora a estabilidade térmica de um forno. Mesmo com média estável, o material pode sofrer danos se houver:\n\npicos excessivos de calor (degradação térmica)\nquedas bruscas de temperatura (choque térmico)\ninstabilidade no sistema de controle\n\nPergunta Motivadora\nComo medir de forma rápida a distância total entre o valor mais alto e o mais baixo de um processo?"
-  },
-  {
-    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#amplitude-total-at",
-    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#amplitude-total-at",
-    "title": "Medidas de Dispersão",
-    "section": "Amplitude Total (\\(AT\\))",
-    "text": "Amplitude Total (\\(AT\\))\n\nA amplitude total é a diferença entre o maior e o menor valor de um conjunto de dados.\nSe identificarmos o valor máximo (\\(X_{max}\\)) e o valor mínimo (\\(X_{min}\\)) em uma amostra, a amplitude é dada por: \\[AT = X_{max} - X_{min}\\]\nEste indicador mostra o campo de variação absoluto dos dados.\nÉ a medida de dispersão mais simples de calcular."
-  },
-  {
-    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#interpretação-da-amplitude",
-    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#interpretação-da-amplitude",
-    "title": "Medidas de Dispersão",
-    "section": "Interpretação da Amplitude",
-    "text": "Interpretação da Amplitude\n\nImagine a amplitude como a extensão de uma régua.\nEla define os limites externos onde os dados se encontram.\nEssa interpretação é útil para:\n\nIdentificar a largura total do processo produtivo.\nVerificar se os extremos ultrapassam limites de segurança.\nRealizar triagens rápidas em lotes de materiais."
-  },
-  {
-    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#exemplo-3.1",
-    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#exemplo-3.1",
-    "title": "Medidas de Dispersão",
-    "section": "Exemplo 3.1",
-    "text": "Exemplo 3.1\nUm engenheiro monitora a temperatura de um forno de tratamento térmico em dois momentos diferentes do dia.\n\nMomento A (°C): 850, 852, 848, 851, 849.\nMomento B (°C): 850, 852, 848, 851, 920.\n\nCalcule a amplitude total (\\(AT\\)) para ambos os momentos e compare os resultados."
-  },
-  {
-    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#reflexão",
-    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#reflexão",
-    "title": "Medidas de Dispersão",
-    "section": "Reflexão",
-    "text": "Reflexão\n\nNo exemplo 3.1, a amplitude saltou de 4°C para 72°C devido a um único pico.\nIsso levanta uma questão importante:\n\nA amplitude descreve o que acontece no “meio” dos dados?\nUm erro de leitura no sensor pode invalidar toda a análise?\n\nEssa limitação motiva o uso de medidas mais precisas, como o Desvio-padrão."
-  },
-  {
-    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#vantagens-e-desvantagens-da-amplitude",
-    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#vantagens-e-desvantagens-da-amplitude",
-    "title": "Medidas de Dispersão",
-    "section": "Vantagens e Desvantagens da Amplitude",
-    "text": "Vantagens e Desvantagens da Amplitude\nVantagens\n\nCálculo imediato e intuitivo.\nIdeal para definir limites de tolerância (mínimo/máximo).\nMuito usada em gráficos de controle simples.\n\nDesvantagem\n\nExtremamente sensível a valores extremos (outliers).\nIgnora como os dados estão distribuídos entre os extremos."
-  },
-  {
-    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#o-que-fazer-na-prática",
-    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#o-que-fazer-na-prática",
-    "title": "Medidas de Dispersão",
-    "section": "O que fazer na prática?",
-    "text": "O que fazer na prática?\n\nUse a amplitude para verificações rápidas de segurança.\nNão confie apenas nela para caracterizar a uniformidade do material.\nCombine a amplitude com o desvio-padrão para uma visão completa."
-  },
-  {
-    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#a-amplitude-não-basta",
-    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#a-amplitude-não-basta",
-    "title": "Medidas de Dispersão",
-    "section": "A Amplitude não basta",
-    "text": "A Amplitude não basta\n\nA amplitude foca apenas nos extremos do lote. No entanto, para garantir a confiabilidade de uma peça, o engenheiro precisa saber:\n\nComo todos os dados se comportam em relação à média?\nO material é homogêneo ou apresenta oscilações internas?\nQual o desvio em relação à média como resumo?\n\n\nPergunta Motivadora\nComo calcular uma medida que utilize todos os valores do conjunto para descrever o espalhamento dos dados?"
-  },
-  {
-    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#variância-s2",
-    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#variância-s2",
-    "title": "Medidas de Dispersão",
-    "section": "Variância (\\(S^2\\))",
-    "text": "Variância (\\(S^2\\))\n\nA variância calcula a média dos quadrados dos desvios em relação à média.\nIndica o espalhamento dos dados ao redor do centro de massa.\nO cálculo diferencia dados populacionais de dados amostrais:\n\n\n\n\nTipo\nFórmula\n\n\n\n\nPopulação\n\\(\\sigma^2 = \\frac{\\sum (X_i - \\mu)^2}{N}\\)\n\n\nAmostra\n\\(S^2 = \\frac{\\sum (X_i-\\overline{X})^2}{n-1}\\)\n\n\n\n\n\\(\\mu\\) é a média populacional e \\(\\overline{X}\\) é a média amostral."
-  },
-  {
-    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#entendendo-o-cálculo",
-    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#entendendo-o-cálculo",
-    "title": "Medidas de Dispersão",
-    "section": "Entendendo o Cálculo",
-    "text": "Entendendo o Cálculo\n\nCalculamos a distância de cada ponto até a média (\\(X_i - \\overline{X}\\)).\nElevamos ao quadrado para eliminar valores negativos.\nDividimos pelo total (com ajuste \\(n-1\\) para amostras).\nObservação: O resultado final estará na unidade ao quadrado (ex: \\(MPa^2\\)).\nNota: O denominador \\(n-1\\) (graus de liberdade) corrige o viés em amostras pequenas."
-  },
-  {
-    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#exemplo-3.2",
-    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#exemplo-3.2",
-    "title": "Medidas de Dispersão",
-    "section": "Exemplo 3.2",
-    "text": "Exemplo 3.2\nConsidere dois lotes de aço com a mesma resistência média (\\(\\overline{X} = 500 \\text{ MPa}\\)). Foram testadas 3 amostras de cada lote:\n\nLote A (MPa): 499, 500, 501.\nLote B (MPa): 450, 500, 550.\n\nCalcule a variância (\\(S^2\\)) de cada lote. Qual material apresenta maior uniformidade na estrutura interna?"
-  },
-  {
-    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#reflexão-1",
-    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#reflexão-1",
-    "title": "Medidas de Dispersão",
-    "section": "Reflexão",
-    "text": "Reflexão\n\nA variância do Lote B será muito maior que a do Lote A.\nProblema de interpretação:\n\nSe a unidade original é MPa, a variância fica dada em MPa\\(^2\\).\nO que significa fisicamente uma “pressão ao quadrado”?\n\nEssa dificuldade de interpretção da unidade de medida motiva o estudo do Desvio-padrão."
-  },
-  {
-    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#vantagens-e-desvantagens-da-variância",
-    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#vantagens-e-desvantagens-da-variância",
-    "title": "Medidas de Dispersão",
-    "section": "Vantagens e Desvantagens da Variância",
-    "text": "Vantagens e Desvantagens da Variância\nVantagens\n\nConsidera a variação de cada dado individualmente.\nBase fundamental para cálculos estatísticos avançados.\nEssencial para modelos de controle de qualidade industrial.\n\nDesvantagens\n\nA unidade de medida original é alterada (fica ao quadrado).\nInterpretação física difícil para tomadas de decisão rápidas."
-  },
-  {
-    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#observações-importantes",
-    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#observações-importantes",
-    "title": "Medidas de Dispersão",
-    "section": "Observações Importantes",
-    "text": "Observações Importantes\n\nUse a Variância para comparar a consistência entre dois processos.\nLembre que ela penaliza pesadamente grandes desvios (devido ao quadrado).\nPara laudos técnicos, utilize o Desvio-padrão para retornar à escala original."
-  },
-  {
-    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#o-problema-da-unidade-ao-quadrado",
-    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#o-problema-da-unidade-ao-quadrado",
-    "title": "Medidas de Dispersão",
-    "section": "O Problema da Unidade ao Quadrado",
-    "text": "O Problema da Unidade ao Quadrado\nA Variância (\\(S^2\\)) é excelente para cálculos, mas gera um problema prático na interpretação da unidade de medida:\n\nResistência em MPa vira MPa\\(^2\\).\nDureza em HB vira HB\\(^2\\).\nTemperatura em °C vira °C\\(^2\\).\n\nPergunta Motivadora\nComo retornar a medida de variabilidade para a mesma unidade original das nossas medições?"
-  },
-  {
-    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#desvio-padrão-s",
-    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#desvio-padrão-s",
-    "title": "Medidas de Dispersão",
-    "section": "Desvio-Padrão (\\(S\\))",
-    "text": "Desvio-Padrão (\\(S\\))\n\nO desvio-padrão é definido como a raiz quadrada positiva da variância.\nEle indica o quanto, em média, os dados se afastam da média aritmética.\nFórmula para dados amostrais: \\[S = \\sqrt{S^2}\\]\nPrefere-se o uso do desvio-padrão por sua interpretabilidade direta em projetos."
-  },
-  {
-    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#interpretação",
-    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#interpretação",
-    "title": "Medidas de Dispersão",
-    "section": "Interpretação",
-    "text": "Interpretação\n\nO desvio-padrão traz a dispersão de volta para a escala real.\nEle permite dizer: “A resistência é \\(500 \\pm 10\\) MPa”.\nFacilita a visualização do erro médio em torno do centro."
-  },
-  {
-    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#exemplo-3.3",
-    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#exemplo-3.3",
-    "title": "Medidas de Dispersão",
-    "section": "Exemplo 3.3",
-    "text": "Exemplo 3.3\nRetome os dados do Exemplo 3.2 sobre a resistência dos aços:\n\nLote A: \\(S^2 = 1\\) MPa\\(^2\\).\nLote B: \\(S^2 = 2500\\) MPa\\(^2\\).\n\nCalcule o desvio-padrão (\\(S\\)) para ambos os lotes. Qual a diferença de “erro” em MPa entre o material estável e o instável?\n\nSe o limite de projeto exige que nenhuma peça falhe abaixo de \\(480\\) MPa, qual lote você aprovaria com segurança apenas olhando para o desvio-padrão?"
-  },
-  {
-    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#vantagens-e-desvantagens-do-desvio-padrão",
-    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#vantagens-e-desvantagens-do-desvio-padrão",
-    "title": "Medidas de Dispersão",
-    "section": "Vantagens e Desvantagens do Desvio-Padrão",
-    "text": "Vantagens e Desvantagens do Desvio-Padrão\nVantagens\n\nExpresso na mesma unidade dos dados originais.\nMais intuitivo para engenheiros e técnicos de laboratório.\nBase para definir intervalos de confiança e margens de segurança.\n\nDesvantagens\n\nAssim como a média, é sensível a valores extremos (outliers)."
-  },
-  {
-    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#observações-importantes-1",
-    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#observações-importantes-1",
-    "title": "Medidas de Dispersão",
-    "section": "Observações Importantes",
-    "text": "Observações Importantes\n\nUse o Desvio-Padrão para redigir laudos técnicos e manuais.\nEle é a “régua” oficial para medir a qualidade de um lote.\nQuanto menor o desvio, mais previsível e confiável é o seu material."
-  },
-  {
-    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#comparando-o-incomparável",
-    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#comparando-o-incomparável",
-    "title": "Medidas de Dispersão",
-    "section": "Comparando o Incomparável",
-    "text": "Comparando o Incomparável\n\nMédia e desvio-padrão são limitados quando precisamos comparar dois cenários diferentes:\n\nLotes com médias muito distantes (ex: fibra fina vs. barra grossa).\nMateriais medidos em unidades diferentes (ex: dureza vs. tração).\nProcessos onde a escala de grandeza altera a percepção do erro.\n\n\nPergunta Motivadora\n\nComo saber qual material é mais estável se as médias são diferentes?"
-  },
-  {
-    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#coeficiente-de-variação-cv",
-    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#coeficiente-de-variação-cv",
-    "title": "Medidas de Dispersão",
-    "section": "Coeficiente de Variação (\\(CV\\))",
-    "text": "Coeficiente de Variação (\\(CV\\))\n\nO \\(CV\\) é uma medida relativa de dispersão.\nExpressa o desvio-padrão como uma proporção da média.\nFrequentemente utilizado em porcentagem: \\[CV = \\left( \\frac{S}{\\overline{X}} \\right) \\times 100\\%\\]\nElimina a unidade de medida, tornando os dados adimensionais."
-  },
-  {
-    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#interpretação-técnica",
-    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#interpretação-técnica",
-    "title": "Medidas de Dispersão",
-    "section": "Interpretação Técnica",
-    "text": "Interpretação Técnica\n\nO \\(CV\\) indica a precisão relativa do processo produtivo.\nPermite comparar a uniformidade entre materiais distintos.\n\nBaixo \\(CV\\): processo homogêneo e controlado.\nAlto \\(CV\\): alta dispersão relativa e maior risco técnico."
-  },
-  {
-    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#exemplo-3.4",
-    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#exemplo-3.4",
-    "title": "Medidas de Dispersão",
-    "section": "Exemplo 3.4",
-    "text": "Exemplo 3.4\nUm laboratório compara a estabilidade de dois processos de fabricação de filamentos.\n\nProcesso A: Média = 120 μm; Desvio-padrão (\\(S\\)) = 1,58 μm.\nProcesso B: Média = 116 μm; Desvio-padrão (\\(S\\)) = 36,47 μm.\n\nCalcule o \\(CV\\) para cada processo. Qual deles apresenta o desempenho mais estável para evitar picos de defeitos?"
-  },
-  {
-    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#vantagens-e-desvantagens",
-    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#vantagens-e-desvantagens",
-    "title": "Medidas de Dispersão",
-    "section": "Vantagens e Desvantagens",
-    "text": "Vantagens e Desvantagens\nVantagens\n\nPermite comparar dispersões entre conjuntos com unidades diferentes.\nFacilita a comunicação de resultados para gerência (porcentagem).\nExcelente indicador de escalabilidade e risco de processo.\n\nDesvantagem\n\nPerde o sentido se a média for igual ou próxima de zero."
-  },
-  {
-    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#observações-importantes-2",
-    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#observações-importantes-2",
-    "title": "Medidas de Dispersão",
-    "section": "Observações Importantes",
-    "text": "Observações Importantes\n\nUse o Coeficiente de Variação para validar fornecedores diferentes.\nUm \\(CV\\) abaixo de 10% geralmente indica alta precisão na engenharia.\nEle é a ferramenta final para decidir sobre a eficiência da produção."
-  },
-  {
-    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#qual-medida-usar-1",
-    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#qual-medida-usar-1",
-    "title": "Medidas de Dispersão",
-    "section": "Qual Medida Usar?",
-    "text": "Qual Medida Usar?\n\n\n\n\n\n\n\n\nSituação no Laboratório\nMedida Recomendada\nPor quê?\n\n\n\n\nTriagem rápida de lotes\nAmplitude Total\nIdentifica picos de defeitos ou instabilidade bruta.\n\n\nCálculos de qualidade\nVariância\nBase matemática para modelos estatísticos avançados."
-  },
-  {
-    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#qual-medida-usar-2",
-    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#qual-medida-usar-2",
-    "title": "Medidas de Dispersão",
-    "section": "Qual Medida Usar?",
-    "text": "Qual Medida Usar?\n\n\n\n\n\n\n\n\nSituação no Laboratório\nMedida Recomendada\nPor quê?\n\n\n\n\nLaudo técnico oficial\nDesvio-padrão\nAvalia consistência na mesma unidade do material.\n\n\nComparar processos\n\\(CV\\)\nCompara precisão relativa entre materiais diferentes."
-  },
-  {
-    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#resumo-de-aplicações",
-    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#resumo-de-aplicações",
-    "title": "Medidas de Dispersão",
-    "section": "Resumo de Aplicações",
-    "text": "Resumo de Aplicações\n\nAmplitude: uso em inspeções iniciais e limites de segurança.\nVariância: fundamental para pesquisa acadêmica e otimização de processos.\nDesvio-padrão: referência para relatórios de conformidade técnica.\n\\(CV\\): ferramenta essencial para seleção de fornecedores e escalabilidade."
-  },
-  {
-    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#atenção-1",
-    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#atenção-1",
-    "title": "Medidas de Dispersão",
-    "section": "Atenção!",
-    "text": "Atenção!\n\nO engenheiro nunca utiliza apenas um indicador isolado.\nA Média localiza o material; a Dispersão valida sua confiabilidade.\nMenor variabilidade sempre resulta em menor risco de falha estrutural."
-  },
-  {
-    "objectID": "slides/11-Distribuicao-Binomial/11-Distribuicao-Binomial.html#exemplo-11.1",
-    "href": "slides/11-Distribuicao-Binomial/11-Distribuicao-Binomial.html#exemplo-11.1",
-    "title": "A Distribuição Binomial",
-    "section": "Exemplo 11.1",
-    "text": "Exemplo 11.1\nUm projeto de reabilitação desenvolveu uma prótese biomecânica de joelho para ajudar pacientes amputados a caminharem. Para garantir a segurança do paciente, a prótese usa sensores eletrônicos que monitoram o equilíbrio e a distribuição de carga. Sabe-se que a probabilidade de um desses sensores passar no teste de calibração (registrar o equilíbrio com alta precisão) é de \\(3/4\\). Se selecionarmos quatro sensores para auditoria, qual a probabilidade de encontrarmos exatamente dois sensores aprovados?"
-  },
-  {
-    "objectID": "slides/11-Distribuicao-Binomial/11-Distribuicao-Binomial.html#distribuição-binomial",
-    "href": "slides/11-Distribuicao-Binomial/11-Distribuicao-Binomial.html#distribuição-binomial",
-    "title": "A Distribuição Binomial",
-    "section": "Distribuição Binomial",
-    "text": "Distribuição Binomial\n\nConsidere que \\(p\\) é a probabilidade de sucesso em um experimento e \\(1 - p\\) é a probabilidade de fracasso.\nSuponha que vamos repetir o experimento \\(n\\) vezes em que cada repetição é independente da outra.\nSe \\(X\\) é o número de sucesso nas \\(n\\) repetições do experimento, dizemos que \\(X\\) tem distribuição binomial e calculamos a probabilidade usando \\[\nP(X=x) = \\binom{n}{x} p^x (1-p)^{n-x}, \\quad x = 0, 1, 2,\\ldots,n.\n\\]\nNotação: \\(X\\sim\\) Binomial(\\(n,p\\))."
-  },
-  {
-    "objectID": "slides/11-Distribuicao-Binomial/11-Distribuicao-Binomial.html#exemplo-11.2",
-    "href": "slides/11-Distribuicao-Binomial/11-Distribuicao-Binomial.html#exemplo-11.2",
-    "title": "A Distribuição Binomial",
-    "section": "Exemplo 11.2",
-    "text": "Exemplo 11.2\nUma empresa desenvolveu um novo selante químico para proteger componentes eletrônicos e estruturas de concreto contra a umidade. Eles descobriram que a probabilidade de uma aplicação desse selante ser perfeita (sem nenhum poro por onde a água possa passar) é de 0,6 (ou 60%). Para um projeto piloto, eles aplicaram esse selante em 10 amostras de materiais diferentes.\nDetermine a probabilidade de que:\n\nExatamente 7 amostras fiquem perfeitamente seladas?\nNo máximo 2 amostras fiquem perfeitamente seladas?\nPelo menos 8 amostras fiquem perfeitamente seladas?"
-  },
-  {
-    "objectID": "slides/11-Distribuicao-Binomial/11-Distribuicao-Binomial.html#section",
-    "href": "slides/11-Distribuicao-Binomial/11-Distribuicao-Binomial.html#section",
-    "title": "A Distribuição Binomial",
+    "objectID": "slides/13-Distribuicao_normal/13-Distribuicao_normal.html#section-1",
+    "href": "slides/13-Distribuicao_normal/13-Distribuicao_normal.html#section-1",
+    "title": "A Distribuição Normal",
     "section": "",
-    "text": "Podemos calcular o valor esperado de um experimento e a variância para uma variável aleatória \\(X\\) com distribuição Binomial(\\(n, p\\)): \\[ E(X) = np \\] e \\[ Var(X) = n p (1-p), \\] respectivamente."
+    "text": "Uma vez que \\(\\mu\\) e \\(\\sigma\\) estão especificados, a curva normal está completamente determinada."
   },
   {
-    "objectID": "slides/11-Distribuicao-Binomial/11-Distribuicao-Binomial.html#exemplo-11.3",
-    "href": "slides/11-Distribuicao-Binomial/11-Distribuicao-Binomial.html#exemplo-11.3",
-    "title": "A Distribuição Binomial",
-    "section": "Exemplo 11.3",
-    "text": "Exemplo 11.3\nUm sistema de reconhecimento facial é utilizado para liberar o acesso de estudantes a um laboratório da universidade. Em cada tentativa de acesso, o sistema pode funcionar corretamente ou apresentar falha. Testes anteriores mostraram que a probabilidade de falha em uma tentativa é de 20%. Suponha que sejam realizadas 10 tentativas independentes de acesso. Considere \\(X\\) a variável aleatória que representa o número de falhas do sistema nas 10 tentativas.\n\nCalcule a probabilidade de o sistema apresentar de 3 a 5 falhas.\nEm média, quantas falhas são esperadas nas 10 tentativas?\nQual a variância?"
+    "objectID": "slides/13-Distribuicao_normal/13-Distribuicao_normal.html#propriedades",
+    "href": "slides/13-Distribuicao_normal/13-Distribuicao_normal.html#propriedades",
+    "title": "A Distribuição Normal",
+    "section": "Propriedades",
+    "text": "Propriedades\n\nA moda, que é o ponto no eixo horizontal onde a curva é o máximo, ocorre em \\(x=\\mu\\).\nA curva é simétrica em torno do eixo vertical que passa na média \\(\\mu\\).\nA curva tem seus pontos de inflexão em \\(x = \\mu\\pm\\sigma\\), é côncava para baixo se \\(\\mu-\\sigma&lt;X&lt;\\mu+\\sigma\\) e, caso contrário, é côncava para cima.\nA área total abaixo da curva e acima do eixo horizontal é igual a 1."
   },
   {
-    "objectID": "slides/11-Distribuicao-Binomial/11-Distribuicao-Binomial.html#exemplo-11.4",
-    "href": "slides/11-Distribuicao-Binomial/11-Distribuicao-Binomial.html#exemplo-11.4",
-    "title": "A Distribuição Binomial",
-    "section": "Exemplo 11.4",
-    "text": "Exemplo 11.4\nUma empresa produz sensores de deformação para monitorar a saúde de grandes estruturas. O controle de qualidade da fábrica indica que 3% desses sensores apresentam falhas na película condutora, impedindo a leitura dos dados.\n\nUm engenheiro seleciona 20 sensores para instalar em uma viga de teste. Qual é a probabilidade de que haja pelo menos um dispositivo com falha entre esses 20?\nSuponha que para monitorar uma ponte inteira sejam utilizados 200 sensores. Qual o número esperado de sensores com defeito e qual a variância?"
+    "objectID": "slides/13-Distribuicao_normal/13-Distribuicao_normal.html#section-2",
+    "href": "slides/13-Distribuicao_normal/13-Distribuicao_normal.html#section-2",
+    "title": "A Distribuição Normal",
+    "section": "",
+    "text": "Para calcularmos a área abaixo da curva delimitadas pelas duas ordenadas \\(x = x_1\\) e \\(x = x_2\\) é igual a probabilidade de que a variável aleatória \\(X\\) assuma um valor entre \\(x = x_1\\) e \\(x = x_2\\). Assim, \\[\n  P(x_1&lt;X&lt;x_2) = \\int\\limits_{x_1}^{x_2} \\frac{1}{\\sigma\\sqrt{2\\pi}}e^{-\\frac{1}{2\\sigma^2}(x-\\mu)^2} dx.\n\\]"
   },
   {
-    "objectID": "slides/11-Distribuicao-Binomial/11-Distribuicao-Binomial.html#exemplo-11.5",
-    "href": "slides/11-Distribuicao-Binomial/11-Distribuicao-Binomial.html#exemplo-11.5",
-    "title": "A Distribuição Binomial",
-    "section": "Exemplo 11.5",
-    "text": "Exemplo 11.5\nEm uma grande distribuidora, estima-se que 30% dos lotes de materiais contenham um nível de impureza acima do permitido. Como é impossível testar quimicamente cada grama de material, um laboratório seleciona oito amostras aleatoriamente para uma análise microscópica.\n\nAssumindo que a estimativa de 30% de lotes impuros está correta, qual é a probabilidade de que, entre oito amostras selecionadas, exatamente três apresentem impurezas críticas?\nNesta amostra de 8 unidades, qual o comportamento médio esperado? Qual a variância?"
+    "objectID": "slides/13-Distribuicao_normal/13-Distribuicao_normal.html#section-3",
+    "href": "slides/13-Distribuicao_normal/13-Distribuicao_normal.html#section-3",
+    "title": "A Distribuição Normal",
+    "section": "",
+    "text": "Como diferentes valores de \\(\\mu\\) e \\(\\sigma\\) correspondem a diferentes curvas normais, a área debaixo da cuva entre duas ordenadas depende de \\(\\mu\\) e \\(\\sigma\\)."
+  },
+  {
+    "objectID": "slides/13-Distribuicao_normal/13-Distribuicao_normal.html#section-4",
+    "href": "slides/13-Distribuicao_normal/13-Distribuicao_normal.html#section-4",
+    "title": "A Distribuição Normal",
+    "section": "",
+    "text": "A integral que corresponde à área sob a curva normal não tem forma fechada. Assim, as integrais são obtidas em forma de tabela.\nPra isso, transformamos as observações de qualquer variável aleatória normal \\(X\\) em um novo grupo de observações da variável aleatória normal \\(Z\\), com média 0 e variância 1, \\(Z \\sim N(0, 1)\\).\nA transformação é \\[\n  Z = \\frac{X-\\mu}{\\sigma}.\n\\]\nA distribuição de uma variável aleatória normal de média 0 e variância 1 é chamada de distribuição normal padrão."
+  },
+  {
+    "objectID": "slides/13-Distribuicao_normal/13-Distribuicao_normal.html#usando-a-curva-normal-ao-contrário",
+    "href": "slides/13-Distribuicao_normal/13-Distribuicao_normal.html#usando-a-curva-normal-ao-contrário",
+    "title": "A Distribuição Normal",
+    "section": "Usando a curva normal “ao contrário”",
+    "text": "Usando a curva normal “ao contrário”\n\nOcasionalmente, temos que encontrar o valor de \\(Z\\) correspondente a uma probabilidade específica que está na tabela.\nEm alguns casos podemos estar interessados no valor de \\(X\\). Para tanto, rearranjamos a fórmula \\[\nZ = \\frac{X-\\mu}{\\sigma} \\text{ para dar } X = \\sigma Z+\\mu.\n\\]"
+  },
+  {
+    "objectID": "slides/13-Distribuicao_normal/13-Distribuicao_normal.html#exemplo-12.1",
+    "href": "slides/13-Distribuicao_normal/13-Distribuicao_normal.html#exemplo-12.1",
+    "title": "A Distribuição Normal",
+    "section": "Exemplo 12.1",
+    "text": "Exemplo 12.1\nDada uma distribuição normal padrão, determine a área abaixo da curva que está\n\nà direita de \\(Z=1,84\\);\nentre \\(Z=-1,97\\) e \\(Z=0,86\\)."
+  },
+  {
+    "objectID": "slides/13-Distribuicao_normal/13-Distribuicao_normal.html#exemplo-12.2",
+    "href": "slides/13-Distribuicao_normal/13-Distribuicao_normal.html#exemplo-12.2",
+    "title": "A Distribuição Normal",
+    "section": "Exemplo 12.2",
+    "text": "Exemplo 12.2\nDada uma distribuição normal padrão, determine o valor de \\(k\\) de modo que\n\n\\(P(Z&gt;k)=0,3015\\);\n\\(P(k&lt;Z&lt;-0,18)=0,4197\\)."
+  },
+  {
+    "objectID": "slides/13-Distribuicao_normal/13-Distribuicao_normal.html#exemplo-12.3",
+    "href": "slides/13-Distribuicao_normal/13-Distribuicao_normal.html#exemplo-12.3",
+    "title": "A Distribuição Normal",
+    "section": "Exemplo 12.3",
+    "text": "Exemplo 12.3\nDada uma distribuição normal com média \\(\\mu=40\\) e \\(\\sigma=6\\), determine o valor de \\(X\\) que tem\n\n45% da área à esquerda;\n14% da área à direita."
+  },
+  {
+    "objectID": "slides/13-Distribuicao_normal/13-Distribuicao_normal.html#exemplo-12.4",
+    "href": "slides/13-Distribuicao_normal/13-Distribuicao_normal.html#exemplo-12.4",
+    "title": "A Distribuição Normal",
+    "section": "Exemplo 12.4",
+    "text": "Exemplo 12.4\nUma indústria fabrica chapas metálicas cuja espessura deve permanecer entre \\(2{,}00 \\pm 0{,}02\\) mm. As espessuras seguem distribuição normal com média \\(\\mu = 2{,}00\\) mm e desvio-padrão \\(\\sigma = 0{,}01\\) mm.\n\nQual a proporção de chapas aprovadas no controle de qualidade?\nQual a probabilidade de uma chapa apresentar espessura inferior a 1,98 mm?\nQual deve ser o valor de \\(d\\) para que 95% das chapas estejam entre \\(2{,}00 \\pm d\\) mm?"
+  },
+  {
+    "objectID": "slides/13-Distribuicao_normal/13-Distribuicao_normal.html#exemplo-12.5",
+    "href": "slides/13-Distribuicao_normal/13-Distribuicao_normal.html#exemplo-12.5",
+    "title": "A Distribuição Normal",
+    "section": "Exemplo 12.5",
+    "text": "Exemplo 12.5\nUm laboratório mede a resistência de blocos de concreto utilizados em construção civil. Os resultados seguem distribuição normal com média de 40 MPa e desvio-padrão de 3 MPa.\n\nQual a probabilidade de um bloco apresentar resistência inferior a 36 MPa?\nQual a probabilidade de a resistência estar entre 38 MPa e 44 MPa?\nQual deve ser a resistência mínima para que apenas 5% dos blocos apresentem valores superiores a ela?"
+  },
+  {
+    "objectID": "slides/13-Distribuicao_normal/13-Distribuicao_normal.html#exemplo-12.6",
+    "href": "slides/13-Distribuicao_normal/13-Distribuicao_normal.html#exemplo-12.6",
+    "title": "A Distribuição Normal",
+    "section": "Exemplo 12.6",
+    "text": "Exemplo 12.6\nUm pesquisador analisa o tempo gasto em exames de imagem. O tempo médio é de 25 minutos com desvio-padrão de 3 minutos.\n\nQual a probabilidade de um exame durar mais de 28 minutos?\nQual a probabilidade de um exame durar entre 22 e 27 minutos?\nApenas exames entre (25 d) minutos são considerados dentro do padrão operacional. Determine (d) para que 95% dos exames estejam dentro da faixa normal."
+  },
+  {
+    "objectID": "slides/13-Distribuicao_normal/13-Distribuicao_normal.html#exemplo-12.7",
+    "href": "slides/13-Distribuicao_normal/13-Distribuicao_normal.html#exemplo-12.7",
+    "title": "A Distribuição Normal",
+    "section": "Exemplo 12.7",
+    "text": "Exemplo 12.7\nUm aplicativo móvel utiliza em média 250 MB de armazenamento com desvio-padrão de 15 MB.\n\nQual a porcentagem das instalações que ocupam mais de 280 MB?\nQual a probabilidade de uma instalação ocupar entre 235 MB e 260 MB?\nAcima de qual valor estão os 12% maiores consumos de armazenamento?"
+  },
+  {
+    "objectID": "slides/10-Teorema-probabilidade-total-e-Bayes/10-Teorema-probabilidade-total-e-Bayes.html#exemplo-10.1",
+    "href": "slides/10-Teorema-probabilidade-total-e-Bayes/10-Teorema-probabilidade-total-e-Bayes.html#exemplo-10.1",
+    "title": "Teorema da Probabilidade Total e Teorema de Bayes",
+    "section": "Exemplo 10.1",
+    "text": "Exemplo 10.1\nUma fábrica produz sensores de alta precisão utilizados em equipamentos de Raio-X e dispositivos inteligentes. A linha de produção é dividida em três setores de montagem: \\(S_1\\), \\(S_2\\) e \\(S_3\\). O setor \\(S_1\\) produz 30% dos sensores, o \\(S_2\\) produz 45% e o \\(S_3\\) produz os 25% restantes.Devido a variações na pureza da matéria-prima, alguns sensores podem sair de fábrica com falha na calibração. A taxa de falha é de 2% no setor \\(S_1\\), 3% no setor \\(S_2\\) e 2% no setor \\(S_3\\). Ao selecionar um sensor finalizado da prateleira para uma auditoria, qual a probabilidade dele estar descalibrado?"
+  },
+  {
+    "objectID": "slides/10-Teorema-probabilidade-total-e-Bayes/10-Teorema-probabilidade-total-e-Bayes.html#definição-10.1-partição",
+    "href": "slides/10-Teorema-probabilidade-total-e-Bayes/10-Teorema-probabilidade-total-e-Bayes.html#definição-10.1-partição",
+    "title": "Teorema da Probabilidade Total e Teorema de Bayes",
+    "section": "Definição 10.1: Partição",
+    "text": "Definição 10.1: Partição\nDizemos que os eventos \\(B_1, B_2, \\ldots, B_k\\) constituem uma partição do espaço amostral \\(\\Omega\\) quando\n\n\\(B_i\\cap B_j=\\emptyset\\), para todo \\(i\\neq j\\);\n\\(\\bigcup_{i=1}^k B_i = \\Omega\\);\n\\(P(B_i)&gt;0\\), para todo \\(i\\)."
+  },
+  {
+    "objectID": "slides/10-Teorema-probabilidade-total-e-Bayes/10-Teorema-probabilidade-total-e-Bayes.html#teorema-da-probabilidade-total",
+    "href": "slides/10-Teorema-probabilidade-total-e-Bayes/10-Teorema-probabilidade-total-e-Bayes.html#teorema-da-probabilidade-total",
+    "title": "Teorema da Probabilidade Total e Teorema de Bayes",
+    "section": "Teorema da Probabilidade Total",
+    "text": "Teorema da Probabilidade Total\nSe os eventos \\(B_1, B_2, \\ldots, B_k\\) constituem uma partição do espaço amostral, de modo que \\(P(B_i)\\neq 0\\), para \\(i = 1, 2, \\ldots, k\\), então para qualquer evento \\(A\\) de \\(\\Omega\\), \\[\n  P(A) = \\sum\\limits_{i=1}^k P(B_i\\cap A) = \\sum\\limits_{i=1}^k P(B_i) P(A|B_i).\n\\]"
+  },
+  {
+    "objectID": "slides/10-Teorema-probabilidade-total-e-Bayes/10-Teorema-probabilidade-total-e-Bayes.html#exemplo-10.2",
+    "href": "slides/10-Teorema-probabilidade-total-e-Bayes/10-Teorema-probabilidade-total-e-Bayes.html#exemplo-10.2",
+    "title": "Teorema da Probabilidade Total e Teorema de Bayes",
+    "section": "Exemplo 10.2",
+    "text": "Exemplo 10.2\nUm aluno propõe-se a resolver uma questão de um trabalho. A probabilidade de que consiga resolver a questão sem necessidade de uma pesquisa é de 40%. Caso faça a pesquisa, a probabilidade de que consiga resolver a questão é de 70%. Se a probabilidade do aluno fazer a pesquisa é de 80%, calcule a probabilidade de que consiga resolver a questão."
+  },
+  {
+    "objectID": "slides/10-Teorema-probabilidade-total-e-Bayes/10-Teorema-probabilidade-total-e-Bayes.html#exemplo-10.3",
+    "href": "slides/10-Teorema-probabilidade-total-e-Bayes/10-Teorema-probabilidade-total-e-Bayes.html#exemplo-10.3",
+    "title": "Teorema da Probabilidade Total e Teorema de Bayes",
+    "section": "Exemplo 10.3",
+    "text": "Exemplo 10.3\nUma equipe de pesquisadores está testando quatro novos compostos de blindagem (\\(B_1, B_2, B_3, B_4\\)) feitos de concreto aditivado e polímeros. O objetivo é verificar se o material consegue bloquear totalmente a passagem de radiação ou resistir a um impacto severo sem romper. Em testes laboratoriais controlados, a probabilidade da blindagem manter sua integridade total foi de: 40% para o composto \\(B_1\\); 30% para o composto \\(B_2\\); 25% para o composto \\(B_3\\); 50% para o composto \\(B_4\\). Considerando que há um corpo de prova (amostra) de cada composto no laboratório e um deles é sorteado para inspeção final, qual a probabilidade do fiscal encontrar um material que resistiu 100% ao teste?"
+  },
+  {
+    "objectID": "slides/10-Teorema-probabilidade-total-e-Bayes/10-Teorema-probabilidade-total-e-Bayes.html#teorema-de-bayes",
+    "href": "slides/10-Teorema-probabilidade-total-e-Bayes/10-Teorema-probabilidade-total-e-Bayes.html#teorema-de-bayes",
+    "title": "Teorema da Probabilidade Total e Teorema de Bayes",
+    "section": "Teorema de Bayes",
+    "text": "Teorema de Bayes\nSe os eventos \\(B_1, \\ldots, B_k\\) constituem uma partição do espaço amostral \\(\\Omega\\), de modo que \\(P(B_i) \\neq 0\\), para \\(i = 1, \\ldots, k\\), então para qualquer evento \\(A\\) de \\(\\Omega\\), tal que \\(P(A) \\neq 0\\), temos que \\[\n  P(B_r|A) = \\frac{P(B_r\\cap A)}{P(A)} = \\frac{P(B_r)P(A|B_r)}{\\sum_{i=1}^k P(B_i)P(A|B_i)},\n\\] para \\(r = 1, \\ldots, k\\)."
+  },
+  {
+    "objectID": "slides/10-Teorema-probabilidade-total-e-Bayes/10-Teorema-probabilidade-total-e-Bayes.html#exemplo-10.4",
+    "href": "slides/10-Teorema-probabilidade-total-e-Bayes/10-Teorema-probabilidade-total-e-Bayes.html#exemplo-10.4",
+    "title": "Teorema da Probabilidade Total e Teorema de Bayes",
+    "section": "Exemplo 10.4",
+    "text": "Exemplo 10.4\nUma equipe de pesquisadores está testando quatro novos compostos de blindagem (\\(B_1, B_2, B_3, B_4\\)) feitos de concreto aditivado e polímeros. O objetivo é verificar se o material consegue bloquear totalmente a passagem de radiação ou resistir a um impacto severo sem romper. Em testes laboratoriais controlados, a probabilidade da blindagem manter sua integridade total foi de: 40% para o composto \\(B_1\\); 30% para o composto \\(B_2\\); 25% para o composto \\(B_3\\); 50% para o composto \\(B_4\\). Suponha que um corpo de prova foi selecionado aleatoriamente e resistiu 100% ao teste. Suponha que um servidor web em um ambiente simulado foi selecionado aleatoriamente e manteve 100% de disponibilidade durante picos de tráfego. Qual é a probabilidade de que ele tenha o composto \\(B_4\\)?"
+  },
+  {
+    "objectID": "slides/10-Teorema-probabilidade-total-e-Bayes/10-Teorema-probabilidade-total-e-Bayes.html#exemplo-10.5",
+    "href": "slides/10-Teorema-probabilidade-total-e-Bayes/10-Teorema-probabilidade-total-e-Bayes.html#exemplo-10.5",
+    "title": "Teorema da Probabilidade Total e Teorema de Bayes",
+    "section": "Exemplo 10.5",
+    "text": "Exemplo 10.5\nUm vendedor de produtos eletrônicos estima que 2% dos seus clientes são da classe \\(A\\), 15% da classe \\(B\\), 63% da classe \\(C\\) e o restante das classes \\(D\\) e \\(E\\). Ele está divulgando uma promoção para a venda de notebooks e acredita que tem 90% de probabilidade de vendê-los para indivíduos da classe \\(A\\), 70% de probabilidade de vendê-los para a classe \\(B\\), para a classe \\(C\\), 40%, e para as classes \\(D\\) e \\(E\\), 10%.\n\nUm cliente entra na loja. Qual a probabilidade dele comprar o computador em promoção?\nUm cliente entra na loja e não se interessa pela promoção. Qual a probabilidade de que seja da classe B?"
+  },
+  {
+    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#gráfico-como-ferramenta-de-decisão",
+    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#gráfico-como-ferramenta-de-decisão",
+    "title": "Visualização de Dados",
+    "section": "Gráfico como Ferramenta de Decisão",
+    "text": "Gráfico como Ferramenta de Decisão\nNa Engenharia, o gráfico não é uma mera ilustração; é um instrumento de diagnóstico de processos e materiais.\n\nDADO: A leitura bruta (ex: 5.000 pontos de carga e extensão – o quanto o material esticou).\nINFORMAÇÃO: O padrão visual (ex: a inclinação da reta indica o Módulo de Young – rigidez/elasticidade do material).\nDECISÃO: A ação técnica (ex: “Este lote de polímero é adequado para a peça?”).\n\n\nObservação: Não buscamos o gráfico mais “bonito”, mas aquele que torna a falha (quebra do material) ou o sucesso evidente."
+  },
+  {
+    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#por-que-visualizar-dados",
+    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#por-que-visualizar-dados",
+    "title": "Visualização de Dados",
+    "section": "Por que Visualizar Dados?",
+    "text": "Por que Visualizar Dados?\nA representação gráfica permite extrair inteligência de grandes volumes de medições que seriam incompreensíveis em tabelas:\n\nIdentificar Padrões (Ex: A relação entre temperatura e taxa de corrosão.)\nValidar Expectativas: Confirmar se o tratamento térmico atingiu a dureza esperada.\nDescobrir Fenômenos: Detectar anomalias ou falhas raras em lotes de produção.\nValidar Estatísticas: Verificar se a distribuição dos dados permite o uso de testes paramétricos (cálculos que exigem dados “normais”)."
+  },
+  {
+    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#ponto-de-partida-o-tipo-de-variável",
+    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#ponto-de-partida-o-tipo-de-variável",
+    "title": "Visualização de Dados",
+    "section": "Ponto de Partida: O Tipo de Variável",
+    "text": "Ponto de Partida: O Tipo de Variável\n\nA escolha do gráfico não é estética, é técnica. A natureza dos dados define a visualização:\nHá então gráficos para\n\nVariáveis Qualitativas (Categóricas)\nVariáveis Quantitativas (Numéricas).\n\nO tipo de variável é que define as opções de gráficos que você pode utilizar."
+  },
+  {
+    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#requisitos-de-um-gráfico-técnico",
+    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#requisitos-de-um-gráfico-técnico",
+    "title": "Visualização de Dados",
+    "section": "Requisitos de um Gráfico Técnico",
+    "text": "Requisitos de um Gráfico Técnico\nPara que um gráfico sirva como prova técnica em um relatório de engenharia, ele deve conter:\n\nTítulo Autoexplicativo: Indica claramente o que foi medido.\nEixos Rotulados: Nome da variável e sua unidade de medida (Ex: Tensão [MPa]).\nEscala Sensata: Evita distorções que mascarem a variação real.\nLegenda Objetiva: Diferencia as condições de ensaio ou materiais.\n\n\nAtenção! Um gráfico sem unidade (como MPa, °C ou mm) é inválido em um laudo técnico. Na dúvida, sempre pergunte: “Alguém conseguiria entender este gráfico sem eu precisar explicar?”."
+  },
+  {
+    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section",
+    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section",
+    "title": "Visualização de Dados",
+    "section": "",
+    "text": "Gráfico ERRADO (Inaceitável)\n\n\n\n\n\n\n\nGráfico CERTO (Padrão Engenharia)"
+  },
+  {
+    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#visualização-de-dados-categóricos",
+    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#visualização-de-dados-categóricos",
+    "title": "Visualização de Dados",
+    "section": "Visualização de Dados Categóricos",
+    "text": "Visualização de Dados Categóricos\n\nQuando os dados representam grupos ou nomes (Qualitativos), o objetivo da visualização é comparar a frequência ou a proporção entre categorias.\nAs principais escolhas são:\n\nGráfico de Barras: Para comparar magnitudes.\nGráfico de Barras Empilhadas: Para comparar subgrupos dentro de categorias.\nGráfico de Pareto: Para priorização de problemas.\nGráfico de Setores (Pizza): Para mostrar partes de um todo."
+  },
+  {
+    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#gráfico-de-barras",
+    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#gráfico-de-barras",
+    "title": "Visualização de Dados",
+    "section": "Gráfico de Barras",
+    "text": "Gráfico de Barras\nÉ a forma mais eficiente de comparar quantidades entre diferentes grupos (categorias).\n\nComo Construir:\n\nEixo X (Categorias): Espaçamento igual entre as barras.\nEixo Y (Frequência): Deve sempre começar no zero.\nLargura das Barras: Deve ser constante para não sugerir “peso” diferente.\nOrdenação: Se não houver ordem natural, organize de forma decrescente."
+  },
+  {
+    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-1",
+    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-1",
+    "title": "Visualização de Dados",
+    "section": "",
+    "text": "Exemplo: Identificação de Falhas Críticas\nConsidere a contagem de defeitos encontrados em uma inspeção de 500 componentes poliméricos.\n\n\n\nCategoria de Defeito\nOcorrências\nImpacto\n\n\n\n\nBolhas (Vazios)\n145\nCrítico\n\n\nDelaminação\n52\nCrítico\n\n\nRebarbas\n30\nEstético\n\n\nManchas\n12\nEstético\n\n\n\nFonte: Dados fictícios (2026)."
+  },
+  {
+    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-2",
+    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-2",
+    "title": "Visualização de Dados",
+    "section": "",
+    "text": "Exemplo: Identificação de Falhas Críticas\nO gráfico abaixo responde: “Qual processo de fabricação deve ser ajustado primeiro?”\n\n\nInsight: O excesso de “Vazios” sugere falha no sistema de vácuo ou na viscosidade da resina."
+  },
+  {
+    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-3",
+    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-3",
+    "title": "Visualização de Dados",
+    "section": "",
+    "text": "Regras de Construção e Escala\nO gráfico de barras é a escolha padrão para representar a magnitude de variáveis categóricas (nominais ou ordinais).\n\nAplicação: Comparar quantidades entre grupos independentes.\nConstrução:\n\nO eixo das categorias não possui escala métrica (é uma lista).\nO eixo quantitativo deve sempre começar no zero para não distorcer as proporções.\n\nInterpretação:\n\nA altura (ou comprimento) da barra é proporcional ao valor que ela representa.\nOrdenação: Salvo se houver uma ordem natural (ex: meses), as barras devem estar em ordem decrescente para facilitar a comparação visual imediata."
+  },
+  {
+    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-4",
+    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-4",
+    "title": "Visualização de Dados",
+    "section": "",
+    "text": "Quando os rótulos das categorias são longos ou numerosos, a rotação facilita a leitura sem poluir o eixo horizontal."
+  },
+  {
+    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-5",
+    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-5",
+    "title": "Visualização de Dados",
+    "section": "",
+    "text": "Respeitando a Hierarquia dos Dados\n\nAo contrário das variáveis nominais (onde ordenamos por frequência), variáveis ordinais possuem uma hierarquia intrínseca. O gráfico deve preservar a ordem natural, mesmo que a frequência não seja decrescente.\nExemplo: Grau de Severidade de Desgaste em ferramentas de corte."
+  },
+  {
+    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-6",
+    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-6",
+    "title": "Visualização de Dados",
+    "section": "",
+    "text": "Comparação entre grupos\nProblema: Como diferentes fornecedores se comportam em diferentes ensaios?"
+  },
+  {
+    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-7",
+    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-7",
+    "title": "Visualização de Dados",
+    "section": "",
+    "text": "Barras empilhadas\n\nCada segmento corresponde a uma subcategoria.\nA altura total da barra representa a soma de todas as subcategorias.\nPermite observar simultaneamente o total de cada categoria e a sua composição interna.\n\n\n\nInterpretação: A Cerâmica X possui o maior índice de reprovação (25 peças), indicando que o processo de sinterização precisa de ajustes."
+  },
+  {
+    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#gráfico-de-pareto",
+    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#gráfico-de-pareto",
+    "title": "Visualização de Dados",
+    "section": "Gráfico de Pareto",
+    "text": "Gráfico de Pareto\nO Gráfico de Pareto é um gráfico de barras decrescentes com uma linha de frequência acumulada sobreposta.\n\nIdeia: 20% das causes geram 80% dos defeitos (regra dos 80/20).\nEste gráfico indica onde o esforço de engenharia terá o maior retorno financeiro e de qualidade.\nComo ele é estruturado:\n\nBarras (em ordem decrescente): frequência ou quantidade de ocorrências\nLinha acumulada: soma percentual dos problemas\nDois eixos Y:\n\nesquerdo → quantidade\ndireito → porcentagem"
+  },
+  {
+    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#exemplo",
+    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#exemplo",
+    "title": "Visualização de Dados",
+    "section": "Exemplo",
+    "text": "Exemplo\nUm engenheiro de materiais catalogou as causas de descarte de 250 peças de alumínio em uma semana. O objetivo é reduzir a perda de material.\n\nInsight: Atacando apenas Porosidade (pequenos buracos/vazios no metal) e Inclusão (sujeira presa dentro do material), o engenheiro resolve quase 80% das falhas do setor."
+  },
+  {
+    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#gráfico-de-setores-pizza",
+    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#gráfico-de-setores-pizza",
+    "title": "Visualização de Dados",
+    "section": "Gráfico de Setores (Pizza)",
+    "text": "Gráfico de Setores (Pizza)\nO gráfico de setores mostra a relação entre as partes e o todo. Embora popular, ele é frequentemente criticado na engenharia.\nQuando usar:\n\nPoucas categorias (máximo 3 ou 4).\nDiferenças de magnitude muito óbvias.\n\nPor que evitar:\n\nO olho humano tem dificuldade em comparar áreas e ângulos com precisão.\nÉ difícil ler rótulos em fatias muito pequenas.\n\nAlternativa: Gráfico de barras (sempre mais preciso para comparação técnica)."
+  },
+  {
+    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-9",
+    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-9",
+    "title": "Visualização de Dados",
+    "section": "",
+    "text": "Exemplo\nNeste caso, o gráfico de setores funciona porque as categorias são poucas e as diferenças são grandes.\n\nDica: Se você precisar de números escritos dentro da fatia para que o gráfico seja entendido, um gráfico de barras provavelmente seria melhor."
+  },
+  {
+    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#visualização-de-dados-numéricos",
+    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#visualização-de-dados-numéricos",
+    "title": "Visualização de Dados",
+    "section": "Visualização de Dados Numéricos",
+    "text": "Visualização de Dados Numéricos\nQuando os dados representam medidas ou contagens (Quantitativos), o objetivo é entender a distribuição, a variabilidade ou a relação entre variáveis. As principais escolhas são:\n\nHistograma: Mostra a distribuição dos dados.\nGráfico de Densidade: Versão “suavizada” do histograma.\nBoxplot: Resume estatísticas e identifica outliers (dados muito fora do normal).\nGráfico de Violino: Une boxplot com densidade.\nGráfico de Dispersão: Avalia relação entre duas medidas (Ex: Temperatura vs. Dureza).\nGráfico de Linha: Para séries temporais (dados medidos ao longo do tempo)."
+  },
+  {
+    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#histograma",
+    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#histograma",
+    "title": "Visualização de Dados",
+    "section": "Histograma",
+    "text": "Histograma\n\nÉ a ferramenta principal para visualizar a distribuição de uma variável quantitativa contínua.\nEle mostra frequência com que valores ocorrem em determinados intervalos (bins).\nFormatação:\n\nEixo X: Escala numérica contínua dividida em intervalos iguais.\nEixo Y: Frequência absoluta ou relativa.\nBarras Adjacentes: Diferente do gráfico de barras, as barras do histograma são encostadas para indicar a continuidade dos dados.\nObjetivo: Identificar o centro, a dispersão e o formato (simetria) dos dados."
+  },
+  {
+    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-10",
+    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-10",
+    "title": "Visualização de Dados",
+    "section": "",
+    "text": "Exemplo\nImagine que medimos a dureza de 100 amostras de um lote de aço. O gráfico nos diz se o processo de fabricação está estável ou se há muita variação."
+  },
+  {
+    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-11",
+    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-11",
+    "title": "Visualização de Dados",
+    "section": "",
+    "text": "O histograma é a representação gráfica de uma Tabela de Distribuição de Frequências por Classes.\nPara as 100 amostras de aço, teríamos a seguinte tabela.\n\n\n\n\nDureza (HRC)\nFreq. Absoluta\n\n\n\n\n\\(40 \\vdash 41\\)\n1\n\n\n\\(41 \\vdash 42\\)\n3\n\n\n\\(42 \\vdash 43\\)\n6\n\n\n\\(43 \\vdash 44\\)\n14\n\n\n\\(44 \\vdash 45\\)\n22\n\n\n\\(45 \\vdash 46\\)\n29\n\n\n\\(46 \\vdash 47\\)\n14\n\n\n\\(47 \\vdash 48\\)\n9\n\n\n\\(48 \\vdash 49\\)\n2"
+  },
+  {
+    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#gráfico-de-densidade",
+    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#gráfico-de-densidade",
+    "title": "Visualização de Dados",
+    "section": "Gráfico de densidade",
+    "text": "Gráfico de densidade\nO gráfico de densidade é uma versão suavizada do histograma.\n\nComo é feito: Utiliza uma técnica matemática chamada Kernel Density Estimation (KDE) para criar uma linha contínua que estima a probabilidade de um valor ocorrer.\nInterpretação:\n\nA área total sob a curva é igual a 1.\nPicos indicam onde os dados estão mais concentrados.\nÚtil para comparar distribuições de grupos diferentes sem a poluição visual de muitas barras sobrepostas."
+  },
+  {
+    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-12",
+    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-12",
+    "title": "Visualização de Dados",
+    "section": "",
+    "text": "Utilizando os mesmos dados de do lote de aço:"
+  },
+  {
+    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#boxplot",
+    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#boxplot",
+    "title": "Visualização de Dados",
+    "section": "Boxplot",
+    "text": "Boxplot\n\nBoxplot, ou diagrama de caixa, é um gráfico que divide os dados em quartis e é a melhor ferramenta para identificar a variabilidade de um material.\nEle exibe cinco estatísticas principais:"
+  },
+  {
+    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-13",
+    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-13",
+    "title": "Visualização de Dados",
+    "section": "",
+    "text": "Exemplo\nUtilizando os mesmos dados de do lote de aço:"
+  },
+  {
+    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-14",
+    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-14",
+    "title": "Visualização de Dados",
+    "section": "",
+    "text": "O gráfico de boxplot é a útil para comparar a estabilidade de processos."
+  },
+  {
+    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#gráfico-de-violino",
+    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#gráfico-de-violino",
+    "title": "Visualização de Dados",
+    "section": "Gráfico de Violino",
+    "text": "Gráfico de Violino\n\nCombina um boxplot com uma estimativa de densidade de kernel.\nQuanto mais largo o violino em um determinado ponto, maior a concentração de dados naquele valor."
+  },
+  {
+    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-15",
+    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-15",
+    "title": "Visualização de Dados",
+    "section": "",
+    "text": "Exemplo\nUtilizando os mesmos dados de do lote de aço:"
+  },
+  {
+    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-16",
+    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-16",
+    "title": "Visualização de Dados",
+    "section": "",
+    "text": "O gráfico de violino também serve para comprar grupos."
+  },
+  {
+    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#visualização-de-associações",
+    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#visualização-de-associações",
+    "title": "Visualização de Dados",
+    "section": "Visualização de Associações",
+    "text": "Visualização de Associações\nGráfico de dispersão\n\nServe para visualização de duas variáveis ao mesmo tempo.\nAuxilia a compreensão da relação entre variáveis.\n\n\nTamanho da cabeça de uma espécie de pássaro e sua massa corporal."
+  },
+  {
+    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#visualização-de-associações-1",
+    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#visualização-de-associações-1",
+    "title": "Visualização de Dados",
+    "section": "Visualização de Associações",
+    "text": "Visualização de Associações\nGráfico de Dispersão (Scatterplot)\nO Gráfico de Dispersão é usado para visualizar duas variáveis numéricas ao mesmo tempo e descobrir relações de causa e efeito.\n\nInterpretação:\n\nPontos subindo: correlação positiva (correlação direta).\nPontos descendo: correlação negativa (correlação inversa).\nPontos sem padrão: dados não correlacionados."
+  },
+  {
+    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-17",
+    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-17",
+    "title": "Visualização de Dados",
+    "section": "",
+    "text": "Exemplo\nQueremos saber o que acontece com a dureza do aço 1045 à medida que aumentamos a temperatura do forno."
+  },
+  {
+    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#visualização-de-dados-no-tempo",
+    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#visualização-de-dados-no-tempo",
+    "title": "Visualização de Dados",
+    "section": "Visualização de Dados no Tempo",
+    "text": "Visualização de Dados no Tempo\nGráfico de Linha (Série Temporal)\nÉ a forma mais comum e eficaz de mostrar como uma variável física evolui ao longo do tempo.\n\nDiferente do Gráfico de Dispersão (pontos isolados), a linha indica continuidade.\nEle mostra tendências, ciclos ou anomalias ao longo de um período."
+  },
+  {
+    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-18",
+    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-18",
+    "title": "Visualização de Dados",
+    "section": "",
+    "text": "Exemplo: Ciclo Térmico de um Forno de Têmpera\nSe plotarmos o sensor do forno apenas com pontos, nosso cérebro tem dificuldade em seguir o caminho do aquecimento. Quando conectamos com uma linha, a história do material fica óbvia.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nInsight: A linha nos permite ver claramente as três fases do tratamento: Aquecimento (subida), Patamar de Austenizacão (reta estável em 850°C) e Resfriamento (descida)."
+  },
+  {
+    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#para-saber-mais",
+    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#para-saber-mais",
+    "title": "Visualização de Dados",
+    "section": "Para saber mais",
+    "text": "Para saber mais\n\nhttps://clauswilke.com/dataviz/visualizing-trends.html"
+  },
+  {
+    "objectID": "aulas/05-Visualizacao_de_dados.html",
+    "href": "aulas/05-Visualizacao_de_dados.html",
+    "title": "Conteúdo 5",
+    "section": "",
+    "text": "Os slides desta aula apresentam os princípios e técnicas de visualização de dados. São discutidos os critérios técnicos para construção de gráficos adequados, incluindo escolha baseada no tipo de variável (qualitativa ou quantitativa), além de boas práticas para sua elaboração. A aula aborda diferentes tipos de gráficos, como barras, histogramas, boxplots, gráficos de dispersão e séries temporais, destacando suas aplicações na identificação de padrões, variabilidade, relações entre variáveis e detecção de falhas em processos e materiais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 5",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Estatística Descritiva",
+      "5- Visualização de Dados"
+    ]
+  },
+  {
+    "objectID": "aulas/05-Visualizacao_de_dados.html#visualização-de-dados",
+    "href": "aulas/05-Visualizacao_de_dados.html#visualização-de-dados",
+    "title": "Conteúdo 5",
+    "section": "",
+    "text": "Os slides desta aula apresentam os princípios e técnicas de visualização de dados. São discutidos os critérios técnicos para construção de gráficos adequados, incluindo escolha baseada no tipo de variável (qualitativa ou quantitativa), além de boas práticas para sua elaboração. A aula aborda diferentes tipos de gráficos, como barras, histogramas, boxplots, gráficos de dispersão e séries temporais, destacando suas aplicações na identificação de padrões, variabilidade, relações entre variáveis e detecção de falhas em processos e materiais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 5",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Estatística Descritiva",
+      "5- Visualização de Dados"
+    ]
+  },
+  {
+    "objectID": "aulas/08-Probabilidade.html",
+    "href": "aulas/08-Probabilidade.html",
+    "title": "Conteúdo 8",
+    "section": "",
+    "text": "Nesta aula é apresentada a teoria da probabilidade como a linguagem fundamental para quantificar e modelar a incerteza associada a fenômenos aleatórios. É abordada a definição de espaços amostrais e eventos, as propriedades matemáticas e operacionais do cálculo de probabilidades, e o uso de técnicas de contagem como permutação, arranjo e combinação para determinar a ocorrência de resultados equiprováveis.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 8",
+    "crumbs": [
+      "Aulas",
+      "Parte 2: Probabilidade",
+      "8- Probabilidade"
+    ]
+  },
+  {
+    "objectID": "aulas/08-Probabilidade.html#introdução-à-probabilidade",
+    "href": "aulas/08-Probabilidade.html#introdução-à-probabilidade",
+    "title": "Conteúdo 8",
+    "section": "",
+    "text": "Nesta aula é apresentada a teoria da probabilidade como a linguagem fundamental para quantificar e modelar a incerteza associada a fenômenos aleatórios. É abordada a definição de espaços amostrais e eventos, as propriedades matemáticas e operacionais do cálculo de probabilidades, e o uso de técnicas de contagem como permutação, arranjo e combinação para determinar a ocorrência de resultados equiprováveis.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 8",
+    "crumbs": [
+      "Aulas",
+      "Parte 2: Probabilidade",
+      "8- Probabilidade"
+    ]
+  },
+  {
+    "objectID": "aulas/04-Distribuicao_de_frequencias_simples_e_em_classe.html",
+    "href": "aulas/04-Distribuicao_de_frequencias_simples_e_em_classe.html",
+    "title": "Conteúdo 4",
+    "section": "",
+    "text": "Os slides desta aula apresentam os procedimentos para organização e síntese de dados por meio de distribuições de frequência, etapa fundamental na análise estatística de dados experimentais. São discutidas as diferenças entre dados brutos e rol, a construção de tabelas de frequência para variáveis qualitativas e quantitativas, bem como o uso da Regra de Sturges para definir o número adequado de classes. Também são abordadas as interpretações de frequências absolutas, relativas e acumuladas, destacando como essas ferramentas auxiliam na identificação de padrões nos dados e na tomada de decisões.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 4",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Estatística Descritiva",
+      "4- Distribuição de Frequências"
+    ]
+  },
+  {
+    "objectID": "aulas/04-Distribuicao_de_frequencias_simples_e_em_classe.html#distribuição-de-frequências-simples-e-em-classes",
+    "href": "aulas/04-Distribuicao_de_frequencias_simples_e_em_classe.html#distribuição-de-frequências-simples-e-em-classes",
+    "title": "Conteúdo 4",
+    "section": "",
+    "text": "Os slides desta aula apresentam os procedimentos para organização e síntese de dados por meio de distribuições de frequência, etapa fundamental na análise estatística de dados experimentais. São discutidas as diferenças entre dados brutos e rol, a construção de tabelas de frequência para variáveis qualitativas e quantitativas, bem como o uso da Regra de Sturges para definir o número adequado de classes. Também são abordadas as interpretações de frequências absolutas, relativas e acumuladas, destacando como essas ferramentas auxiliam na identificação de padrões nos dados e na tomada de decisões.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 4",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Estatística Descritiva",
+      "4- Distribuição de Frequências"
+    ]
+  },
+  {
+    "objectID": "aulas/13-Distribuicao_normal.html",
+    "href": "aulas/13-Distribuicao_normal.html",
+    "title": "Conteúdo 13",
+    "section": "",
+    "text": "Nesta aula estudamos a distribuição normal, uma das distribuições de probabilidade mais importantes da Estatística. São apresentadas suas propriedades fundamentais, a interpretação geométrica das probabilidades e o processo de padronização por meio da variável normal padrão (Z). Além disso, discutimos o uso da tabela normal tanto para calcular probabilidades quanto para determinar valores associados a probabilidades específicas.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 13",
+    "crumbs": [
+      "Aulas",
+      "Parte 2: Probabilidade",
+      "13- Distribuição Normal"
+    ]
+  },
+  {
+    "objectID": "aulas/13-Distribuicao_normal.html#distribuição-normal",
+    "href": "aulas/13-Distribuicao_normal.html#distribuição-normal",
+    "title": "Conteúdo 13",
+    "section": "",
+    "text": "Nesta aula estudamos a distribuição normal, uma das distribuições de probabilidade mais importantes da Estatística. São apresentadas suas propriedades fundamentais, a interpretação geométrica das probabilidades e o processo de padronização por meio da variável normal padrão (Z). Além disso, discutimos o uso da tabela normal tanto para calcular probabilidades quanto para determinar valores associados a probabilidades específicas.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 13",
+    "crumbs": [
+      "Aulas",
+      "Parte 2: Probabilidade",
+      "13- Distribuição Normal"
+    ]
+  },
+  {
+    "objectID": "aulas/06-Correlacao.html",
+    "href": "aulas/06-Correlacao.html",
+    "title": "Conteúdo 6",
+    "section": "",
+    "text": "Nesta aula é abordado o conceito de correlação para analisar relações entre variáveis. São apresentados o objetivo e a interpretação do coeficiente de correlação de Pearson, incluindo seus limites e significados, bem como a distinção crítica entre associação e causalidade.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 6",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Estatística Descritiva",
+      "6- Correlação"
+    ]
+  },
+  {
+    "objectID": "aulas/06-Correlacao.html#correlação-entre-variáveis",
+    "href": "aulas/06-Correlacao.html#correlação-entre-variáveis",
+    "title": "Conteúdo 6",
+    "section": "",
+    "text": "Nesta aula é abordado o conceito de correlação para analisar relações entre variáveis. São apresentados o objetivo e a interpretação do coeficiente de correlação de Pearson, incluindo seus limites e significados, bem como a distinção crítica entre associação e causalidade.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 6",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Estatística Descritiva",
+      "6- Correlação"
+    ]
+  },
+  {
+    "objectID": "aulas/03-Medidas_de_dispersao.html",
+    "href": "aulas/03-Medidas_de_dispersao.html",
+    "title": "Conteúdo 3",
+    "section": "",
+    "text": "Os slides desta aula apresentam as principais medidas de dispersão, utilizadas para quantificar a variabilidade dos dados em torno de uma medida central. São discutidos os conceitos de amplitude total, variância, desvio-padrão e coeficiente de variação, destacando suas definições, interpretações e aplicações na análise de dados experimentais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 3",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Estatística Descritiva",
+      "3- Medidas de Dispersão"
+    ]
+  },
+  {
+    "objectID": "aulas/03-Medidas_de_dispersao.html#medidas-de-dispersão",
+    "href": "aulas/03-Medidas_de_dispersao.html#medidas-de-dispersão",
+    "title": "Conteúdo 3",
+    "section": "",
+    "text": "Os slides desta aula apresentam as principais medidas de dispersão, utilizadas para quantificar a variabilidade dos dados em torno de uma medida central. São discutidos os conceitos de amplitude total, variância, desvio-padrão e coeficiente de variação, destacando suas definições, interpretações e aplicações na análise de dados experimentais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 3",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Estatística Descritiva",
+      "3- Medidas de Dispersão"
+    ]
+  },
+  {
+    "objectID": "aulas/02-Medidas_de_posicao.html",
+    "href": "aulas/02-Medidas_de_posicao.html",
+    "title": "Conteúdo 2",
+    "section": "",
+    "text": "Os slides desta aula introduzem as medidas de posição utilizadas para resumir e interpretar conjuntos de dados experimentais. São apresentados os conceitos de média aritmética, mediana, moda e separatrizes (quartis e percentis), discutindo suas definições, interpretações e limitações. Ao longo da aula, exemplos inspirados em ensaios e propriedades de materiais são utilizados para mostrar como essas medidas ajudam a compreender o comportamento dos dados, identificar valores atípicos e apoiar a análise e a tomada de decisão.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 2",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Estatística Descritiva",
+      "2- Medidas de Posição"
+    ]
+  },
+  {
+    "objectID": "aulas/02-Medidas_de_posicao.html#medidas-de-posição",
+    "href": "aulas/02-Medidas_de_posicao.html#medidas-de-posição",
+    "title": "Conteúdo 2",
+    "section": "",
+    "text": "Os slides desta aula introduzem as medidas de posição utilizadas para resumir e interpretar conjuntos de dados experimentais. São apresentados os conceitos de média aritmética, mediana, moda e separatrizes (quartis e percentis), discutindo suas definições, interpretações e limitações. Ao longo da aula, exemplos inspirados em ensaios e propriedades de materiais são utilizados para mostrar como essas medidas ajudam a compreender o comportamento dos dados, identificar valores atípicos e apoiar a análise e a tomada de decisão.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 2",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Estatística Descritiva",
+      "2- Medidas de Posição"
+    ]
+  },
+  {
+    "objectID": "aulas/12-Distribuicao-de-Poisson.html",
+    "href": "aulas/12-Distribuicao-de-Poisson.html",
+    "title": "Conteúdo 12",
+    "section": "",
+    "text": "Nesta aula, é apresentada a distribuição de Poisson, um modelo probabilístico utilizado para descrever a quantidade de ocorrências de um evento em determinado intervalo de tempo, área ou espaço. Serão discutidos os conceitos fundamentais da distribuição, incluindo função de probabilidade, interpretação do parâmetro λ, cálculo de probabilidades e aplicações práticas.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 12",
+    "crumbs": [
+      "Aulas",
+      "Parte 2: Probabilidade",
+      "12- Distribuição de Poisson"
+    ]
+  },
+  {
+    "objectID": "aulas/12-Distribuicao-de-Poisson.html#distribuição-de-poisson",
+    "href": "aulas/12-Distribuicao-de-Poisson.html#distribuição-de-poisson",
+    "title": "Conteúdo 12",
+    "section": "",
+    "text": "Nesta aula, é apresentada a distribuição de Poisson, um modelo probabilístico utilizado para descrever a quantidade de ocorrências de um evento em determinado intervalo de tempo, área ou espaço. Serão discutidos os conceitos fundamentais da distribuição, incluindo função de probabilidade, interpretação do parâmetro λ, cálculo de probabilidades e aplicações práticas.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 12",
+    "crumbs": [
+      "Aulas",
+      "Parte 2: Probabilidade",
+      "12- Distribuição de Poisson"
+    ]
+  },
+  {
+    "objectID": "aulas/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html",
+    "href": "aulas/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html",
+    "title": "Conteúdo 1",
+    "section": "",
+    "text": "Este material apresenta a estrutura da disciplina Estatística Aplicada (ESTAT0011), incluindo informações sobre carga horária, cronograma, datas importantes, metodologia e objetivos do curso. Além disso, introduz os conceitos iniciais da Estatística, fundamentais para o desenvolvimento da disciplina, como população e amostra, parâmetros e estatísticas, bem como a classificação de variáveis qualitativas e quantitativas, ilustradas com exemplos relacionados à Engenharia de Materiais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 1",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Estatística Descritiva",
+      "1- Apresentação da Disciplina"
+    ]
+  },
+  {
+    "objectID": "aulas/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#apresentação-da-disciplina-e-conceitos-iniciais",
+    "href": "aulas/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#apresentação-da-disciplina-e-conceitos-iniciais",
+    "title": "Conteúdo 1",
+    "section": "",
+    "text": "Este material apresenta a estrutura da disciplina Estatística Aplicada (ESTAT0011), incluindo informações sobre carga horária, cronograma, datas importantes, metodologia e objetivos do curso. Além disso, introduz os conceitos iniciais da Estatística, fundamentais para o desenvolvimento da disciplina, como população e amostra, parâmetros e estatísticas, bem como a classificação de variáveis qualitativas e quantitativas, ilustradas com exemplos relacionados à Engenharia de Materiais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 1",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Estatística Descritiva",
+      "1- Apresentação da Disciplina"
+    ]
+  },
+  {
+    "objectID": "aulas/10-Teorema-probabilidade-total-e-Bayes.html",
+    "href": "aulas/10-Teorema-probabilidade-total-e-Bayes.html",
+    "title": "Conteúdo 10",
+    "section": "",
+    "text": "Nesta aula são apresentados os conceitos do Teorema da Probabilidade Total e do Teorema de Bayes como ferramentas para avaliar as chances de causas quando um efeito já é conhecido. É abordada a definição formal de partição do espaço amostral por meio de eventos mutuamente excludentes, a aplicação da Probabilidade Total para determinar a probabilidade global de um acontecimento e a caracterização do Teorema de Bayes, no qual a ocorrência de um resultado prático permite atualizar e inverter as probabilidades condicionais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 10",
+    "crumbs": [
+      "Aulas",
+      "Parte 2: Probabilidade",
+      "10- Teorema da Probabilidade Total e de Bayes"
+    ]
+  },
+  {
+    "objectID": "aulas/10-Teorema-probabilidade-total-e-Bayes.html#teorema-da-probabilidade-total-e-teorema-de-bayes",
+    "href": "aulas/10-Teorema-probabilidade-total-e-Bayes.html#teorema-da-probabilidade-total-e-teorema-de-bayes",
+    "title": "Conteúdo 10",
+    "section": "",
+    "text": "Nesta aula são apresentados os conceitos do Teorema da Probabilidade Total e do Teorema de Bayes como ferramentas para avaliar as chances de causas quando um efeito já é conhecido. É abordada a definição formal de partição do espaço amostral por meio de eventos mutuamente excludentes, a aplicação da Probabilidade Total para determinar a probabilidade global de um acontecimento e a caracterização do Teorema de Bayes, no qual a ocorrência de um resultado prático permite atualizar e inverter as probabilidades condicionais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 10",
+    "crumbs": [
+      "Aulas",
+      "Parte 2: Probabilidade",
+      "10- Teorema da Probabilidade Total e de Bayes"
+    ]
+  },
+  {
+    "objectID": "aulas/07-Regressao.html",
+    "href": "aulas/07-Regressao.html",
+    "title": "Conteúdo 7",
+    "section": "",
+    "text": "Nesta aula é apresentada a regressão linear simples como modelo para descrever e prever a relação entre uma variável independente e uma dependente. É Abordada a estimação dos parâmetros pelo método dos mínimos quadrados, a interpretação dos resíduos e o uso do coeficiente de determinação (R²) para avaliar o ajuste do modelo.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 7",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Estatística Descritiva",
+      "7- Regressão Linear Simples"
+    ]
+  },
+  {
+    "objectID": "aulas/07-Regressao.html#regressão-linear-simples",
+    "href": "aulas/07-Regressao.html#regressão-linear-simples",
+    "title": "Conteúdo 7",
+    "section": "",
+    "text": "Nesta aula é apresentada a regressão linear simples como modelo para descrever e prever a relação entre uma variável independente e uma dependente. É Abordada a estimação dos parâmetros pelo método dos mínimos quadrados, a interpretação dos resíduos e o uso do coeficiente de determinação (R²) para avaliar o ajuste do modelo.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 7",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Estatística Descritiva",
+      "7- Regressão Linear Simples"
+    ]
+  },
+  {
+    "objectID": "aulas/09-Probabilidade-condicional-e-Independencia.html",
+    "href": "aulas/09-Probabilidade-condicional-e-Independencia.html",
+    "title": "Conteúdo 9",
+    "section": "",
+    "text": "Nesta aula são apresentados os conceitos de probabilidade condicional e independência como ferramentas fundamentais para calcular e avaliar as chances de um evento quando temos informações adicionais conhecidas. É abordada a definição formal e interpretativa da probabilidade condicional por meio da redução do espaço amostral, a aplicação do Teorema da Multiplicação para determinar a interseção de eventos sucessivos e a caracterização de eventos independentes, nos quais a ocorrência de um resultado não interfere na probabilidade do outro.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 9",
+    "crumbs": [
+      "Aulas",
+      "Parte 2: Probabilidade",
+      "9- Probabilidade Condicional e Independência"
+    ]
+  },
+  {
+    "objectID": "aulas/09-Probabilidade-condicional-e-Independencia.html#probabilidade-condicional-e-independência",
+    "href": "aulas/09-Probabilidade-condicional-e-Independencia.html#probabilidade-condicional-e-independência",
+    "title": "Conteúdo 9",
+    "section": "",
+    "text": "Nesta aula são apresentados os conceitos de probabilidade condicional e independência como ferramentas fundamentais para calcular e avaliar as chances de um evento quando temos informações adicionais conhecidas. É abordada a definição formal e interpretativa da probabilidade condicional por meio da redução do espaço amostral, a aplicação do Teorema da Multiplicação para determinar a interseção de eventos sucessivos e a caracterização de eventos independentes, nos quais a ocorrência de um resultado não interfere na probabilidade do outro.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 9",
+    "crumbs": [
+      "Aulas",
+      "Parte 2: Probabilidade",
+      "9- Probabilidade Condicional e Independência"
+    ]
+  },
+  {
+    "objectID": "aulas/11-Distribuicao-Binomial.html",
+    "href": "aulas/11-Distribuicao-Binomial.html",
+    "title": "Conteúdo 11",
+    "section": "",
+    "text": "Nesta aula, será apresentada a distribuição binomial, um dos modelos probabilísticos mais importantes para analisar experimentos com dois possíveis resultados (sucesso ou fracasso). Serão discutidos os conceitos fundamentais da distribuição, incluindo função de probabilidade, cálculo de probabilidades, esperança matemática e variância, sempre com exemplos aplicados e de fácil interpretação.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 11",
+    "crumbs": [
+      "Aulas",
+      "Parte 2: Probabilidade",
+      "11- Distribuição Binomial"
+    ]
+  },
+  {
+    "objectID": "aulas/11-Distribuicao-Binomial.html#distribuição-binomial",
+    "href": "aulas/11-Distribuicao-Binomial.html#distribuição-binomial",
+    "title": "Conteúdo 11",
+    "section": "",
+    "text": "Nesta aula, será apresentada a distribuição binomial, um dos modelos probabilísticos mais importantes para analisar experimentos com dois possíveis resultados (sucesso ou fracasso). Serão discutidos os conceitos fundamentais da distribuição, incluindo função de probabilidade, cálculo de probabilidades, esperança matemática e variância, sempre com exemplos aplicados e de fácil interpretação.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 11",
+    "crumbs": [
+      "Aulas",
+      "Parte 2: Probabilidade",
+      "11- Distribuição Binomial"
+    ]
   },
   {
     "objectID": "slides/02-Medidas_de_posicao/02-Medidas_de_posicao.html#introdução",
@@ -982,600 +1420,284 @@
     "text": "Percentis (posição relativa)\n\nPergunta que responde: Qual é a posição de um valor dentro da distribuição?\nExemplo:\n\n\\(P_{90}\\)→ 90% dos valores estão abaixo\n\nUso típico: definir limites de segurança e confiabilidade\nExemplo em engenharia: resistência mínima usada em projeto pode ser o percentil 5."
   },
   {
-    "objectID": "aulas/11-Distribuicao-Binomial.html",
-    "href": "aulas/11-Distribuicao-Binomial.html",
-    "title": "Conteúdo 11",
+    "objectID": "slides/11-Distribuicao-Binomial/11-Distribuicao-Binomial.html#exemplo-11.1",
+    "href": "slides/11-Distribuicao-Binomial/11-Distribuicao-Binomial.html#exemplo-11.1",
+    "title": "A Distribuição Binomial",
+    "section": "Exemplo 11.1",
+    "text": "Exemplo 11.1\nUm projeto de reabilitação desenvolveu uma prótese biomecânica de joelho para ajudar pacientes amputados a caminharem. Para garantir a segurança do paciente, a prótese usa sensores eletrônicos que monitoram o equilíbrio e a distribuição de carga. Sabe-se que a probabilidade de um desses sensores passar no teste de calibração (registrar o equilíbrio com alta precisão) é de \\(3/4\\). Se selecionarmos quatro sensores para auditoria, qual a probabilidade de encontrarmos exatamente dois sensores aprovados?"
+  },
+  {
+    "objectID": "slides/11-Distribuicao-Binomial/11-Distribuicao-Binomial.html#distribuição-binomial",
+    "href": "slides/11-Distribuicao-Binomial/11-Distribuicao-Binomial.html#distribuição-binomial",
+    "title": "A Distribuição Binomial",
+    "section": "Distribuição Binomial",
+    "text": "Distribuição Binomial\n\nConsidere que \\(p\\) é a probabilidade de sucesso em um experimento e \\(1 - p\\) é a probabilidade de fracasso.\nSuponha que vamos repetir o experimento \\(n\\) vezes em que cada repetição é independente da outra.\nSe \\(X\\) é o número de sucesso nas \\(n\\) repetições do experimento, dizemos que \\(X\\) tem distribuição binomial e calculamos a probabilidade usando \\[\nP(X=x) = \\binom{n}{x} p^x (1-p)^{n-x}, \\quad x = 0, 1, 2,\\ldots,n.\n\\]\nNotação: \\(X\\sim\\) Binomial(\\(n,p\\))."
+  },
+  {
+    "objectID": "slides/11-Distribuicao-Binomial/11-Distribuicao-Binomial.html#exemplo-11.2",
+    "href": "slides/11-Distribuicao-Binomial/11-Distribuicao-Binomial.html#exemplo-11.2",
+    "title": "A Distribuição Binomial",
+    "section": "Exemplo 11.2",
+    "text": "Exemplo 11.2\nUma empresa desenvolveu um novo selante químico para proteger componentes eletrônicos e estruturas de concreto contra a umidade. Eles descobriram que a probabilidade de uma aplicação desse selante ser perfeita (sem nenhum poro por onde a água possa passar) é de 0,6 (ou 60%). Para um projeto piloto, eles aplicaram esse selante em 10 amostras de materiais diferentes.\nDetermine a probabilidade de que:\n\nExatamente 7 amostras fiquem perfeitamente seladas?\nNo máximo 2 amostras fiquem perfeitamente seladas?\nPelo menos 8 amostras fiquem perfeitamente seladas?"
+  },
+  {
+    "objectID": "slides/11-Distribuicao-Binomial/11-Distribuicao-Binomial.html#section",
+    "href": "slides/11-Distribuicao-Binomial/11-Distribuicao-Binomial.html#section",
+    "title": "A Distribuição Binomial",
     "section": "",
-    "text": "Nesta aula, será apresentada a distribuição binomial, um dos modelos probabilísticos mais importantes para analisar experimentos com dois possíveis resultados (sucesso ou fracasso). Serão discutidos os conceitos fundamentais da distribuição, incluindo função de probabilidade, cálculo de probabilidades, esperança matemática e variância, sempre com exemplos aplicados e de fácil interpretação.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 11",
-    "crumbs": [
-      "Aulas",
-      "Parte 2: Probabilidade",
-      "11- Distribuição Binomial"
-    ]
-  },
-  {
-    "objectID": "aulas/11-Distribuicao-Binomial.html#distribuição-binomial",
-    "href": "aulas/11-Distribuicao-Binomial.html#distribuição-binomial",
-    "title": "Conteúdo 11",
-    "section": "",
-    "text": "Nesta aula, será apresentada a distribuição binomial, um dos modelos probabilísticos mais importantes para analisar experimentos com dois possíveis resultados (sucesso ou fracasso). Serão discutidos os conceitos fundamentais da distribuição, incluindo função de probabilidade, cálculo de probabilidades, esperança matemática e variância, sempre com exemplos aplicados e de fácil interpretação.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 11",
-    "crumbs": [
-      "Aulas",
-      "Parte 2: Probabilidade",
-      "11- Distribuição Binomial"
-    ]
-  },
-  {
-    "objectID": "aulas/09-Probabilidade-condicional-e-Independencia.html",
-    "href": "aulas/09-Probabilidade-condicional-e-Independencia.html",
-    "title": "Conteúdo 9",
-    "section": "",
-    "text": "Nesta aula são apresentados os conceitos de probabilidade condicional e independência como ferramentas fundamentais para calcular e avaliar as chances de um evento quando temos informações adicionais conhecidas. É abordada a definição formal e interpretativa da probabilidade condicional por meio da redução do espaço amostral, a aplicação do Teorema da Multiplicação para determinar a interseção de eventos sucessivos e a caracterização de eventos independentes, nos quais a ocorrência de um resultado não interfere na probabilidade do outro.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 9",
-    "crumbs": [
-      "Aulas",
-      "Parte 2: Probabilidade",
-      "9- Probabilidade Condicional e Independência"
-    ]
-  },
-  {
-    "objectID": "aulas/09-Probabilidade-condicional-e-Independencia.html#probabilidade-condicional-e-independência",
-    "href": "aulas/09-Probabilidade-condicional-e-Independencia.html#probabilidade-condicional-e-independência",
-    "title": "Conteúdo 9",
-    "section": "",
-    "text": "Nesta aula são apresentados os conceitos de probabilidade condicional e independência como ferramentas fundamentais para calcular e avaliar as chances de um evento quando temos informações adicionais conhecidas. É abordada a definição formal e interpretativa da probabilidade condicional por meio da redução do espaço amostral, a aplicação do Teorema da Multiplicação para determinar a interseção de eventos sucessivos e a caracterização de eventos independentes, nos quais a ocorrência de um resultado não interfere na probabilidade do outro.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 9",
-    "crumbs": [
-      "Aulas",
-      "Parte 2: Probabilidade",
-      "9- Probabilidade Condicional e Independência"
-    ]
-  },
-  {
-    "objectID": "aulas/07-Regressao.html",
-    "href": "aulas/07-Regressao.html",
-    "title": "Conteúdo 7",
-    "section": "",
-    "text": "Nesta aula é apresentada a regressão linear simples como modelo para descrever e prever a relação entre uma variável independente e uma dependente. É Abordada a estimação dos parâmetros pelo método dos mínimos quadrados, a interpretação dos resíduos e o uso do coeficiente de determinação (R²) para avaliar o ajuste do modelo.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 7",
-    "crumbs": [
-      "Aulas",
-      "Parte 1: Estatística Descritiva",
-      "7- Regressão Linear Simples"
-    ]
-  },
-  {
-    "objectID": "aulas/07-Regressao.html#regressão-linear-simples",
-    "href": "aulas/07-Regressao.html#regressão-linear-simples",
-    "title": "Conteúdo 7",
-    "section": "",
-    "text": "Nesta aula é apresentada a regressão linear simples como modelo para descrever e prever a relação entre uma variável independente e uma dependente. É Abordada a estimação dos parâmetros pelo método dos mínimos quadrados, a interpretação dos resíduos e o uso do coeficiente de determinação (R²) para avaliar o ajuste do modelo.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 7",
-    "crumbs": [
-      "Aulas",
-      "Parte 1: Estatística Descritiva",
-      "7- Regressão Linear Simples"
-    ]
-  },
-  {
-    "objectID": "aulas/06-Correlacao.html",
-    "href": "aulas/06-Correlacao.html",
-    "title": "Conteúdo 6",
-    "section": "",
-    "text": "Nesta aula é abordado o conceito de correlação para analisar relações entre variáveis. São apresentados o objetivo e a interpretação do coeficiente de correlação de Pearson, incluindo seus limites e significados, bem como a distinção crítica entre associação e causalidade.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 6",
-    "crumbs": [
-      "Aulas",
-      "Parte 1: Estatística Descritiva",
-      "6- Correlação"
-    ]
-  },
-  {
-    "objectID": "aulas/06-Correlacao.html#correlação-entre-variáveis",
-    "href": "aulas/06-Correlacao.html#correlação-entre-variáveis",
-    "title": "Conteúdo 6",
-    "section": "",
-    "text": "Nesta aula é abordado o conceito de correlação para analisar relações entre variáveis. São apresentados o objetivo e a interpretação do coeficiente de correlação de Pearson, incluindo seus limites e significados, bem como a distinção crítica entre associação e causalidade.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 6",
-    "crumbs": [
-      "Aulas",
-      "Parte 1: Estatística Descritiva",
-      "6- Correlação"
-    ]
-  },
-  {
-    "objectID": "aulas/03-Medidas_de_dispersao.html",
-    "href": "aulas/03-Medidas_de_dispersao.html",
-    "title": "Conteúdo 3",
-    "section": "",
-    "text": "Os slides desta aula apresentam as principais medidas de dispersão, utilizadas para quantificar a variabilidade dos dados em torno de uma medida central. São discutidos os conceitos de amplitude total, variância, desvio-padrão e coeficiente de variação, destacando suas definições, interpretações e aplicações na análise de dados experimentais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 3",
-    "crumbs": [
-      "Aulas",
-      "Parte 1: Estatística Descritiva",
-      "3- Medidas de Dispersão"
-    ]
-  },
-  {
-    "objectID": "aulas/03-Medidas_de_dispersao.html#medidas-de-dispersão",
-    "href": "aulas/03-Medidas_de_dispersao.html#medidas-de-dispersão",
-    "title": "Conteúdo 3",
-    "section": "",
-    "text": "Os slides desta aula apresentam as principais medidas de dispersão, utilizadas para quantificar a variabilidade dos dados em torno de uma medida central. São discutidos os conceitos de amplitude total, variância, desvio-padrão e coeficiente de variação, destacando suas definições, interpretações e aplicações na análise de dados experimentais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 3",
-    "crumbs": [
-      "Aulas",
-      "Parte 1: Estatística Descritiva",
-      "3- Medidas de Dispersão"
-    ]
-  },
-  {
-    "objectID": "aulas/02-Medidas_de_posicao.html",
-    "href": "aulas/02-Medidas_de_posicao.html",
-    "title": "Conteúdo 2",
-    "section": "",
-    "text": "Os slides desta aula introduzem as medidas de posição utilizadas para resumir e interpretar conjuntos de dados experimentais. São apresentados os conceitos de média aritmética, mediana, moda e separatrizes (quartis e percentis), discutindo suas definições, interpretações e limitações. Ao longo da aula, exemplos inspirados em ensaios e propriedades de materiais são utilizados para mostrar como essas medidas ajudam a compreender o comportamento dos dados, identificar valores atípicos e apoiar a análise e a tomada de decisão.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 2",
-    "crumbs": [
-      "Aulas",
-      "Parte 1: Estatística Descritiva",
-      "2- Medidas de Posição"
-    ]
-  },
-  {
-    "objectID": "aulas/02-Medidas_de_posicao.html#medidas-de-posição",
-    "href": "aulas/02-Medidas_de_posicao.html#medidas-de-posição",
-    "title": "Conteúdo 2",
-    "section": "",
-    "text": "Os slides desta aula introduzem as medidas de posição utilizadas para resumir e interpretar conjuntos de dados experimentais. São apresentados os conceitos de média aritmética, mediana, moda e separatrizes (quartis e percentis), discutindo suas definições, interpretações e limitações. Ao longo da aula, exemplos inspirados em ensaios e propriedades de materiais são utilizados para mostrar como essas medidas ajudam a compreender o comportamento dos dados, identificar valores atípicos e apoiar a análise e a tomada de decisão.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 2",
-    "crumbs": [
-      "Aulas",
-      "Parte 1: Estatística Descritiva",
-      "2- Medidas de Posição"
-    ]
-  },
-  {
-    "objectID": "aulas/12-Distribuicao-de-Poisson.html",
-    "href": "aulas/12-Distribuicao-de-Poisson.html",
-    "title": "Conteúdo 12",
-    "section": "",
-    "text": "Nesta aula, é apresentada a distribuição de Poisson, um modelo probabilístico utilizado para descrever a quantidade de ocorrências de um evento em determinado intervalo de tempo, área ou espaço. Serão discutidos os conceitos fundamentais da distribuição, incluindo função de probabilidade, interpretação do parâmetro λ, cálculo de probabilidades e aplicações práticas.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 12",
-    "crumbs": [
-      "Aulas",
-      "Parte 2: Probabilidade",
-      "12- Distribuição de Poisson"
-    ]
-  },
-  {
-    "objectID": "aulas/12-Distribuicao-de-Poisson.html#distribuição-de-poisson",
-    "href": "aulas/12-Distribuicao-de-Poisson.html#distribuição-de-poisson",
-    "title": "Conteúdo 12",
-    "section": "",
-    "text": "Nesta aula, é apresentada a distribuição de Poisson, um modelo probabilístico utilizado para descrever a quantidade de ocorrências de um evento em determinado intervalo de tempo, área ou espaço. Serão discutidos os conceitos fundamentais da distribuição, incluindo função de probabilidade, interpretação do parâmetro λ, cálculo de probabilidades e aplicações práticas.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 12",
-    "crumbs": [
-      "Aulas",
-      "Parte 2: Probabilidade",
-      "12- Distribuição de Poisson"
-    ]
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html",
-    "href": "aulas/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html",
-    "title": "Conteúdo 1",
-    "section": "",
-    "text": "Este material apresenta a estrutura da disciplina Estatística Aplicada (ESTAT0011), incluindo informações sobre carga horária, cronograma, datas importantes, metodologia e objetivos do curso. Além disso, introduz os conceitos iniciais da Estatística, fundamentais para o desenvolvimento da disciplina, como população e amostra, parâmetros e estatísticas, bem como a classificação de variáveis qualitativas e quantitativas, ilustradas com exemplos relacionados à Engenharia de Materiais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 1",
-    "crumbs": [
-      "Aulas",
-      "Parte 1: Estatística Descritiva",
-      "1- Apresentação da Disciplina"
-    ]
-  },
-  {
-    "objectID": "aulas/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#apresentação-da-disciplina-e-conceitos-iniciais",
-    "href": "aulas/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#apresentação-da-disciplina-e-conceitos-iniciais",
-    "title": "Conteúdo 1",
-    "section": "",
-    "text": "Este material apresenta a estrutura da disciplina Estatística Aplicada (ESTAT0011), incluindo informações sobre carga horária, cronograma, datas importantes, metodologia e objetivos do curso. Além disso, introduz os conceitos iniciais da Estatística, fundamentais para o desenvolvimento da disciplina, como população e amostra, parâmetros e estatísticas, bem como a classificação de variáveis qualitativas e quantitativas, ilustradas com exemplos relacionados à Engenharia de Materiais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 1",
-    "crumbs": [
-      "Aulas",
-      "Parte 1: Estatística Descritiva",
-      "1- Apresentação da Disciplina"
-    ]
-  },
-  {
-    "objectID": "aulas/10-Teorema-probabilidade-total-e-Bayes.html",
-    "href": "aulas/10-Teorema-probabilidade-total-e-Bayes.html",
-    "title": "Conteúdo 10",
-    "section": "",
-    "text": "Nesta aula são apresentados os conceitos do Teorema da Probabilidade Total e do Teorema de Bayes como ferramentas para avaliar as chances de causas quando um efeito já é conhecido. É abordada a definição formal de partição do espaço amostral por meio de eventos mutuamente excludentes, a aplicação da Probabilidade Total para determinar a probabilidade global de um acontecimento e a caracterização do Teorema de Bayes, no qual a ocorrência de um resultado prático permite atualizar e inverter as probabilidades condicionais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 10",
-    "crumbs": [
-      "Aulas",
-      "Parte 2: Probabilidade",
-      "10- Teorema da Probabilidade Total e de Bayes"
-    ]
-  },
-  {
-    "objectID": "aulas/10-Teorema-probabilidade-total-e-Bayes.html#teorema-da-probabilidade-total-e-teorema-de-bayes",
-    "href": "aulas/10-Teorema-probabilidade-total-e-Bayes.html#teorema-da-probabilidade-total-e-teorema-de-bayes",
-    "title": "Conteúdo 10",
-    "section": "",
-    "text": "Nesta aula são apresentados os conceitos do Teorema da Probabilidade Total e do Teorema de Bayes como ferramentas para avaliar as chances de causas quando um efeito já é conhecido. É abordada a definição formal de partição do espaço amostral por meio de eventos mutuamente excludentes, a aplicação da Probabilidade Total para determinar a probabilidade global de um acontecimento e a caracterização do Teorema de Bayes, no qual a ocorrência de um resultado prático permite atualizar e inverter as probabilidades condicionais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 10",
-    "crumbs": [
-      "Aulas",
-      "Parte 2: Probabilidade",
-      "10- Teorema da Probabilidade Total e de Bayes"
-    ]
-  },
-  {
-    "objectID": "aulas/04-Distribuicao_de_frequencias_simples_e_em_classe.html",
-    "href": "aulas/04-Distribuicao_de_frequencias_simples_e_em_classe.html",
-    "title": "Conteúdo 4",
-    "section": "",
-    "text": "Os slides desta aula apresentam os procedimentos para organização e síntese de dados por meio de distribuições de frequência, etapa fundamental na análise estatística de dados experimentais. São discutidas as diferenças entre dados brutos e rol, a construção de tabelas de frequência para variáveis qualitativas e quantitativas, bem como o uso da Regra de Sturges para definir o número adequado de classes. Também são abordadas as interpretações de frequências absolutas, relativas e acumuladas, destacando como essas ferramentas auxiliam na identificação de padrões nos dados e na tomada de decisões.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 4",
-    "crumbs": [
-      "Aulas",
-      "Parte 1: Estatística Descritiva",
-      "4- Distribuição de Frequências"
-    ]
-  },
-  {
-    "objectID": "aulas/04-Distribuicao_de_frequencias_simples_e_em_classe.html#distribuição-de-frequências-simples-e-em-classes",
-    "href": "aulas/04-Distribuicao_de_frequencias_simples_e_em_classe.html#distribuição-de-frequências-simples-e-em-classes",
-    "title": "Conteúdo 4",
-    "section": "",
-    "text": "Os slides desta aula apresentam os procedimentos para organização e síntese de dados por meio de distribuições de frequência, etapa fundamental na análise estatística de dados experimentais. São discutidas as diferenças entre dados brutos e rol, a construção de tabelas de frequência para variáveis qualitativas e quantitativas, bem como o uso da Regra de Sturges para definir o número adequado de classes. Também são abordadas as interpretações de frequências absolutas, relativas e acumuladas, destacando como essas ferramentas auxiliam na identificação de padrões nos dados e na tomada de decisões.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 4",
-    "crumbs": [
-      "Aulas",
-      "Parte 1: Estatística Descritiva",
-      "4- Distribuição de Frequências"
-    ]
-  },
-  {
-    "objectID": "aulas/08-Probabilidade.html",
-    "href": "aulas/08-Probabilidade.html",
-    "title": "Conteúdo 8",
-    "section": "",
-    "text": "Nesta aula é apresentada a teoria da probabilidade como a linguagem fundamental para quantificar e modelar a incerteza associada a fenômenos aleatórios. É abordada a definição de espaços amostrais e eventos, as propriedades matemáticas e operacionais do cálculo de probabilidades, e o uso de técnicas de contagem como permutação, arranjo e combinação para determinar a ocorrência de resultados equiprováveis.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 8",
-    "crumbs": [
-      "Aulas",
-      "Parte 2: Probabilidade",
-      "8- Probabilidade"
-    ]
-  },
-  {
-    "objectID": "aulas/08-Probabilidade.html#introdução-à-probabilidade",
-    "href": "aulas/08-Probabilidade.html#introdução-à-probabilidade",
-    "title": "Conteúdo 8",
-    "section": "",
-    "text": "Nesta aula é apresentada a teoria da probabilidade como a linguagem fundamental para quantificar e modelar a incerteza associada a fenômenos aleatórios. É abordada a definição de espaços amostrais e eventos, as propriedades matemáticas e operacionais do cálculo de probabilidades, e o uso de técnicas de contagem como permutação, arranjo e combinação para determinar a ocorrência de resultados equiprováveis.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 8",
-    "crumbs": [
-      "Aulas",
-      "Parte 2: Probabilidade",
-      "8- Probabilidade"
-    ]
-  },
-  {
-    "objectID": "aulas/05-Visualizacao_de_dados.html",
-    "href": "aulas/05-Visualizacao_de_dados.html",
-    "title": "Conteúdo 5",
-    "section": "",
-    "text": "Os slides desta aula apresentam os princípios e técnicas de visualização de dados. São discutidos os critérios técnicos para construção de gráficos adequados, incluindo escolha baseada no tipo de variável (qualitativa ou quantitativa), além de boas práticas para sua elaboração. A aula aborda diferentes tipos de gráficos, como barras, histogramas, boxplots, gráficos de dispersão e séries temporais, destacando suas aplicações na identificação de padrões, variabilidade, relações entre variáveis e detecção de falhas em processos e materiais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 5",
-    "crumbs": [
-      "Aulas",
-      "Parte 1: Estatística Descritiva",
-      "5- Visualização de Dados"
-    ]
-  },
-  {
-    "objectID": "aulas/05-Visualizacao_de_dados.html#visualização-de-dados",
-    "href": "aulas/05-Visualizacao_de_dados.html#visualização-de-dados",
-    "title": "Conteúdo 5",
-    "section": "",
-    "text": "Os slides desta aula apresentam os princípios e técnicas de visualização de dados. São discutidos os critérios técnicos para construção de gráficos adequados, incluindo escolha baseada no tipo de variável (qualitativa ou quantitativa), além de boas práticas para sua elaboração. A aula aborda diferentes tipos de gráficos, como barras, histogramas, boxplots, gráficos de dispersão e séries temporais, destacando suas aplicações na identificação de padrões, variabilidade, relações entre variáveis e detecção de falhas em processos e materiais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 5",
-    "crumbs": [
-      "Aulas",
-      "Parte 1: Estatística Descritiva",
-      "5- Visualização de Dados"
-    ]
-  },
-  {
-    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#gráfico-como-ferramenta-de-decisão",
-    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#gráfico-como-ferramenta-de-decisão",
-    "title": "Visualização de Dados",
-    "section": "Gráfico como Ferramenta de Decisão",
-    "text": "Gráfico como Ferramenta de Decisão\nNa Engenharia, o gráfico não é uma mera ilustração; é um instrumento de diagnóstico de processos e materiais.\n\nDADO: A leitura bruta (ex: 5.000 pontos de carga e extensão – o quanto o material esticou).\nINFORMAÇÃO: O padrão visual (ex: a inclinação da reta indica o Módulo de Young – rigidez/elasticidade do material).\nDECISÃO: A ação técnica (ex: “Este lote de polímero é adequado para a peça?”).\n\n\nObservação: Não buscamos o gráfico mais “bonito”, mas aquele que torna a falha (quebra do material) ou o sucesso evidente."
-  },
-  {
-    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#por-que-visualizar-dados",
-    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#por-que-visualizar-dados",
-    "title": "Visualização de Dados",
-    "section": "Por que Visualizar Dados?",
-    "text": "Por que Visualizar Dados?\nA representação gráfica permite extrair inteligência de grandes volumes de medições que seriam incompreensíveis em tabelas:\n\nIdentificar Padrões (Ex: A relação entre temperatura e taxa de corrosão.)\nValidar Expectativas: Confirmar se o tratamento térmico atingiu a dureza esperada.\nDescobrir Fenômenos: Detectar anomalias ou falhas raras em lotes de produção.\nValidar Estatísticas: Verificar se a distribuição dos dados permite o uso de testes paramétricos (cálculos que exigem dados “normais”)."
-  },
-  {
-    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#ponto-de-partida-o-tipo-de-variável",
-    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#ponto-de-partida-o-tipo-de-variável",
-    "title": "Visualização de Dados",
-    "section": "Ponto de Partida: O Tipo de Variável",
-    "text": "Ponto de Partida: O Tipo de Variável\n\nA escolha do gráfico não é estética, é técnica. A natureza dos dados define a visualização:\nHá então gráficos para\n\nVariáveis Qualitativas (Categóricas)\nVariáveis Quantitativas (Numéricas).\n\nO tipo de variável é que define as opções de gráficos que você pode utilizar."
-  },
-  {
-    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#requisitos-de-um-gráfico-técnico",
-    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#requisitos-de-um-gráfico-técnico",
-    "title": "Visualização de Dados",
-    "section": "Requisitos de um Gráfico Técnico",
-    "text": "Requisitos de um Gráfico Técnico\nPara que um gráfico sirva como prova técnica em um relatório de engenharia, ele deve conter:\n\nTítulo Autoexplicativo: Indica claramente o que foi medido.\nEixos Rotulados: Nome da variável e sua unidade de medida (Ex: Tensão [MPa]).\nEscala Sensata: Evita distorções que mascarem a variação real.\nLegenda Objetiva: Diferencia as condições de ensaio ou materiais.\n\n\nAtenção! Um gráfico sem unidade (como MPa, °C ou mm) é inválido em um laudo técnico. Na dúvida, sempre pergunte: “Alguém conseguiria entender este gráfico sem eu precisar explicar?”."
-  },
-  {
-    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section",
-    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section",
-    "title": "Visualização de Dados",
-    "section": "",
-    "text": "Gráfico ERRADO (Inaceitável)\n\n\n\n\n\n\n\nGráfico CERTO (Padrão Engenharia)"
-  },
-  {
-    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#visualização-de-dados-categóricos",
-    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#visualização-de-dados-categóricos",
-    "title": "Visualização de Dados",
-    "section": "Visualização de Dados Categóricos",
-    "text": "Visualização de Dados Categóricos\n\nQuando os dados representam grupos ou nomes (Qualitativos), o objetivo da visualização é comparar a frequência ou a proporção entre categorias.\nAs principais escolhas são:\n\nGráfico de Barras: Para comparar magnitudes.\nGráfico de Barras Empilhadas: Para comparar subgrupos dentro de categorias.\nGráfico de Pareto: Para priorização de problemas.\nGráfico de Setores (Pizza): Para mostrar partes de um todo."
-  },
-  {
-    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#gráfico-de-barras",
-    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#gráfico-de-barras",
-    "title": "Visualização de Dados",
-    "section": "Gráfico de Barras",
-    "text": "Gráfico de Barras\nÉ a forma mais eficiente de comparar quantidades entre diferentes grupos (categorias).\n\nComo Construir:\n\nEixo X (Categorias): Espaçamento igual entre as barras.\nEixo Y (Frequência): Deve sempre começar no zero.\nLargura das Barras: Deve ser constante para não sugerir “peso” diferente.\nOrdenação: Se não houver ordem natural, organize de forma decrescente."
-  },
-  {
-    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-1",
-    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-1",
-    "title": "Visualização de Dados",
-    "section": "",
-    "text": "Exemplo: Identificação de Falhas Críticas\nConsidere a contagem de defeitos encontrados em uma inspeção de 500 componentes poliméricos.\n\n\n\nCategoria de Defeito\nOcorrências\nImpacto\n\n\n\n\nBolhas (Vazios)\n145\nCrítico\n\n\nDelaminação\n52\nCrítico\n\n\nRebarbas\n30\nEstético\n\n\nManchas\n12\nEstético\n\n\n\nFonte: Dados fictícios (2026)."
-  },
-  {
-    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-2",
-    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-2",
-    "title": "Visualização de Dados",
-    "section": "",
-    "text": "Exemplo: Identificação de Falhas Críticas\nO gráfico abaixo responde: “Qual processo de fabricação deve ser ajustado primeiro?”\n\n\nInsight: O excesso de “Vazios” sugere falha no sistema de vácuo ou na viscosidade da resina."
-  },
-  {
-    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-3",
-    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-3",
-    "title": "Visualização de Dados",
-    "section": "",
-    "text": "Regras de Construção e Escala\nO gráfico de barras é a escolha padrão para representar a magnitude de variáveis categóricas (nominais ou ordinais).\n\nAplicação: Comparar quantidades entre grupos independentes.\nConstrução:\n\nO eixo das categorias não possui escala métrica (é uma lista).\nO eixo quantitativo deve sempre começar no zero para não distorcer as proporções.\n\nInterpretação:\n\nA altura (ou comprimento) da barra é proporcional ao valor que ela representa.\nOrdenação: Salvo se houver uma ordem natural (ex: meses), as barras devem estar em ordem decrescente para facilitar a comparação visual imediata."
-  },
-  {
-    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-4",
-    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-4",
-    "title": "Visualização de Dados",
-    "section": "",
-    "text": "Quando os rótulos das categorias são longos ou numerosos, a rotação facilita a leitura sem poluir o eixo horizontal."
-  },
-  {
-    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-5",
-    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-5",
-    "title": "Visualização de Dados",
-    "section": "",
-    "text": "Respeitando a Hierarquia dos Dados\n\nAo contrário das variáveis nominais (onde ordenamos por frequência), variáveis ordinais possuem uma hierarquia intrínseca. O gráfico deve preservar a ordem natural, mesmo que a frequência não seja decrescente.\nExemplo: Grau de Severidade de Desgaste em ferramentas de corte."
-  },
-  {
-    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-6",
-    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-6",
-    "title": "Visualização de Dados",
-    "section": "",
-    "text": "Comparação entre grupos\nProblema: Como diferentes fornecedores se comportam em diferentes ensaios?"
-  },
-  {
-    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-7",
-    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-7",
-    "title": "Visualização de Dados",
-    "section": "",
-    "text": "Barras empilhadas\n\nCada segmento corresponde a uma subcategoria.\nA altura total da barra representa a soma de todas as subcategorias.\nPermite observar simultaneamente o total de cada categoria e a sua composição interna.\n\n\n\nInterpretação: A Cerâmica X possui o maior índice de reprovação (25 peças), indicando que o processo de sinterização precisa de ajustes."
-  },
-  {
-    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#gráfico-de-pareto",
-    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#gráfico-de-pareto",
-    "title": "Visualização de Dados",
-    "section": "Gráfico de Pareto",
-    "text": "Gráfico de Pareto\nO Gráfico de Pareto é um gráfico de barras decrescentes com uma linha de frequência acumulada sobreposta.\n\nIdeia: 20% das causes geram 80% dos defeitos (regra dos 80/20).\nEste gráfico indica onde o esforço de engenharia terá o maior retorno financeiro e de qualidade.\nComo ele é estruturado:\n\nBarras (em ordem decrescente): frequência ou quantidade de ocorrências\nLinha acumulada: soma percentual dos problemas\nDois eixos Y:\n\nesquerdo → quantidade\ndireito → porcentagem"
-  },
-  {
-    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#exemplo",
-    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#exemplo",
-    "title": "Visualização de Dados",
-    "section": "Exemplo",
-    "text": "Exemplo\nUm engenheiro de materiais catalogou as causas de descarte de 250 peças de alumínio em uma semana. O objetivo é reduzir a perda de material.\n\nInsight: Atacando apenas Porosidade (pequenos buracos/vazios no metal) e Inclusão (sujeira presa dentro do material), o engenheiro resolve quase 80% das falhas do setor."
-  },
-  {
-    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#gráfico-de-setores-pizza",
-    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#gráfico-de-setores-pizza",
-    "title": "Visualização de Dados",
-    "section": "Gráfico de Setores (Pizza)",
-    "text": "Gráfico de Setores (Pizza)\nO gráfico de setores mostra a relação entre as partes e o todo. Embora popular, ele é frequentemente criticado na engenharia.\nQuando usar:\n\nPoucas categorias (máximo 3 ou 4).\nDiferenças de magnitude muito óbvias.\n\nPor que evitar:\n\nO olho humano tem dificuldade em comparar áreas e ângulos com precisão.\nÉ difícil ler rótulos em fatias muito pequenas.\n\nAlternativa: Gráfico de barras (sempre mais preciso para comparação técnica)."
-  },
-  {
-    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-9",
-    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-9",
-    "title": "Visualização de Dados",
-    "section": "",
-    "text": "Exemplo\nNeste caso, o gráfico de setores funciona porque as categorias são poucas e as diferenças são grandes.\n\nDica: Se você precisar de números escritos dentro da fatia para que o gráfico seja entendido, um gráfico de barras provavelmente seria melhor."
-  },
-  {
-    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#visualização-de-dados-numéricos",
-    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#visualização-de-dados-numéricos",
-    "title": "Visualização de Dados",
-    "section": "Visualização de Dados Numéricos",
-    "text": "Visualização de Dados Numéricos\nQuando os dados representam medidas ou contagens (Quantitativos), o objetivo é entender a distribuição, a variabilidade ou a relação entre variáveis. As principais escolhas são:\n\nHistograma: Mostra a distribuição dos dados.\nGráfico de Densidade: Versão “suavizada” do histograma.\nBoxplot: Resume estatísticas e identifica outliers (dados muito fora do normal).\nGráfico de Violino: Une boxplot com densidade.\nGráfico de Dispersão: Avalia relação entre duas medidas (Ex: Temperatura vs. Dureza).\nGráfico de Linha: Para séries temporais (dados medidos ao longo do tempo)."
-  },
-  {
-    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#histograma",
-    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#histograma",
-    "title": "Visualização de Dados",
-    "section": "Histograma",
-    "text": "Histograma\n\nÉ a ferramenta principal para visualizar a distribuição de uma variável quantitativa contínua.\nEle mostra frequência com que valores ocorrem em determinados intervalos (bins).\nFormatação:\n\nEixo X: Escala numérica contínua dividida em intervalos iguais.\nEixo Y: Frequência absoluta ou relativa.\nBarras Adjacentes: Diferente do gráfico de barras, as barras do histograma são encostadas para indicar a continuidade dos dados.\nObjetivo: Identificar o centro, a dispersão e o formato (simetria) dos dados."
-  },
-  {
-    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-10",
-    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-10",
-    "title": "Visualização de Dados",
-    "section": "",
-    "text": "Exemplo\nImagine que medimos a dureza de 100 amostras de um lote de aço. O gráfico nos diz se o processo de fabricação está estável ou se há muita variação."
-  },
-  {
-    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-11",
-    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-11",
-    "title": "Visualização de Dados",
-    "section": "",
-    "text": "O histograma é a representação gráfica de uma Tabela de Distribuição de Frequências por Classes.\nPara as 100 amostras de aço, teríamos a seguinte tabela.\n\n\n\n\nDureza (HRC)\nFreq. Absoluta\n\n\n\n\n\\(40 \\vdash 41\\)\n1\n\n\n\\(41 \\vdash 42\\)\n3\n\n\n\\(42 \\vdash 43\\)\n6\n\n\n\\(43 \\vdash 44\\)\n14\n\n\n\\(44 \\vdash 45\\)\n22\n\n\n\\(45 \\vdash 46\\)\n29\n\n\n\\(46 \\vdash 47\\)\n14\n\n\n\\(47 \\vdash 48\\)\n9\n\n\n\\(48 \\vdash 49\\)\n2"
-  },
-  {
-    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#gráfico-de-densidade",
-    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#gráfico-de-densidade",
-    "title": "Visualização de Dados",
-    "section": "Gráfico de densidade",
-    "text": "Gráfico de densidade\nO gráfico de densidade é uma versão suavizada do histograma.\n\nComo é feito: Utiliza uma técnica matemática chamada Kernel Density Estimation (KDE) para criar uma linha contínua que estima a probabilidade de um valor ocorrer.\nInterpretação:\n\nA área total sob a curva é igual a 1.\nPicos indicam onde os dados estão mais concentrados.\nÚtil para comparar distribuições de grupos diferentes sem a poluição visual de muitas barras sobrepostas."
-  },
-  {
-    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-12",
-    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-12",
-    "title": "Visualização de Dados",
-    "section": "",
-    "text": "Utilizando os mesmos dados de do lote de aço:"
-  },
-  {
-    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#boxplot",
-    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#boxplot",
-    "title": "Visualização de Dados",
-    "section": "Boxplot",
-    "text": "Boxplot\n\nBoxplot, ou diagrama de caixa, é um gráfico que divide os dados em quartis e é a melhor ferramenta para identificar a variabilidade de um material.\nEle exibe cinco estatísticas principais:"
-  },
-  {
-    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-13",
-    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-13",
-    "title": "Visualização de Dados",
-    "section": "",
-    "text": "Exemplo\nUtilizando os mesmos dados de do lote de aço:"
-  },
-  {
-    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-14",
-    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-14",
-    "title": "Visualização de Dados",
-    "section": "",
-    "text": "O gráfico de boxplot é a útil para comparar a estabilidade de processos."
-  },
-  {
-    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#gráfico-de-violino",
-    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#gráfico-de-violino",
-    "title": "Visualização de Dados",
-    "section": "Gráfico de Violino",
-    "text": "Gráfico de Violino\n\nCombina um boxplot com uma estimativa de densidade de kernel.\nQuanto mais largo o violino em um determinado ponto, maior a concentração de dados naquele valor."
-  },
-  {
-    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-15",
-    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-15",
-    "title": "Visualização de Dados",
-    "section": "",
-    "text": "Exemplo\nUtilizando os mesmos dados de do lote de aço:"
-  },
-  {
-    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-16",
-    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-16",
-    "title": "Visualização de Dados",
-    "section": "",
-    "text": "O gráfico de violino também serve para comprar grupos."
-  },
-  {
-    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#visualização-de-associações",
-    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#visualização-de-associações",
-    "title": "Visualização de Dados",
-    "section": "Visualização de Associações",
-    "text": "Visualização de Associações\nGráfico de dispersão\n\nServe para visualização de duas variáveis ao mesmo tempo.\nAuxilia a compreensão da relação entre variáveis.\n\n\nTamanho da cabeça de uma espécie de pássaro e sua massa corporal."
-  },
-  {
-    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#visualização-de-associações-1",
-    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#visualização-de-associações-1",
-    "title": "Visualização de Dados",
-    "section": "Visualização de Associações",
-    "text": "Visualização de Associações\nGráfico de Dispersão (Scatterplot)\nO Gráfico de Dispersão é usado para visualizar duas variáveis numéricas ao mesmo tempo e descobrir relações de causa e efeito.\n\nInterpretação:\n\nPontos subindo: correlação positiva (correlação direta).\nPontos descendo: correlação negativa (correlação inversa).\nPontos sem padrão: dados não correlacionados."
-  },
-  {
-    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-17",
-    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-17",
-    "title": "Visualização de Dados",
-    "section": "",
-    "text": "Exemplo\nQueremos saber o que acontece com a dureza do aço 1045 à medida que aumentamos a temperatura do forno."
-  },
-  {
-    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#visualização-de-dados-no-tempo",
-    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#visualização-de-dados-no-tempo",
-    "title": "Visualização de Dados",
-    "section": "Visualização de Dados no Tempo",
-    "text": "Visualização de Dados no Tempo\nGráfico de Linha (Série Temporal)\nÉ a forma mais comum e eficaz de mostrar como uma variável física evolui ao longo do tempo.\n\nDiferente do Gráfico de Dispersão (pontos isolados), a linha indica continuidade.\nEle mostra tendências, ciclos ou anomalias ao longo de um período."
-  },
-  {
-    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-18",
-    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#section-18",
-    "title": "Visualização de Dados",
-    "section": "",
-    "text": "Exemplo: Ciclo Térmico de um Forno de Têmpera\nSe plotarmos o sensor do forno apenas com pontos, nosso cérebro tem dificuldade em seguir o caminho do aquecimento. Quando conectamos com uma linha, a história do material fica óbvia.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nInsight: A linha nos permite ver claramente as três fases do tratamento: Aquecimento (subida), Patamar de Austenizacão (reta estável em 850°C) e Resfriamento (descida)."
-  },
-  {
-    "objectID": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#para-saber-mais",
-    "href": "slides/05-Visualizacao_de_dados/05-Visualizacao_de_dados.html#para-saber-mais",
-    "title": "Visualização de Dados",
-    "section": "Para saber mais",
-    "text": "Para saber mais\n\nhttps://clauswilke.com/dataviz/visualizing-trends.html"
-  },
-  {
-    "objectID": "slides/10-Teorema-probabilidade-total-e-Bayes/10-Teorema-probabilidade-total-e-Bayes.html#exemplo-10.1",
-    "href": "slides/10-Teorema-probabilidade-total-e-Bayes/10-Teorema-probabilidade-total-e-Bayes.html#exemplo-10.1",
-    "title": "Teorema da Probabilidade Total e Teorema de Bayes",
-    "section": "Exemplo 10.1",
-    "text": "Exemplo 10.1\nUma fábrica produz sensores de alta precisão utilizados em equipamentos de Raio-X e dispositivos inteligentes. A linha de produção é dividida em três setores de montagem: \\(S_1\\), \\(S_2\\) e \\(S_3\\). O setor \\(S_1\\) produz 30% dos sensores, o \\(S_2\\) produz 45% e o \\(S_3\\) produz os 25% restantes.Devido a variações na pureza da matéria-prima, alguns sensores podem sair de fábrica com falha na calibração. A taxa de falha é de 2% no setor \\(S_1\\), 3% no setor \\(S_2\\) e 2% no setor \\(S_3\\). Ao selecionar um sensor finalizado da prateleira para uma auditoria, qual a probabilidade dele estar descalibrado?"
-  },
-  {
-    "objectID": "slides/10-Teorema-probabilidade-total-e-Bayes/10-Teorema-probabilidade-total-e-Bayes.html#definição-10.1-partição",
-    "href": "slides/10-Teorema-probabilidade-total-e-Bayes/10-Teorema-probabilidade-total-e-Bayes.html#definição-10.1-partição",
-    "title": "Teorema da Probabilidade Total e Teorema de Bayes",
-    "section": "Definição 10.1: Partição",
-    "text": "Definição 10.1: Partição\nDizemos que os eventos \\(B_1, B_2, \\ldots, B_k\\) constituem uma partição do espaço amostral \\(\\Omega\\) quando\n\n\\(B_i\\cap B_j=\\emptyset\\), para todo \\(i\\neq j\\);\n\\(\\bigcup_{i=1}^k B_i = \\Omega\\);\n\\(P(B_i)&gt;0\\), para todo \\(i\\)."
-  },
-  {
-    "objectID": "slides/10-Teorema-probabilidade-total-e-Bayes/10-Teorema-probabilidade-total-e-Bayes.html#teorema-da-probabilidade-total",
-    "href": "slides/10-Teorema-probabilidade-total-e-Bayes/10-Teorema-probabilidade-total-e-Bayes.html#teorema-da-probabilidade-total",
-    "title": "Teorema da Probabilidade Total e Teorema de Bayes",
-    "section": "Teorema da Probabilidade Total",
-    "text": "Teorema da Probabilidade Total\nSe os eventos \\(B_1, B_2, \\ldots, B_k\\) constituem uma partição do espaço amostral, de modo que \\(P(B_i)\\neq 0\\), para \\(i = 1, 2, \\ldots, k\\), então para qualquer evento \\(A\\) de \\(\\Omega\\), \\[\n  P(A) = \\sum\\limits_{i=1}^k P(B_i\\cap A) = \\sum\\limits_{i=1}^k P(B_i) P(A|B_i).\n\\]"
-  },
-  {
-    "objectID": "slides/10-Teorema-probabilidade-total-e-Bayes/10-Teorema-probabilidade-total-e-Bayes.html#exemplo-10.2",
-    "href": "slides/10-Teorema-probabilidade-total-e-Bayes/10-Teorema-probabilidade-total-e-Bayes.html#exemplo-10.2",
-    "title": "Teorema da Probabilidade Total e Teorema de Bayes",
-    "section": "Exemplo 10.2",
-    "text": "Exemplo 10.2\nUm aluno propõe-se a resolver uma questão de um trabalho. A probabilidade de que consiga resolver a questão sem necessidade de uma pesquisa é de 40%. Caso faça a pesquisa, a probabilidade de que consiga resolver a questão é de 70%. Se a probabilidade do aluno fazer a pesquisa é de 80%, calcule a probabilidade de que consiga resolver a questão."
-  },
-  {
-    "objectID": "slides/10-Teorema-probabilidade-total-e-Bayes/10-Teorema-probabilidade-total-e-Bayes.html#exemplo-10.3",
-    "href": "slides/10-Teorema-probabilidade-total-e-Bayes/10-Teorema-probabilidade-total-e-Bayes.html#exemplo-10.3",
-    "title": "Teorema da Probabilidade Total e Teorema de Bayes",
-    "section": "Exemplo 10.3",
-    "text": "Exemplo 10.3\nUma equipe de pesquisadores está testando quatro novos compostos de blindagem (\\(B_1, B_2, B_3, B_4\\)) feitos de concreto aditivado e polímeros. O objetivo é verificar se o material consegue bloquear totalmente a passagem de radiação ou resistir a um impacto severo sem romper. Em testes laboratoriais controlados, a probabilidade da blindagem manter sua integridade total foi de: 40% para o composto \\(B_1\\); 30% para o composto \\(B_2\\); 25% para o composto \\(B_3\\); 50% para o composto \\(B_4\\). Considerando que há um corpo de prova (amostra) de cada composto no laboratório e um deles é sorteado para inspeção final, qual a probabilidade do fiscal encontrar um material que resistiu 100% ao teste?"
-  },
-  {
-    "objectID": "slides/10-Teorema-probabilidade-total-e-Bayes/10-Teorema-probabilidade-total-e-Bayes.html#teorema-de-bayes",
-    "href": "slides/10-Teorema-probabilidade-total-e-Bayes/10-Teorema-probabilidade-total-e-Bayes.html#teorema-de-bayes",
-    "title": "Teorema da Probabilidade Total e Teorema de Bayes",
-    "section": "Teorema de Bayes",
-    "text": "Teorema de Bayes\nSe os eventos \\(B_1, \\ldots, B_k\\) constituem uma partição do espaço amostral \\(\\Omega\\), de modo que \\(P(B_i) \\neq 0\\), para \\(i = 1, \\ldots, k\\), então para qualquer evento \\(A\\) de \\(\\Omega\\), tal que \\(P(A) \\neq 0\\), temos que \\[\n  P(B_r|A) = \\frac{P(B_r\\cap A)}{P(A)} = \\frac{P(B_r)P(A|B_r)}{\\sum_{i=1}^k P(B_i)P(A|B_i)},\n\\] para \\(r = 1, \\ldots, k\\)."
-  },
-  {
-    "objectID": "slides/10-Teorema-probabilidade-total-e-Bayes/10-Teorema-probabilidade-total-e-Bayes.html#exemplo-10.4",
-    "href": "slides/10-Teorema-probabilidade-total-e-Bayes/10-Teorema-probabilidade-total-e-Bayes.html#exemplo-10.4",
-    "title": "Teorema da Probabilidade Total e Teorema de Bayes",
-    "section": "Exemplo 10.4",
-    "text": "Exemplo 10.4\nUma equipe de pesquisadores está testando quatro novos compostos de blindagem (\\(B_1, B_2, B_3, B_4\\)) feitos de concreto aditivado e polímeros. O objetivo é verificar se o material consegue bloquear totalmente a passagem de radiação ou resistir a um impacto severo sem romper. Em testes laboratoriais controlados, a probabilidade da blindagem manter sua integridade total foi de: 40% para o composto \\(B_1\\); 30% para o composto \\(B_2\\); 25% para o composto \\(B_3\\); 50% para o composto \\(B_4\\). Suponha que um corpo de prova foi selecionado aleatoriamente e resistiu 100% ao teste. Suponha que um servidor web em um ambiente simulado foi selecionado aleatoriamente e manteve 100% de disponibilidade durante picos de tráfego. Qual é a probabilidade de que ele tenha o composto \\(B_4\\)?"
-  },
-  {
-    "objectID": "slides/10-Teorema-probabilidade-total-e-Bayes/10-Teorema-probabilidade-total-e-Bayes.html#exemplo-10.5",
-    "href": "slides/10-Teorema-probabilidade-total-e-Bayes/10-Teorema-probabilidade-total-e-Bayes.html#exemplo-10.5",
-    "title": "Teorema da Probabilidade Total e Teorema de Bayes",
-    "section": "Exemplo 10.5",
-    "text": "Exemplo 10.5\nUm vendedor de produtos eletrônicos estima que 2% dos seus clientes são da classe \\(A\\), 15% da classe \\(B\\), 63% da classe \\(C\\) e o restante das classes \\(D\\) e \\(E\\). Ele está divulgando uma promoção para a venda de notebooks e acredita que tem 90% de probabilidade de vendê-los para indivíduos da classe \\(A\\), 70% de probabilidade de vendê-los para a classe \\(B\\), para a classe \\(C\\), 40%, e para as classes \\(D\\) e \\(E\\), 10%.\n\nUm cliente entra na loja. Qual a probabilidade dele comprar o computador em promoção?\nUm cliente entra na loja e não se interessa pela promoção. Qual a probabilidade de que seja da classe B?"
+    "text": "Podemos calcular o valor esperado de um experimento e a variância para uma variável aleatória \\(X\\) com distribuição Binomial(\\(n, p\\)): \\[ E(X) = np \\] e \\[ Var(X) = n p (1-p), \\] respectivamente."
+  },
+  {
+    "objectID": "slides/11-Distribuicao-Binomial/11-Distribuicao-Binomial.html#exemplo-11.3",
+    "href": "slides/11-Distribuicao-Binomial/11-Distribuicao-Binomial.html#exemplo-11.3",
+    "title": "A Distribuição Binomial",
+    "section": "Exemplo 11.3",
+    "text": "Exemplo 11.3\nUm sistema de reconhecimento facial é utilizado para liberar o acesso de estudantes a um laboratório da universidade. Em cada tentativa de acesso, o sistema pode funcionar corretamente ou apresentar falha. Testes anteriores mostraram que a probabilidade de falha em uma tentativa é de 20%. Suponha que sejam realizadas 10 tentativas independentes de acesso. Considere \\(X\\) a variável aleatória que representa o número de falhas do sistema nas 10 tentativas.\n\nCalcule a probabilidade de o sistema apresentar de 3 a 5 falhas.\nEm média, quantas falhas são esperadas nas 10 tentativas?\nQual a variância?"
+  },
+  {
+    "objectID": "slides/11-Distribuicao-Binomial/11-Distribuicao-Binomial.html#exemplo-11.4",
+    "href": "slides/11-Distribuicao-Binomial/11-Distribuicao-Binomial.html#exemplo-11.4",
+    "title": "A Distribuição Binomial",
+    "section": "Exemplo 11.4",
+    "text": "Exemplo 11.4\nUma empresa produz sensores de deformação para monitorar a saúde de grandes estruturas. O controle de qualidade da fábrica indica que 3% desses sensores apresentam falhas na película condutora, impedindo a leitura dos dados.\n\nUm engenheiro seleciona 20 sensores para instalar em uma viga de teste. Qual é a probabilidade de que haja pelo menos um dispositivo com falha entre esses 20?\nSuponha que para monitorar uma ponte inteira sejam utilizados 200 sensores. Qual o número esperado de sensores com defeito e qual a variância?"
+  },
+  {
+    "objectID": "slides/11-Distribuicao-Binomial/11-Distribuicao-Binomial.html#exemplo-11.5",
+    "href": "slides/11-Distribuicao-Binomial/11-Distribuicao-Binomial.html#exemplo-11.5",
+    "title": "A Distribuição Binomial",
+    "section": "Exemplo 11.5",
+    "text": "Exemplo 11.5\nEm uma grande distribuidora, estima-se que 30% dos lotes de materiais contenham um nível de impureza acima do permitido. Como é impossível testar quimicamente cada grama de material, um laboratório seleciona oito amostras aleatoriamente para uma análise microscópica.\n\nAssumindo que a estimativa de 30% de lotes impuros está correta, qual é a probabilidade de que, entre oito amostras selecionadas, exatamente três apresentem impurezas críticas?\nNesta amostra de 8 unidades, qual o comportamento médio esperado? Qual a variância?"
+  },
+  {
+    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#introdução",
+    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#introdução",
+    "title": "Medidas de Dispersão",
+    "section": "Introdução",
+    "text": "Introdução\n\nNa Engenharia de Materiais, saber onde os dados se localizam (Média) não diz todas as informações sobre os dados.\nA variabilidade natural e os erros de medição definem se um material é confiável ou perigoso.\nDuas ligas metálicas podem ter a mesma resistência média, mas uma pode ser muito instável (variável) e a outra muito uniforme.\nPara o engenheiro, variabilidade elevada está associada a maior risco. Precisamos quantificar esse risco."
+  },
+  {
+    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#introdução-1",
+    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#introdução-1",
+    "title": "Medidas de Dispersão",
+    "section": "Introdução",
+    "text": "Introdução\n\nComo medir a incerteza e a falta de uniformidade em um lote de materiais?\nMedidas de Dispersão (ou variabilidade) indicam quão afastados os dados estão do centro de massa.\nInformações principais que vamos extrair:\n\nAmplitude: diferença entre o maior e o menor valor.\nVariância: média dos quadrados dos desvios em relação à média (unidade ao quadrado).\nDesvio-padrão: medida do espalhamento dos dados na mesma unidade da variável.\nCoeficiente de Variação: quantifica se a variação é grande ou pequena em relação à média."
+  },
+  {
+    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#introdução-2",
+    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#introdução-2",
+    "title": "Medidas de Dispersão",
+    "section": "Introdução",
+    "text": "Introdução\nExemplo\n\nImagine dois lotes de cerâmica com resistência média de 100 MPa.\n\nNo Lote A, todas as peças variam entre 98 e 102 MPa.\nNo Lote B, as peças variam entre 50 e 150 MPa.\n\nSe você projetar uma peça para suportar 90 MPa, o Lote A é seguro, mas o Lote B é arriscado, apesar da média ser 100 MPa.\n\nAtenção!\n\nMédia não descreve confiabilidade.\nDispersão descreve."
+  },
+  {
+    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#por-que-calcular-a-amplitude",
+    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#por-que-calcular-a-amplitude",
+    "title": "Medidas de Dispersão",
+    "section": "Por que calcular a amplitude?",
+    "text": "Por que calcular a amplitude?\nEm uma linha de produção, um engenheiro monitora a estabilidade térmica de um forno. Mesmo com média estável, o material pode sofrer danos se houver:\n\npicos excessivos de calor (degradação térmica)\nquedas bruscas de temperatura (choque térmico)\ninstabilidade no sistema de controle\n\nPergunta Motivadora\nComo medir de forma rápida a distância total entre o valor mais alto e o mais baixo de um processo?"
+  },
+  {
+    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#amplitude-total-at",
+    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#amplitude-total-at",
+    "title": "Medidas de Dispersão",
+    "section": "Amplitude Total (\\(AT\\))",
+    "text": "Amplitude Total (\\(AT\\))\n\nA amplitude total é a diferença entre o maior e o menor valor de um conjunto de dados.\nSe identificarmos o valor máximo (\\(X_{max}\\)) e o valor mínimo (\\(X_{min}\\)) em uma amostra, a amplitude é dada por: \\[AT = X_{max} - X_{min}\\]\nEste indicador mostra o campo de variação absoluto dos dados.\nÉ a medida de dispersão mais simples de calcular."
+  },
+  {
+    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#interpretação-da-amplitude",
+    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#interpretação-da-amplitude",
+    "title": "Medidas de Dispersão",
+    "section": "Interpretação da Amplitude",
+    "text": "Interpretação da Amplitude\n\nImagine a amplitude como a extensão de uma régua.\nEla define os limites externos onde os dados se encontram.\nEssa interpretação é útil para:\n\nIdentificar a largura total do processo produtivo.\nVerificar se os extremos ultrapassam limites de segurança.\nRealizar triagens rápidas em lotes de materiais."
+  },
+  {
+    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#exemplo-3.1",
+    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#exemplo-3.1",
+    "title": "Medidas de Dispersão",
+    "section": "Exemplo 3.1",
+    "text": "Exemplo 3.1\nUm engenheiro monitora a temperatura de um forno de tratamento térmico em dois momentos diferentes do dia.\n\nMomento A (°C): 850, 852, 848, 851, 849.\nMomento B (°C): 850, 852, 848, 851, 920.\n\nCalcule a amplitude total (\\(AT\\)) para ambos os momentos e compare os resultados."
+  },
+  {
+    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#reflexão",
+    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#reflexão",
+    "title": "Medidas de Dispersão",
+    "section": "Reflexão",
+    "text": "Reflexão\n\nNo exemplo 3.1, a amplitude saltou de 4°C para 72°C devido a um único pico.\nIsso levanta uma questão importante:\n\nA amplitude descreve o que acontece no “meio” dos dados?\nUm erro de leitura no sensor pode invalidar toda a análise?\n\nEssa limitação motiva o uso de medidas mais precisas, como o Desvio-padrão."
+  },
+  {
+    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#vantagens-e-desvantagens-da-amplitude",
+    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#vantagens-e-desvantagens-da-amplitude",
+    "title": "Medidas de Dispersão",
+    "section": "Vantagens e Desvantagens da Amplitude",
+    "text": "Vantagens e Desvantagens da Amplitude\nVantagens\n\nCálculo imediato e intuitivo.\nIdeal para definir limites de tolerância (mínimo/máximo).\nMuito usada em gráficos de controle simples.\n\nDesvantagem\n\nExtremamente sensível a valores extremos (outliers).\nIgnora como os dados estão distribuídos entre os extremos."
+  },
+  {
+    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#o-que-fazer-na-prática",
+    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#o-que-fazer-na-prática",
+    "title": "Medidas de Dispersão",
+    "section": "O que fazer na prática?",
+    "text": "O que fazer na prática?\n\nUse a amplitude para verificações rápidas de segurança.\nNão confie apenas nela para caracterizar a uniformidade do material.\nCombine a amplitude com o desvio-padrão para uma visão completa."
+  },
+  {
+    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#a-amplitude-não-basta",
+    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#a-amplitude-não-basta",
+    "title": "Medidas de Dispersão",
+    "section": "A Amplitude não basta",
+    "text": "A Amplitude não basta\n\nA amplitude foca apenas nos extremos do lote. No entanto, para garantir a confiabilidade de uma peça, o engenheiro precisa saber:\n\nComo todos os dados se comportam em relação à média?\nO material é homogêneo ou apresenta oscilações internas?\nQual o desvio em relação à média como resumo?\n\n\nPergunta Motivadora\nComo calcular uma medida que utilize todos os valores do conjunto para descrever o espalhamento dos dados?"
+  },
+  {
+    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#variância-s2",
+    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#variância-s2",
+    "title": "Medidas de Dispersão",
+    "section": "Variância (\\(S^2\\))",
+    "text": "Variância (\\(S^2\\))\n\nA variância calcula a média dos quadrados dos desvios em relação à média.\nIndica o espalhamento dos dados ao redor do centro de massa.\nO cálculo diferencia dados populacionais de dados amostrais:\n\n\n\n\nTipo\nFórmula\n\n\n\n\nPopulação\n\\(\\sigma^2 = \\frac{\\sum (X_i - \\mu)^2}{N}\\)\n\n\nAmostra\n\\(S^2 = \\frac{\\sum (X_i-\\overline{X})^2}{n-1}\\)\n\n\n\n\n\\(\\mu\\) é a média populacional e \\(\\overline{X}\\) é a média amostral."
+  },
+  {
+    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#entendendo-o-cálculo",
+    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#entendendo-o-cálculo",
+    "title": "Medidas de Dispersão",
+    "section": "Entendendo o Cálculo",
+    "text": "Entendendo o Cálculo\n\nCalculamos a distância de cada ponto até a média (\\(X_i - \\overline{X}\\)).\nElevamos ao quadrado para eliminar valores negativos.\nDividimos pelo total (com ajuste \\(n-1\\) para amostras).\nObservação: O resultado final estará na unidade ao quadrado (ex: \\(MPa^2\\)).\nNota: O denominador \\(n-1\\) (graus de liberdade) corrige o viés em amostras pequenas."
+  },
+  {
+    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#exemplo-3.2",
+    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#exemplo-3.2",
+    "title": "Medidas de Dispersão",
+    "section": "Exemplo 3.2",
+    "text": "Exemplo 3.2\nConsidere dois lotes de aço com a mesma resistência média (\\(\\overline{X} = 500 \\text{ MPa}\\)). Foram testadas 3 amostras de cada lote:\n\nLote A (MPa): 499, 500, 501.\nLote B (MPa): 450, 500, 550.\n\nCalcule a variância (\\(S^2\\)) de cada lote. Qual material apresenta maior uniformidade na estrutura interna?"
+  },
+  {
+    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#reflexão-1",
+    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#reflexão-1",
+    "title": "Medidas de Dispersão",
+    "section": "Reflexão",
+    "text": "Reflexão\n\nA variância do Lote B será muito maior que a do Lote A.\nProblema de interpretação:\n\nSe a unidade original é MPa, a variância fica dada em MPa\\(^2\\).\nO que significa fisicamente uma “pressão ao quadrado”?\n\nEssa dificuldade de interpretção da unidade de medida motiva o estudo do Desvio-padrão."
+  },
+  {
+    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#vantagens-e-desvantagens-da-variância",
+    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#vantagens-e-desvantagens-da-variância",
+    "title": "Medidas de Dispersão",
+    "section": "Vantagens e Desvantagens da Variância",
+    "text": "Vantagens e Desvantagens da Variância\nVantagens\n\nConsidera a variação de cada dado individualmente.\nBase fundamental para cálculos estatísticos avançados.\nEssencial para modelos de controle de qualidade industrial.\n\nDesvantagens\n\nA unidade de medida original é alterada (fica ao quadrado).\nInterpretação física difícil para tomadas de decisão rápidas."
+  },
+  {
+    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#observações-importantes",
+    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#observações-importantes",
+    "title": "Medidas de Dispersão",
+    "section": "Observações Importantes",
+    "text": "Observações Importantes\n\nUse a Variância para comparar a consistência entre dois processos.\nLembre que ela penaliza pesadamente grandes desvios (devido ao quadrado).\nPara laudos técnicos, utilize o Desvio-padrão para retornar à escala original."
+  },
+  {
+    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#o-problema-da-unidade-ao-quadrado",
+    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#o-problema-da-unidade-ao-quadrado",
+    "title": "Medidas de Dispersão",
+    "section": "O Problema da Unidade ao Quadrado",
+    "text": "O Problema da Unidade ao Quadrado\nA Variância (\\(S^2\\)) é excelente para cálculos, mas gera um problema prático na interpretação da unidade de medida:\n\nResistência em MPa vira MPa\\(^2\\).\nDureza em HB vira HB\\(^2\\).\nTemperatura em °C vira °C\\(^2\\).\n\nPergunta Motivadora\nComo retornar a medida de variabilidade para a mesma unidade original das nossas medições?"
+  },
+  {
+    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#desvio-padrão-s",
+    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#desvio-padrão-s",
+    "title": "Medidas de Dispersão",
+    "section": "Desvio-Padrão (\\(S\\))",
+    "text": "Desvio-Padrão (\\(S\\))\n\nO desvio-padrão é definido como a raiz quadrada positiva da variância.\nEle indica o quanto, em média, os dados se afastam da média aritmética.\nFórmula para dados amostrais: \\[S = \\sqrt{S^2}\\]\nPrefere-se o uso do desvio-padrão por sua interpretabilidade direta em projetos."
+  },
+  {
+    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#interpretação",
+    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#interpretação",
+    "title": "Medidas de Dispersão",
+    "section": "Interpretação",
+    "text": "Interpretação\n\nO desvio-padrão traz a dispersão de volta para a escala real.\nEle permite dizer: “A resistência é \\(500 \\pm 10\\) MPa”.\nFacilita a visualização do erro médio em torno do centro."
+  },
+  {
+    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#exemplo-3.3",
+    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#exemplo-3.3",
+    "title": "Medidas de Dispersão",
+    "section": "Exemplo 3.3",
+    "text": "Exemplo 3.3\nRetome os dados do Exemplo 3.2 sobre a resistência dos aços:\n\nLote A: \\(S^2 = 1\\) MPa\\(^2\\).\nLote B: \\(S^2 = 2500\\) MPa\\(^2\\).\n\nCalcule o desvio-padrão (\\(S\\)) para ambos os lotes. Qual a diferença de “erro” em MPa entre o material estável e o instável?\n\nSe o limite de projeto exige que nenhuma peça falhe abaixo de \\(480\\) MPa, qual lote você aprovaria com segurança apenas olhando para o desvio-padrão?"
+  },
+  {
+    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#vantagens-e-desvantagens-do-desvio-padrão",
+    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#vantagens-e-desvantagens-do-desvio-padrão",
+    "title": "Medidas de Dispersão",
+    "section": "Vantagens e Desvantagens do Desvio-Padrão",
+    "text": "Vantagens e Desvantagens do Desvio-Padrão\nVantagens\n\nExpresso na mesma unidade dos dados originais.\nMais intuitivo para engenheiros e técnicos de laboratório.\nBase para definir intervalos de confiança e margens de segurança.\n\nDesvantagens\n\nAssim como a média, é sensível a valores extremos (outliers)."
+  },
+  {
+    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#observações-importantes-1",
+    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#observações-importantes-1",
+    "title": "Medidas de Dispersão",
+    "section": "Observações Importantes",
+    "text": "Observações Importantes\n\nUse o Desvio-Padrão para redigir laudos técnicos e manuais.\nEle é a “régua” oficial para medir a qualidade de um lote.\nQuanto menor o desvio, mais previsível e confiável é o seu material."
+  },
+  {
+    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#comparando-o-incomparável",
+    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#comparando-o-incomparável",
+    "title": "Medidas de Dispersão",
+    "section": "Comparando o Incomparável",
+    "text": "Comparando o Incomparável\n\nMédia e desvio-padrão são limitados quando precisamos comparar dois cenários diferentes:\n\nLotes com médias muito distantes (ex: fibra fina vs. barra grossa).\nMateriais medidos em unidades diferentes (ex: dureza vs. tração).\nProcessos onde a escala de grandeza altera a percepção do erro.\n\n\nPergunta Motivadora\n\nComo saber qual material é mais estável se as médias são diferentes?"
+  },
+  {
+    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#coeficiente-de-variação-cv",
+    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#coeficiente-de-variação-cv",
+    "title": "Medidas de Dispersão",
+    "section": "Coeficiente de Variação (\\(CV\\))",
+    "text": "Coeficiente de Variação (\\(CV\\))\n\nO \\(CV\\) é uma medida relativa de dispersão.\nExpressa o desvio-padrão como uma proporção da média.\nFrequentemente utilizado em porcentagem: \\[CV = \\left( \\frac{S}{\\overline{X}} \\right) \\times 100\\%\\]\nElimina a unidade de medida, tornando os dados adimensionais."
+  },
+  {
+    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#interpretação-técnica",
+    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#interpretação-técnica",
+    "title": "Medidas de Dispersão",
+    "section": "Interpretação Técnica",
+    "text": "Interpretação Técnica\n\nO \\(CV\\) indica a precisão relativa do processo produtivo.\nPermite comparar a uniformidade entre materiais distintos.\n\nBaixo \\(CV\\): processo homogêneo e controlado.\nAlto \\(CV\\): alta dispersão relativa e maior risco técnico."
+  },
+  {
+    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#exemplo-3.4",
+    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#exemplo-3.4",
+    "title": "Medidas de Dispersão",
+    "section": "Exemplo 3.4",
+    "text": "Exemplo 3.4\nUm laboratório compara a estabilidade de dois processos de fabricação de filamentos.\n\nProcesso A: Média = 120 μm; Desvio-padrão (\\(S\\)) = 1,58 μm.\nProcesso B: Média = 116 μm; Desvio-padrão (\\(S\\)) = 36,47 μm.\n\nCalcule o \\(CV\\) para cada processo. Qual deles apresenta o desempenho mais estável para evitar picos de defeitos?"
+  },
+  {
+    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#vantagens-e-desvantagens",
+    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#vantagens-e-desvantagens",
+    "title": "Medidas de Dispersão",
+    "section": "Vantagens e Desvantagens",
+    "text": "Vantagens e Desvantagens\nVantagens\n\nPermite comparar dispersões entre conjuntos com unidades diferentes.\nFacilita a comunicação de resultados para gerência (porcentagem).\nExcelente indicador de escalabilidade e risco de processo.\n\nDesvantagem\n\nPerde o sentido se a média for igual ou próxima de zero."
+  },
+  {
+    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#observações-importantes-2",
+    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#observações-importantes-2",
+    "title": "Medidas de Dispersão",
+    "section": "Observações Importantes",
+    "text": "Observações Importantes\n\nUse o Coeficiente de Variação para validar fornecedores diferentes.\nUm \\(CV\\) abaixo de 10% geralmente indica alta precisão na engenharia.\nEle é a ferramenta final para decidir sobre a eficiência da produção."
+  },
+  {
+    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#qual-medida-usar-1",
+    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#qual-medida-usar-1",
+    "title": "Medidas de Dispersão",
+    "section": "Qual Medida Usar?",
+    "text": "Qual Medida Usar?\n\n\n\n\n\n\n\n\nSituação no Laboratório\nMedida Recomendada\nPor quê?\n\n\n\n\nTriagem rápida de lotes\nAmplitude Total\nIdentifica picos de defeitos ou instabilidade bruta.\n\n\nCálculos de qualidade\nVariância\nBase matemática para modelos estatísticos avançados."
+  },
+  {
+    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#qual-medida-usar-2",
+    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#qual-medida-usar-2",
+    "title": "Medidas de Dispersão",
+    "section": "Qual Medida Usar?",
+    "text": "Qual Medida Usar?\n\n\n\n\n\n\n\n\nSituação no Laboratório\nMedida Recomendada\nPor quê?\n\n\n\n\nLaudo técnico oficial\nDesvio-padrão\nAvalia consistência na mesma unidade do material.\n\n\nComparar processos\n\\(CV\\)\nCompara precisão relativa entre materiais diferentes."
+  },
+  {
+    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#resumo-de-aplicações",
+    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#resumo-de-aplicações",
+    "title": "Medidas de Dispersão",
+    "section": "Resumo de Aplicações",
+    "text": "Resumo de Aplicações\n\nAmplitude: uso em inspeções iniciais e limites de segurança.\nVariância: fundamental para pesquisa acadêmica e otimização de processos.\nDesvio-padrão: referência para relatórios de conformidade técnica.\n\\(CV\\): ferramenta essencial para seleção de fornecedores e escalabilidade."
+  },
+  {
+    "objectID": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#atenção-1",
+    "href": "slides/03-Medidas_de_dispersao/03-Medidas_de_dispersao.html#atenção-1",
+    "title": "Medidas de Dispersão",
+    "section": "Atenção!",
+    "text": "Atenção!\n\nO engenheiro nunca utiliza apenas um indicador isolado.\nA Média localiza o material; a Dispersão valida sua confiabilidade.\nMenor variabilidade sempre resulta em menor risco de falha estrutural."
   },
   {
     "objectID": "slides/08-Probabilidade/08-Probabilidade.html#o-que-é-probabilidade",
