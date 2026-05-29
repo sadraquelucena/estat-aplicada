@@ -53,8 +53,8 @@ website:
             text: "11- Distribuição Binomial"
           - href: aulas/12-Distribuicao-de-Poisson.qmd
             text: "12- Distribuição de Poisson"
-          - href: aulas/13-Distribuicao_normal.qmd
-            text: "13- Distribuição Normal"
+          #- href: aulas/13-Distribuicao_normal.qmd
+          #  text: "13- Distribuição Normal"
             
             
             
