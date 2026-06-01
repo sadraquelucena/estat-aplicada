@@ -28,9 +28,16 @@ Slides:
 
 ::::
 
-Lista de Exercícios:
+Tabela Normal e Lista de Exercícos:
 
 :::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/tabelas/tabela_normal.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/tabelas/tabela_normal.png){width=80%}<br>Tabela Normal
+</a>
+:::
+
 
 ::: {.g-col-12 .g-col-md-4}
 <a href="/PDFs/listas/EstatAplicada_lista13.pdf" target="_blank" style="text-decoration: none; color: inherit;">
