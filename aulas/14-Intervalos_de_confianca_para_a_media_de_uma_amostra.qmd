@@ -28,7 +28,7 @@ Slides:
 
 ::::
 
-Tabela Normal e Lista de Exercícos:
+Tabela Normal, Tabela t e Lista de Exercícos:
 
 :::: {.grid}
 

@@ -1,0 +1,57 @@
+---
+title: "Teste de Hipóteses para Uma Proporção"
+subtitle: "ESTAT0011 -- Estatística Aplicada"
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <span style="font-size:.8em;">sadraquelucena@academico.ufs.br</span>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1024
+    height: 768
+    margin: 0.1         # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem número das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_horizontal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+
+lang: pt-BR
+---
+
+## Teste de Hipóteses Para Uma Proporção
+
+- Estatística de teste:
+$$
+	Z_{cal} = \frac{\widehat{p}-p_0}{\sqrt{\frac{p_0(1-p_0)}{n}}}.
+$$
+
+- Usamos a distribuição normal.
+
+
+
+
+## Exemplo 16.1
+
+Uma empresa de deseja avaliar a qualidade dos blocos de concreto produzidos em uma de suas fábricas. Uma auditoria foi realizada em uma amostra aleatória de 703 blocos, dos quais 61% atenderam integralmente às especificações técnicas estabelecidas pela norma. Com base nesses dados, existe evidência estatística, ao nível de significância de 5%, de que a maioria dos blocos produzidos atende às especificações técnicas?
+
+
+
+
+## Exemplo 16.2
+Um grupo de pesquisa em Computação e Engenharia Civil desenvolveu um algoritmo de visão computacional para detectar fissuras em estruturas de concreto. Estudos anteriores indicam que algoritmos tradicionais identificam corretamente fissuras em aproximadamente 60% das imagens analisadas. Para avaliar a nova abordagem baseada em aprendizado profundo, uma amostra aleatória de 100 imagens foi analisada e o algoritmo identificou corretamente fissuras em 70 delas. Esses resultados fornecem evidências suficientes para concluir que o novo algoritmo possui taxa de acerto superior a 60%? Considere um nível de significância de 0,04.
+
+
+
+## Exemplo 16.3
+
+Uma clínica de diagnóstico por imagem monitora a proporção de exames de tomografia que precisam ser repetidos devido a problemas técnicos. Historicamente, essa proporção é de 4%. Após a instalação de novos equipamentos, uma amostra de 300 exames mostrou que 21 precisaram ser repetidos. Existe evidência de que a proporção de repetições seja diferente de 4%? Considere $\alpha=0{,}05$.
+
+
+# Fim

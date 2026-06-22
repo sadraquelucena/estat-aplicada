@@ -1,0 +1,55 @@
+---
+title: "Conteúdo 16"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Teste de Hipóteses Para a Média de Uma Amostra
+
+Nesta aula, introduzimos os fundamentos dos testes de hipóteses para médias populacionais. São apresentados os conceitos de hipótese nula e alternativa, erros dos tipos I e II, níveis de significância, regiões críticas e p-valores. Também são estudados os testes Z e t de Student para situações envolvendo médias populacionais, destacando os critérios de escolha entre eles e a interpretação correta dos resultados.
+
+Slides:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/slides/16-Teste_de_hipoteses_para_uma_media/16-Teste_de_hipoteses_para_uma_media.html" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide16_html.png)<br>Versão html
+</a>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/slides/16-Teste_de_hipoteses_para_uma_media.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide16_pdf.png)<br>Versão pdf
+</a>
+:::
+
+::::
+
+Tabela Normal, Tabela t e Lista de Exercícos:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/tabelas/tabela_normal.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/tabelas/tabela_normal.png){width=80%}<br>Tabela Normal
+</a>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/tabelas/tabela_t.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/tabelas/tabela_t.png){width=80%}<br>Tabela t
+</a>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/listas/EstatAplicada_lista16.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/listas/lista16.png){width=80%}<br>Lista 16
+</a>
+:::
+
+::::
+
+

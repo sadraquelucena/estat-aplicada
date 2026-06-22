@@ -1,0 +1,52 @@
+---
+title: "Conteúdo 17"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Teste de Hipóteses Para Uma Proporção
+
+Nesta aula, estudamos os testes de hipóteses para proporções populacionais utilizando a aproximação Normal. São apresentados os procedimentos para formular hipóteses, construir estatísticas de teste, interpretar p-valores e tomar decisões com base em evidências amostrais.
+
+Slides:
+
+Slides:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/slides/17-Teste_de_hipoteses_para_uma_proporcao/17-Teste_de_hipoteses_para_uma_proporcao.html" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide17_html.png)<br>Versão html
+</a>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/slides/17-Teste_de_hipoteses_para_uma_proporcao.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide17_pdf.png)<br>Versão pdf
+</a>
+:::
+
+::::
+
+Tabela Normal e Lista de Exercícos:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/tabelas/tabela_normal.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/tabelas/tabela_normal.png){width=80%}<br>Tabela Normal
+</a>
+:::
+
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/listas/EstatAplicada_lista17.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/listas/lista17.png){width=80%}<br>Lista 17
+</a>
+:::
+
+::::
+
+

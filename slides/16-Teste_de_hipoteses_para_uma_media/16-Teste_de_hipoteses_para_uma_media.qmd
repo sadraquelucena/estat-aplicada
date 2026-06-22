@@ -1,0 +1,248 @@
+---
+title: "Teste de Hipóteses para Uma Média"
+subtitle: "ESTAT0011 -- Estatística Aplicada"
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <span style="font-size:.8em;">sadraquelucena@academico.ufs.br</span>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1024
+    height: 768
+    margin: 0.1         # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem número das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_horizontal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+
+lang: pt-BR
+---
+
+## Conceitos Gerais
+
+- **Hipótese estatística:** afirmação sobre um parâmetro populacional.
+- Como geralmente não observamos toda a população, utilizamos uma amostra para avaliar essa afirmação.
+- A decisão será baseada nas evidências fornecidas pelos dados.
+
+
+
+
+## Hipótese Nula e Alternativa
+
+- **Hipótese alternativa ($H_0$):** representa a situação de referência.
+- **Hipótese nula ($H_1$):** representa a afirmação que desejamos investigar.
+- Ao final do teste:
+
+    - Rejeitamos $H_0$; ou
+    - Não rejeitamos $H)_0$.
+
+
+- Nunca dizemos "aceitamos $H_0$".
+
+
+
+## Exemplo
+Um réu está sendo julgado em um tribunal. As hipóteses nula e alternativa são
+
+- **$H_0$:** o réu é inocente.
+- **$H_1$:** o réu é culpado.
+
+Se as evidências forem insuficientes: Não rejeitamos $H_0$.
+
+- Isso não significa que o réu é inocente.
+- Significa apenas que não existem evidências suficientes para concluir que ele é culpado.
+
+
+
+## Erros em Testes de Hipóteses
+
+
+| | $H_0$ é verdadeira | $H_0$ é falsa |
+|:---|:---|:---|
+| Não rejeitar $H_0$ | Decisão correta | Erro tipo II |
+| Rejeitar $H_0$ | Erro tipo I | Decisão correta |
+
+
+
+
+## Erro Tipo I e Tipo II
+
+- **Erro tipo I:** rejeitar a hipótese nula quando ela é verdadeira.
+
+    - Sua probabilidade é chamada de nível de significância:
+$$
+  \alpha = P(\text{rejeitar } H_0 |\, H_0\text{ é verdadeira}).
+$$
+
+- **Erro tipo II:** não rejeitar a hipótese nula quando ela é falsa.
+
+    - A probabilidade desse erro é:
+$$
+  \beta = P(\text{não rejeitar } H_0|\, H_0\text{ é falsa}).
+$$
+
+- Na prática escolhemos $\alpha$.
+- Valores comuns: 0,10; 0,05; 0,01.
+
+
+
+
+## Testes Unilaterais e Bilaterais
+
+- Teste unilateral:
+$$
+	\begin{align*}
+		H_0: ~\theta = \theta_0 & \quad\quad \text{ou} & H_0: \theta=\theta_0\\
+		H_1: \theta<\theta_0 &  & H_1: \theta>\theta_0 \\
+		\text{(à esquerda)} &  & \text{(à direita)}
+	\end{align*}
+$$
+
+- Teste bilateral:
+$$
+  \begin{align*}
+	  H_0:& ~\theta=\theta_0\\
+		H_1:& ~\theta\neq \theta_0\\
+	\end{align*}
+$$
+
+
+
+## Exemplo 16.1
+
+Uma indústria desenvolveu um novo processo de fabricação de chapas metálicas e afirma que a espessura média produzida não excede 5 mm. Estabeleça as hipóteses nula e alternativa para serem usadas no teste e determine onde a região crítica está localizada.
+
+
+
+
+## Exemplo 16.2
+
+Um algoritmo de visão computacional foi desenvolvido para identificar automaticamente trincas em estruturas de concreto. Os desenvolvedores afirmam que o algoritmo possui taxa de acerto de 90%. Para verificar essa afirmação, o algoritmo é aplicado a um grande conjunto de imagens de inspeção estrutural, e a proporção de classificações corretas é registrada. Estabeleça as hipóteses nula e alternativa usadas nesse teste e determine a localização da região crítica.
+
+
+
+
+## Teste Z para a Média
+
+Utilizado quando:
+
+- $\sigma$ é conhecida; ou
+- a amostra é grande.
+
+Estatística de teste:
+$$
+	Z_{cal} = \frac{\overline{X}-\mu_0}{\sigma/\sqrt{n}}.
+$$
+
+
+
+## Regra da região crítica para o Teste Z
+
+- Teste unilateral à esquerda: $$ Z_{cal} < -z_{\alpha} $$
+- Teste unilateral à direita: $$ Z_{cal} > z_{\alpha} $$
+- Teste bilateral: $$ Z_{cal} < -z_{\alpha/2} \quad \text{ou} \quad Z_{cal} > z_{\alpha/2} $$
+
+
+
+## Regra do p-valor para o Teste Z
+
+- Teste unilateral à esquerda: $p = P(Z \leq Z_{cal})$
+- Teste unilateral à direita: $p = 1- P(Z \leq Z_{cal})$
+- Teste bilateral: $p = 2 [1 - P(Z \leq |Z_{cal}|)]$
+
+Critério prático:
+
+- Se $p\leq \alpha \rightarrow$ rejeitar $H_0$
+- Se $p>\alpha \rightarrow$ não rejeitar $H_0$
+
+
+
+## Exemplo 16.3
+
+Uma empresa de tecnologia desenvolveu uma nova versão de um algoritmo de busca em banco de dados e afirma que o tempo médio de resposta é inferior a 2 segundos. Uma amostra de 100 consultas executadas apresentou tempo médio de resposta de 1,95 segundos. Assumindo que o desvio padrão populacional seja de 0,5 segundo, esses dados fornecem evidências de que o tempo médio de resposta é realmente inferior a 2 segundos? Utilize um nível de significância de 0,05.
+
+
+
+
+## Exemplo 16.4
+
+Um equipamento de tomografia computadorizada utilizado em um hospital é calibrado para emitir uma dose média de 8 mGy por exame, com desvio padrão populacional de 0,5 mGy. Uma amostra aleatória de 50 exames apresentou dose média de 7,8 mGy. Teste a hipótese de que a dose média é igual a 8 mGy contra a alternativa de que ela é diferente de 8 mGy. Utilize um nível de significância de 0,01.
+
+
+
+
+## Teste t para a Média
+
+- Utilizado quando $\sigma$ é desconhecida.
+- Suposição importante: população aproximadamente normal.
+- Estatística de teste:
+$$
+	t_{cal} = \frac{\overline{X}-\mu_0}{S/\sqrt{n}}.
+$$
+- Este teste exige que a distribuição dos dados seja normal. Para dados não normais, usamos testes não-paramétricos.
+
+
+
+
+## Região Crítica para o Teste t
+
+- Teste unilateral à esquerda: $$ t_{cal} < -t_{\alpha, n-1} $$
+- Teste unilateral à direita: $$ t_{cal} > t_{\alpha, n-1} $$
+- Teste bilateral: $$ t_{cal} < -t_{\alpha/2, n-1} \quad \text{ou} \quad t_{cal} > t_{\alpha/2, n-1} $$
+
+
+
+
+## Regra do p-valor para o Teste t
+
+- Teste unilateral à esquerda: $p = P(t_{n-1} \leq t_{cal})$
+- Teste unilateral à direita: $p = 1- P(t_{n-1} \leq t_{cal})$
+- Teste bilateral: $p = 2 [1 - P(t_{n-1} \leq |t_{cal}|)]$
+
+Critério prático:
+
+- Se $p\leq \alpha \rightarrow$ rejeitar $H_0$
+- Se $p>\alpha \rightarrow$ não rejeitar $H_0$
+
+
+
+## Exemplo 16.5
+
+Um fabricante de ligas metálicas afirma que a resistência média à tração de um novo material é de pelo menos 550 MPa. Uma amostra aleatória de 64 corpos de prova apresentou resistência média de 530 MPa e desvio padrão amostral de 24 MPa. Teste a hipótese de que a resistência média é $H_0: \mu \geq 550$ contra $H_1:\mu<550$ ao nível de significância de 0,05.
+
+
+
+
+## Exemplo 16.6
+
+Um fabricante de aceleradores lineares para radioterapia afirma que o equipamento fornece uma intensidade média de feixe de 46 unidades de dose por minuto. Para verificar essa afirmação, foram avaliados 12 equipamentos selecionados aleatoriamente. Os resultados indicaram intensidade média de 42 unidades de dose por minuto, com desvio padrão amostral de 11,9 unidades. Isso sugere, ao nível de significância de 0,05, que os equipamentos produzem, em média, menos de 46 unidades de dose por minuto? Assuma que a intensidade do feixe segue distribuição Normal.
+
+
+
+## Resumo
+
+| Pergunta | Resposta |
+|-----------|-----------|
+| Variância conhecida? | Use o teste Z |
+| Variância desconhecida? | Use o teste t |
+| $p\text{-valor} \leq \alpha$? | Rejeite $H_0$ |
+| $p\text{-valor} > \alpha$? | Não rejeite $H_0$ |
+| Conclusão correta | Baseada em evidências amostrais |
+| Erro comum | Dizer que "aceitamos $H_0$" |
+
+::: {.callout-important}
+### Não esqueça!
+
+Um teste de hipóteses não prova que uma hipótese é verdadeira. Ele apenas avalia se existem evidências suficientes para rejeitá-la.
+:::
+
+
+
+# Fim

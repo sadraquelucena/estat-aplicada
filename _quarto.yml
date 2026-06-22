@@ -61,6 +61,10 @@ website:
             text: "14- Intervalos de Confiança Para a Média de Uma Amostra"
           - href: aulas/15-Intervalos_de_confianca_para_a_proporcao.qmd
             text: "15- Intervalos de Confiança Para a Proporção"
+          - href: aulas/16-Teste_de_hipoteses_para_uma_media.qmd
+            text: "16- Teste de Hipóteses Para a Média de Uma Amostra"
+          - href: aulas/17-Teste_de_hipoteses_para_uma_proporcao.qmd
+            text: "17- Teste de Hipóteses Para Uma Proporção"
             
             
             
