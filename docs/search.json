@@ -65,137 +65,123 @@
     "text": "Bem-vindo(a)!\nEsta página foi criada para centralizar os conteúdos, atividades, cronograma e materiais da disciplina ESTAT0011 — Estatística Aplicada, ofertada pelo Departamentoe de Estatística e Ciências Atuariais para o curso de Engenharia de Materiais da Universidade Federal de Sergipe. Ao longo do semestre, serão desenvolvidos os principais conceitos e ferramentas estatísticas utilizados na análise de dados experimentais, com foco em aplicações típicas da engenharia.\nA disciplina abordará tópicos fundamentais como estatística descritiva, distribuições de probabilidade, estimação de parâmetros, intervalos de confiança, testes de hipóteses e análise de regressão, sempre com ênfase na interpretação e utilização dessas técnicas em problemas reais de engenharia de materiais, como caracterização de propriedades, controle de qualidade e análise de resultados experimentais.\nAs aulas combinarão exposição teórica dos conceitos com exemplos práticos, resolução de exercícios e análise de conjuntos de dados, permitindo que os estudantes desenvolvam a capacidade de aplicar métodos estatísticos na tomada de decisões baseada em dados.\nFique atento(a) às atualizações desta página — ela será utilizada para disponibilização de avisos, materiais de apoio, listas de exercícios e alterações no cronograma ao longo do semestre."
   },
   {
-    "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#canais-de-comunicação-e-materiais-da-disciplina",
-    "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#canais-de-comunicação-e-materiais-da-disciplina",
-    "title": "Apresentação da Disciplina e Conceitos Iniciais",
-    "section": "Canais de Comunicação e Materiais da Disciplina",
-    "text": "Canais de Comunicação e Materiais da Disciplina\n\nSite: http://sadraquelucena.github.io/estat-aplicada\nGrupo no WhatsApp: http://tiny.cc/eawpp"
+    "objectID": "slides/07-Regressao/07-Regressao.html#motivação",
+    "href": "slides/07-Regressao/07-Regressao.html#motivação",
+    "title": "Regressão Linear Simples",
+    "section": "Motivação",
+    "text": "Motivação\n\nVamos estudar o modelo de regressão com a formulação: uma variável dependente \\(Y\\) e uma variável independente \\(X\\).\nO objetivo é modelar \\(Y\\) como uma função linear de \\(X\\): modelo de regressão linear simples.\n\n\n\n\n\n\n\n\n\nÁrea\nVariável Independente (\\(X\\))\nVariável Dependente (\\(Y\\))\n\n\n\n\nEng. Materiais\nCarga aplicada (N)\nDeformação do corpo de prova (mm)\n\n\nEng. Civil\nRelação Água/Cimento\nResistência à Compressão (MPa)\n\n\nFísica Médica\nTempo de Exposição (s)\nDose de Radiação Absorvida (Gy)"
   },
   {
-    "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#informações-da-disciplina",
-    "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#informações-da-disciplina",
-    "title": "Apresentação da Disciplina e Conceitos Iniciais",
-    "section": "Informações da disciplina",
-    "text": "Informações da disciplina\n\nComponente curricular: ESTAT0011 – Estatística Aplicada\nVagas Reservadas: Engenharia de Materiais\nCarga horária: 60 horas (4 créditos)\nHorário:\n\nTerças – 17h00 às 18h30\nQuintas – 17h00 às 18h30\n\nDocente: Prof. Dr. Sadraque E. F. Lucena"
+    "objectID": "slides/07-Regressao/07-Regressao.html#objetivos-da-regressão-linear",
+    "href": "slides/07-Regressao/07-Regressao.html#objetivos-da-regressão-linear",
+    "title": "Regressão Linear Simples",
+    "section": "Objetivos da Regressão Linear",
+    "text": "Objetivos da Regressão Linear\n\nA regressão linear pode ser utilizada com dois objetivos principais:\n\nModelo preditivo: Estimar o valor de \\(Y\\) para novos valores de \\(X\\).\nModelo Explicativo: Investigar a relação entre as variáveis e entender como mudanças em \\(X\\) influenciam \\(Y\\).\n\nNas engenharias, isso significa:\n\nOtimizar processos: Encontrar o ajuste ideal de \\(X\\) para obter o melhor \\(Y\\).\nReduzir custos e riscos: Substituir medições complexas ou perigosas por estimativas matemáticas confiáveis baseadas em calibrações prévias."
   },
   {
-    "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#objetivos",
-    "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#objetivos",
-    "title": "Apresentação da Disciplina e Conceitos Iniciais",
-    "section": "Objetivos",
-    "text": "Objetivos\n\nProporcionar experiências de aprendizagem que permitam ao estudante familiarizar-se com conhecimentos estatísticos fundamentais para a análise, interpretação e solução de problemas cotidianos e aplicados."
+    "objectID": "slides/07-Regressao/07-Regressao.html#fundamentos-do-modelo",
+    "href": "slides/07-Regressao/07-Regressao.html#fundamentos-do-modelo",
+    "title": "Regressão Linear Simples",
+    "section": "Fundamentos do Modelo",
+    "text": "Fundamentos do Modelo\n\nA análise parte de pares \\((x_1, y_1), (x_2,y_2),\\ldots, (x_n,y_n)\\).\nSuponha que podemos escrever a relação entre as duas variáveis, da seguinte maneira:\n\n\\[\ny_i = \\alpha + \\beta x_i + \\varepsilon_i\n\\]\n\n\\(y_i\\) é a variável aleatória associada à \\(i\\)-ésima observação de \\(Y\\);\n\\(x_i\\) é a \\(i\\)-ésima observação do valor fixado para a variável independente (e não-aleatória) \\(X\\);\n\\(\\varepsilon_i\\) é o erro aleatório da \\(i\\)-ésima observação, isto é, o efeito de uma infinidade de fatores que estão afetando a observação de \\(Y\\) de forma aleatória;\n\\(\\alpha\\) e \\(\\beta\\) são parâmetros que precisam ser estimados."
   },
   {
-    "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#ementa",
-    "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#ementa",
-    "title": "Apresentação da Disciplina e Conceitos Iniciais",
-    "section": "Ementa",
-    "text": "Ementa\n\nRegras elementares de probabilidade.\nDistribuição binomial, Poisson e normal.\nPopulação e amostras.\nTestes de bondade de ajustamento.\nUso de transformações.\nDistribuições de certas estatísticas amostrais.\nNoções de testes e hipóteses.\nNoções de delineamento experimental.\nExperimentos com um e dois fatores.\nRegressão e correlação."
+    "objectID": "slides/07-Regressao/07-Regressao.html#estimando-os-parâmetros",
+    "href": "slides/07-Regressao/07-Regressao.html#estimando-os-parâmetros",
+    "title": "Regressão Linear Simples",
+    "section": "Estimando os Parâmetros",
+    "text": "Estimando os Parâmetros\n\nQueremos encontrar a reta que passe o mais próximo possível dos pontos observados"
   },
   {
-    "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#conteúdo-programático",
-    "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#conteúdo-programático",
-    "title": "Apresentação da Disciplina e Conceitos Iniciais",
-    "section": "Conteúdo programático",
-    "text": "Conteúdo programático\n\nEstatística Descritiva e Confiabilidade de Dados\n1.1. As fases do trabalho estatístico e classificação de variáveis em engenharia;\n1.2. Séries estatísticas e representação tabular e gráfica (Histogramas e Boxplots);\n1.3. Distribuição de frequências simples e em classes;\n1.4. Medidas de Posição: Média, Mediana e Moda;\n1.5. Medidas de Dispersão: Variância, desvio-padrão e coeficiente de variação (CV);\n1.6. Erros de medição e tratamento de valores atípicos (outliers)."
+    "objectID": "slides/07-Regressao/07-Regressao.html#estimando-os-parâmetros-1",
+    "href": "slides/07-Regressao/07-Regressao.html#estimando-os-parâmetros-1",
+    "title": "Regressão Linear Simples",
+    "section": "Estimando os Parâmetros",
+    "text": "Estimando os Parâmetros\n\nO método de mínimos quadrados é usado para estimar os parâmetros do modelo (\\(\\alpha\\) e \\(\\beta\\)) e consiste em fazer com que a soma dos erros quadráticos seja menor possível, ou seja, este método consiste em obter os valores de \\(\\alpha\\) e \\(\\beta\\) que minimizam a expressão: \\[\n  S = \\sum\\limits_{i=1}^n \\varepsilon_i = \\sum\\limits_{i=1}^n (y_i - \\alpha - \\beta x_i)^2.\n\\]"
   },
   {
-    "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#conteúdo-programático-1",
-    "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#conteúdo-programático-1",
-    "title": "Apresentação da Disciplina e Conceitos Iniciais",
-    "section": "Conteúdo programático",
-    "text": "Conteúdo programático\n\nProbabilidade e Modelagem de Fenômenos\n2.1. Conceitos de probabilidade: Experimento aleatório, espaço amostral e eventos;\n2.2. Probabilidade condicional e Teorema de Bayes aplicado a ensaios não destrutivos;\n2.3. Variáveis aleatórias, esperança matemática e variância;\n2.4. Distribuições discretas: Bernoulli, Binomial e Poisson (defeitos por unidade de área);\n2.5. Distribuições contínuas: Uniforme, Exponencial e Normal;\n2.6. Padronização (Z) e tabelas de probabilidade."
+    "objectID": "slides/07-Regressao/07-Regressao.html#fórmulas-das-estimativas",
+    "href": "slides/07-Regressao/07-Regressao.html#fórmulas-das-estimativas",
+    "title": "Regressão Linear Simples",
+    "section": "Fórmulas das Estimativas",
+    "text": "Fórmulas das Estimativas\n\nAplicando-se derivadas parciais à expressão anterior, e igualando-se a zero, acharemos as seguintes estimativas para \\(\\alpha\\) e \\(\\beta\\), as quais chamaremos de \\(a\\) e \\(b\\), respectivamente: \\[\n  b = \\frac{n \\sum\\limits_{i=1}^n x_i y_i - \\left(  \\sum\\limits_{i=1}^n x_i\\right) \\left(  \\sum\\limits_{i=1}^n y_i\\right)}{n\\sum\\limits_{i=1}^n x_i^2 - \\left(\\sum\\limits_{i=1}^n x_i\\right)^2}\n\\] e \\[\n  a = \\frac{\\sum\\limits_{i=1}^n y_i - b \\sum\\limits_{i=1}^n x_i}{n}.\n\\]"
   },
   {
-    "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#conteúdo-programático-2",
-    "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#conteúdo-programático-2",
-    "title": "Apresentação da Disciplina e Conceitos Iniciais",
-    "section": "Conteúdo programático",
-    "text": "Conteúdo programático\n\nInferência Estatística e Tomada de Decisão\n3.1. Noções de amostragem e erro padrão;\n3.2. Distribuições amostrais da média e da proporção;\n3.3. Intervalo de confiança para média e proporção;\n3.4. Testes de hipóteses: Conceitos, erro tipo I e erro tipo II;\n3.5. Teste t de Student para comparação de médias (amostras independentes e pareadas);\n3.6. Testes de bondade de ajuste (testes de normalidade)."
+    "objectID": "slides/07-Regressao/07-Regressao.html#a-reta-de-regressão",
+    "href": "slides/07-Regressao/07-Regressao.html#a-reta-de-regressão",
+    "title": "Regressão Linear Simples",
+    "section": "A Reta de Regressão",
+    "text": "A Reta de Regressão\n\nA chamada equação (reta) de regressão é dada por: \\[\n  \\widehat{y} = a + bx\n\\]\nE para cada valor \\(x_i\\) (\\(i = 1, \\ldots, n\\)) temos, pela equação de regressão, o valor predito: \\[\n  \\widehat{y}_i = a + b x_i.\n\\]\nA diferença entre os valores observados e os preditos é chamada de resíduo: \\[\n  e_i = y_i - \\widehat{y}_i.\n\\]"
   },
   {
-    "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#conteúdo-programático-3",
-    "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#conteúdo-programático-3",
-    "title": "Apresentação da Disciplina e Conceitos Iniciais",
-    "section": "Conteúdo programático",
-    "text": "Conteúdo programático\n\nDelineamento Experimental (ANOVA) e Modelagem\n4.1. Análise de Variância (ANOVA) com um fator: Experimentos completamente casualizados;\n4.2. Análise de Variância (ANOVA) com dois fatores e interação;\n4.3. Tipos de correlação e Coeficiente Linear de Pearson;\n4.4. Regressão Linear Simples: Estimativa de parâmetros e interpretação física;\n4.5. Coeficiente de determinação (\\(R^2\\)) e análise de resíduos."
+    "objectID": "slides/07-Regressao/07-Regressao.html#resíduos-e-ajuste",
+    "href": "slides/07-Regressao/07-Regressao.html#resíduos-e-ajuste",
+    "title": "Regressão Linear Simples",
+    "section": "Resíduos e Ajuste",
+    "text": "Resíduos e Ajuste\n\nO resíduo relativo à \\(i\\)-ésima observação (\\(e_i\\)) pode ser considerado uma estimativa do erro aleatório (\\(\\varepsilon_i\\)) desta observação (veja ilustração abaixo).\n\n\n\nComo medir a “qualidade” do modelo?"
   },
   {
-    "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#conteúdo-programático-4",
-    "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#conteúdo-programático-4",
-    "title": "Apresentação da Disciplina e Conceitos Iniciais",
-    "section": "Conteúdo programático",
-    "text": "Conteúdo programático\n\nTópicos Especiais de Engenharia de Materiais\n5.1. Introdução à Distribuição de Weibull;\n5.2. Linearização da função de Weibull via logaritmos;\n5.3. Determinação do Módulo de Weibull (\\(m\\)) para análise de confiabilidade de materiais frágeis."
+    "objectID": "slides/07-Regressao/07-Regressao.html#coeficiente-de-determinação-r2",
+    "href": "slides/07-Regressao/07-Regressao.html#coeficiente-de-determinação-r2",
+    "title": "Regressão Linear Simples",
+    "section": "Coeficiente de Determinação (\\(R^2\\))",
+    "text": "Coeficiente de Determinação (\\(R^2\\))\n\nO coeficiente de determinação é uma medida descritiva da proporção da variação de \\(Y\\) que pode ser explicada por variações em \\(X\\), segundo o modelo de regressão especificado. Ele é dado pela seguinte razão:\n\n\\[\n  \\begin{align}\n        R^2 &= \\frac{\\text{variação explicada pelo modelo}}{\\text{variação total}}\\\\\n          &=\\frac{\\sum\\limits_{i=1}^n (\\widehat{y}_i - \\overline{y})^2}{\\sum\\limits_{i=1}^n (y_i - \\overline{y})^2} = \\frac{\\sum\\limits_{i=1}^n \\widehat{y}_i - n\\overline{y}^2}{\\sum\\limits_{i=1}^n y_i - n\\overline{y}^2}.\n    \\end{align}\n\\]"
   },
   {
-    "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#bibliografia-recomendada",
-    "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#bibliografia-recomendada",
-    "title": "Apresentação da Disciplina e Conceitos Iniciais",
-    "section": "Bibliografia Recomendada",
-    "text": "Bibliografia Recomendada"
+    "objectID": "slides/07-Regressao/07-Regressao.html#coeficiente-de-determinação-r2-1",
+    "href": "slides/07-Regressao/07-Regressao.html#coeficiente-de-determinação-r2-1",
+    "title": "Regressão Linear Simples",
+    "section": "Coeficiente de Determinação (\\(R^2\\))",
+    "text": "Coeficiente de Determinação (\\(R^2\\))\n\nNote que \\(0\\leq R^2 \\leq 1\\).\n\nSe \\(R^2 = 0\\), o modelo não tem nenhum poder explicativo.\nSe \\(R^2 = 1\\), o poder explicativo do modelo é total."
   },
   {
-    "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#metodologia",
-    "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#metodologia",
-    "title": "Apresentação da Disciplina e Conceitos Iniciais",
-    "section": "Metodologia",
-    "text": "Metodologia\n\n2 encontros semanais, com 90 minutos de aula presencial cada\n30 minutos de atividades extraclasse (hora-trabalho) para cada aula, indicadas pelo docente"
+    "objectID": "slides/07-Regressao/07-Regressao.html#exemplo-6.1",
+    "href": "slides/07-Regressao/07-Regressao.html#exemplo-6.1",
+    "title": "Regressão Linear Simples",
+    "section": "Exemplo 6.1",
+    "text": "Exemplo 6.1\nUma engenheira está desenvolvendo um novo polímero reforçado com fibras de vidro. Ele quer entender como o aumento do percentual de fibra de vidro (em massa) afeta a resistência ao impacto do material. Isso permite prever a resistência de novas composições e identificar o ponto onde o excesso de fibra pode, na verdade, fragilizar o material devido à má dispersão.\n\n\n\nTeor de Fibra (%)\n2\n4\n4\n5\n7\n8\n10\n\n\nResistência (J)\n40\n55\n50\n41\n17\n26\n16\n\n\n\n\nAjuste um modelo de regressão linear para prever a Resistência (\\(Y\\)) em função do Teor de Fibra (\\(X\\)).\nCalcule o Coeficiente de Determinação (\\(R^2\\)) e interprete a qualidade do ajuste.\nEstime qual seria a Resistência esperada para um composto com 12% de fibra."
   },
   {
-    "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#datas-importantes",
-    "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#datas-importantes",
-    "title": "Apresentação da Disciplina e Conceitos Iniciais",
-    "section": "Datas Importantes",
-    "text": "Datas Importantes\nAvaliações\n\nAvaliação 1: 07/05/2026 (quinta)\nAvaliação 2: 11/06/2026 (quinta)\nAvaliação 3: 16/07/2026 (quinta)\nAvaliação Repositiva: 21/07/2026 (terça)\n\nNão haverá aula\n\n02/04/2026: Quinta-feira santa (recesso acadêmico)\n21/04/2026: Tiradentes (feriado nacional)\n04/06/2026: Corpus Christi (recesso acadêmico)\n23/06/2026: Véspera de São João (recesso acadêmico)"
+    "objectID": "slides/07-Regressao/07-Regressao.html#exemplo-6.2",
+    "href": "slides/07-Regressao/07-Regressao.html#exemplo-6.2",
+    "title": "Regressão Linear Simples",
+    "section": "Exemplo 6.2",
+    "text": "Exemplo 6.2\nO engenheiro monitora a consistência do concreto via betoneira. Ele modela o volume de água (L/m³) e o abatimento (capacidade de fluir e nivelar sem compactação adicional) em centímetros. O objetivo é prever a fluidez, garantindo o preenchimento de armaduras densas sem criar vazios.\n\n\n\nÁgua adicionada (L/m³)\n160\n165\n165\n170\n175\n180\n185\n\n\nAbatimento (cm)\n5\n8\n7\n10\n14\n18\n22\n\n\n\n\n\nAjuste um modelo de regressão linear para prever o Abatimento (\\(Y\\)) com base na Água (\\(X\\)).\n\n\nInterprete o significado prático do coeficiente \\(\\beta_1\\) (inclinação) para a dosagem do concreto.\n\n\nSe o projeto exige um abatimento de 16 cm, quanta água o engenheiro deve estimar?"
   },
   {
-    "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#população-vs.-amostra",
-    "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#população-vs.-amostra",
-    "title": "Apresentação da Disciplina e Conceitos Iniciais",
-    "section": "População vs. Amostra",
-    "text": "População vs. Amostra\n\nPopulação\n\nConsiste de todas as unidades de interesse.\nQuando os dados coletados são da população, chamamos o procedimento de coleta de censo.\nQualquer característica numérica de uma população é chamada de parâmetro."
+    "objectID": "slides/15-Intervalos_de_confianca_para_a_proporcao/15-Intervalos_de_confianca_para_a_proporcao.html#intervalo-de-confiança-para-a-proporção",
+    "href": "slides/15-Intervalos_de_confianca_para_a_proporcao/15-Intervalos_de_confianca_para_a_proporcao.html#intervalo-de-confiança-para-a-proporção",
+    "title": "Intervalos de Confiança Para a Porporção",
+    "section": "Intervalo de Confiança para a Proporção",
+    "text": "Intervalo de Confiança para a Proporção\n\nA proporção é estimada por \\[\n  \\widehat{p}=\\frac{\\text{número de elementos com a característica de interesse}}{\\text{tamanho da amostra}},\n\\]\n\\(\\widehat{p}\\) tem distribuição \\(N\\left(p,\\frac{p(1-p)}{n}\\right)\\). Assim, o intervalo de confiança para \\(p\\) é então dado por \\[\n  \\widehat{p}\\pm z_{\\alpha/2}\\sqrt{\\frac{\\widehat{p}(1-\\widehat{p})}{n}}.\n\\]"
   },
   {
-    "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#população-vs.-amostra-1",
-    "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#população-vs.-amostra-1",
-    "title": "Apresentação da Disciplina e Conceitos Iniciais",
-    "section": "População vs. Amostra",
-    "text": "População vs. Amostra\n\nAmostra\n\nQualquer subconjunto da população.\nUsada para fazer inferências sobre a população.\nQuando os dados coletados são de uma amostra, o procedimento de coleta é chamado de amostragem.\nQualquer medida calculada a partir da amostra é chamada de estatística."
+    "objectID": "slides/15-Intervalos_de_confianca_para_a_proporcao/15-Intervalos_de_confianca_para_a_proporcao.html#section",
+    "href": "slides/15-Intervalos_de_confianca_para_a_proporcao/15-Intervalos_de_confianca_para_a_proporcao.html#section",
+    "title": "Intervalos de Confiança Para a Porporção",
+    "section": "",
+    "text": "Para determinar o tamanho da amostra para estimar \\(p\\) com um erro máximo \\(E\\), fazemos o seguinte:\n\nSe já temos alguma informação sobre \\(p\\) (coletada de uma amostra preliminar de tamanho \\(n &gt; 30\\)): \\[\n    n=\\frac{z^2_{\\alpha/2}\\widehat{p}(1-\\widehat{p})}{E^2}.\n\\]\n\nSe não tivermos informações sobre \\(p\\): \\[\n  n= \\frac{z^2_{\\alpha/2}}{4E^2}.\n\\]"
   },
   {
-    "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#tipos-de-variáveis",
-    "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#tipos-de-variáveis",
-    "title": "Apresentação da Disciplina e Conceitos Iniciais",
-    "section": "Tipos de Variáveis",
-    "text": "Tipos de Variáveis\nQualitativas\n\nSão variáveis que consistem em atributos, classificações ou registros não numéricos.\nExemplos: Tipo de tratamento térmico (têmpera, recozimento, normalização), Presença de defeito (sim / não)\n\nQuantitativas\n\nSão variáveis que correspondem a medidas ou contagens numéricas.\nExemplos: Teor de carbono (%), Espessura de revestimento (µm)"
+    "objectID": "slides/15-Intervalos_de_confianca_para_a_proporcao/15-Intervalos_de_confianca_para_a_proporcao.html#exemplo-15.1",
+    "href": "slides/15-Intervalos_de_confianca_para_a_proporcao/15-Intervalos_de_confianca_para_a_proporcao.html#exemplo-15.1",
+    "title": "Intervalos de Confiança Para a Porporção",
+    "section": "Exemplo 15.1",
+    "text": "Exemplo 15.1\nEm uma empresa de desenvolvimento de software, foi feito um levantamento para entender por que os usuários assinam um serviço premium. Em uma amostra aleatória de \\(500\\) usuários do software, descobre-se que \\(340\\) assinaram a versão premium por causa de um novo recurso de IA para otimização de código. Baseado nesses dados, determine um intervalo de confiança de 95% para a proporção real de todos os usuários da base que assinaram a versão premium especificamente por causa deste recurso de IA."
   },
   {
-    "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#variáveis-qualitativas",
-    "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#variáveis-qualitativas",
-    "title": "Apresentação da Disciplina e Conceitos Iniciais",
-    "section": "Variáveis Qualitativas",
-    "text": "Variáveis Qualitativas\n\nNominais\n\nOs dados que representam um conjunto de possíveis categorias e não possuem ordem.\nExemplos:\n\nTipo de polímero (PE, PP, PVC, PET)\nMétodo de ensaio (tração, impacto, dureza)\nFornecedor de minério (Vale, CSN Mineração)\n\nUm caso especial são os dados binários, que possuem apenas duas categorias de valores (0/1, verdadeiro/falso)."
+    "objectID": "slides/15-Intervalos_de_confianca_para_a_proporcao/15-Intervalos_de_confianca_para_a_proporcao.html#exemplo-15.2",
+    "href": "slides/15-Intervalos_de_confianca_para_a_proporcao/15-Intervalos_de_confianca_para_a_proporcao.html#exemplo-15.2",
+    "title": "Intervalos de Confiança Para a Porporção",
+    "section": "Exemplo 15.2",
+    "text": "Exemplo 15.2\nA empresa de software quer realizar uma nova pesquisa para determinar a popularidade do seu recurso de IA. Eles precisam de uma amostra que seja precisa.\n\nQual o tamanho de amostra necessário para que a empresa tenha 95% de confiança de que a estimativa da proporção de usuários que assinam por causa do recurso de IA não tenha um erro superior a 2%? Utilize a estimativa da proporção encontrada no exercício anterior.\nSe a empresa não tivesse nenhuma informação prévia sobre a proporção de usuários, qual seria o tamanho de amostra necessário para garantir a mesma precisão e nível de confiança?"
   },
   {
-    "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#variáveis-qualitativas-1",
-    "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#variáveis-qualitativas-1",
-    "title": "Apresentação da Disciplina e Conceitos Iniciais",
-    "section": "Variáveis Qualitativas",
-    "text": "Variáveis Qualitativas\n\nOrdinais\n\nDado categórico que tem uma ordem explícita.\nExemplos:\n\nClassificação de dureza (Escala Mohs): 1- Extremamente macio a 10- Dureza máxima\nNível de oxidação (Baixo, Médio, Alto)\nClassificação de acabamento superficial (ruim, regular, bom, excelente)"
-  },
-  {
-    "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#variáveis-quantitativas",
-    "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#variáveis-quantitativas",
-    "title": "Apresentação da Disciplina e Conceitos Iniciais",
-    "section": "Variáveis Quantitativas",
-    "text": "Variáveis Quantitativas\n\nDiscretas\n\nPodem assumir apenas valores inteiros, como contagens.\nExemplos: Número de trincas em uma amostra, Número de peças produzidas por lote\n\nContínuas\n\nPodem assumir qualquer valor em um intervalo.\nExemplos: Temperatura de tratamento térmico (°C), Resistência à tração (MPa)"
-  },
-  {
-    "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#exemplo",
-    "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#exemplo",
-    "title": "Apresentação da Disciplina e Conceitos Iniciais",
-    "section": "Exemplo",
-    "text": "Exemplo\nClassifique as variáveis abaixo:\n\nTipo de liga metálica (ex: Aço 1020, Inox 304)\nNúmero de microtrincas por cm² em uma cerâmica\nTemperatura de sinterização em °C (ex: 1250.5°C)\nClassificação de resistência ao impacto (Ruim &lt; Regular &lt; Bom)\nQuantidade de fases presentes na microestrutura\nAlongamento percentual após ensaio de tração (ex: 12.4%)\nTipo de fratura observada (Dúctil ou Frágil)\nRugosidade superficial (Ra) medida em micrômetros\nNível de pureza do reagente (Técnico &lt; Analítico &lt; Ultrapuro)"
+    "objectID": "slides/15-Intervalos_de_confianca_para_a_proporcao/15-Intervalos_de_confianca_para_a_proporcao.html#exemplo-15.3",
+    "href": "slides/15-Intervalos_de_confianca_para_a_proporcao/15-Intervalos_de_confianca_para_a_proporcao.html#exemplo-15.3",
+    "title": "Intervalos de Confiança Para a Porporção",
+    "section": "Exemplo 15.3",
+    "text": "Exemplo 15.3\nEm um processo de desenvolvimento de software, a qualidade do código é monitorada por testes automatizados. Em uma amostra de 100 módulos de código testados, oito continham bugs graves. Calcule o intervalo de confiança de 98% para a proporção real de módulos de código com bugs graves em todo o projeto."
   },
   {
     "objectID": "slides/06-Correlacao/06-Correlacao.html#entendendo-relações-entre-variáveis",
@@ -845,123 +831,147 @@
     ]
   },
   {
-    "objectID": "aulas/08-Probabilidade.html",
-    "href": "aulas/08-Probabilidade.html",
-    "title": "Conteúdo 8",
+    "objectID": "aulas/15-Intervalos_de_confianca_para_a_proporcao.html",
+    "href": "aulas/15-Intervalos_de_confianca_para_a_proporcao.html",
+    "title": "Conteúdo 15",
     "section": "",
-    "text": "Nesta aula é apresentada a teoria da probabilidade como a linguagem fundamental para quantificar e modelar a incerteza associada a fenômenos aleatórios. É abordada a definição de espaços amostrais e eventos, as propriedades matemáticas e operacionais do cálculo de probabilidades, e o uso de técnicas de contagem como permutação, arranjo e combinação para determinar a ocorrência de resultados equiprováveis.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 8",
+    "text": "Nesta aula, estudamos a construção de intervalos de confiança para proporções populacionais. Também abordamos o cálculo do tamanho de amostra necessário para alcançar uma margem de erro especificada, tanto quando existe uma estimativa prévia da proporção quanto quando nenhuma informação está disponível.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nTabela Normal e Lista de Exercícos:\n\n\n Tabela Normal \n\n\n Lista 15",
+    "crumbs": [
+      "Aulas",
+      "Parte 3: Inferência Estatística",
+      "15- Intervalos de Confiança Para a Proporção"
+    ]
+  },
+  {
+    "objectID": "aulas/15-Intervalos_de_confianca_para_a_proporcao.html#intervalos-de-confiança-para-a-proporção",
+    "href": "aulas/15-Intervalos_de_confianca_para_a_proporcao.html#intervalos-de-confiança-para-a-proporção",
+    "title": "Conteúdo 15",
+    "section": "",
+    "text": "Nesta aula, estudamos a construção de intervalos de confiança para proporções populacionais. Também abordamos o cálculo do tamanho de amostra necessário para alcançar uma margem de erro especificada, tanto quando existe uma estimativa prévia da proporção quanto quando nenhuma informação está disponível.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nTabela Normal e Lista de Exercícos:\n\n\n Tabela Normal \n\n\n Lista 15",
+    "crumbs": [
+      "Aulas",
+      "Parte 3: Inferência Estatística",
+      "15- Intervalos de Confiança Para a Proporção"
+    ]
+  },
+  {
+    "objectID": "aulas/09-Probabilidade-condicional-e-Independencia.html",
+    "href": "aulas/09-Probabilidade-condicional-e-Independencia.html",
+    "title": "Conteúdo 9",
+    "section": "",
+    "text": "Nesta aula são apresentados os conceitos de probabilidade condicional e independência como ferramentas fundamentais para calcular e avaliar as chances de um evento quando temos informações adicionais conhecidas. É abordada a definição formal e interpretativa da probabilidade condicional por meio da redução do espaço amostral, a aplicação do Teorema da Multiplicação para determinar a interseção de eventos sucessivos e a caracterização de eventos independentes, nos quais a ocorrência de um resultado não interfere na probabilidade do outro.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 9",
     "crumbs": [
       "Aulas",
       "Parte 2: Probabilidade",
-      "8- Probabilidade"
+      "9- Probabilidade Condicional e Independência"
     ]
   },
   {
-    "objectID": "aulas/08-Probabilidade.html#introdução-à-probabilidade",
-    "href": "aulas/08-Probabilidade.html#introdução-à-probabilidade",
-    "title": "Conteúdo 8",
+    "objectID": "aulas/09-Probabilidade-condicional-e-Independencia.html#probabilidade-condicional-e-independência",
+    "href": "aulas/09-Probabilidade-condicional-e-Independencia.html#probabilidade-condicional-e-independência",
+    "title": "Conteúdo 9",
     "section": "",
-    "text": "Nesta aula é apresentada a teoria da probabilidade como a linguagem fundamental para quantificar e modelar a incerteza associada a fenômenos aleatórios. É abordada a definição de espaços amostrais e eventos, as propriedades matemáticas e operacionais do cálculo de probabilidades, e o uso de técnicas de contagem como permutação, arranjo e combinação para determinar a ocorrência de resultados equiprováveis.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 8",
+    "text": "Nesta aula são apresentados os conceitos de probabilidade condicional e independência como ferramentas fundamentais para calcular e avaliar as chances de um evento quando temos informações adicionais conhecidas. É abordada a definição formal e interpretativa da probabilidade condicional por meio da redução do espaço amostral, a aplicação do Teorema da Multiplicação para determinar a interseção de eventos sucessivos e a caracterização de eventos independentes, nos quais a ocorrência de um resultado não interfere na probabilidade do outro.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 9",
     "crumbs": [
       "Aulas",
       "Parte 2: Probabilidade",
-      "8- Probabilidade"
+      "9- Probabilidade Condicional e Independência"
     ]
   },
   {
-    "objectID": "aulas/04-Distribuicao_de_frequencias_simples_e_em_classe.html",
-    "href": "aulas/04-Distribuicao_de_frequencias_simples_e_em_classe.html",
-    "title": "Conteúdo 4",
+    "objectID": "aulas/07-Regressao.html",
+    "href": "aulas/07-Regressao.html",
+    "title": "Conteúdo 7",
     "section": "",
-    "text": "Os slides desta aula apresentam os procedimentos para organização e síntese de dados por meio de distribuições de frequência, etapa fundamental na análise estatística de dados experimentais. São discutidas as diferenças entre dados brutos e rol, a construção de tabelas de frequência para variáveis qualitativas e quantitativas, bem como o uso da Regra de Sturges para definir o número adequado de classes. Também são abordadas as interpretações de frequências absolutas, relativas e acumuladas, destacando como essas ferramentas auxiliam na identificação de padrões nos dados e na tomada de decisões.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 4",
+    "text": "Nesta aula é apresentada a regressão linear simples como modelo para descrever e prever a relação entre uma variável independente e uma dependente. É Abordada a estimação dos parâmetros pelo método dos mínimos quadrados, a interpretação dos resíduos e o uso do coeficiente de determinação (R²) para avaliar o ajuste do modelo.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 7",
     "crumbs": [
       "Aulas",
       "Parte 1: Estatística Descritiva",
-      "4- Distribuição de Frequências"
+      "7- Regressão Linear Simples"
     ]
   },
   {
-    "objectID": "aulas/04-Distribuicao_de_frequencias_simples_e_em_classe.html#distribuição-de-frequências-simples-e-em-classes",
-    "href": "aulas/04-Distribuicao_de_frequencias_simples_e_em_classe.html#distribuição-de-frequências-simples-e-em-classes",
-    "title": "Conteúdo 4",
+    "objectID": "aulas/07-Regressao.html#regressão-linear-simples",
+    "href": "aulas/07-Regressao.html#regressão-linear-simples",
+    "title": "Conteúdo 7",
     "section": "",
-    "text": "Os slides desta aula apresentam os procedimentos para organização e síntese de dados por meio de distribuições de frequência, etapa fundamental na análise estatística de dados experimentais. São discutidas as diferenças entre dados brutos e rol, a construção de tabelas de frequência para variáveis qualitativas e quantitativas, bem como o uso da Regra de Sturges para definir o número adequado de classes. Também são abordadas as interpretações de frequências absolutas, relativas e acumuladas, destacando como essas ferramentas auxiliam na identificação de padrões nos dados e na tomada de decisões.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 4",
+    "text": "Nesta aula é apresentada a regressão linear simples como modelo para descrever e prever a relação entre uma variável independente e uma dependente. É Abordada a estimação dos parâmetros pelo método dos mínimos quadrados, a interpretação dos resíduos e o uso do coeficiente de determinação (R²) para avaliar o ajuste do modelo.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 7",
     "crumbs": [
       "Aulas",
       "Parte 1: Estatística Descritiva",
-      "4- Distribuição de Frequências"
+      "7- Regressão Linear Simples"
     ]
   },
   {
-    "objectID": "aulas/13-Distribuicao_normal.html",
-    "href": "aulas/13-Distribuicao_normal.html",
-    "title": "Conteúdo 13",
+    "objectID": "aulas/10-Teorema-probabilidade-total-e-Bayes.html",
+    "href": "aulas/10-Teorema-probabilidade-total-e-Bayes.html",
+    "title": "Conteúdo 10",
     "section": "",
-    "text": "Nesta aula estudamos a distribuição normal, uma das distribuições de probabilidade mais importantes da Estatística. São apresentadas suas propriedades fundamentais, a interpretação geométrica das probabilidades e o processo de padronização por meio da variável normal padrão (Z). Além disso, discutimos o uso da tabela normal tanto para calcular probabilidades quanto para determinar valores associados a probabilidades específicas.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nTabela Normal e Lista de Exercícos:\n\n\n Tabela Normal \n\n\n Lista 13",
+    "text": "Nesta aula são apresentados os conceitos do Teorema da Probabilidade Total e do Teorema de Bayes como ferramentas para avaliar as chances de causas quando um efeito já é conhecido. É abordada a definição formal de partição do espaço amostral por meio de eventos mutuamente excludentes, a aplicação da Probabilidade Total para determinar a probabilidade global de um acontecimento e a caracterização do Teorema de Bayes, no qual a ocorrência de um resultado prático permite atualizar e inverter as probabilidades condicionais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 10",
     "crumbs": [
       "Aulas",
       "Parte 2: Probabilidade",
-      "13- Distribuição Normal"
+      "10- Teorema da Probabilidade Total e de Bayes"
     ]
   },
   {
-    "objectID": "aulas/13-Distribuicao_normal.html#distribuição-normal",
-    "href": "aulas/13-Distribuicao_normal.html#distribuição-normal",
-    "title": "Conteúdo 13",
+    "objectID": "aulas/10-Teorema-probabilidade-total-e-Bayes.html#teorema-da-probabilidade-total-e-teorema-de-bayes",
+    "href": "aulas/10-Teorema-probabilidade-total-e-Bayes.html#teorema-da-probabilidade-total-e-teorema-de-bayes",
+    "title": "Conteúdo 10",
     "section": "",
-    "text": "Nesta aula estudamos a distribuição normal, uma das distribuições de probabilidade mais importantes da Estatística. São apresentadas suas propriedades fundamentais, a interpretação geométrica das probabilidades e o processo de padronização por meio da variável normal padrão (Z). Além disso, discutimos o uso da tabela normal tanto para calcular probabilidades quanto para determinar valores associados a probabilidades específicas.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nTabela Normal e Lista de Exercícos:\n\n\n Tabela Normal \n\n\n Lista 13",
+    "text": "Nesta aula são apresentados os conceitos do Teorema da Probabilidade Total e do Teorema de Bayes como ferramentas para avaliar as chances de causas quando um efeito já é conhecido. É abordada a definição formal de partição do espaço amostral por meio de eventos mutuamente excludentes, a aplicação da Probabilidade Total para determinar a probabilidade global de um acontecimento e a caracterização do Teorema de Bayes, no qual a ocorrência de um resultado prático permite atualizar e inverter as probabilidades condicionais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 10",
     "crumbs": [
       "Aulas",
       "Parte 2: Probabilidade",
-      "13- Distribuição Normal"
+      "10- Teorema da Probabilidade Total e de Bayes"
     ]
   },
   {
-    "objectID": "aulas/06-Correlacao.html",
-    "href": "aulas/06-Correlacao.html",
-    "title": "Conteúdo 6",
+    "objectID": "aulas/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html",
+    "href": "aulas/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html",
+    "title": "Conteúdo 1",
     "section": "",
-    "text": "Nesta aula é abordado o conceito de correlação para analisar relações entre variáveis. São apresentados o objetivo e a interpretação do coeficiente de correlação de Pearson, incluindo seus limites e significados, bem como a distinção crítica entre associação e causalidade.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 6",
+    "text": "Este material apresenta a estrutura da disciplina Estatística Aplicada (ESTAT0011), incluindo informações sobre carga horária, cronograma, datas importantes, metodologia e objetivos do curso. Além disso, introduz os conceitos iniciais da Estatística, fundamentais para o desenvolvimento da disciplina, como população e amostra, parâmetros e estatísticas, bem como a classificação de variáveis qualitativas e quantitativas, ilustradas com exemplos relacionados à Engenharia de Materiais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 1",
     "crumbs": [
       "Aulas",
       "Parte 1: Estatística Descritiva",
-      "6- Correlação"
+      "1- Apresentação da Disciplina"
     ]
   },
   {
-    "objectID": "aulas/06-Correlacao.html#correlação-entre-variáveis",
-    "href": "aulas/06-Correlacao.html#correlação-entre-variáveis",
-    "title": "Conteúdo 6",
+    "objectID": "aulas/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#apresentação-da-disciplina-e-conceitos-iniciais",
+    "href": "aulas/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#apresentação-da-disciplina-e-conceitos-iniciais",
+    "title": "Conteúdo 1",
     "section": "",
-    "text": "Nesta aula é abordado o conceito de correlação para analisar relações entre variáveis. São apresentados o objetivo e a interpretação do coeficiente de correlação de Pearson, incluindo seus limites e significados, bem como a distinção crítica entre associação e causalidade.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 6",
+    "text": "Este material apresenta a estrutura da disciplina Estatística Aplicada (ESTAT0011), incluindo informações sobre carga horária, cronograma, datas importantes, metodologia e objetivos do curso. Além disso, introduz os conceitos iniciais da Estatística, fundamentais para o desenvolvimento da disciplina, como população e amostra, parâmetros e estatísticas, bem como a classificação de variáveis qualitativas e quantitativas, ilustradas com exemplos relacionados à Engenharia de Materiais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 1",
     "crumbs": [
       "Aulas",
       "Parte 1: Estatística Descritiva",
-      "6- Correlação"
+      "1- Apresentação da Disciplina"
     ]
   },
   {
-    "objectID": "aulas/03-Medidas_de_dispersao.html",
-    "href": "aulas/03-Medidas_de_dispersao.html",
-    "title": "Conteúdo 3",
+    "objectID": "aulas/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.html",
+    "href": "aulas/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.html",
+    "title": "Conteúdo 14",
     "section": "",
-    "text": "Os slides desta aula apresentam as principais medidas de dispersão, utilizadas para quantificar a variabilidade dos dados em torno de uma medida central. São discutidos os conceitos de amplitude total, variância, desvio-padrão e coeficiente de variação, destacando suas definições, interpretações e aplicações na análise de dados experimentais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 3",
+    "text": "Nesta aula, introduzimos o conceito de intervalo de confiança para quantificar a incerteza associada às estimativas obtidas a partir de amostras. Apresentamos os procedimentos para construir intervalos de confiança para a média populacional nos casos em que a variância é conhecida e desconhecida, destacando o uso das distribuições Normal e t de Student. Também discutimos a interpretação correta do nível de confiança e mostramos como determinar o tamanho de amostra necessário para atingir uma precisão desejada.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nTabela Normal e Lista de Exercícos:\n\n\n Tabela Normal \n\n\n Tabela t \n\n\n Lista 14",
     "crumbs": [
       "Aulas",
-      "Parte 1: Estatística Descritiva",
-      "3- Medidas de Dispersão"
+      "Parte 3: Inferência Estatística",
+      "14- Intervalos de Confiança Para a Média de Uma Amostra"
     ]
   },
   {
-    "objectID": "aulas/03-Medidas_de_dispersao.html#medidas-de-dispersão",
-    "href": "aulas/03-Medidas_de_dispersao.html#medidas-de-dispersão",
-    "title": "Conteúdo 3",
+    "objectID": "aulas/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.html#intervalos-de-confiança-para-a-média-de-uma-amostra",
+    "href": "aulas/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.html#intervalos-de-confiança-para-a-média-de-uma-amostra",
+    "title": "Conteúdo 14",
     "section": "",
-    "text": "Os slides desta aula apresentam as principais medidas de dispersão, utilizadas para quantificar a variabilidade dos dados em torno de uma medida central. São discutidos os conceitos de amplitude total, variância, desvio-padrão e coeficiente de variação, destacando suas definições, interpretações e aplicações na análise de dados experimentais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 3",
+    "text": "Nesta aula, introduzimos o conceito de intervalo de confiança para quantificar a incerteza associada às estimativas obtidas a partir de amostras. Apresentamos os procedimentos para construir intervalos de confiança para a média populacional nos casos em que a variância é conhecida e desconhecida, destacando o uso das distribuições Normal e t de Student. Também discutimos a interpretação correta do nível de confiança e mostramos como determinar o tamanho de amostra necessário para atingir uma precisão desejada.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nTabela Normal e Lista de Exercícos:\n\n\n Tabela Normal \n\n\n Tabela t \n\n\n Lista 14",
     "crumbs": [
       "Aulas",
-      "Parte 1: Estatística Descritiva",
-      "3- Medidas de Dispersão"
+      "Parte 3: Inferência Estatística",
+      "14- Intervalos de Confiança Para a Média de Uma Amostra"
     ]
   },
   {
@@ -1013,99 +1023,123 @@
     ]
   },
   {
-    "objectID": "aulas/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html",
-    "href": "aulas/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html",
-    "title": "Conteúdo 1",
+    "objectID": "aulas/03-Medidas_de_dispersao.html",
+    "href": "aulas/03-Medidas_de_dispersao.html",
+    "title": "Conteúdo 3",
     "section": "",
-    "text": "Este material apresenta a estrutura da disciplina Estatística Aplicada (ESTAT0011), incluindo informações sobre carga horária, cronograma, datas importantes, metodologia e objetivos do curso. Além disso, introduz os conceitos iniciais da Estatística, fundamentais para o desenvolvimento da disciplina, como população e amostra, parâmetros e estatísticas, bem como a classificação de variáveis qualitativas e quantitativas, ilustradas com exemplos relacionados à Engenharia de Materiais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 1",
+    "text": "Os slides desta aula apresentam as principais medidas de dispersão, utilizadas para quantificar a variabilidade dos dados em torno de uma medida central. São discutidos os conceitos de amplitude total, variância, desvio-padrão e coeficiente de variação, destacando suas definições, interpretações e aplicações na análise de dados experimentais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 3",
     "crumbs": [
       "Aulas",
       "Parte 1: Estatística Descritiva",
-      "1- Apresentação da Disciplina"
+      "3- Medidas de Dispersão"
     ]
   },
   {
-    "objectID": "aulas/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#apresentação-da-disciplina-e-conceitos-iniciais",
-    "href": "aulas/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#apresentação-da-disciplina-e-conceitos-iniciais",
-    "title": "Conteúdo 1",
+    "objectID": "aulas/03-Medidas_de_dispersao.html#medidas-de-dispersão",
+    "href": "aulas/03-Medidas_de_dispersao.html#medidas-de-dispersão",
+    "title": "Conteúdo 3",
     "section": "",
-    "text": "Este material apresenta a estrutura da disciplina Estatística Aplicada (ESTAT0011), incluindo informações sobre carga horária, cronograma, datas importantes, metodologia e objetivos do curso. Além disso, introduz os conceitos iniciais da Estatística, fundamentais para o desenvolvimento da disciplina, como população e amostra, parâmetros e estatísticas, bem como a classificação de variáveis qualitativas e quantitativas, ilustradas com exemplos relacionados à Engenharia de Materiais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 1",
+    "text": "Os slides desta aula apresentam as principais medidas de dispersão, utilizadas para quantificar a variabilidade dos dados em torno de uma medida central. São discutidos os conceitos de amplitude total, variância, desvio-padrão e coeficiente de variação, destacando suas definições, interpretações e aplicações na análise de dados experimentais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 3",
     "crumbs": [
       "Aulas",
       "Parte 1: Estatística Descritiva",
-      "1- Apresentação da Disciplina"
+      "3- Medidas de Dispersão"
     ]
   },
   {
-    "objectID": "aulas/10-Teorema-probabilidade-total-e-Bayes.html",
-    "href": "aulas/10-Teorema-probabilidade-total-e-Bayes.html",
-    "title": "Conteúdo 10",
+    "objectID": "aulas/06-Correlacao.html",
+    "href": "aulas/06-Correlacao.html",
+    "title": "Conteúdo 6",
     "section": "",
-    "text": "Nesta aula são apresentados os conceitos do Teorema da Probabilidade Total e do Teorema de Bayes como ferramentas para avaliar as chances de causas quando um efeito já é conhecido. É abordada a definição formal de partição do espaço amostral por meio de eventos mutuamente excludentes, a aplicação da Probabilidade Total para determinar a probabilidade global de um acontecimento e a caracterização do Teorema de Bayes, no qual a ocorrência de um resultado prático permite atualizar e inverter as probabilidades condicionais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 10",
-    "crumbs": [
-      "Aulas",
-      "Parte 2: Probabilidade",
-      "10- Teorema da Probabilidade Total e de Bayes"
-    ]
-  },
-  {
-    "objectID": "aulas/10-Teorema-probabilidade-total-e-Bayes.html#teorema-da-probabilidade-total-e-teorema-de-bayes",
-    "href": "aulas/10-Teorema-probabilidade-total-e-Bayes.html#teorema-da-probabilidade-total-e-teorema-de-bayes",
-    "title": "Conteúdo 10",
-    "section": "",
-    "text": "Nesta aula são apresentados os conceitos do Teorema da Probabilidade Total e do Teorema de Bayes como ferramentas para avaliar as chances de causas quando um efeito já é conhecido. É abordada a definição formal de partição do espaço amostral por meio de eventos mutuamente excludentes, a aplicação da Probabilidade Total para determinar a probabilidade global de um acontecimento e a caracterização do Teorema de Bayes, no qual a ocorrência de um resultado prático permite atualizar e inverter as probabilidades condicionais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 10",
-    "crumbs": [
-      "Aulas",
-      "Parte 2: Probabilidade",
-      "10- Teorema da Probabilidade Total e de Bayes"
-    ]
-  },
-  {
-    "objectID": "aulas/07-Regressao.html",
-    "href": "aulas/07-Regressao.html",
-    "title": "Conteúdo 7",
-    "section": "",
-    "text": "Nesta aula é apresentada a regressão linear simples como modelo para descrever e prever a relação entre uma variável independente e uma dependente. É Abordada a estimação dos parâmetros pelo método dos mínimos quadrados, a interpretação dos resíduos e o uso do coeficiente de determinação (R²) para avaliar o ajuste do modelo.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 7",
+    "text": "Nesta aula é abordado o conceito de correlação para analisar relações entre variáveis. São apresentados o objetivo e a interpretação do coeficiente de correlação de Pearson, incluindo seus limites e significados, bem como a distinção crítica entre associação e causalidade.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 6",
     "crumbs": [
       "Aulas",
       "Parte 1: Estatística Descritiva",
-      "7- Regressão Linear Simples"
+      "6- Correlação"
     ]
   },
   {
-    "objectID": "aulas/07-Regressao.html#regressão-linear-simples",
-    "href": "aulas/07-Regressao.html#regressão-linear-simples",
-    "title": "Conteúdo 7",
+    "objectID": "aulas/06-Correlacao.html#correlação-entre-variáveis",
+    "href": "aulas/06-Correlacao.html#correlação-entre-variáveis",
+    "title": "Conteúdo 6",
     "section": "",
-    "text": "Nesta aula é apresentada a regressão linear simples como modelo para descrever e prever a relação entre uma variável independente e uma dependente. É Abordada a estimação dos parâmetros pelo método dos mínimos quadrados, a interpretação dos resíduos e o uso do coeficiente de determinação (R²) para avaliar o ajuste do modelo.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 7",
+    "text": "Nesta aula é abordado o conceito de correlação para analisar relações entre variáveis. São apresentados o objetivo e a interpretação do coeficiente de correlação de Pearson, incluindo seus limites e significados, bem como a distinção crítica entre associação e causalidade.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 6",
     "crumbs": [
       "Aulas",
       "Parte 1: Estatística Descritiva",
-      "7- Regressão Linear Simples"
+      "6- Correlação"
     ]
   },
   {
-    "objectID": "aulas/09-Probabilidade-condicional-e-Independencia.html",
-    "href": "aulas/09-Probabilidade-condicional-e-Independencia.html",
-    "title": "Conteúdo 9",
+    "objectID": "aulas/13-Distribuicao_normal.html",
+    "href": "aulas/13-Distribuicao_normal.html",
+    "title": "Conteúdo 13",
     "section": "",
-    "text": "Nesta aula são apresentados os conceitos de probabilidade condicional e independência como ferramentas fundamentais para calcular e avaliar as chances de um evento quando temos informações adicionais conhecidas. É abordada a definição formal e interpretativa da probabilidade condicional por meio da redução do espaço amostral, a aplicação do Teorema da Multiplicação para determinar a interseção de eventos sucessivos e a caracterização de eventos independentes, nos quais a ocorrência de um resultado não interfere na probabilidade do outro.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 9",
+    "text": "Nesta aula estudamos a distribuição normal, uma das distribuições de probabilidade mais importantes da Estatística. São apresentadas suas propriedades fundamentais, a interpretação geométrica das probabilidades e o processo de padronização por meio da variável normal padrão (Z). Além disso, discutimos o uso da tabela normal tanto para calcular probabilidades quanto para determinar valores associados a probabilidades específicas.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nTabela Normal e Lista de Exercícos:\n\n\n Tabela Normal \n\n\n Lista 13",
     "crumbs": [
       "Aulas",
       "Parte 2: Probabilidade",
-      "9- Probabilidade Condicional e Independência"
+      "13- Distribuição Normal"
     ]
   },
   {
-    "objectID": "aulas/09-Probabilidade-condicional-e-Independencia.html#probabilidade-condicional-e-independência",
-    "href": "aulas/09-Probabilidade-condicional-e-Independencia.html#probabilidade-condicional-e-independência",
-    "title": "Conteúdo 9",
+    "objectID": "aulas/13-Distribuicao_normal.html#distribuição-normal",
+    "href": "aulas/13-Distribuicao_normal.html#distribuição-normal",
+    "title": "Conteúdo 13",
     "section": "",
-    "text": "Nesta aula são apresentados os conceitos de probabilidade condicional e independência como ferramentas fundamentais para calcular e avaliar as chances de um evento quando temos informações adicionais conhecidas. É abordada a definição formal e interpretativa da probabilidade condicional por meio da redução do espaço amostral, a aplicação do Teorema da Multiplicação para determinar a interseção de eventos sucessivos e a caracterização de eventos independentes, nos quais a ocorrência de um resultado não interfere na probabilidade do outro.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 9",
+    "text": "Nesta aula estudamos a distribuição normal, uma das distribuições de probabilidade mais importantes da Estatística. São apresentadas suas propriedades fundamentais, a interpretação geométrica das probabilidades e o processo de padronização por meio da variável normal padrão (Z). Além disso, discutimos o uso da tabela normal tanto para calcular probabilidades quanto para determinar valores associados a probabilidades específicas.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nTabela Normal e Lista de Exercícos:\n\n\n Tabela Normal \n\n\n Lista 13",
     "crumbs": [
       "Aulas",
       "Parte 2: Probabilidade",
-      "9- Probabilidade Condicional e Independência"
+      "13- Distribuição Normal"
+    ]
+  },
+  {
+    "objectID": "aulas/04-Distribuicao_de_frequencias_simples_e_em_classe.html",
+    "href": "aulas/04-Distribuicao_de_frequencias_simples_e_em_classe.html",
+    "title": "Conteúdo 4",
+    "section": "",
+    "text": "Os slides desta aula apresentam os procedimentos para organização e síntese de dados por meio de distribuições de frequência, etapa fundamental na análise estatística de dados experimentais. São discutidas as diferenças entre dados brutos e rol, a construção de tabelas de frequência para variáveis qualitativas e quantitativas, bem como o uso da Regra de Sturges para definir o número adequado de classes. Também são abordadas as interpretações de frequências absolutas, relativas e acumuladas, destacando como essas ferramentas auxiliam na identificação de padrões nos dados e na tomada de decisões.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 4",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Estatística Descritiva",
+      "4- Distribuição de Frequências"
+    ]
+  },
+  {
+    "objectID": "aulas/04-Distribuicao_de_frequencias_simples_e_em_classe.html#distribuição-de-frequências-simples-e-em-classes",
+    "href": "aulas/04-Distribuicao_de_frequencias_simples_e_em_classe.html#distribuição-de-frequências-simples-e-em-classes",
+    "title": "Conteúdo 4",
+    "section": "",
+    "text": "Os slides desta aula apresentam os procedimentos para organização e síntese de dados por meio de distribuições de frequência, etapa fundamental na análise estatística de dados experimentais. São discutidas as diferenças entre dados brutos e rol, a construção de tabelas de frequência para variáveis qualitativas e quantitativas, bem como o uso da Regra de Sturges para definir o número adequado de classes. Também são abordadas as interpretações de frequências absolutas, relativas e acumuladas, destacando como essas ferramentas auxiliam na identificação de padrões nos dados e na tomada de decisões.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 4",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: Estatística Descritiva",
+      "4- Distribuição de Frequências"
+    ]
+  },
+  {
+    "objectID": "aulas/08-Probabilidade.html",
+    "href": "aulas/08-Probabilidade.html",
+    "title": "Conteúdo 8",
+    "section": "",
+    "text": "Nesta aula é apresentada a teoria da probabilidade como a linguagem fundamental para quantificar e modelar a incerteza associada a fenômenos aleatórios. É abordada a definição de espaços amostrais e eventos, as propriedades matemáticas e operacionais do cálculo de probabilidades, e o uso de técnicas de contagem como permutação, arranjo e combinação para determinar a ocorrência de resultados equiprováveis.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 8",
+    "crumbs": [
+      "Aulas",
+      "Parte 2: Probabilidade",
+      "8- Probabilidade"
+    ]
+  },
+  {
+    "objectID": "aulas/08-Probabilidade.html#introdução-à-probabilidade",
+    "href": "aulas/08-Probabilidade.html#introdução-à-probabilidade",
+    "title": "Conteúdo 8",
+    "section": "",
+    "text": "Nesta aula é apresentada a teoria da probabilidade como a linguagem fundamental para quantificar e modelar a incerteza associada a fenômenos aleatórios. É abordada a definição de espaços amostrais e eventos, as propriedades matemáticas e operacionais do cálculo de probabilidades, e o uso de técnicas de contagem como permutação, arranjo e combinação para determinar a ocorrência de resultados equiprováveis.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 8",
+    "crumbs": [
+      "Aulas",
+      "Parte 2: Probabilidade",
+      "8- Probabilidade"
     ]
   },
   {
@@ -2050,88 +2084,263 @@
     "text": "Exemplo 9.8\nUma carta é retirada aleatoriamente de um baralho padrão de 52 cartas. Considere os eventos \\(A\\): “a carta é vermelha” e \\(B\\): “a carta é um rei”. Os eventos \\(A\\) e \\(B\\) são independentes?"
   },
   {
-    "objectID": "slides/07-Regressao/07-Regressao.html#motivação",
-    "href": "slides/07-Regressao/07-Regressao.html#motivação",
-    "title": "Regressão Linear Simples",
-    "section": "Motivação",
-    "text": "Motivação\n\nVamos estudar o modelo de regressão com a formulação: uma variável dependente \\(Y\\) e uma variável independente \\(X\\).\nO objetivo é modelar \\(Y\\) como uma função linear de \\(X\\): modelo de regressão linear simples.\n\n\n\n\n\n\n\n\n\nÁrea\nVariável Independente (\\(X\\))\nVariável Dependente (\\(Y\\))\n\n\n\n\nEng. Materiais\nCarga aplicada (N)\nDeformação do corpo de prova (mm)\n\n\nEng. Civil\nRelação Água/Cimento\nResistência à Compressão (MPa)\n\n\nFísica Médica\nTempo de Exposição (s)\nDose de Radiação Absorvida (Gy)"
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#canais-de-comunicação-e-materiais-da-disciplina",
+    "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#canais-de-comunicação-e-materiais-da-disciplina",
+    "title": "Apresentação da Disciplina e Conceitos Iniciais",
+    "section": "Canais de Comunicação e Materiais da Disciplina",
+    "text": "Canais de Comunicação e Materiais da Disciplina\n\nSite: http://sadraquelucena.github.io/estat-aplicada\nGrupo no WhatsApp: http://tiny.cc/eawpp"
   },
   {
-    "objectID": "slides/07-Regressao/07-Regressao.html#objetivos-da-regressão-linear",
-    "href": "slides/07-Regressao/07-Regressao.html#objetivos-da-regressão-linear",
-    "title": "Regressão Linear Simples",
-    "section": "Objetivos da Regressão Linear",
-    "text": "Objetivos da Regressão Linear\n\nA regressão linear pode ser utilizada com dois objetivos principais:\n\nModelo preditivo: Estimar o valor de \\(Y\\) para novos valores de \\(X\\).\nModelo Explicativo: Investigar a relação entre as variáveis e entender como mudanças em \\(X\\) influenciam \\(Y\\).\n\nNas engenharias, isso significa:\n\nOtimizar processos: Encontrar o ajuste ideal de \\(X\\) para obter o melhor \\(Y\\).\nReduzir custos e riscos: Substituir medições complexas ou perigosas por estimativas matemáticas confiáveis baseadas em calibrações prévias."
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#informações-da-disciplina",
+    "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#informações-da-disciplina",
+    "title": "Apresentação da Disciplina e Conceitos Iniciais",
+    "section": "Informações da disciplina",
+    "text": "Informações da disciplina\n\nComponente curricular: ESTAT0011 – Estatística Aplicada\nVagas Reservadas: Engenharia de Materiais\nCarga horária: 60 horas (4 créditos)\nHorário:\n\nTerças – 17h00 às 18h30\nQuintas – 17h00 às 18h30\n\nDocente: Prof. Dr. Sadraque E. F. Lucena"
   },
   {
-    "objectID": "slides/07-Regressao/07-Regressao.html#fundamentos-do-modelo",
-    "href": "slides/07-Regressao/07-Regressao.html#fundamentos-do-modelo",
-    "title": "Regressão Linear Simples",
-    "section": "Fundamentos do Modelo",
-    "text": "Fundamentos do Modelo\n\nA análise parte de pares \\((x_1, y_1), (x_2,y_2),\\ldots, (x_n,y_n)\\).\nSuponha que podemos escrever a relação entre as duas variáveis, da seguinte maneira:\n\n\\[\ny_i = \\alpha + \\beta x_i + \\varepsilon_i\n\\]\n\n\\(y_i\\) é a variável aleatória associada à \\(i\\)-ésima observação de \\(Y\\);\n\\(x_i\\) é a \\(i\\)-ésima observação do valor fixado para a variável independente (e não-aleatória) \\(X\\);\n\\(\\varepsilon_i\\) é o erro aleatório da \\(i\\)-ésima observação, isto é, o efeito de uma infinidade de fatores que estão afetando a observação de \\(Y\\) de forma aleatória;\n\\(\\alpha\\) e \\(\\beta\\) são parâmetros que precisam ser estimados."
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#objetivos",
+    "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#objetivos",
+    "title": "Apresentação da Disciplina e Conceitos Iniciais",
+    "section": "Objetivos",
+    "text": "Objetivos\n\nProporcionar experiências de aprendizagem que permitam ao estudante familiarizar-se com conhecimentos estatísticos fundamentais para a análise, interpretação e solução de problemas cotidianos e aplicados."
   },
   {
-    "objectID": "slides/07-Regressao/07-Regressao.html#estimando-os-parâmetros",
-    "href": "slides/07-Regressao/07-Regressao.html#estimando-os-parâmetros",
-    "title": "Regressão Linear Simples",
-    "section": "Estimando os Parâmetros",
-    "text": "Estimando os Parâmetros\n\nQueremos encontrar a reta que passe o mais próximo possível dos pontos observados"
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#ementa",
+    "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#ementa",
+    "title": "Apresentação da Disciplina e Conceitos Iniciais",
+    "section": "Ementa",
+    "text": "Ementa\n\nRegras elementares de probabilidade.\nDistribuição binomial, Poisson e normal.\nPopulação e amostras.\nTestes de bondade de ajustamento.\nUso de transformações.\nDistribuições de certas estatísticas amostrais.\nNoções de testes e hipóteses.\nNoções de delineamento experimental.\nExperimentos com um e dois fatores.\nRegressão e correlação."
   },
   {
-    "objectID": "slides/07-Regressao/07-Regressao.html#estimando-os-parâmetros-1",
-    "href": "slides/07-Regressao/07-Regressao.html#estimando-os-parâmetros-1",
-    "title": "Regressão Linear Simples",
-    "section": "Estimando os Parâmetros",
-    "text": "Estimando os Parâmetros\n\nO método de mínimos quadrados é usado para estimar os parâmetros do modelo (\\(\\alpha\\) e \\(\\beta\\)) e consiste em fazer com que a soma dos erros quadráticos seja menor possível, ou seja, este método consiste em obter os valores de \\(\\alpha\\) e \\(\\beta\\) que minimizam a expressão: \\[\n  S = \\sum\\limits_{i=1}^n \\varepsilon_i = \\sum\\limits_{i=1}^n (y_i - \\alpha - \\beta x_i)^2.\n\\]"
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#conteúdo-programático",
+    "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#conteúdo-programático",
+    "title": "Apresentação da Disciplina e Conceitos Iniciais",
+    "section": "Conteúdo programático",
+    "text": "Conteúdo programático\n\nEstatística Descritiva e Confiabilidade de Dados\n1.1. As fases do trabalho estatístico e classificação de variáveis em engenharia;\n1.2. Séries estatísticas e representação tabular e gráfica (Histogramas e Boxplots);\n1.3. Distribuição de frequências simples e em classes;\n1.4. Medidas de Posição: Média, Mediana e Moda;\n1.5. Medidas de Dispersão: Variância, desvio-padrão e coeficiente de variação (CV);\n1.6. Erros de medição e tratamento de valores atípicos (outliers)."
   },
   {
-    "objectID": "slides/07-Regressao/07-Regressao.html#fórmulas-das-estimativas",
-    "href": "slides/07-Regressao/07-Regressao.html#fórmulas-das-estimativas",
-    "title": "Regressão Linear Simples",
-    "section": "Fórmulas das Estimativas",
-    "text": "Fórmulas das Estimativas\n\nAplicando-se derivadas parciais à expressão anterior, e igualando-se a zero, acharemos as seguintes estimativas para \\(\\alpha\\) e \\(\\beta\\), as quais chamaremos de \\(a\\) e \\(b\\), respectivamente: \\[\n  b = \\frac{n \\sum\\limits_{i=1}^n x_i y_i - \\left(  \\sum\\limits_{i=1}^n x_i\\right) \\left(  \\sum\\limits_{i=1}^n y_i\\right)}{n\\sum\\limits_{i=1}^n x_i^2 - \\left(\\sum\\limits_{i=1}^n x_i\\right)^2}\n\\] e \\[\n  a = \\frac{\\sum\\limits_{i=1}^n y_i - b \\sum\\limits_{i=1}^n x_i}{n}.\n\\]"
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#conteúdo-programático-1",
+    "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#conteúdo-programático-1",
+    "title": "Apresentação da Disciplina e Conceitos Iniciais",
+    "section": "Conteúdo programático",
+    "text": "Conteúdo programático\n\nProbabilidade e Modelagem de Fenômenos\n2.1. Conceitos de probabilidade: Experimento aleatório, espaço amostral e eventos;\n2.2. Probabilidade condicional e Teorema de Bayes aplicado a ensaios não destrutivos;\n2.3. Variáveis aleatórias, esperança matemática e variância;\n2.4. Distribuições discretas: Bernoulli, Binomial e Poisson (defeitos por unidade de área);\n2.5. Distribuições contínuas: Uniforme, Exponencial e Normal;\n2.6. Padronização (Z) e tabelas de probabilidade."
   },
   {
-    "objectID": "slides/07-Regressao/07-Regressao.html#a-reta-de-regressão",
-    "href": "slides/07-Regressao/07-Regressao.html#a-reta-de-regressão",
-    "title": "Regressão Linear Simples",
-    "section": "A Reta de Regressão",
-    "text": "A Reta de Regressão\n\nA chamada equação (reta) de regressão é dada por: \\[\n  \\widehat{y} = a + bx\n\\]\nE para cada valor \\(x_i\\) (\\(i = 1, \\ldots, n\\)) temos, pela equação de regressão, o valor predito: \\[\n  \\widehat{y}_i = a + b x_i.\n\\]\nA diferença entre os valores observados e os preditos é chamada de resíduo: \\[\n  e_i = y_i - \\widehat{y}_i.\n\\]"
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#conteúdo-programático-2",
+    "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#conteúdo-programático-2",
+    "title": "Apresentação da Disciplina e Conceitos Iniciais",
+    "section": "Conteúdo programático",
+    "text": "Conteúdo programático\n\nInferência Estatística e Tomada de Decisão\n3.1. Noções de amostragem e erro padrão;\n3.2. Distribuições amostrais da média e da proporção;\n3.3. Intervalo de confiança para média e proporção;\n3.4. Testes de hipóteses: Conceitos, erro tipo I e erro tipo II;\n3.5. Teste t de Student para comparação de médias (amostras independentes e pareadas);\n3.6. Testes de bondade de ajuste (testes de normalidade)."
   },
   {
-    "objectID": "slides/07-Regressao/07-Regressao.html#resíduos-e-ajuste",
-    "href": "slides/07-Regressao/07-Regressao.html#resíduos-e-ajuste",
-    "title": "Regressão Linear Simples",
-    "section": "Resíduos e Ajuste",
-    "text": "Resíduos e Ajuste\n\nO resíduo relativo à \\(i\\)-ésima observação (\\(e_i\\)) pode ser considerado uma estimativa do erro aleatório (\\(\\varepsilon_i\\)) desta observação (veja ilustração abaixo).\n\n\n\nComo medir a “qualidade” do modelo?"
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#conteúdo-programático-3",
+    "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#conteúdo-programático-3",
+    "title": "Apresentação da Disciplina e Conceitos Iniciais",
+    "section": "Conteúdo programático",
+    "text": "Conteúdo programático\n\nDelineamento Experimental (ANOVA) e Modelagem\n4.1. Análise de Variância (ANOVA) com um fator: Experimentos completamente casualizados;\n4.2. Análise de Variância (ANOVA) com dois fatores e interação;\n4.3. Tipos de correlação e Coeficiente Linear de Pearson;\n4.4. Regressão Linear Simples: Estimativa de parâmetros e interpretação física;\n4.5. Coeficiente de determinação (\\(R^2\\)) e análise de resíduos."
   },
   {
-    "objectID": "slides/07-Regressao/07-Regressao.html#coeficiente-de-determinação-r2",
-    "href": "slides/07-Regressao/07-Regressao.html#coeficiente-de-determinação-r2",
-    "title": "Regressão Linear Simples",
-    "section": "Coeficiente de Determinação (\\(R^2\\))",
-    "text": "Coeficiente de Determinação (\\(R^2\\))\n\nO coeficiente de determinação é uma medida descritiva da proporção da variação de \\(Y\\) que pode ser explicada por variações em \\(X\\), segundo o modelo de regressão especificado. Ele é dado pela seguinte razão:\n\n\\[\n  \\begin{align}\n        R^2 &= \\frac{\\text{variação explicada pelo modelo}}{\\text{variação total}}\\\\\n          &=\\frac{\\sum\\limits_{i=1}^n (\\widehat{y}_i - \\overline{y})^2}{\\sum\\limits_{i=1}^n (y_i - \\overline{y})^2} = \\frac{\\sum\\limits_{i=1}^n \\widehat{y}_i - n\\overline{y}^2}{\\sum\\limits_{i=1}^n y_i - n\\overline{y}^2}.\n    \\end{align}\n\\]"
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#conteúdo-programático-4",
+    "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#conteúdo-programático-4",
+    "title": "Apresentação da Disciplina e Conceitos Iniciais",
+    "section": "Conteúdo programático",
+    "text": "Conteúdo programático\n\nTópicos Especiais de Engenharia de Materiais\n5.1. Introdução à Distribuição de Weibull;\n5.2. Linearização da função de Weibull via logaritmos;\n5.3. Determinação do Módulo de Weibull (\\(m\\)) para análise de confiabilidade de materiais frágeis."
   },
   {
-    "objectID": "slides/07-Regressao/07-Regressao.html#coeficiente-de-determinação-r2-1",
-    "href": "slides/07-Regressao/07-Regressao.html#coeficiente-de-determinação-r2-1",
-    "title": "Regressão Linear Simples",
-    "section": "Coeficiente de Determinação (\\(R^2\\))",
-    "text": "Coeficiente de Determinação (\\(R^2\\))\n\nNote que \\(0\\leq R^2 \\leq 1\\).\n\nSe \\(R^2 = 0\\), o modelo não tem nenhum poder explicativo.\nSe \\(R^2 = 1\\), o poder explicativo do modelo é total."
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#bibliografia-recomendada",
+    "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#bibliografia-recomendada",
+    "title": "Apresentação da Disciplina e Conceitos Iniciais",
+    "section": "Bibliografia Recomendada",
+    "text": "Bibliografia Recomendada"
   },
   {
-    "objectID": "slides/07-Regressao/07-Regressao.html#exemplo-6.1",
-    "href": "slides/07-Regressao/07-Regressao.html#exemplo-6.1",
-    "title": "Regressão Linear Simples",
-    "section": "Exemplo 6.1",
-    "text": "Exemplo 6.1\nUma engenheira está desenvolvendo um novo polímero reforçado com fibras de vidro. Ele quer entender como o aumento do percentual de fibra de vidro (em massa) afeta a resistência ao impacto do material. Isso permite prever a resistência de novas composições e identificar o ponto onde o excesso de fibra pode, na verdade, fragilizar o material devido à má dispersão.\n\n\n\nTeor de Fibra (%)\n2\n4\n4\n5\n7\n8\n10\n\n\nResistência (J)\n40\n55\n50\n41\n17\n26\n16\n\n\n\n\nAjuste um modelo de regressão linear para prever a Resistência (\\(Y\\)) em função do Teor de Fibra (\\(X\\)).\nCalcule o Coeficiente de Determinação (\\(R^2\\)) e interprete a qualidade do ajuste.\nEstime qual seria a Resistência esperada para um composto com 12% de fibra."
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#metodologia",
+    "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#metodologia",
+    "title": "Apresentação da Disciplina e Conceitos Iniciais",
+    "section": "Metodologia",
+    "text": "Metodologia\n\n2 encontros semanais, com 90 minutos de aula presencial cada\n30 minutos de atividades extraclasse (hora-trabalho) para cada aula, indicadas pelo docente"
   },
   {
-    "objectID": "slides/07-Regressao/07-Regressao.html#exemplo-6.2",
-    "href": "slides/07-Regressao/07-Regressao.html#exemplo-6.2",
-    "title": "Regressão Linear Simples",
-    "section": "Exemplo 6.2",
-    "text": "Exemplo 6.2\nO engenheiro monitora a consistência do concreto via betoneira. Ele modela o volume de água (L/m³) e o abatimento (capacidade de fluir e nivelar sem compactação adicional) em centímetros. O objetivo é prever a fluidez, garantindo o preenchimento de armaduras densas sem criar vazios.\n\n\n\nÁgua adicionada (L/m³)\n160\n165\n165\n170\n175\n180\n185\n\n\nAbatimento (cm)\n5\n8\n7\n10\n14\n18\n22\n\n\n\n\n\nAjuste um modelo de regressão linear para prever o Abatimento (\\(Y\\)) com base na Água (\\(X\\)).\n\n\nInterprete o significado prático do coeficiente \\(\\beta_1\\) (inclinação) para a dosagem do concreto.\n\n\nSe o projeto exige um abatimento de 16 cm, quanta água o engenheiro deve estimar?"
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#datas-importantes",
+    "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#datas-importantes",
+    "title": "Apresentação da Disciplina e Conceitos Iniciais",
+    "section": "Datas Importantes",
+    "text": "Datas Importantes\nAvaliações\n\nAvaliação 1: 07/05/2026 (quinta)\nAvaliação 2: 11/06/2026 (quinta)\nAvaliação 3: 16/07/2026 (quinta)\nAvaliação Repositiva: 21/07/2026 (terça)\n\nNão haverá aula\n\n02/04/2026: Quinta-feira santa (recesso acadêmico)\n21/04/2026: Tiradentes (feriado nacional)\n04/06/2026: Corpus Christi (recesso acadêmico)\n23/06/2026: Véspera de São João (recesso acadêmico)"
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#população-vs.-amostra",
+    "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#população-vs.-amostra",
+    "title": "Apresentação da Disciplina e Conceitos Iniciais",
+    "section": "População vs. Amostra",
+    "text": "População vs. Amostra\n\nPopulação\n\nConsiste de todas as unidades de interesse.\nQuando os dados coletados são da população, chamamos o procedimento de coleta de censo.\nQualquer característica numérica de uma população é chamada de parâmetro."
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#população-vs.-amostra-1",
+    "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#população-vs.-amostra-1",
+    "title": "Apresentação da Disciplina e Conceitos Iniciais",
+    "section": "População vs. Amostra",
+    "text": "População vs. Amostra\n\nAmostra\n\nQualquer subconjunto da população.\nUsada para fazer inferências sobre a população.\nQuando os dados coletados são de uma amostra, o procedimento de coleta é chamado de amostragem.\nQualquer medida calculada a partir da amostra é chamada de estatística."
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#tipos-de-variáveis",
+    "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#tipos-de-variáveis",
+    "title": "Apresentação da Disciplina e Conceitos Iniciais",
+    "section": "Tipos de Variáveis",
+    "text": "Tipos de Variáveis\nQualitativas\n\nSão variáveis que consistem em atributos, classificações ou registros não numéricos.\nExemplos: Tipo de tratamento térmico (têmpera, recozimento, normalização), Presença de defeito (sim / não)\n\nQuantitativas\n\nSão variáveis que correspondem a medidas ou contagens numéricas.\nExemplos: Teor de carbono (%), Espessura de revestimento (µm)"
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#variáveis-qualitativas",
+    "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#variáveis-qualitativas",
+    "title": "Apresentação da Disciplina e Conceitos Iniciais",
+    "section": "Variáveis Qualitativas",
+    "text": "Variáveis Qualitativas\n\nNominais\n\nOs dados que representam um conjunto de possíveis categorias e não possuem ordem.\nExemplos:\n\nTipo de polímero (PE, PP, PVC, PET)\nMétodo de ensaio (tração, impacto, dureza)\nFornecedor de minério (Vale, CSN Mineração)\n\nUm caso especial são os dados binários, que possuem apenas duas categorias de valores (0/1, verdadeiro/falso)."
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#variáveis-qualitativas-1",
+    "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#variáveis-qualitativas-1",
+    "title": "Apresentação da Disciplina e Conceitos Iniciais",
+    "section": "Variáveis Qualitativas",
+    "text": "Variáveis Qualitativas\n\nOrdinais\n\nDado categórico que tem uma ordem explícita.\nExemplos:\n\nClassificação de dureza (Escala Mohs): 1- Extremamente macio a 10- Dureza máxima\nNível de oxidação (Baixo, Médio, Alto)\nClassificação de acabamento superficial (ruim, regular, bom, excelente)"
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#variáveis-quantitativas",
+    "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#variáveis-quantitativas",
+    "title": "Apresentação da Disciplina e Conceitos Iniciais",
+    "section": "Variáveis Quantitativas",
+    "text": "Variáveis Quantitativas\n\nDiscretas\n\nPodem assumir apenas valores inteiros, como contagens.\nExemplos: Número de trincas em uma amostra, Número de peças produzidas por lote\n\nContínuas\n\nPodem assumir qualquer valor em um intervalo.\nExemplos: Temperatura de tratamento térmico (°C), Resistência à tração (MPa)"
+  },
+  {
+    "objectID": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#exemplo",
+    "href": "slides/01-Apresentacao_da_disciplina_e_conceitos_iniciais/01-Apresentacao_da_disciplina_e_conceitos_iniciais.html#exemplo",
+    "title": "Apresentação da Disciplina e Conceitos Iniciais",
+    "section": "Exemplo",
+    "text": "Exemplo\nClassifique as variáveis abaixo:\n\nTipo de liga metálica (ex: Aço 1020, Inox 304)\nNúmero de microtrincas por cm² em uma cerâmica\nTemperatura de sinterização em °C (ex: 1250.5°C)\nClassificação de resistência ao impacto (Ruim &lt; Regular &lt; Bom)\nQuantidade de fases presentes na microestrutura\nAlongamento percentual após ensaio de tração (ex: 12.4%)\nTipo de fratura observada (Dúctil ou Frágil)\nRugosidade superficial (Ra) medida em micrômetros\nNível de pureza do reagente (Técnico &lt; Analítico &lt; Ultrapuro)"
+  },
+  {
+    "objectID": "slides/14-Intervalos_de_confianca_para_a_media_de_uma_amostra/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.html#inferência-estatística",
+    "href": "slides/14-Intervalos_de_confianca_para_a_media_de_uma_amostra/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.html#inferência-estatística",
+    "title": "Intervalos de Confiança Para a Média de Uma Amostra",
+    "section": "Inferência Estatística",
+    "text": "Inferência Estatística\n\nEm geral, quando fazemos um estudo, coletamos dados de uma amostra para entender algo sobre uma população inteira.\nO processo de usar amostras para tirar conclusões sobre os parâmetros de populacionais é chamado de inferência estatística.\nA inferência estatística nos permite fazer generalizações sobre uma população com base em dados de uma amostra e se divide em duas áreas principais:\n\nEstimação (pontual e intervalar)\nTestes de hipóteses"
+  },
+  {
+    "objectID": "slides/14-Intervalos_de_confianca_para_a_media_de_uma_amostra/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.html#estimação-pontual",
+    "href": "slides/14-Intervalos_de_confianca_para_a_media_de_uma_amostra/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.html#estimação-pontual",
+    "title": "Intervalos de Confiança Para a Média de Uma Amostra",
+    "section": "Estimação Pontual",
+    "text": "Estimação Pontual\n\nSuponha que queremos estimar a altura média dos alunos da UFS.\nPor questões de tempo e de custo, só conseguimos coletar uma amostra de 100 alunos.\n\nA média que calcularmos a partir dessa amostra (\\(\\overline{X}\\)) é uma estimativa para a média real da população (\\(\\mu\\)).\nPor causa do erro amostral, a média da amostra quase nunca é exatamente igual à média da população. Ela está perto, mas não é a mesma coisa.\n\nÉ aí que entram os Intervalos de Confiança."
+  },
+  {
+    "objectID": "slides/14-Intervalos_de_confianca_para_a_media_de_uma_amostra/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.html#intervalos-de-confiança",
+    "href": "slides/14-Intervalos_de_confianca_para_a_media_de_uma_amostra/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.html#intervalos-de-confiança",
+    "title": "Intervalos de Confiança Para a Média de Uma Amostra",
+    "section": "Intervalos de Confiança",
+    "text": "Intervalos de Confiança\n\nIntervalos de confiança são uma faixa de valores que “merece nossa confiança” para conter o valor real do parâmetro da população.\nDefinição formal: Um intervalo \\([a,b]\\) é um intervalo de confiança \\((1 - \\alpha)\\times 100\\%\\) para um parâmetro \\(\\theta\\) se a probabilidade desse intervalo conter \\(\\theta\\) for \\(1-\\alpha\\). Ou seja, \\[\nP(a\\leq \\theta \\leq b) = 1-\\alpha.\n\\]\nA probabilidade \\(1-\\alpha\\) é chamada de nível de confiança.\n\nOs valores mais comuns são 90%, 95% e 99%."
+  },
+  {
+    "objectID": "slides/14-Intervalos_de_confianca_para_a_media_de_uma_amostra/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.html#intervalos-de-confiança-1",
+    "href": "slides/14-Intervalos_de_confianca_para_a_media_de_uma_amostra/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.html#intervalos-de-confiança-1",
+    "title": "Intervalos de Confiança Para a Média de Uma Amostra",
+    "section": "Intervalos de Confiança",
+    "text": "Intervalos de Confiança\n\nÉ importante entendermos o que é aleatório nessa equação.\nO parâmetro da população, \\(\\theta\\), é um valor fixo. Ele não muda. O que é aleatório é o intervalo \\([a,b]\\), que é construído a partir de dados aleatórios da amostra.\nO nível de confiança de 95% significa que se pegarmos 100 amostras diferentes e construirmos 100 intervalos de confiança, esperamos que 95 desses intervalos contenham o valor real do parâmetro da população e 5 deles não contenham."
+  },
+  {
+    "objectID": "slides/14-Intervalos_de_confianca_para_a_media_de_uma_amostra/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.html#intervalos-de-confiança-2",
+    "href": "slides/14-Intervalos_de_confianca_para_a_media_de_uma_amostra/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.html#intervalos-de-confiança-2",
+    "title": "Intervalos de Confiança Para a Média de Uma Amostra",
+    "section": "Intervalos de Confiança",
+    "text": "Intervalos de Confiança"
+  },
+  {
+    "objectID": "slides/14-Intervalos_de_confianca_para_a_media_de_uma_amostra/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.html#intervalos-de-confiança-para-a-média",
+    "href": "slides/14-Intervalos_de_confianca_para_a_media_de_uma_amostra/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.html#intervalos-de-confiança-para-a-média",
+    "title": "Intervalos de Confiança Para a Média de Uma Amostra",
+    "section": "Intervalos de Confiança para a Média",
+    "text": "Intervalos de Confiança para a Média\n\nComo construímos um intervalo de confiança para a média da população (\\(\\mu\\))?\nO ponto de partida é o estimador da média da população, que é a média da amostra (\\(\\overline{X}\\)).\nA fórmula geral para um intervalo de confiança é: \\[\n\\text{Centro} \\pm \\text{margem de erro}\n\\]\nOnde o centro é o estimador (\\(\\theta\\)) e a margem de erro depende do nível de confiança e da variabilidade dos dados."
+  },
+  {
+    "objectID": "slides/14-Intervalos_de_confianca_para_a_media_de_uma_amostra/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.html#caso-1-a-variância-da-população-sigma2-é-conhecida",
+    "href": "slides/14-Intervalos_de_confianca_para_a_media_de_uma_amostra/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.html#caso-1-a-variância-da-população-sigma2-é-conhecida",
+    "title": "Intervalos de Confiança Para a Média de Uma Amostra",
+    "section": "Caso 1: A variância da população \\((\\sigma^2)\\) é conhecida",
+    "text": "Caso 1: A variância da população \\((\\sigma^2)\\) é conhecida\nNesse caso, usamos a distribuição Normal padrão (Z). A fórmula é: \\[\n  \\overline{X} \\pm z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}\n\\tag{1}\\] em que\n\n\\(\\overline{X}\\) é a média da amostra\n\\(z_{\\alpha/2}\\) é o valor crítico da distribuição Normal padrão que deixa uma área de \\(\\alpha/2\\) na cauda superior\n\\(\\sigma\\) é o desvio padrão da população\n\\(n\\) é o tamanho da amostra"
+  },
+  {
+    "objectID": "slides/14-Intervalos_de_confianca_para_a_media_de_uma_amostra/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.html#caso-1-a-variância-da-população-sigma2-é-conhecida-1",
+    "href": "slides/14-Intervalos_de_confianca_para_a_media_de_uma_amostra/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.html#caso-1-a-variância-da-população-sigma2-é-conhecida-1",
+    "title": "Intervalos de Confiança Para a Média de Uma Amostra",
+    "section": "Caso 1: A variância da população \\((\\sigma^2)\\) é conhecida",
+    "text": "Caso 1: A variância da população \\((\\sigma^2)\\) é conhecida"
+  },
+  {
+    "objectID": "slides/14-Intervalos_de_confianca_para_a_media_de_uma_amostra/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.html#caso-1-a-variância-da-população-sigma2-é-conhecida-2",
+    "href": "slides/14-Intervalos_de_confianca_para_a_media_de_uma_amostra/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.html#caso-1-a-variância-da-população-sigma2-é-conhecida-2",
+    "title": "Intervalos de Confiança Para a Média de Uma Amostra",
+    "section": "Caso 1: A variância da população \\((\\sigma^2)\\) é conhecida",
+    "text": "Caso 1: A variância da população \\((\\sigma^2)\\) é conhecida\n\nA Equação 1 funciona em duas situações:\n\nQuando a população de onde a amostra foi retirada já segue uma distribuição Normal.\nQuando o tamanho da amostra (\\(n\\)) é grande o suficiente, mesmo que a distribuição da população não seja Normal. Isso é graças a um resultado chamado Teorema Central do Limite.\n\nNesse caso, substituímos o desvio padrão populacional \\(\\sigma\\) na Equação 1 pelo desvio padrão amostral \\(S\\)."
+  },
+  {
+    "objectID": "slides/14-Intervalos_de_confianca_para_a_media_de_uma_amostra/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.html#exemplo-13.1",
+    "href": "slides/14-Intervalos_de_confianca_para_a_media_de_uma_amostra/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.html#exemplo-13.1",
+    "title": "Intervalos de Confiança Para a Média de Uma Amostra",
+    "section": "Exemplo 13.1",
+    "text": "Exemplo 13.1\nConstrua um intervalo de confiança de 95% para a média da população com base em uma amostra de medições:\n\\[2.5\\quad 7.4\\quad 8.0\\quad 4.5\\quad 7.4\\quad 9.2\\]\nse os erros de medição têm distribuição Normal e o dispositivo de medição garante um desvio padrão de \\(\\sigma=2.2\\)."
+  },
+  {
+    "objectID": "slides/14-Intervalos_de_confianca_para_a_media_de_uma_amostra/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.html#exemplo-13.2",
+    "href": "slides/14-Intervalos_de_confianca_para_a_media_de_uma_amostra/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.html#exemplo-13.2",
+    "title": "Intervalos de Confiança Para a Média de Uma Amostra",
+    "section": "Exemplo 13.2",
+    "text": "Exemplo 13.2\nUma equipe de engenheiros e físicos médicos está usando um scanner de raio-X industrial controlado por computador para avaliar a segurança dos pilares de concreto de uma ponte. O sistema mede o coeficiente de atenuação (\\(\\mu\\)) do material, que indica o quanto o concreto barra a radiação. Um concreto saudável e seguro para essa ponte deve ter um coeficiente médio de, no mínimo, \\(0,210 \\text{ cm}^{-1}\\). Valores abaixo disso indicam que o concreto está poroso, com rachaduras internas ou falhas de fundação. Para testar a segurança, o computador realizou 64 medições em pontos aleatórios de um pilar, obtendo uma média amostral de \\(0,220 \\text{ cm}^{-1}\\) e desvio padrão de \\(0,040 \\text{ cm}^{-1}\\). Calcule o Intervalo de Confiança de 95% para a verdadeira média do coeficiente desse pilar e avalie se o pilar é seguro ou a ponte corre o risco de desabar."
+  },
+  {
+    "objectID": "slides/14-Intervalos_de_confianca_para_a_media_de_uma_amostra/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.html#como-obter-o-tamanho-da-amostra",
+    "href": "slides/14-Intervalos_de_confianca_para_a_media_de_uma_amostra/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.html#como-obter-o-tamanho-da-amostra",
+    "title": "Intervalos de Confiança Para a Média de Uma Amostra",
+    "section": "Como Obter o Tamanho da Amostra",
+    "text": "Como Obter o Tamanho da Amostra\n\nUsamos a margem de erro:\n\n\\[\n  z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}} \\leq E\n\\]\n\nAo rearranjar a fórmula para \\(n\\), obtemos o tamanho de amostra mínimo necessário: \\[\nn \\geq \\left(\\frac{z_{\\alpha/2} \\cdot \\sigma}{E}\\right)^2\n\\]\nComo o tamanho da amostra precisa ser um número inteiro, devemos sempre arredondar para cima para garantir que a margem de erro não exceda o valor desejado."
+  },
+  {
+    "objectID": "slides/14-Intervalos_de_confianca_para_a_media_de_uma_amostra/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.html#exemplo-13.3",
+    "href": "slides/14-Intervalos_de_confianca_para_a_media_de_uma_amostra/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.html#exemplo-13.3",
+    "title": "Intervalos de Confiança Para a Média de Uma Amostra",
+    "section": "Exemplo 13.3",
+    "text": "Exemplo 13.3\nNo Exemplo 13.1, construímos um intervalo de confiança de 95% com centro 6.50 e margem de 1.76, baseado em uma amostra de tamanho 6. Agora, esse intervalo era muito amplo, certo? Qual o tamanho de amostra que precisamos para estimar a média da população com uma margem de no máximo 0.4 unidades e com 95% de confiança?"
+  },
+  {
+    "objectID": "slides/14-Intervalos_de_confianca_para_a_media_de_uma_amostra/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.html#caso-2-a-variância-da-população-sigma2-é-desconhecida",
+    "href": "slides/14-Intervalos_de_confianca_para_a_media_de_uma_amostra/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.html#caso-2-a-variância-da-população-sigma2-é-desconhecida",
+    "title": "Intervalos de Confiança Para a Média de Uma Amostra",
+    "section": "Caso 2: A variância da população \\((\\sigma^2)\\) é desconhecida",
+    "text": "Caso 2: A variância da população \\((\\sigma^2)\\) é desconhecida\n\nEsse é o caso mais comum, pois geralmente não sabemos a variância da população. O que fazemos é usar o desvio padrão da amostra (\\(S\\)) para estimar o desvio padrão da população (\\(\\sigma\\)).\nNo entanto, essa substituição tem uma consequência importante: a distribuição do nosso estimador não é mais a Normal padrão (Z), mas sim a distribuição t de Student."
+  },
+  {
+    "objectID": "slides/14-Intervalos_de_confianca_para_a_media_de_uma_amostra/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.html#caso-2-a-variância-da-população-sigma2-é-desconhecida-1",
+    "href": "slides/14-Intervalos_de_confianca_para_a_media_de_uma_amostra/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.html#caso-2-a-variância-da-população-sigma2-é-desconhecida-1",
+    "title": "Intervalos de Confiança Para a Média de Uma Amostra",
+    "section": "Caso 2: A variância da população \\((\\sigma^2)\\) é desconhecida",
+    "text": "Caso 2: A variância da população \\((\\sigma^2)\\) é desconhecida\n\nA fórmula para o intervalo de confiança é: \\[\n\\overline{X}\\pm t_{\\alpha/2}\\frac{S}{\\sqrt{n}}\n\\]\n\n\\(S\\) é o desvio padrão da amostra\n\\(t_{\\alpha/2}\\) é o valor crítico da distribuição t de Student com \\(n-1\\) graus de liberdade."
+  },
+  {
+    "objectID": "slides/14-Intervalos_de_confianca_para_a_media_de_uma_amostra/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.html#caso-2-a-variância-da-população-sigma2-é-desconhecida-2",
+    "href": "slides/14-Intervalos_de_confianca_para_a_media_de_uma_amostra/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.html#caso-2-a-variância-da-população-sigma2-é-desconhecida-2",
+    "title": "Intervalos de Confiança Para a Média de Uma Amostra",
+    "section": "Caso 2: A variância da população \\((\\sigma^2)\\) é desconhecida",
+    "text": "Caso 2: A variância da população \\((\\sigma^2)\\) é desconhecida\n\nGraus de liberdade podem ser pensados como o número de observações independentes disponíveis para estimar a variabilidade. Aqui, perdemos um grau de liberdade porque usamos a média da amostra ($) para calcular o desvio padrão da amostra.\nQuando o tamanho da amostra (\\(n\\)) é grande, a distribuição t de Student se aproxima da distribuição Normal padrão. É por isso que, para grandes amostras, a gente pode usar a distribuição Z, mesmo com o desvio padrão da amostra."
+  },
+  {
+    "objectID": "slides/14-Intervalos_de_confianca_para_a_media_de_uma_amostra/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.html#exemplo-13.4",
+    "href": "slides/14-Intervalos_de_confianca_para_a_media_de_uma_amostra/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.html#exemplo-13.4",
+    "title": "Intervalos de Confiança Para a Média de Uma Amostra",
+    "section": "Exemplo 13.4",
+    "text": "Exemplo 13.4\nAlguns métodos buscam detectar intrusões em contas de computador, mesmo com a senha correta. A técnica mede padrões de digitação, como o tempo entre as teclas, e os compara com os do dono da conta. Se a diferença for significativa, um intruso é identificado. Os seguintes tempos (em segundos) entre as teclas foram registrados quando um usuário digitou o nome de usuário e a senha:\n\n\n\n0.24\n0.22\n0.26\n0.34\n0.35\n0.32\n0.33\n0.29\n0.19\n\n\n0.36\n0.30\n0.15\n0.17\n0.28\n0.38\n0.40\n0.37\n0.27\n\n\n\nComo primeiro passo para detectar uma intrusão, construa um intervalo de confiança de 99% para o tempo médio entre as teclas, assumindo uma distribuição Normal para esses tempos."
+  },
+  {
+    "objectID": "slides/14-Intervalos_de_confianca_para_a_media_de_uma_amostra/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.html#como-escolher-o-intervalo-de-confiança-para-a-média",
+    "href": "slides/14-Intervalos_de_confianca_para_a_media_de_uma_amostra/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.html#como-escolher-o-intervalo-de-confiança-para-a-média",
+    "title": "Intervalos de Confiança Para a Média de Uma Amostra",
+    "section": "Como Escolher o Intervalo de Confiança para a Média",
+    "text": "Como Escolher o Intervalo de Confiança para a Média"
   },
   {
     "objectID": "info/ementa.html",

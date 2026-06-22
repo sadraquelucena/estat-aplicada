@@ -55,7 +55,12 @@ website:
             text: "12- Distribuição de Poisson"
           - href: aulas/13-Distribuicao_normal.qmd
             text: "13- Distribuição Normal"
-            
+      - section: "Parte 3: Inferência Estatística"
+        contents:
+          - href: aulas/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.qmd
+            text: "14- Intervalos de Confiança Para a Média de Uma Amostra"
+          - href: aulas/15-Intervalos_de_confianca_para_a_proporcao.qmd
+            text: "15- Intervalos de Confiança Para a Proporção"
             
             
             

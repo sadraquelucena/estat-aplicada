@@ -1,0 +1,55 @@
+---
+title: "Conteúdo 14"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Intervalos de Confiança Para a Média de Uma Amostra
+
+Nesta aula, introduzimos o conceito de intervalo de confiança para quantificar a incerteza associada às estimativas obtidas a partir de amostras. Apresentamos os procedimentos para construir intervalos de confiança para a média populacional nos casos em que a variância é conhecida e desconhecida, destacando o uso das distribuições Normal e t de Student. Também discutimos a interpretação correta do nível de confiança e mostramos como determinar o tamanho de amostra necessário para atingir uma precisão desejada.
+
+Slides:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/slides/14-Intervalos_de_confianca_para_a_media_de_uma_amostra/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.html" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide14_html.png)<br>Versão html
+</a>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/slides/14-Intervalos_de_confianca_para_a_media_de_uma_amostra.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide14_pdf.png)<br>Versão pdf
+</a>
+:::
+
+::::
+
+Tabela Normal e Lista de Exercícos:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/tabelas/tabela_normal.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/tabelas/tabela_normal.png){width=80%}<br>Tabela Normal
+</a>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/tabelas/tabela_t.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/tabelas/tabela_t.png){width=80%}<br>Tabela t
+</a>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/listas/EstatAplicada_lista14.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/listas/lista14.png){width=80%}<br>Lista 14
+</a>
+:::
+
+::::
+
+

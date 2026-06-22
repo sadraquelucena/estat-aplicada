@@ -1,0 +1,81 @@
+---
+title: "Intervalos de Confiança Para a Porporção"
+subtitle: "ESTAT0011 -- Estatística Aplicada"
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <span style="font-size:.8em;">sadraquelucena@academico.ufs.br</span>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1024
+    height: 768
+    margin: 0.1         # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem número das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_horizontal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+
+lang: pt-BR
+---
+
+## Intervalo de Confiança para a Proporção
+
+- A proporção é estimada por
+$$
+	\widehat{p}=\frac{\text{número de elementos com a característica de interesse}}{\text{tamanho da amostra}},
+$$
+
+- $\widehat{p}$ tem distribuição $N\left(p,\frac{p(1-p)}{n}\right)$. Assim, o intervalo de confiança para $p$ é então dado por
+$$
+	\widehat{p}\pm z_{\alpha/2}\sqrt{\frac{\widehat{p}(1-\widehat{p})}{n}}.
+$$
+
+
+
+
+## 
+
+- Para determinar o tamanho da amostra para estimar $p$ com um erro máximo $E$, fazemos o seguinte:
+  - Se já temos alguma informação sobre $p$ (coletada de uma amostra preliminar de tamanho $n > 30$):
+  $$
+		n=\frac{z^2_{\alpha/2}\widehat{p}(1-\widehat{p})}{E^2}.
+	$$
+	- Se não tivermos informações sobre $p$:
+	$$
+		n= \frac{z^2_{\alpha/2}}{4E^2}.
+	$$
+
+
+
+
+## Exemplo 15.1
+
+Em uma empresa de desenvolvimento de software, foi feito um levantamento para entender por que os usuários assinam um serviço premium. Em uma amostra aleatória de $500$ usuários do software, descobre-se que $340$ assinaram a versão premium por causa de um novo recurso de IA para otimização de código. Baseado nesses dados, determine um intervalo de confiança de 95% para a proporção real de todos os usuários da base que assinaram a versão premium especificamente por causa deste recurso de IA.
+
+
+
+
+## Exemplo 15.2
+
+A empresa de software quer realizar uma nova pesquisa para determinar a popularidade do seu recurso de IA. Eles precisam de uma amostra que seja precisa.
+
+a) Qual o tamanho de amostra necessário para que a empresa tenha 95% de confiança de que a estimativa da proporção de usuários que assinam por causa do recurso de IA não tenha um erro superior a 2%? Utilize a estimativa da proporção encontrada no exercício anterior.
+
+b) Se a empresa não tivesse nenhuma informação prévia sobre a proporção de usuários, qual seria o tamanho de amostra necessário para garantir a mesma precisão e nível de confiança?
+
+
+
+
+## Exemplo 15.3
+
+Em um processo de desenvolvimento de software, a qualidade do código é monitorada por testes automatizados. Em uma amostra de 100 módulos de código testados, oito continham bugs graves. Calcule o intervalo de confiança de 98% para a proporção real de módulos de código com bugs graves em todo o projeto.
+
+
+# Fim

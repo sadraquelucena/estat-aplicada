@@ -1,0 +1,50 @@
+---
+title: "Conteúdo 15"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Intervalos de Confiança Para a Proporção
+
+Nesta aula, estudamos a construção de intervalos de confiança para proporções populacionais. Também abordamos o cálculo do tamanho de amostra necessário para alcançar uma margem de erro especificada, tanto quando existe uma estimativa prévia da proporção quanto quando nenhuma informação está disponível.
+
+Slides:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/slides/15-Intervalos_de_confianca_para_a_proporcao/15-Intervalos_de_confianca_para_a_proporcao.html" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide15_html.png)<br>Versão html
+</a>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/slides/15-Intervalos_de_confianca_para_a_proporcao.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide15_pdf.png)<br>Versão pdf
+</a>
+:::
+
+::::
+
+Tabela Normal e Lista de Exercícos:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/tabelas/tabela_normal.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/tabelas/tabela_normal.png){width=80%}<br>Tabela Normal
+</a>
+:::
+
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/listas/EstatAplicada_lista15.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/listas/lista15.png){width=80%}<br>Lista 15
+</a>
+:::
+
+::::
+
+
